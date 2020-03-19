@@ -1,0 +1,33 @@
+<!DOCTYPE html><html>
+<head><title>Vifixes</title><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no"><link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="css/trendy.css">
+<link rel="stylesheet" href="css/trendy_scale.css"> 
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"> 
+</head> 
+<body>
+<div id="background" class="openup">
+<div id="inner-background">
+</div>
+<div id="inner-background-in">
+	<div id="logo" class="" onclick="window.location='http://vifixes.com'"><img src="images/favicon.png"/>
+		<h2>VIfixes</h2>
+		<h3>The Virtual Interconnection</h3>
+	</div>
+	<div id="pass150"></div>
+	<hr id="hrtype1">
+	<div id="hasitems"> 
+	
+<h2 style="background:#9E9E9E;padding:10px;padding-top:50px;padding-bottom:50px">
+Error: 404 - We could not find that page. 
+<br><br>Please report any errors at our<a href="http://vifixes.com"> homepage </a></h2>
+	
+	</div>
+</div>
+</div>
+<!--<script language="JavaScript" type="text/javascript">
+TrustLogo("https://vifixes.com/images/comodo.png", "CL1", "none");
+</script>
+<a  href="https://www.positivessl.com/" id="comodoTL">Positive SSL</a> --> 
+
+</body>
+</html>

@@ -1,0 +1,1077 @@
+AWSTATS DATA FILE 7.4 (build 20140726)
+# If you remove this file, all statistics for date 201701 will be lost/reset.
+# Last config file used to build this data file was /home/daanvaq7/tmp/awstats/awstats.daanvir.org.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2008                
+POS_TIME 2689                
+POS_VISITOR 29426               
+POS_DAY 31665               
+POS_DOMAIN 3549                
+POS_LOGIN 3942                
+POS_ROBOT 4097                
+POS_WORMS 4484                
+POS_EMAILSENDER 4615                
+POS_EMAILRECEIVER 4758                
+POS_SESSION 32326               
+POS_SIDER 32535               
+POS_FILETYPES 4893                
+POS_DOWNLOADS 5185                
+POS_OS 5233                
+POS_BROWSER 5456                
+POS_SCREENSIZE 6009                
+POS_UNKNOWNREFERER 6083                
+POS_UNKNOWNREFERERBROWSER 6583                
+POS_ORIGIN 6986                
+POS_SEREFERRALS 7136                
+POS_PAGEREFS 7293                
+POS_SEARCHWORDS 7602                
+POS_KEYWORDS 7782                
+POS_MISC 2353                
+POS_ERRORS 7869                
+POS_CLUSTER 3798                
+POS_SIDER_404 8036                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20170201085123 8728 2173551 13245682219183
+FirstTime 20170106134736
+LastTime 20170131141408
+LastUpdate 20170202060251 1 0 0 0 0
+TotalVisits 116                 
+TotalUnique 44                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 57                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 0 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 46 46 379964 14 21 4998
+1 0 0 0 1 2 5214
+2 0 0 0 0 0 0
+3 11 30 58138 1 1 0
+4 38 101 2305651 1 23 16463
+5 173 419 23952525 13 50 58704
+6 128 293 5123433 8 39 25223
+7 237 507 15139437 3 49 33087
+8 45 121 3844549 2 11 473826
+9 528 804 12642410 8 46 53119
+10 218 543 18900537 13 77 46483
+11 101 224 6570376 45 76 688393
+12 1335 1564 20384609 360 515 462082
+13 6360 6636 16952165 18 80 4258795
+14 2804 2974 11044614 32 60 269049
+15 121 448 16860325 56 93 26197
+16 71 269 10957990 8 38 23444
+17 2080 2528 23187499 276 443 700331
+18 219 671 23762758 510 607 955922
+19 174 229 3643359 404 433 21532
+20 2214 2436 18442639 425 596 1927630
+21 2105 2193 13780330 294 392 354429
+22 125 262 10367887 11 31 30102
+23 159 192 4241775 150 169 61614
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 11
+in 18969 22131 199192882
+us 294 1196 53350871
+ca 15 72 4383379
+br 3 18 1133994
+gb 3 8 196239
+ar 2 23 1364204
+nz 2 18 1229792
+md 1 1 26481
+nl 1 1 26481
+au 1 15 1124388
+id 1 7 514259
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 7
+bingpreview 21 1498625 20170106200223 0
+php 12 2400132 20170123220603 0
+spider 5 129552 20170130214152 0
+googlebot 5 136071 20170129121511 0
+unknown 4 612 20170129121501 4
+bot[\s_+:,\.\;\/\\-] 2 30881 20170124235932 0
+ia_archiver 1 25854 20170109091925 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 11
+css 611 10308882 0 0
+png 1712 39627523 0 0
+ttf 93 2802736 0 0
+cgi 15 35825 0 0
+woff 15 14724 0 0
+php 17949 22444703 0 0
+html 1116 24408858 0 0
+js 615 10257634 0 0
+jpg 1201 151003302 0 0
+Unknown 104 1612809 0 0
+svg 59 25974 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 11
+linuxandroid 1981 930
+winxp 22 0
+ios_iphone 55 6
+winnt 3941 2929
+linux 3 3
+win7 7502 7157
+macosx 1 1
+macosx9 1 1
+win8 259 108
+win8.1 9713 8146
+Unknown 12 11
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 23
+opera42.0.2393.94 409 91
+chrome55.0.2883.87 10671 8469
+android 110 22
+chrome38.0.1025.166 44 5
+chrome55.0.2883.91 229 57
+chrome34.0.1847.131 1 1
+safari10.0 27 2
+firefox21.0 61 12
+opera42.0.2393.517 2560 2524
+msie11.0 230 88
+chrome36.0.1985.143 65 7
+mozilla 3 2
+chrome47.0.2526.111 16 2
+opera42.0.2393.137 153 36
+chrome37.0.2062.120 3 3
+chrome50.0.2661.102 1 1
+chrome55.0.2883.95 1 1
+chrome54.0.2840.85 1517 820
+chrome41.0.2228.0 7327 7134
+Unknown 9 9
+firefox11.0 22 0
+safari 28 4
+chrome51.0.2684.0 3 2
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 11
+Python-urllib/2.7 20170119092119
+';print(md5(acunetix_wvs_security_test));$a=' 20170128175950
+'\ 20170128190107
+Mozilla/5.0_(compatible;_Attracta) 20170108060204
+Http://testasp.vulnweb.com/t/fit.txt 20170128175945
+) 20170128175946
+<!-- 20170128190108
+!(()&&!|*|*| 20170128175947
+^(#$!@#$)(()))****** 20170128175948
+Mozilla/4.0_(compatible;) 20170116075120
+;print(md5(acunetix_wvs_security_test)); 20170128175948
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 9
+Python-urllib/2.7 20170119092119
+';print(md5(acunetix_wvs_security_test));$a=' 20170128175950
+'\ 20170128190107
+Http://testasp.vulnweb.com/t/fit.txt 20170128175945
+) 20170128175946
+<!-- 20170128190108
+!(()&&!|*|*| 20170128175947
+^(#$!@#$)(()))****** 20170128175948
+;print(md5(acunetix_wvs_security_test)); 20170128175948
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 2575 2598
+From1 25 25
+From2 73 73
+From3 11 11
+From4 16608 20783
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 1
+google 73 73
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 5
+http://1-free-share-buttons.com 3 3
+http://top10-way.com/try.php 3 3
+http://burger-imperia.com 3 3
+http://hitrFtVlI1tS3.bxss.me 1 1
+https://www.facebook.com 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 2
+testing 72
+testing9865965 1
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 2
+testing 72
+testing9865965 1
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 7
+302 26 1170
+206 32 4710600
+500 481 1230
+429 1 271
+417 5 1965
+404 3172 1548102
+301 49 11572
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 614
+/daanvirdb.zip 2 -
+/15XbS5Az4q.exe 1 -
+/daanvir.sql 5 -
+/Suw2S5yg5S.phtml 1 -
+/\"%2bresponse.write(9219958*9891954)%2b\" 1 -
+//etc/passwd 3 http://daanvir.org
+/Http://testasp.vulnweb.com/t/fit.txt 3 http://daanvir.org
+/webalizer/ 4 -
+/mysqladmin/ 4 -
+/{{9999599*9999865}} 1 http://daanvir.org
+/web-console/status 5 -
+/inexistent_file_name.inexistent0123450987.cfm 5 -
+/activate9220040 1 http://daanvir.org
+/-1%20OR%203%2b511-511-1=0%2b0%2b0%2b1%20--%20 1 http://daanvir.org
+/15XbS5Az4q.aspx 1 -
+/MgDGdexB 1 -
+//WEB-INF%20-%20Copy/jboss-web.xml 4 -
+/main/Hitlist/Articles//images/favicon.png 3 http://daanvir.org/main/Hitlist/Articles//.php
+/daanvir_backup.sql.tar 3 -
+/daanvirbackup.zip 3 -
+/%40%40lB8e0 1 http://daanvir.org
+/activate\"%20AND%202*3*8=6*8%20AND%20\"mnWq\"=\"mnWq 1 http://daanvir.org
+/%26nslookup%20t7YPqqjx%26'%5c\"`0%26nslookup%20t7YPqqjx%26`' 1 -
+/database.7z 2 -
+/daanvir_dump.sql.tar 3 -
+/epr3jSig.jsp 1 -
+/WEB-INF/web.xml 2 http://daanvir.org
+/acux8255%C0%BEz1%C0%BCz2a%90bcxuca8255 1 http://daanvir.org
+//wp-login.php 4 -
+/backup.rar 3 -
+/0QSdakozG7.cfm 1 -
+/nm 12 -
+/-1%20OR%203*2<(0%2b5%2b511-511)%20--%20 1 http://daanvir.org
+/Suw2S5yg5S.asp 1 -
+/http://hit3Tw5llWkU3.bxss.me/ 1 -
+/LO9JhWl6VI.exe 1 -
+/LO9JhWl6VI.aspx 1 -
+//member.php 4 -
+/Suw2S5yg5S.exe 1 -
+/L4uI4Zq6 1 -
+/..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%afetc/passwd 2 http://daanvir.org
+/_vti_bin/_vti_aut/author.dll 5 -
+/Suw2S5yg5S.jsp 1 -
+/activate'%20AND%202*3*8=6*8%20AND%20'HHle'='HHle 1 http://daanvir.org
+///www.vulnweb.com 3 -
+//Copy%20of%20WEB-INF/jboss-web.xml 4 -
+/LO9JhWl6VI.shtml 1 -
+/jmx-console/HtmlAdaptor 15 -
+/normalize.css 45 http://daanvir.org/reset
+/-1%20OR%203*2<(0%2b5%2b106-106) 1 http://daanvir.org
+/lAD6BPObJy.cfm 1 -
+/backup.sql 5 -
+/Suw2S5yg5S.shtml 1 -
+/IPjqTdAN 1 -
+/axis2/services/listServices 4 -
+/db.sql.gz 5 -
+/-1%20OR%203*2>(0%2b5%2b344-344) 1 http://daanvir.org
+//../..//../..//../..//../..//../..//etc/passwd%00.jpg 3 http://daanvir.org
+/-1%20OR%203%2b703-703-1=0%2b0%2b0%2b1%20--%20 1 http://daanvir.org
+/daanvir_database.7z 3 -
+/activate\"%20AND%202*3*8=6*8%20AND%20\"5Rex\"=\"5Rex 1 http://daanvir.org
+/'%2bresponse.write(9372781*9790159)%2b' 1 -
+/solr/select/ 5 -
+/%24{10000081%2b10000377} 1 -
+/vPAAWrC0n6.cfm 1 -
+/%5e(%23%24!%40%23%24)(()))****** 3 http://daanvir.org
+/daanvir-backup.7z 3 -
+//UserRegistration 2 -
+/daanvir_db.7z 2 -
+/axis1/services/listServices 4 -
+/../../../../../../../../../../etc/passwd%00.jpg 3 http://daanvir.org
+/-1%20OR%203%2b278-278-1=0%2b0%2b0%2b1%20--%20 1 http://daanvir.org
+/db/ 4 -
+/backupdaanvir.zip 4 -
+/daanvir_backup.7z 3 -
+/daanvirdb.sql.gz 5 -
+//en-us/account/register 4 -
+/response.write(9219958*9891954) 1 -
+/activate%26n929561=v948255 1 -
+/ls7pU1mkxH.cfm 1 -
+/EM1EwMwC 1 -
+/'%2bresponse.write(9219958*9891954)%2b' 1 -
+/beheer/ 4 -
+/activate9607148 1 http://daanvir.org
+//registration 3 -
+/920611 1 -
+/LO9JhWl6VI.jsp 1 -
+/backup.zip 2 -
+/activate%25'%20AND%202*3*8=6*8%20AND%20'uT69'!='uT69%25 1 http://daanvir.org
+/theme/META-INF%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%afwindows/win.ini 5 -
+//user/register 4 -
+/if(now()=sysdate()%2csleep(6)%2c0)/*'XOR(if(now()=sysdate()%2csleep(6)%2c0))OR'\"XOR(if(now()=sysdate()%2csleep(6)%2c0))OR\"*/ 3 http://daanvir.org
+/%26nslookup%20NkM8F0x9%26'%5c\"`0%26nslookup%20NkM8F0x9%26`' 1 -
+/database.rar 3 -
+/(select(0)from(select(sleep(6)))v)/*'%2b(select(0)from(select(sleep(6)))v)%2b'\"%2b(select(0)from(select(sleep(6)))v)%2b\"*/ 3 http://daanvir.org
+/WTdMeFQwVEo= 1 -
+/cgi-bin/guestbook.cgi 5 ()%20{%20Referer
+/backup-daanvir.zip 4 -
+/main/points/ 48 http://www.google.com/search
+/main/css/normalize.css 2 http://daanvir.org/main/html/videos.php
+/PhNelPqb 1 -
+/GbMG7HHk 1 -
+/main/css/fonts/cantarell/Cantarell-Regular.ttf 9 http://daanvir.org/main/css/overview.css
+/daanvir_backup.sql 5 -
+/backup_daanvir.7z 4 -
+/backup.sql.tar 3 -
+/dbdump.sql.gz 5 -
+/daanvirbackup.sql.tar 3 -
+/{{10000337*9999412}} 1 http://daanvir.org
+/main/css/reset.css 3 http://daanvir.org/main/activate.php
+/http://cdn.attracta.com/sitemap/5042077.xml.g 5 http://daanvir.org/robots.txt
+/img/ 61 http://daanvir.org/img/
+/main/Traversal/Articles/Delhi/normalize.css 3 http://daanvir.org/main/Traversal/Articles/Delhi/South%20Block1.php
+/LO9JhWl6VI.nsf 1 -
+/%5c 3 http://daanvir.org
+/daanvir.rar 3 -
+/daanvir-db.sql.tar 3 -
+/15XbS5Az4q.jhtml 1 -
+/images/ 73 http://daanvir.org/images/
+/backup_daanvir.rar 2 -
+/15XbS5Az4q.asp 1 -
+/cgi-mod/index.cgi 5 ()%20{%20Referer
+/db.sql.tar 4 -
+/activate\"%20AND%202*3*8=6*8%20AND%20\"1i4z\"=\"1i4z 1 http://daanvir.org
+/dhekPy9K')) 1 http://daanvir.org
+/js/jquery.min.map 21 -
+/elmah.axd 5 -
+/daanvir_db.zip 3 -
+/dump.7z 2 -
+/main/Hitlist/Articles/null/null.php 5 http://daanvir.org/
+/98yseWFm 1 http://daanvir.org
+/URYhIZjk 1 -
+/default 5 -
+/tidXOOgy') 1 http://daanvir.org
+/daanvir-dump.tar.gz 2 -
+/acunetix-wvs-test-for-some-inexistent-file 4 -
+/daanvir-dump.tar 2 -
+/0EVFn8lj') 1 http://daanvir.org
+/dump.sql.gz 5 -
+/main/Traversal/Articles/JAMMU%20&%20KASHMIR/GHAGWAL42.php 1 -
+/database.tar.gz 4 -
+/http://hithMpsdpErIZ.bxss.me/ 1 -
+/cgi-bin/awstats/ 2 -
+/LO9JhWl6VI.cfm 1 -
+/cgi-bin/test.cgi 5 ()%20{%20Referer
+/backup_daanvir.zip 4 -
+/VVruz6FLSX.jsp 1 -
+/-1%20OR%203*2>(0%2b5%2b278-278)%20--%20 1 http://daanvir.org
+/|~.aspx 5 -
+/VVruz6FLSX.stm 1 -
+/dump.tar.gz 4 -
+/1%00%c0%a7%c0%a2%252527%252522 3 http://daanvir.org
+/ 61 http://whois.domaintools.com/daanvir.org
+/css/main/images 5 -
+/main/css/style2.css 3 http://daanvir.org/main/activate.php
+/long_inexistent_path12345_/Null.htw 5 -
+/invoker/JMXInvokerServlet 5 -
+/dump.sql.tar 4 -
+/backup.sql.gz 5 -
+/daanvir-backup.sql 5 -
+/Hitlist/images/2/wallpaper23.jpg 1 -
+//WEB-INF/jboss-web.xml%20(copy) 2 -
+/server-info 5 -
+/admin/elmah.axd 5 -
+/-1%20OR%203*2>(0%2b5%2b703-703)%20--%20 1 http://daanvir.org
+/app/config/database.yml.sqlite3 1 -
+/activate'%20AND%202*3*8=6*8%20AND%20'0S4F'='0S4F 1 http://daanvir.org
+/dbdump.tar 1 -
+/daanvir_db.sql.tar 3 -
+/logs/ 4 -
+/coredumpcheck.php 5 -
+/' 3 -
+/backup-daanvir.rar 2 -
+/licenses 5 http://daanvir.org/js/jquery.bxslider.min.js
+/daanvir-db.sql 5 -
+/-1%20OR%203*2<(0%2b5%2b278-278)%20--%20 1 http://daanvir.org
+/main/Traversal/Articles/JAMMU%20&%20KASHMIR/GHAGWAL44.php 1 -
+/backup.7z 2 -
+/-1%20OR%202%2b106-106-1=0%2b0%2b0%2b1 1 http://daanvir.org
+/axis/services/listServices 5 -
+/main/Traversal/Articles/JAMMU%20&%20KASHMIR/GHAGWAL33.php 1 -
+/ClientAccessPolicy.xml 9 -
+/-1%20OR%202%2b278-278-1=0%2b0%2b0%2b1%20--%20 1 http://daanvir.org
+/daanvirdb.rar 3 -
+/574DwdciYv.php 1 -
+//register.php 7 -
+/daanvir_database.tar 2 -
+/acu4607%EF%BC%9Cs1%EF%B9%A5s2%CA%BAs3%CA%B9uca4607 1 http://daanvir.org
+/activate.php 10 http://daanvir.org/
+/backup.tar 1 -
+/main/test/Car/purple.jpg 5 http://daanvir.org/main/test/index
+/Suw2S5yg5S.cfm 1 -
+/servlet/%0ARefresh:0 5 -
+/15XbS5Az4q.jsp 1 -
+/admin/mysql/main.php 1 -
+/activate%25'%20AND%202*3*8=6*8%20AND%20'cMKT'!='cMKT%25 1 http://daanvir.org
+/Webalizer/ 4 -
+/daanvir-backup.sql.tar 2 -
+/acu6538%EF%BC%9Cs1%EF%B9%A5s2%CA%BAs3%CA%B9uca6538 1 http://daanvir.org
+/ZzEXH6Az 1 -
+/daanvir.tar.gz 4 -
+/qVtuYXhe 1 http://daanvir.org
+/daanvir_db.tar 1 -
+/VVruz6FLSX.shtml 1 -
+/Suw2S5yg5S.pl 1 -
+/main/Hitlist/Articles/Delhi/North%20Block 2 http://daanvir.org/
+/daanvir-backup.zip 3 -
+/database.zip 2 -
+/Stories/Archives/2/India%20Traditional%20Music%20Part%206.mp4 1 http://daanvir.org/
+/Bt3NP6JA' 1 http://daanvir.org
+/574DwdciYv.nsf 1 -
+/crossdomain.xml 8 -
+/daanvir_database.zip 3 -
+/15XbS5Az4q.cgi 1 -
+/LO9JhWl6VI.pl 1 -
+/dump.tar 1 -
+//signup/account 3 -
+/daanvirbackup.7z 3 -
+/cgi-bin/admin.cgi 4 ()%20{%20Referer
+/backup-daanvir.tar.gz 2 -
+/backup_daanvir.tar.gz 2 -
+/http://testasp.vulnweb.com/t/xss.html%3f%2500.jpg 3 -
+/Uem8DOGF 1 http://daanvir.org
+/horde/util/barcode.php 4 -
+/_webalizer/ 4 -
+/css/main/ 82 http://www.google.com/search
+/%24(nslookup%20On6uoxUC) 1 -
+/LO9JhWl6VI.stm 1 -
+/ctivate.php 1 -
+/VVruz6FLSX.pl 1 -
+/main/Stories/Thumbnails/2/WIN_20160619_122919.JPG 3 http://daanvir.org/
+/daanvir.zip 2 -
+/8xjkOkjj' 1 http://daanvir.org
+/%bf'%bf\" 2 http://daanvir.org
+/daanvir_backup.zip 3 -
+/cgi/mt/mt-upgrade.cgi 2 -
+/Suw2S5yg5S.jspa 1 -
+/http://www.vulnweb.com 3 -
+/_vti_inf.html 5 -
+/1%20waitfor%20delay%20'0:0:6'%20--%20 3 http://daanvir.org
+/backup_daanvir.tar 2 -
+/daanvirbackup.sql 5 -
+/jboss-net/services/listServices 5 -
+/15XbS5Az4q.jspa 1 -
+/VVruz6FLSX.jhtml 1 -
+/browserconfig.xml 1 -
+/backup_daanvir.sql.tar 2 -
+/mysql/ 4 -
+/usage/ 4 -
+//WEB-INF/jboss-web.xml%20-%20Copy 3 -
+/MZORonhu 1 -
+/cgi-bin/FormHandler.cgi 5 ()%20{%20Referer
+/daanvir-backup.tar 2 -
+/main/Hitlist/Articles//.php 3 http://daanvir.org/
+/-1%20OR%202%2b344-344-1=0%2b0%2b0%2b1 1 http://daanvir.org
+/daanvir_database.sql.tar 3 -
+/admin/mysql/ 4 -
+/../..//../..//../..//../..//../..//../..//../..//../..//etc/passwd 2 http://daanvir.org
+/574DwdciYv.jspa 1 -
+/daanvirdb.tar 2 -
+/dump.rar 3 -
+/main/Hitlist/images/ 34 http://www.google.com/search
+/activate<WNTXKD>4FCRU[!%2b!]</WNTXKD> 1 http://daanvir.org
+/web-console/Invoker 5 -
+/574DwdciYv.phtml 1 -
+/activate%26n930433=v924670 1 -
+/-1%20OR%202%2b511-511-1=0%2b0%2b0%2b1%20--%20 1 http://daanvir.org
+/daanvir_dump.rar 3 -
+/daanvir.sql.tar 3 -
+/daanvirbackup.sql.gz 5 -
+/main/Hitlist/ 91 http://www.google.com/search
+/15XbS5Az4q.stm 1 -
+/%24{10000260%2b9999928} 1 -
+/invoker/EJBInvokerServlet 5 -
+/activate%25'%20AND%202*3*8=6*8%20AND%20'9krP'!='9krP%25 1 http://daanvir.org
+/..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252Fetc%252Fpasswd%2500.jpg 6 http://daanvir.org
+/rmjqryaP 1 -
+//join.php 4 -
+/574DwdciYv 1 -
+/admin.cgi 4 ()%20{%20Referer
+/VVruz6FLSX.cgi 1 -
+/-1%20OR%203%2b344-344-1=0%2b0%2b0%2b1 1 http://daanvir.org
+/daanvir-db.tar.gz 3 -
+/OwlCarousel2/OwlCarousel2/blob 5 http://daanvir.org/js/owl.carousel.min.js
+/574DwdciYv.jsp 1 -
+/main/Hitlist/images/2/ 20 http://www.google.com/search
+/daanvir-dump.rar 2 -
+/roller-ui/login.rol 4 -
+/daanvir_dump.tar.gz 3 -
+/response.write(9372781*9790159) 1 -
+/jbossws/services 5 -
+/loader-wizard.php 5 -
+/y9gwJjn8 1 http://daanvir.org
+/FFhx6Xeo 1 -
+/.stats/ 4 -
+/))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))) 3 -
+/../../../../../../../../../../../../../../../proc/version 3 http://daanvir.org
+/daanvir_database.sql.gz 5 -
+/%5C../%5C../%5C../%5C../%5C../%5C../%5C../%5C../%5C../etc/hosts 5 -
+/15XbS5Az4q.phtml 1 -
+/OwlCarousel2/OwlCarousel2/blob/master 4 http://daanvir.org/js/owl.carousel.min.js
+/backupdaanvir.sql 5 -
+/../.../.././../.../.././../.../.././../.../.././../.../.././../.../.././etc/passwd 2 http://daanvir.org
+/%f0''%f0\"\" 2 http://daanvir.org
+/http://testasp.vulnweb.com/t/fit.txt%3F.jpg 3 http://daanvir.org
+/daanvir-database.sql.tar 3 -
+/daanvir-db.7z 2 -
+/Suw2S5yg5S.jhtml 1 -
+/) 3 http://daanvir.org
+/%24{%40print(md5(acunetix_wvs_security_test))}%5c 2 -
+/15XbS5Az4q.cfm 1 -
+/main/fonts/ 21 http://daanvir.org/main/fonts/
+/'\"()%26%25<acx><ScRiPt%20>ubDg(9517)</ScRiPt> 1 http://daanvir.org
+/nmiop.php 1 -
+/Global.asa.bak 5 -
+/15XbS5Az4q.plx 1 -
+/dswsbobje/services/listServices 5 -
+/574DwdciYv.jhtml 1 -
+/%24(nslookup%20LIiuYTNR) 1 -
+http://daanvir.org/crossdomain.xml 2 -
+/db.tar 2 -
+/\" 3 -
+/VVruz6FLSX 1 -
+/-1%20OR%203*2>(0%2b5%2b106-106) 1 http://daanvir.org
+/dbdump.tar.gz 4 -
+/921685 1 -
+/backup-daanvir.7z 3 -
+/myadmin/ 4 -
+/Traversal/Articles/Delhi/South%20Block.php 1 -
+/T4CAXCjs' 1 http://daanvir.org
+/daanvir-dump.zip 3 -
+/VVruz6FLSX.cfm 1 -
+/dump.zip 2 -
+//%5cwww.vulnweb.com 3 -
+/%40%40IdP2X 1 http://daanvir.org
+/daanvir-database.sql.gz 5 -
+/php/newcamp.php 1 http://daanvir.org/
+/ur4k04Lntk.cfm 1 -
+/D30gi1eiEe.cfm 1 -
+/-1%20OR%203*2<(0%2b5%2b703-703)%20--%20 1 http://daanvir.org
+/daanvir_db.rar 3 -
+/main/FullGlass/images/Needs/gift-303735_960_720.png 1 http://daanvir.org/
+/daanvir-dump.sql.gz 5 -
+/clhkZGp3eEg= 1 -
+/-1%20OR%203%2b106-106-1=0%2b0%2b0%2b1 1 http://daanvir.org
+/awstats.pl 4 -
+/index.html 4 -
+/574DwdciYv.cgi 1 -
+/daanvir-database.zip 3 -
+//register 1 -
+/mt/mt-upgrade.cgi 4 -
+/%26nslookup%20OzJ7SYZz%26'%5c\"`0%26nslookup%20OzJ7SYZz%26`' 1 -
+/\"%2bresponse.write(9976174*9317035)%2b\" 1 -
+/daanvir_dump.sql 5 -
+/PMA/ 4 -
+/daanvir-backup.sql.gz 5 -
+/activate<ScRiPt%20>IaX2(9200)</ScRiPt> 1 http://daanvir.org
+/daanvir-database.7z 3 -
+/main/Stories/Thumbnails/2/happy.jpg 3 http://daanvir.org/
+/reports/Webalizer/ 4 -
+/%252fetc%252fpasswd 2 http://daanvir.org
+/9NCXFf8vwU.cfm 1 -
+/main/Stories/Thumbnails/2/header3.jpg 3 http://daanvir.org/
+/KKM9hko1jZ.cfm 1 -
+/main/Hitlist/Articles//normalize.css 3 http://daanvir.org/main/Hitlist/Articles//.php
+/-1%20OR%202%2b703-703-1=0%2b0%2b0%2b1%20--%20 1 http://daanvir.org
+/jmx-console/ 5 -
+/daanvirdb.7z 2 -
+/daanvir-db.zip 3 -
+/15XbS5Az4q.nsf 1 -
+/database.tar 2 -
+/1'\" 3 http://daanvir.org
+/index 5 -
+/web-console/ 5 -
+/daanvir_db.tar.gz 4 -
+/ZyvMNFXb 1 -
+/main/test/Car/blue.jpg 1 http://daanvir.org/main/test/index
+/V0JhdmY5dnk= 1 -
+/daanvir-dump.sql.tar 3 -
+/robots.txt 4 -
+/OwlCarousel2/OwlCarousel2 5 http://daanvir.org/js/owl.carousel.min.js
+/Suw2S5yg5S.nsf 1 -
+/574DwdciYv.asp 1 -
+/daanvir_db.sql.gz 5 -
+/Suw2S5yg5S 1 -
+/Estadisticas/ 4 -
+/daanvir_database.tar.gz 3 -
+/daanvir_dump.zip 3 -
+/main/main/Bubbles/MyCampPics/CampPic0000000000001/6_documentary_photography14.jpg 1 -
+/OwlCarousel2/OwlCarousel2/blob/master/LICENSE 5 http://daanvir.org/js/owl.carousel.min.js
+/%24{%40print(md5(acunetix_wvs_security_test))} 3 -
+/Suw2S5yg5S.php 1 -
+/574DwdciYv.plx 1 -
+/daanvir.org 3 -
+/activate9346881 1 http://daanvir.org
+/daanvir_database.rar 3 -
+/perl-status 5 -
+/bJCTFCTc1g.cfm 1 -
+/%24{9999240%2b10000234} 1 -
+/daanvir_dump.sql.gz 5 -
+/pE2RaqXy' 1 http://daanvir.org
+//%5c../%5c../%5c../%5c../%5c../%5c../%5c../etc/passwd 1 http://daanvir.org
+/phpmyadmin2/ 4 -
+/database.sql.gz 5 -
+/backup.tar.gz 4 -
+/VVruz6FLSX.plx 1 -
+//WEB-INF/Copy%20of%20jboss-web.xml 3 -
+/daanvir.sql.gz 5 -
+/admin/ 5 -
+/Hitlist/images/2/wallpaper5.jpg 2 -
+/backupdaanvir.tar 2 -
+/backup-daanvir.sql 5 -
+/database.sql 5 -
+/\"%2bresponse.write(9372781*9790159)%2b\" 1 -
+/css/main/images/ 7 http://www.google.com/search
+//WEB-INF%20(copy)/jboss-web.xml 3 -
+//signup 4 -
+/images/favicon.png 60 http://daanvir.org/
+/VGbfb1Dt' 1 http://daanvir.org
+/activate%26n941730=v904957 1 -
+/daanvir.7z 2 -
+/OwlCarousel2 5 http://daanvir.org/js/owl.carousel.min.js
+/sitemap 5 http://daanvir.org/robots.txt
+/activate'%20AND%202*3*8=6*8%20AND%20'kNxW'='kNxW 1 http://daanvir.org
+/8obBiak9.jsp 1 -
+/daanvirdb.tar.gz 4 -
+/main/Traversal/Articles/Delhi/South%20Block1.php 4 http://daanvir.org/
+/http://hitsM6OjySTrt.bxss.me/ 1 -
+/main/html/ 85 http://www.google.com/search
+/backup-daanvir.sql.gz 4 -
+/manager/status/all 5 -
+/wstat/ 4 -
+/fonts/ 80 http://daanvir.org/fonts/
+/LO9JhWl6VI.asp 1 -
+/VVruz6FLSX.asp 1 -
+/daanvir_dump.7z 3 -
+/backup_daanvir.sql 5 -
+/status 5 -
+/cgi-bin/FormMail.cgi 5 ()%20{%20Referer
+//UserRegister 2 -
+/LO9JhWl6VI.plx 1 -
+/css/main 5 -
+/activate'\"()%26%25<acx><ScRiPt%20>ec3O(9323)</ScRiPt> 1 http://daanvir.org
+/activate'\"()%26%25<acx><ScRiPt%20>IaX2(9386)</ScRiPt> 1 http://daanvir.org
+/574DwdciYv.cfm 1 -
+/_vti_pvt/service.cnf 5 -
+/VVruz6FLSX.nsf 1 -
+/css/ 55 http://daanvir.org/css/
+/574DwdciYv.stm 1 -
+/daanvir-backup.tar.gz 2 -
+/fonts/fontawesome/ 79 http://daanvir.org/fonts/fontawesome/
+/phpMyAdmin/ 3 -
+/main/fonts/cantarell/ 59 http://daanvir.org/main/fonts/cantarell/
+/statystyka/ 4 -
+/daanvir-database.tar.gz 3 -
+/TC7xyCnT 1 -
+/server-status 5 -
+/VVruz6FLSX.exe 1 -
+/<!-- 3 -
+/'\"()%26%25<acx><ScRiPt%20>ec3O(9952)</ScRiPt> 1 http://daanvir.org
+/daanvir-database.sql 5 -
+/0xR0gjmrjg.cfm 1 -
+/574DwdciYv.shtml 1 -
+/daanvir-database.tar 2 -
+/daanvirbackup.tar 2 -
+/activate'\"()%26%25<acx><ScRiPt%20>ubDg(9464)</ScRiPt> 1 http://daanvir.org
+/Suw2S5yg5S.cgi 1 -
+/main/Hitlist/Articles/Delhi/normalize.css 2 http://daanvir.org/main/Hitlist/Articles/Delhi/North%20Block
+/daanvir_db.sql 5 -
+/backupdaanvir.rar 2 -
+/J7A8iVIh 1 -
+/VVruz6FLSX.php 1 -
+/pma/ 4 -
+/daanvir.tar 1 -
+/phpMyAdmin2/ 4 -
+/_vti_pvt/authors.pwd 5 -
+/licenses/MIT 5 http://daanvir.org/js/jquery.bxslider.min.js
+/dump.sql 5 -
+/admin/pma/ 4 -
+/backupdaanvir.7z 3 -
+/db.zip 2 -
+/ioncube/loader-wizard.php 5 -
+/acux3615%C0%BEz1%C0%BCz2a%90bcxuca3615 1 http://daanvir.org
+/VVruz6FLSX.jspa 1 -
+//account/register 4 -
+/daanvir-backup.rar 2 -
+/'%2bresponse.write(9976174*9317035)%2b' 1 -
+/phpinfo.php 1 -
+/db.rar 4 -
+/main/Traversal/Articles/Delhi/images/favicon.png 1 http://daanvir.org/main/Traversal/Articles/Delhi/South%20Block1.php
+/574DwdciYv.exe 1 -
+/fivK9RLD 1 -
+/daanvir-db.sql.gz 5 -
+/574DwdciYv.aspx 1 -
+/dbdump.sql 5 -
+/cgi-bin/le_check_v3.exe 5 -
+/backup_daanvir.sql.gz 4 -
+/main/Traversal/Articles/null/images/favicon.png 1 http://daanvir.org/main/Traversal/Articles/null/null.php
+/VVruz6FLSX.aspx 1 -
+/admin/phpmyadmin/ 4 -
+/stronghold-status 5 -
+/administrator.cgi 5 ()%20{%20Referer
+/-1%20OR%203*2<(0%2b5%2b344-344) 1 http://daanvir.org
+/daanvir-dump.sql 5 -
+/Suw2S5yg5S.plx 1 -
+/main/Traversal/Articles/null/null.php 1 http://daanvir.org/
+/oarVe8dX.jsp 1 -
+/y3PKWYNJ 1 http://daanvir.org
+/console/j_security_check 5 -
+/main/images/ 5 http://daanvir.org/main/images/
+/main/points/hitlist.php 1 http://daanvir.org
+/../../../../../../../../../../etc/passwd 3 http://daanvir.org
+/TfW31kIw 1 -
+/invalid../../../../../../../../../../etc/passwd/./././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././. 3 http://daanvir.org
+/js/ 4 http://www.google.com/search
+/LO9JhWl6VI.phtml 1 -
+/main/php/ 84 http://www.google.com/search
+http://daanvir.org/ClientAccessPolicy.xml 1 -
+/dbdump.sql.tar 3 -
+/FmJ6UWEO 1 -
+/daanvirdb.sql.tar 3 -
+/db.tar.gz 4 -
+/main/js/jquery.min.map 6 -
+/backup-daanvir.tar 2 -
+/daanvirbackup.rar 2 -
+/CFIDE/administrator/index.cfm 5 -
+/daanvir_backup.rar 2 -
+/usagedata/ 4 -
+/daanvir-db.rar 3 -
+/database.sql.tar 3 -
+//WEB-INF/web.xml 1 http://daanvir.org
+/http://some-inexistent-website.acu/some_inexistent_file_with_long_name%3F.jpg 3 http://daanvir.org
+/'\" 3 -
+/set%7cset%26set 3 -
+/daanvirdb.sql 4 -
+/daanvir-db.tar 2 -
+//RegisterUser 2 -
+/daanvir_backup.sql.gz 5 -
+/15XbS5Az4q 1 -
+/574DwdciYv.pl 1 -
+/main/Traversal/Articles/null/normalize.css 1 http://daanvir.org/main/Traversal/Articles/null/null.php
+/%24(nslookup%20KdJBpxfO) 1 -
+/LO9JhWl6VI.jhtml 1 -
+/Suw2S5yg5S.aspx 1 -
+/daanvirbackup.tar.gz 3 -
+//.././.././.././.././.././.././.././../etc/./passwd%2500 2 http://daanvir.org
+/cgi-sys/entropybanner.cgi 4 ()%20{%20Referer
+/Suw2S5yg5S.stm 1 -
+/main/css/style2_small.css 3 http://daanvir.org/main/activate.php
+/activate 15 http://daanvir.org
+/daanvir_backup.tar.gz 2 -
+/main/ 11 '\"()&%<acx><ScRiPt%20>zlfF(9155)</ScRiPt>
+/activate<ScRiPt%20>ubDg(9845)</ScRiPt> 1 http://daanvir.org
+/'\"()%26%25<acx><ScRiPt%20>IaX2(9400)</ScRiPt> 1 http://daanvir.org
+/daanvir_dump.tar 2 -
+/JyI= 2 http://daanvir.org
+/%40%40vH2S5 1 http://daanvir.org
+/-1%20OR%202%2b446-446-1=0%2b0%2b0%2b1 1 http://daanvir.org
+/backupdaanvir.tar.gz 2 -
+/app/config/database.yml.pgsql 1 -
+/ZukLhF20 1 -
+//en/account/register 4 -
+/1some_inexistent_file_with_long_name%00.jpg 3 http://daanvir.org
+//www.vulnweb.com 3 -
+/wqc20X45 1 -
+/daanvir-database.rar 3 -
+/backup-daanvir.sql.tar 2 -
+/file:///etc/passwd 1 http://daanvir.org
+/8DJmewyh' 1 http://daanvir.org
+/theme/META-INF%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%afetc/passwd 4 -
+/dbdump.rar 3 -
+/daanvir-dump.7z 3 -
+/img/cd.svg 512 http://daanvir.org/
+/dbdump.7z 2 -
+/-1%20OR%203%2b446-446-1=0%2b0%2b0%2b1 1 http://daanvir.org
+/15XbS5Az4q.php 1 -
+/main/Hitlist/Articles/null/normalize.css 8 http://daanvir.org/main/Hitlist/Articles/null/null.php
+/util/barcode.php 5 -
+/daanvir_database.sql 5 -
+/response.write(9976174*9317035) 1 -
+/15XbS5Az4q.shtml 1 -
+/main/Traversal/Articles/JAMMU%20&%20KASHMIR/GHAGWAL.php 1 -
+/cgi-sys/addalink.cgi 4 ()%20{%20Referer
+/testasp.vulnweb.com 3 http://daanvir.org
+/cgi-bin-sdb/printenv 10 ()%20{%20Referer
+/dbdump.zip 2 -
+/db.7z 2 -
+/main/Traversal/ 17 -
+/-1%20OR%203*2>(0%2b5%2b446-446) 1 http://daanvir.org
+/LO9JhWl6VI 1 -
+/.%5c%5c./.%5c%5c./.%5c%5c./.%5c%5c./.%5c%5c./.%5c%5c./etc/passwd 3 http://daanvir.org
+/-1%20OR%203*2>(0%2b5%2b511-511)%20--%20 1 http://daanvir.org
+/backupdaanvir.sql.gz 5 -
+/main/Hitlist/Articles/North%20Block%20/null.php 1 http://daanvir.org/
+/cgi-bin/search.cgi 5 ()%20{%20Referer
+/Global.asax.bak 5 -
+/LO9JhWl6VI.jspa 1 -
+/Account/Register.aspx 5 -
+/_vti_bin/shtml.exe 5 -
+/!(()%26%26!%7c*%7c*%7c 3 http://daanvir.org
+/phpmyadmin/main.php 3 -
+/activate<script>IaX2(9521)</script> 1 http://daanvir.org
+/db.sql 5 -
+/acu1373%EF%BC%9Cs1%EF%B9%A5s2%CA%BAs3%CA%B9uca1373 1 http://daanvir.org
+/-1%20OR%203*2<(0%2b5%2b446-446) 1 http://daanvir.org
+/990766 1 -
+/TeHHsgWm 1 http://daanvir.org
+/main/Hitlist/Articles/null/images/favicon.png 5 http://daanvir.org/main/Hitlist/Articles/null/null.php
+/backupdaanvir.sql.tar 2 -
+/daanvir_backup.tar 2 -
+/VVruz6FLSX.phtml 1 -
+/15XbS5Az4q.pl 1 -
+/dbadmin/ 4 -
+/stronghold-info 5 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 57
+14.139.61.129 18824 21594 177003437 20170131141409
+64.233.173.156 93 362 12606943 20170109044931
+64.233.173.154 83 339 11829669 20170127060708
+64.233.173.155 79 310 12965054 20170114180959
+111.91.113.154 62 122 6010501 20170108140211
+59.178.215.100 18 62 3047396 20170109135703
+47.30.14.107 15 72 4383379 20170107052628
+182.73.94.66 14 94 6267346 20170107092735
+59.178.197.215 12 49 108738 20170115155318
+59.178.223.83 10 46 1864851 20170115065022
+59.178.217.49 9 37 576994 20170127082302
+59.178.203.17 9 33 57779 20170115110929
+64.233.173.159 5 12 226070 20170109173343
+59.178.214.24 5 38 296633 20170116140647
+169.149.52.126 5 5 17275 20170106154837
+169.149.53.209 4 5 17378 20170127060718
+169.149.63.240 3 17 1205960 20170129092013
+42.106.41.88 3 26 2029847 20170107104551
+8.37.230.211 3 21 1301888 20170107052151
+64.233.173.131 2 9 777598 20170109173536
+162.243.114.156 2 2 49580 20170108060204
+169.149.3.129 2 12 331107 20170121090649
+169.149.5.150 2 2 30202 20170108090457
+66.102.7.163 2 13 934237 20170106154837
+66.249.84.209 2 11 2555277 20170106154840
+66.102.7.161 1 12 1009541 20170106154806
+177.54.224.245 0 1 105303 
+52.204.248.150 1 1 26450 20170122100422
+185.38.14.171 1 1 26481 20170115084709
+120.147.218.6 1 15 1124388 20170125083358
+66.249.84.205 0 9 3227100 
+169.149.14.203 0 1 89660 
+64.233.173.129 0 6 0 
+169.149.23.209 2 10 502170 20170121170902
+178.17.170.212 1 1 26481 20170114222403
+186.225.182.66 1 1 27517 20170129212608
+66.249.80.25 0 2 953962 
+128.199.241.231 0 3 111142 
+181.47.172.78 2 23 1364204 20170113184729
+66.249.84.207 0 14 1240670 
+179.125.46.214 0 3 109103 
+66.249.80.23 0 2 176442 
+120.59.17.35 2 27 1899394 20170106180537
+179.159.56.199 1 1 27182 20170128104614
+8.37.230.194 0 6 225971 
+122.160.248.20 0 1 4112 
+216.18.199.114 1 1 26450 20170125230911
+128.199.254.26 1 3 32166 20170108165909
+163.172.135.18 1 1 26481 20170115062012
+42.111.34.33 1 2 25854 20170108072946
+185.47.62.214 1 1 26450 20170119092119
+36.73.103.229 1 7 514259 20170126112542
+177.17.195.211 1 9 372346 20170116142732
+66.102.7.165 0 3 153883 
+121.98.133.100 2 18 1229792 20170126094417
+169.149.42.179 2 9 870334 20170124092902
+187.45.45.224 0 3 492543 
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 23
+20170106 461 1407 45441118 11
+20170107 1434 2581 70855029 19
+20170108 383 833 35018116 12
+20170109 195 385 9960832 9
+20170111 8 35 362714 3
+20170112 0 5 89289 0
+20170113 119 335 9754495 4
+20170114 17 39 1060156 4
+20170115 120 293 6422538 8
+20170116 215 405 8079650 8
+20170117 7 31 1080551 3
+20170119 1 1 26450 1
+20170121 8 38 1017353 3
+20170122 8 41 2594246 3
+20170123 9 30 1399044 1
+20170124 69 135 2829038 2
+20170125 95 109 3549587 5
+20170126 32 114 6141173 5
+20170127 4108 4376 24269065 6
+20170128 1801 1857 10049738 4
+20170129 1533 1712 9305471 4
+20170130 0 10 648680 0
+20170131 8669 8718 12588637 1
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+1h+ 25
+5mn-15mn 12
+0s-30s 46
+15mn-30mn 9
+30s-2mn 10
+2mn-5mn 7
+30mn-1h 7
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 59
+/main/php/locs.php 8842 9609657 0 6
+/main/points/hitlist.php 2854 6241947 19 29
+/main/php/registerme.php 1715 166313 0 0
+/main/html/sendto.php 1227 1227 0 0
+/ 1099 24062286 68 36
+/main/html/open.php 1013 24031 4 3
+/main/php/verifyme.php 596 323 0 0
+/main/html/search.php 532 34024 0 1
+/main/pages/x29.php 158 873340 2 4
+/main/points/turnlink.php 125 1001 0 2
+/main/pages/x50.php 113 2941 0 1
+/main/php/newcamp.php 106 75660 1 2
+/main/fonts/cantarell/Cantarell-Regular.ttf 93 2802736 7 7
+/activate 93 1450329 0 1
+/main/pages/x27.php 89 468346 1 4
+/main/php/advanced.php 78 51758 2 0
+/activate.php 70 1093084 1 0
+/main/php/setcamppic.php 65 4062 1 1
+/main/pages/x23.php 35 1621494 1 3
+/main/html/fulldesc.php 33 64755 0 4
+/main/pages/x24.php 29 18117 0 2
+/main/pages/x90.php 26 530552 0 1
+/main/pages/x22.php 25 24655 0 0
+/main/pages/x25.php 22 63288 1 1
+//main/html/pages/p90.php 21 358407 0 1
+/main/Hitlist/Articles/Delhi/North%20Block%20.php 15 101658 1 1
+/main/html/similar_people.php 1 956 0 0
+/cgi-sys/defaultwebpage.cgi 5 33655 0 0
+/main/html/forgot.php 8 172 0 0
+/cgi-sys/FormMail-clone.cgi 5 2080 0 0
+//index.php/customer/account/create/ 4 108889 0 0
+/fonts/fontawesome/fontawesome.woff 15 14724 0 1
+/main/Hitlist/Articles/Delhi/South%20Block.php 6 46113 0 0
+/main/php/validate_support.php 14 29 0 0
+/main/pages/x30.php 8 75008 0 0
+/main/html/reset.php 5 0 0 0
+/main/Traversal/Articles/Delhi/North%20Block%20.php 4 49166 1 1
+/main/php/setprofilepic.php 4 43 0 0
+/main/Traversal/Articles/Delhi/South%20Block.php 7 85614 0 0
+/main/ 5 19905 0 0
+/main/pages/x1.php 10 88681 0 0
+/main/pages/x28.php 11 64275 0 0
+/main/php/new_camp.php 1 2 0 0
+//index.php 20 544445 0 0
+/main/test/index 2 28533 1 2
+//index.php/register/ 4 108889 0 0
+/main/points/trend.php 1 1 0 0
+/cgi-sys/entropysearch.cgi 5 90 0 0
+/main/php/test_camp.php 1 806 0 0
+/main/pages/x26.php 7 13862 0 0
+/main/html/fulldescr.php 17 10169 0 1
+/main/html/videos.php 1 2552 0 0
+/reset 9 133947 3 0
+/main/html/finder.php 5 2351 0 1
+/reset.php 2 29747 0 0
+/main/html/fblogin.php 11 0 1 0
+/main/php/collectneeds.php 5 38 1 0
+/main/php/setval.php 11 33 0 0
+//index.php/component/users/ 4 108889 0 0
+END_SIDER

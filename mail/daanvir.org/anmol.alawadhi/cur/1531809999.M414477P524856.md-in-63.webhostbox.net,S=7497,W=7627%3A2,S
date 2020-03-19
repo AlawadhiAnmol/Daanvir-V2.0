@@ -1,0 +1,130 @@
+Return-Path: <01000164a6fd662f-d085daa4-4069-4776-8bec-4c9d55310a3a-000000@amazonses.com>
+Delivered-To: anmol.alawadhi@daanvir.org
+Received: from md-in-63.webhostbox.net
+	by md-in-63.webhostbox.net (Dovecot) with LMTP id UZKTFs+QTVs4AggAwBqdFg
+	for <anmol.alawadhi@daanvir.org>; Tue, 17 Jul 2018 06:46:39 +0000
+Return-path: <01000164a6fd662f-d085daa4-4069-4776-8bec-4c9d55310a3a-000000@amazonses.com>
+Envelope-to: anmol.alawadhi@daanvir.org
+Delivery-date: Tue, 17 Jul 2018 06:46:39 +0000
+Received: from a10-168.smtp-out.amazonses.com ([54.240.10.168]:54102)
+	by md-in-63.webhostbox.net with esmtps (TLSv1.2:ECDHE-RSA-AES128-SHA256:128)
+	(Exim 4.89)
+	(envelope-from <01000164a6fd662f-d085daa4-4069-4776-8bec-4c9d55310a3a-000000@amazonses.com>)
+	id 1ffJkp-002JEv-Ai
+	for anmol.alawadhi@daanvir.org; Tue, 17 Jul 2018 06:46:39 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=vmweay23vju5pgjewim6y7ifjhik2vjg; d=internshala.com;
+	t=1531809982;
+	h=To:Subject:Message-ID:Date:From:Reply-To:MIME-Version:List-Unsubscribe:Content-Type:Content-Transfer-Encoding;
+	bh=a+W9Bo6DecexGZNTLpL/Y4ipnDPHyHM36H1sL5tBTEg=;
+	b=g0lvyJVGMvIdhJWMuYY9vl9/0iIArIdjek4cGwnI/OLq1vuKm5iWLxIZcDh7b9YY
+	xUzvLbrdcadfO9qfOKDi0u1c3/i4W53Jkpp4+vtvt3PSbTRIkoxH0s1rrwmfgtLtnuh
+	Z1izir/yY+hdsQikaTtnPDRciPFdPEWC/RDLRdNo=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug; d=amazonses.com; t=1531809982;
+	h=To:Subject:Message-ID:Date:From:Reply-To:MIME-Version:List-Unsubscribe:Content-Type:Content-Transfer-Encoding:Feedback-ID;
+	bh=a+W9Bo6DecexGZNTLpL/Y4ipnDPHyHM36H1sL5tBTEg=;
+	b=PaMkn38UxwG7BrzvIkIdRRGH3l6n36cdmtOLlwYKx46l3LWcndq9sH7pSWWTXRk+
+	ZCAKnRuQStQfeloHhpFZfHokfc4HWq3h2kpRwpUG+XLS8gScz+NUQVcqHuf3uAeXEmx
+	3E8Q7rycycK0ml+0uOktpJdUFGv7J/+U8lm/boVE=
+To: anmol.alawadhi@daanvir.org
+Subject: Regarding your summer intern requirements - Internshala
+Message-ID: <01000164a6fd662f-d085daa4-4069-4776-8bec-4c9d55310a3a-000000@email.amazonses.com>
+Date: Tue, 17 Jul 2018 06:46:22 +0000
+From: "Raghav Singla" <raghav@internshala.com>
+Reply-To: raghav@internshala.com
+MIME-Version: 1.0
+X-Mailer-LID: 5736
+List-Unsubscribe: <http://em.internshala.com/unsubscribe.php?M=87701445&C=c04de3d2251b2aee23192dfdbb9a1907&L=5736&N=13843>
+X-Mailer-RecptId: 87701445
+X-Mailer-SID: 13843
+X-Mailer-Sent-By: 4
+Content-Type: multipart/alternative; charset="UTF-8"; boundary="b1_53bba99f7fd6eab2c79348383bbc1198"
+Content-Transfer-Encoding: 8bit
+X-SES-Outgoing: 2018.07.17-54.240.10.168
+Feedback-ID: 1.us-east-1.zxtucPVubGftJWR49L2EMyyk1hBPV57S2rBAeFj2vQs=:AmazonSES
+X-Authenticated_sender: 
+X-Spam-Status: No, score=1.6
+X-Spam-Score: 16
+X-Spam-Bar: +
+X-Ham-Report: DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, HEADER_FROM_DIFFERENT_DOMAINS=0.249, HTML_IMAGE_ONLY_28=0.726, HTML_MESSAGE=0.001, MPART_ALT_DIFF=0.724, RCVD_IN_DNSWL_NONE=-0.0001, SPF_PASS=-0.001, URIBL_BLOCKED=0.001, CMAE Analysis: v=2.3 cv=P/8UeBIu c=1 sm=0 tr=0 a=HpAAvcLHHh0Zw7uRqdWCyQ==:117 a=dcquBOTM6S/aYmUySERGkg==:17 a=IkcTkHD0fZMA:10 a=R9QF1RCXAYgA:10 a=mDRq-kXtxVkA:10 a=Hgn-wnRn1-cA:10 a=2VSlVHIOZe9zSUxvpCQA:9 a=QEXdDO2ut3YA:10 a=BG0-yrJV6j4A:10 a=JlbB7QOLdOYA:10 a=FU5plfW0zvc5xMct5o8A:9 a=gD1SZYPHV0PX47uh:21 a=_W_S_7VecoQA:10 a=Tiie-zG8F9MA:10 a=R4z4fLCyvN8A:10
+ 
+ *  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ *       See http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ *      for more information.
+ *      [URIs: internshala.com]
+ * -0.0 RCVD_IN_DNSWL_NONE RBL: Sender listed at http://www.dnswl.org/, no
+ *      trust
+ *      [54.240.10.168 listed in list.dnswl.org]
+ *  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
+ *      domains are different
+ * -0.0 SPF_PASS SPF: sender matches SPF record
+ *  0.0 HTML_MESSAGE BODY: HTML included in message
+ *  0.7 MPART_ALT_DIFF BODY: HTML and text parts are different
+ *  0.7 HTML_IMAGE_ONLY_28 BODY: HTML: images with 2400-2800 bytes of words
+ *  0.1 DKIM_SIGNED Message has a DKIM or DK signature, not necessarily
+ *      valid
+ * -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
+ *       domain
+ * -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+X-Spam-Flag: NO
+
+--b1_53bba99f7fd6eab2c79348383bbc1198
+Content-Type: text/plain; format=flowed; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Your email client cannot read this email.
+To view it online, please go here:
+http://em.internshala.com/display.php?M=87701445&C=c04de3d2251b2aee23192dfdbb9a1907&S=13843&L=5736&N=9478
+
+
+To stop receiving these
+emails:http://em.internshala.com/unsubscribe.php?M=87701445&C=c04de3d2251b2aee23192dfdbb9a1907&L=5736&N=13843
+
+--b1_53bba99f7fd6eab2c79348383bbc1198
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+<html>
+<head>
+</head>
+<body>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size:
+small;">Hi Anmol ,<br /><br /></span><span style="font-family: arial,
+helvetica, sans-serif; font-size: small;">I am Raghav from Internshala.
+Hope you are doing well.<br /><br /></span><span style="font-family: arial,
+helvetica, sans-serif; font-size: small;">I would like to inform you that
+summer internship season is about to end and students are actively looking
+for internships.<br /><br /></span><strong style="font-family: arial,
+helvetica, sans-serif; font-size: small;">Click&nbsp;<a
+href="http://em.internshala.com/link.php?M=87701445&N=13843&L=17683&F=H"
+target="_blank"
+data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://internshala.com/login/employer?utm_source%3Dfmail%26utm_medium%3DRCJS1%26utm_campaign%3DIM_06_2018&amp;source=gmail&amp;ust=1529555381608000&amp;usg=AFQjCNHEDjiz0_KdfTnLEwGmJUxpElG8Pg">here</a>,
+to post your internship and hire interns.<br /><br /></strong><span
+style="font-family: arial, helvetica, sans-serif; font-size: small;">Please
+let me know in case of any queries.<br /><br /></span><span
+style="font-family: arial, helvetica, sans-serif; font-size:
+small;">Regards,&nbsp;<br /></span><span style="font-family: arial,
+helvetica, sans-serif; font-size: small;">Raghav Singla&nbsp;<br
+/></span><span style="font-family: arial, helvetica, sans-serif; font-size:
+small;">Manager - Corporate Relations&nbsp;<br /></span><a
+href="http://em.internshala.com/link.php?M=87701445&N=13843&L=17683&F=H"
+target="_blank"
+data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://internshala.com/login/employer?utm_source%3Dfmail%26utm_medium%3DRCJS2%26utm_campaign%3DIM_06_2018&amp;source=gmail&amp;ust=1529555381608000&amp;usg=AFQjCNFACAtASSixZIX7TG7p_hTU3BA-dg"><font
+face="arial, helvetica, sans-serif" size="2">Internshala</font></a><br
+/><br /><br /><br /><br /><br /><br /><br /><span style="font-size:
+x-small;"><a
+href="http://em.internshala.com/unsubscribe.php?M=87701445&C=c04de3d2251b2aee23192dfdbb9a1907&L=5736&N=13843">Unsubscribe</a></span><a
+href="http://em.internshala.com/link.php?M=87701445&N=13843&L=17366&F=H"
+target="_blank"
+data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://internshala.com/login/employer?utm_source%3Dfmail%26utm_medium%3DRCJS2%26utm_campaign%3DIM_06_2018&amp;source=gmail&amp;ust=1529555381608000&amp;usg=AFQjCNFACAtASSixZIX7TG7p_hTU3BA-dg"
+style="font-family: arial, helvetica, sans-serif; font-size:
+small;"></a></p>
+<img
+src="http://em.internshala.com/open.php?M=87701445&L=5736&N=13843&F=H&image=.jpg"
+height="1" width="10"></body>
+</html>
+
+--b1_53bba99f7fd6eab2c79348383bbc1198--
+
+

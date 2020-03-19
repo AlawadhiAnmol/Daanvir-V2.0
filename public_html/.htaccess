@@ -1,0 +1,2 @@
+Header set X-Frame-Options SAMEORIGIN
+Options -MultiViews

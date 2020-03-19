@@ -1,0 +1,139 @@
+Return-Path: <ughhhhateit48@gmail.com>
+Delivered-To: anmol.alawadhi@daanvir.org
+Received: from md-in-63.webhostbox.net
+	by md-in-63.webhostbox.net with LMTP id EBslD8o6ilsgLw8AwBqdFg
+	for <anmol.alawadhi@daanvir.org>; Sat, 01 Sep 2018 07:07:54 +0000
+Return-path: <ughhhhateit48@gmail.com>
+Envelope-to: anmol.alawadhi@daanvir.org
+Delivery-date: Sat, 01 Sep 2018 07:07:54 +0000
+Received: from mail-qt0-f171.google.com ([209.85.216.171]:43392)
+	by md-in-63.webhostbox.net with esmtps (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128)
+	(Exim 4.91)
+	(envelope-from <ughhhhateit48@gmail.com>)
+	id 1fw00c-004IWo-FR
+	for anmol.alawadhi@daanvir.org; Sat, 01 Sep 2018 07:07:54 +0000
+Received: by mail-qt0-f171.google.com with SMTP id g53-v6so16968502qtg.10
+        for <anmol.alawadhi@daanvir.org>; Sat, 01 Sep 2018 00:07:42 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=3SFhk/XSJ5IsYAQcXKVSywR4rwOrq7c4cJGlLcdrEok=;
+        b=MJJotItg1WTNIY6WLz19myYh2SqpMhFYneLJiqeJJFvZx/j+NzdYZE16lVPmOVwJxO
+         csylwcGdPTqpY32PoUKBSo6NQc3JIR1wieLZnd/x7dtowY8na6Ep1j+BlpifviRxThrJ
+         aluhJImPxvQFvviglcZmYkSf5moKSqKiiRAphG8D63SzOaFbN07mIcB+O/++YD5JuSI0
+         yWXSS4dBvoDHPLs8kudmzzb0OfKXskpMxySnCDway7C/9IFDX7Ga3eYFJw86AjS/csU1
+         /6cPz/JrsSmIkdbaA+wwSH7qJ8+Fkt11qs9p5fh4yenxl7t3DzTNqOg73Bm0394arR/4
+         NX/g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=3SFhk/XSJ5IsYAQcXKVSywR4rwOrq7c4cJGlLcdrEok=;
+        b=DK/bMFoDo0ediIcHNmWH+CgV5crEZ+za2IV/jQFvZuu2AIBhtarv6HdhIQrBECKxeI
+         kMXhxAvibmaTy1C/Aq+lsAwnqb/qPkMEtGK07LWig0Ye0/F5p38Vw0HTeFXlxVjSg5wT
+         7lx7QhrtcYRvuQflMTtMVxhHRPH/AjeY+T2FbqxUed/x2+An7O/U1Q92l5/PYmtc9osc
+         F7lXIXu4k8PHSITv1q/3kcDxE1KKWWKSx9TcmC1U5oUamMYqmxQ5y/pnqOZuzeg0F/w1
+         BMUp5IYbkg27epPWqworqmO5gaP3nOymG5flfVYI8AzoZm1ksIV+B+taFaOiX4PJdByA
+         hCig==
+X-Gm-Message-State: APzg51B0BrHhLH/ccmgzTP7sDNJF5B4JaCNi0YRrs5fXhOoxIeBH0uMI
+	8h4dCyRZZG9RkyrPyzuxW4Hm/etxDdx00pQgCfUV/g==
+X-Google-Smtp-Source: ANB0Vdah8BFxSbJs4nlcvnkdJP+cEQyuQSqUJFV3URF0q3X5ujYkhChXloEOUMHct96aPybsToByUhV4hv35Ob53Zfk=
+X-Received: by 2002:ac8:5056:: with SMTP id h22-v6mr18985001qtm.71.1535785653760;
+ Sat, 01 Sep 2018 00:07:33 -0700 (PDT)
+MIME-Version: 1.0
+References: <3503972709AE7200.6017c077-9209-4b8f-9e32-a94a54252925@mail.outlook.com>
+In-Reply-To: <3503972709AE7200.6017c077-9209-4b8f-9e32-a94a54252925@mail.outlook.com>
+From: PraChi Joshi <ughhhhateit48@gmail.com>
+Date: Sat, 1 Sep 2018 12:37:30 +0530
+Message-ID: <CAJsOwiZcpG+21PR4h4+2tiqiyftkvZPyFqg+0xA0RGq-PkrX6w@mail.gmail.com>
+Subject: Re: Certificate_Prachi.doc
+To: Anmol Alawadhi <anmol.alawadhi@daanvir.org>
+Content-Type: multipart/alternative; boundary="00000000000057f5210574c9f68b"
+X-Authenticated_sender: 
+X-Spam-Status: No, score=0.8
+X-Spam-Score: 8
+X-Spam-Bar: /
+X-Ham-Report: DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, FREEMAIL_ENVFROM_END_DIGIT=0.25, FREEMAIL_FROM=0.001, HK_RANDOM_ENVFROM=0.626, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_NONE=-0.0001, RCVD_IN_MSPIKE_H3=0.001, RCVD_IN_MSPIKE_WL=0.001, SPF_PASS=-0.001, URIBL_BLOCKED=0.001, CMAE Analysis: v=2.3 cv=NN/7BXyg c=1 sm=0 tr=0 a=HpAAvcLHHh0Zw7uRqdWCyQ==:117 a=x7bEGLp0ZPQA:10 a=FOBbzUb_h_sA:10 a=JBFolyDoGHsA:10 a=a05rt29YK7ETaXJnm3EA:9 a=QEXdDO2ut3YA:10 a=xKPl_Oh14GoA:10 a=apDBYZpXVNUA:10 a=nB31WiPCS-IA:10 a=b_C5__MMax2JOa6p1KoA:9 a=oQqAxlTdS3bbIXnh:21
+ 
+ *  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ *       See http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ *      for more information.
+ *      [URIs: aka.ms]
+ *  0.6 HK_RANDOM_ENVFROM Envelope sender username looks random
+ * -0.0 RCVD_IN_DNSWL_NONE RBL: Sender listed at http://www.dnswl.org/, no
+ *      trust
+ *      [209.85.216.171 listed in list.dnswl.org]
+ *  0.0 FREEMAIL_FROM Sender email is commonly abused enduser mail provider
+ *      (ughhhhateit48[at]gmail.com)
+ * -0.0 SPF_PASS SPF: sender matches SPF record
+ *  0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends in
+ *      digit (ughhhhateit48[at]gmail.com)
+ *  0.0 RCVD_IN_MSPIKE_H3 RBL: Good reputation (+3)
+ *      [209.85.216.171 listed in wl.mailspike.net]
+ *  0.0 HTML_MESSAGE BODY: HTML included in message
+ * -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
+ *       domain
+ * -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ *  0.1 DKIM_SIGNED Message has a DKIM or DK signature, not necessarily
+ *      valid
+ *  0.0 RCVD_IN_MSPIKE_WL Mailspike good senders
+X-Spam-Flag: NO
+
+--00000000000057f5210574c9f68b
+Content-Type: text/plain; charset="UTF-8"
+
+Thanks a lot.
+
+On Tue, Aug 21, 2018 at 8:36 AM <anmol.alawadhi@daanvir.org> wrote:
+
+> Hi prachi,
+>
+> PFA (date corrected)
+>
+> Regards,
+> Anmol Alawadhi.
+>
+> Get Outlook for Android <https://aka.ms/ghei36>
+>
+>
+
+-- 
+Regards,
+Prachi
+
+--00000000000057f5210574c9f68b
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Thanks a lot.=C2=A0<br></div><br><div class=3D"gmail_quote=
+"><div dir=3D"ltr">On Tue, Aug 21, 2018 at 8:36 AM &lt;<a href=3D"mailto:an=
+mol.alawadhi@daanvir.org">anmol.alawadhi@daanvir.org</a>&gt; wrote:<br></di=
+v><blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:=
+1px #ccc solid;padding-left:1ex"><div dir=3D"auto" style=3D"direction:ltr;m=
+argin:0;padding:0;font-family:sans-serif;font-size:11pt;color:black">Hi pra=
+chi,<br>
+<br>
+</div>
+<div dir=3D"auto" style=3D"direction:ltr;margin:0;padding:0;font-family:san=
+s-serif;font-size:11pt;color:black">PFA (date corrected)<br>
+<br>
+</div>
+<div dir=3D"auto" style=3D"direction:ltr;margin:0;padding:0;font-family:san=
+s-serif;font-size:11pt;color:black">Regards,<br>
+</div>
+<div dir=3D"auto" style=3D"direction:ltr;margin:0;padding:0;font-family:san=
+s-serif;font-size:11pt;color:black">Anmol Alawadhi.<br>
+<br>
+</div>
+<div dir=3D"auto" style=3D"direction:ltr;margin:0;padding:0;font-family:san=
+s-serif;font-size:11pt;color:black"><div dir=3D"auto" style=3D"direction:lt=
+r;margin:0;padding:0;font-family:sans-serif;font-size:11pt;color:black">Get=
+ <a href=3D"https://aka.ms/ghei36" target=3D"_blank">Outlook for Android</a=
+></div>
+<br>
+</div>
+</blockquote></div><br clear=3D"all"><div><br></div>-- <br><div dir=3D"ltr"=
+ class=3D"gmail_signature" data-smartmail=3D"gmail_signature"><div dir=3D"l=
+tr">Regards,=C2=A0<div>Prachi=C2=A0</div></div></div>
+
+--00000000000057f5210574c9f68b--

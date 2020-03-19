@@ -1,0 +1,125 @@
+Return-Path: <010001666270d2c7-67b84ea5-4319-4fc1-aac4-6267b0a75449-000000@amazonses.com>
+Delivered-To: anmol.alawadhi@daanvir.org
+Received: from md-in-63.webhostbox.net
+	by md-in-63.webhostbox.net with LMTP id yLq3ONAWv1u0TQUAwBqdFg
+	for <anmol.alawadhi@daanvir.org>; Thu, 11 Oct 2018 09:24:32 +0000
+Return-path: <010001666270d2c7-67b84ea5-4319-4fc1-aac4-6267b0a75449-000000@amazonses.com>
+Envelope-to: anmol.alawadhi@daanvir.org
+Delivery-date: Thu, 11 Oct 2018 09:24:32 +0000
+Received: from a10-199.smtp-out.amazonses.com ([54.240.10.199]:36520)
+	by md-in-63.webhostbox.net with esmtps (TLSv1.2:ECDHE-RSA-AES128-SHA256:128)
+	(Exim 4.91)
+	(envelope-from <010001666270d2c7-67b84ea5-4319-4fc1-aac4-6267b0a75449-000000@amazonses.com>)
+	id 1gAXCk-001UNQ-Ug
+	for anmol.alawadhi@daanvir.org; Thu, 11 Oct 2018 09:24:32 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=beyj7v6v7m44vc3226foutgqzcxxbogf; d=internshala.com;
+	t=1539249853;
+	h=To:Subject:Message-ID:Date:From:Reply-To:MIME-Version:List-Unsubscribe:Content-Type:Content-Transfer-Encoding;
+	bh=NX3DatFspaOLn1UVRJgoUoioJDG+keq8UvLY/9womKY=;
+	b=bn4gqsDmTVnIRiz4DLC706TN1nyNvwkiFlOm3faqbqpvAVH/rUlIf3NydbzTOIbJ
+	h9RiLdGjlVtsnqmyuqkdVkPFlv4Kj+kwQ8Bw/47RlDxCTNNrjCPKkHPxAHpuXF2JKjG
+	MkMlwXerpPzguMtHBqJoOFBbu9wK5LN8b7/1myyw=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug; d=amazonses.com; t=1539249853;
+	h=To:Subject:Message-ID:Date:From:Reply-To:MIME-Version:List-Unsubscribe:Content-Type:Content-Transfer-Encoding:Feedback-ID;
+	bh=NX3DatFspaOLn1UVRJgoUoioJDG+keq8UvLY/9womKY=;
+	b=bRJvnI4sQMoCIT8R95UY8dwc5nVEObNkvQWU82GdEF8PFx5eHQVTWB4+fXcz0jQJ
+	MJmupk1wUUKke1Pn0oaHrv4NJ7t9XYs6MQNn0+qc2yU5nTLSOrDhyFmkA2EQAgko5vJ
+	7AMBHdEyEqfAmzDDzp4Y0fNLFYD65COuNQwXJYSE=
+To: anmol.alawadhi@daanvir.org
+Subject: Now chat with applicants in real-time on Internshala!
+Message-ID: <010001666270d2c7-67b84ea5-4319-4fc1-aac4-6267b0a75449-000000@email.amazonses.com>
+Date: Thu, 11 Oct 2018 09:24:13 +0000
+From: "Team Internshala" <employer@internshala.com>
+Reply-To: employer@internshala.com
+MIME-Version: 1.0
+X-Mailer-LID: 6071
+List-Unsubscribe: <http://em.internshala.com/unsubscribe.php?M=96854780&C=5529f2a2e2ef29d7fbb86d7964a0b976&L=6071&N=14587>
+X-Mailer-RecptId: 96854780
+X-Mailer-SID: 14587
+X-Mailer-Sent-By: 4
+Content-Type: multipart/alternative; charset="UTF-8"; boundary="b1_c352201704bee77d24240d5f2ab1fadd"
+Content-Transfer-Encoding: 8bit
+X-SES-Outgoing: 2018.10.11-54.240.10.199
+Feedback-ID: 1.us-east-1.zxtucPVubGftJWR49L2EMyyk1hBPV57S2rBAeFj2vQs=:AmazonSES
+X-Authenticated_sender: 
+X-Spam-Status: No, score=0.9
+X-Spam-Score: 9
+X-Spam-Bar: /
+X-Ham-Report: DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, HEADER_FROM_DIFFERENT_DOMAINS=0.25, HTML_IMAGE_ONLY_20=0.7, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_NONE=-0.0001, SPF_PASS=-0.001, URIBL_BLOCKED=0.001, CMAE Analysis: v=2.3 cv=KIx08mNo c=1 sm=0 tr=0 a=HpAAvcLHHh0Zw7uRqdWCyQ==:117 a=VaTxF8gYw79KEsH6JjGBHQ==:17 a=IkcTkHD0fZMA:10 a=smKx5t2vBNcA:10 a=mDRq-kXtxVkA:10 a=Hgn-wnRn1-cA:10 a=iHgoZvMWry5zJ3K6jnEA:9 a=QEXdDO2ut3YA:10 a=BG0-yrJV6j4A:10 a=JlbB7QOLdOYA:10 a=JCNtAeA_QL0BD76YSVEA:9 a=IUQ3Tnq5cC19zvqa:21 a=FskFQffOjBlad83Y:21 a=bNRhYRhbNTd03WRC:21 a=_W_S_7VecoQA:10 a=Tiie-zG8F9MA:10 a=R4z4fLCyvN8A:10
+ 
+ *  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ *       See http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ *      for more information.
+ *      [URIs: internshala.com]
+ * -0.0 RCVD_IN_DNSWL_NONE RBL: Sender listed at http://www.dnswl.org/, no
+ *      trust
+ *      [54.240.10.199 listed in list.dnswl.org]
+ * -0.0 SPF_PASS SPF: sender matches SPF record
+ *  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
+ *      domains are different
+ *  0.7 HTML_IMAGE_ONLY_20 BODY: HTML: images with 1600-2000 bytes of words
+ *  0.0 HTML_MESSAGE BODY: HTML included in message
+ *  0.1 DKIM_SIGNED Message has a DKIM or DK signature, not necessarily
+ *      valid
+ * -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ * -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
+ *       domain
+X-Spam-Flag: NO
+
+--b1_c352201704bee77d24240d5f2ab1fadd
+Content-Type: text/plain; format=flowed; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Your email client cannot read this email.
+To view it online, please go here:
+http://em.internshala.com/display.php?M=96854780&C=5529f2a2e2ef29d7fbb86d7964a0b976&S=14587&L=6071&N=10015
+
+
+To stop receiving these
+emails:http://em.internshala.com/unsubscribe.php?M=96854780&C=5529f2a2e2ef29d7fbb86d7964a0b976&L=6071&N=14587
+
+--b1_c352201704bee77d24240d5f2ab1fadd
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<span style="font-size: 10pt; font-family: arial, helvetica,
+sans-serif;">Dear Anmol ,</span><br /><br /><span style="font-size: 10pt;
+font-family: arial, helvetica, sans-serif;">I am excited to tell you about
+our latest feature 'Internshala Chat'. This feature will make your hiring
+process faster &amp; easier.</span><br /><br /><span style="font-size:
+10pt; font-family: arial, helvetica, sans-serif;"><strong>How will it make
+the process easier?</strong></span><br /><br /><span style="font-size:
+10pt; font-family: arial, helvetica, sans-serif;">1. <span
+style="text-decoration: underline;">Access everything in one place</span>
+-&nbsp;Everything related to the hiring process (reviewing applications,
+having conversations with students, changing application status etc.) will
+all happen at one place.</span><br /><br /><span style="font-size: 10pt;
+font-family: arial, helvetica, sans-serif;">2. <span
+style="text-decoration: underline;">Faster response from
+students</span>&nbsp;- Everytime you send a message to a student, we send
+them email and app/SMS notification to make sure they respond on
+time.</span><br /><br /><span style="font-size: 10pt; font-family: arial,
+helvetica, sans-serif;">3. <span style="text-decoration: underline;">Have
+real-time&nbsp;conversations</span> -&nbsp;&nbsp;You will be able to see
+when applicants are online and have real-time conversations with
+them.</span><br /><br /><span style="font-size: 10pt; font-family: arial,
+helvetica, sans-serif;">Check out this feature&nbsp;<a
+href="http://em.internshala.com/link.php?M=96854780&N=14587&L=10843&F=H">here</a>!</span><br
+/><br /><span style="font-size: 10pt; font-family: arial, helvetica,
+sans-serif;">Many Thanks,</span><br /><span style="font-size: 10pt;
+font-family: arial, helvetica, sans-serif;">Team Internshala</span>
+<img
+src="http://em.internshala.com/open.php?M=96854780&L=6071&N=14587&F=H&image=.jpg"
+height="1" width="10"></body>
+</html>
+
+--b1_c352201704bee77d24240d5f2ab1fadd--
+
+

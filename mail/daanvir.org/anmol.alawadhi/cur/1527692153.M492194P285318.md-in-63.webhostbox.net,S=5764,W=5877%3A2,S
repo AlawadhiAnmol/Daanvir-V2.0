@@ -1,0 +1,113 @@
+Return-Path: <01000163b18c0efd-e51003af-a770-42b9-a964-f9ff837e587e-000000@amazonses.com>
+Delivered-To: anmol.alawadhi@daanvir.org
+Received: from md-in-63.webhostbox.net
+	by md-in-63.webhostbox.net (Dovecot) with LMTP id AZtHHXm7DluGWgQAwBqdFg
+	for <anmol.alawadhi@daanvir.org>; Wed, 30 May 2018 14:55:53 +0000
+Return-path: <01000163b18c0efd-e51003af-a770-42b9-a964-f9ff837e587e-000000@amazonses.com>
+Envelope-to: anmol.alawadhi@daanvir.org
+Delivery-date: Wed, 30 May 2018 14:55:53 +0000
+Received: from a10-16.smtp-out.amazonses.com ([54.240.10.16]:41166)
+	by md-in-63.webhostbox.net with esmtps (TLSv1.2:ECDHE-RSA-AES128-SHA256:128)
+	(Exim 4.89)
+	(envelope-from <01000163b18c0efd-e51003af-a770-42b9-a964-f9ff837e587e-000000@amazonses.com>)
+	id 1fO2Vx-001DmF-Qk
+	for anmol.alawadhi@daanvir.org; Wed, 30 May 2018 14:55:53 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=vmweay23vju5pgjewim6y7ifjhik2vjg; d=internshala.com;
+	t=1527692136;
+	h=Date:From:To:Subject:Reply-To:Message-ID:Mime-Version:Content-Type;
+	bh=yXz9/xP8VYq55Kl+7j/8dpt/tH5P4yLF77IR/FvmEzo=;
+	b=AxUGQu42A9LEsv9caxmbpAAhrRJ5ISYfMbnEVRW0KEfZ74zZTq+XeTBJaShEolHT
+	iKafxoBWmyfZ2YpcDHaQrjUcZFPHM8nO8chvVV1XbD8JnW8ESS+/Unas4UWo9/goz07
+	qRo8UgLPhXH2SPbSfrD97Kv9uQKgVQarpeQPAwjc=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug; d=amazonses.com; t=1527692136;
+	h=Date:From:To:Subject:Reply-To:Message-ID:Mime-Version:Content-Type:Feedback-ID;
+	bh=yXz9/xP8VYq55Kl+7j/8dpt/tH5P4yLF77IR/FvmEzo=;
+	b=TTHvQkkTSO5wVi76iXyX5lnBJIHYUh4ceT9ZE1e/Q6jvWpC81xSrA6+Thhcfgym8
+	fkIBKCJuvSxcfWSvekKyG8J9UjIB8Td1T8SWEDTts3n6tNGd/dozC3higWSRX8DbzS0
+	K1h/itt2CuPOxiwOmihHZpYgcUrgDqvDz/4mWQrA=
+User-Agent: internshala.com
+Date: Wed, 30 May 2018 14:55:36 +0000
+From: "Internshala" <employer@internshala.com>
+To: anmol.alawadhi@daanvir.org
+Subject: =?UTF-8?Q?Note=20regarding=20hirin?==?UTF-8?Q?g=20Saachi?= =?UTF-8?Q?=20Srivastava=20for=20Conte?==?UTF-8?Q?nt=20Writi?= =?UTF-8?Q?ng=20internship?=
+Reply-To: "Internshala" <employer@internshala.com>
+X-Sender: employer@internshala.com
+X-Mailer: internshala.com
+X-Priority: 3 (Normal)
+Message-ID: <01000163b18c0efd-e51003af-a770-42b9-a964-f9ff837e587e-000000@email.amazonses.com>
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary="B_ALT_5b0ebb6595b61"
+X-SES-Outgoing: 2018.05.30-54.240.10.16
+Feedback-ID: 1.us-east-1.zxtucPVubGftJWR49L2EMyyk1hBPV57S2rBAeFj2vQs=:AmazonSES
+X-Authenticated_sender: 
+X-Spam-Status: No, score=0.2
+X-Spam-Score: 2
+X-Spam-Bar: /
+X-Ham-Report: DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, HEADER_FROM_DIFFERENT_DOMAINS=0.249, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_NONE=-0.0001, SPF_PASS=-0.001, T_FILL_THIS_FORM_SHORT=0.01, URIBL_BLOCKED=0.001, CMAE Analysis: v=2.3 cv=P/8UeBIu c=1 sm=0 tr=0 a=HpAAvcLHHh0Zw7uRqdWCyQ==:117 a=4VOzxXmHWTRdBo9g/MPcXw==:17 a=VUJBJC2UJ8kA:10 a=Hgn-wnRn1-cA:10 a=54V8FjglJEe5w-i4kO8A:9 a=itu6QE8DNexdFaGIbroA:9 a=oEQSweuHwXBoCQB8:21 a=EVeTHSFzQb1zaOjM:21 a=QEXdDO2ut3YA:10 a=bQKJ5s3wXbwA:10 a=DfvYnbWwaOwA:10 a=7mnmXfUPo_QA:10 a=0eXPms03A-lWugO-:21 a=NlJYUsXQbZ4_5MS7:21 a=ifC4pwg874Yw1gmQF-9F:22
+ 
+ *  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ *       See http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ *      for more information.
+ *      [URIs: linkedin.com]
+ * -0.0 RCVD_IN_DNSWL_NONE RBL: Sender listed at http://www.dnswl.org/, no
+ *      trust
+ *      [54.240.10.16 listed in list.dnswl.org]
+ * -0.0 SPF_PASS SPF: sender matches SPF record
+ *  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
+ *      domains are different
+ *  0.0 HTML_MESSAGE BODY: HTML included in message
+ * -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ *  0.1 DKIM_SIGNED Message has a DKIM or DK signature, not necessarily
+ *      valid
+ * -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
+ *       domain
+ *  0.0 T_FILL_THIS_FORM_SHORT Fill in a short form with personal
+ *      information
+X-Spam-Flag: NO
+
+This is a multi-part message in MIME format.
+Your email application may not support this format.
+
+--B_ALT_5b0ebb6595b61
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Dear Anmol ,
+
+You have selected Saachi Srivastava from CBSE (RANI LAXMI BAI) for Content
+Writing internship. Please let the student know about the next steps at the
+earliest. The student contact details are given below -
+
+Name :- Saachi Srivastava
+Email :- ssachisrivastava@gmail.com
+Phone :- +91 7417923538
+Please feel free to write to us if there are any queries.
+
+ Many thanks,
+ Nitin Malik
+ Manager - Employer Relations
+ Internshala
+ Phone - +91 - 83758 36427
+ LinkedIn | Facebook
+
+
+--B_ALT_5b0ebb6595b61
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Dear Anmol ,=0A<br/><br/>=0AYou have selected Saachi Srivastava from CBSE (=
+RANI LAXMI BAI) for Content Writing internship. Please let the student know=
+ about the next steps at the earliest. The student contact details are give=
+n below -=0A<br/><br>=0A<b>Name</b> :- Saachi Srivastava<br>=0A<b>Email </b=
+>:- ssachisrivastava@gmail.com<br>=0A<b>Phone </b>:- +91 7417923538<br/><br=
+/>=0APlease feel free to write to us if there are any queries.=0A<br/><br/>=
+=0A                        Many thanks,=0A                        <br/>Niti=
+n Malik=0A                        <br/>Manager - Employer Relations=0A     =
+                   <br/><a href=3D'https://internshala.com'>Internshala</a>=
+=0A                        <br/>Phone - +91 - 83758 36427=0A               =
+         <br/><a href=3D'http://www.linkedin.com/company/1706756'>LinkedIn<=
+/a> | <a href=3D'https://www.facebook.com/Internshala/'>Facebook</a>
+
+--B_ALT_5b0ebb6595b61--

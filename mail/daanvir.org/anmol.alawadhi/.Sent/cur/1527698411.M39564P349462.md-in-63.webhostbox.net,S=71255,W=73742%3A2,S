@@ -1,0 +1,2487 @@
+From: "Anmol Alawadhi" <anmol.alawadhi@daanvir.org>
+To: <manaswini.mysore@gmail.com>
+Subject: 
+Date: Wed, 30 May 2018 22:10:03 +0530
+Message-ID: <000601d3f834$dd7b4eb0$9871ec10$@daanvir.org>
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="----=_NextPart_000_0007_01D3F862.F7353860"
+X-Mailer: Microsoft Outlook 16.0
+Thread-Index: AQH0frnFry4lBe5eVbSuDX2YtJgeVw==
+Content-Language: en-in
+X-OlkEid: 000000001DFAF9CD4D27314B8CB7B97664F46EED0700C3B68E10F77511CEB4CD00AA00BBB6E600000000000E000026AEE0203C305D498990478127D43CB5000000001021000019CD5CCAD8E62A4CA4AAFE7927601598
+
+This is a multipart message in MIME format.
+
+------=_NextPart_000_0007_01D3F862.F7353860
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_001_0008_01D3F862.F7353860"
+
+
+------=_NextPart_001_0008_01D3F862.F7353860
+Content-Type: text/plain;
+	charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+ 
+
+
+------=_NextPart_001_0008_01D3F862.F7353860
+Content-Type: text/html;
+	charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" =
+xmlns:o=3D"urn:schemas-microsoft-com:office:office" =
+xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" =
+xmlns=3D"http://www.w3.org/TR/REC-html40"><head><META =
+HTTP-EQUIV=3D"Content-Type" CONTENT=3D"text/html; =
+charset=3Dus-ascii"><meta name=3DGenerator content=3D"Microsoft Word 15 =
+(filtered medium)"><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]--></head><body lang=3DEN-IN =
+link=3D"#0563C1" vlink=3D"#954F72"><div class=3DWordSection1><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p></div></body></html>
+------=_NextPart_001_0008_01D3F862.F7353860--
+
+------=_NextPart_000_0007_01D3F862.F7353860
+Content-Type: application/octet-stream;
+	name="users.php"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: attachment;
+	filename="users.php"
+
+=EF=BB=BF<?php // error_reporting(E_ALL); ini_set('display_errors', =
+'1'); ?>
+<?php =20
+function Sanitize($data){
+	$data=3Dtrim($data);
+return =
+htmlentities(strip_tags(mysqli_real_escape_string($GLOBALS['conn'],$data)=
+));
+
+}
+=20
+function arraySanitize(&$data){
+$data=3Dhtmlentities(strip_tags(mysqli_real_escape_string($data)));
+return $data;
+}
+
+function fbLogin($login){  =20
+$_SESSION['userId']=3D$login;
+//echo 'loggedIn';    =20
+return;
+}
+function protectPage(){
+	if(loggedIn()=3D=3D=3Dfalse){ =20
+	header('Location:http://daanvir.org');
+	session_destroy(); =20
+	exit();
+	}
+	return;
+}=20
+function registerProtect(){
+	if(loggedIn()=3D=3D=3Dtrue){ =20
+	header('Location:http://daanvir.org');=20
+	exit();
+	}=20
+	return;
+}
+function logout(){
+	if(isset($_POST["logout"])){ =20
+	unset($_SESSION['userId']);
+	session_destroy();=20
+	//header('Location:http://daanvir.org');
+=09
+	exit();
+	}=20
+	return;
+}
+
+function outError($errors){
+	return=20
+	'ul li'.implode('</li><li>',$errors).'</li></ul>';
+}
+
+//include this on login page
+function logger(){=20
+$loginAttempt=3D0;
+$apc_key =3D =
+"{$_SERVER['SERVER_NAME']}~login:{$_SERVER['REMOTE_ADDR']}";
+$apc_blocked_key =3D =
+"{$_SERVER['SERVER_NAME']}~login-blocked:{$_SERVER['REMOTE_ADDR']}";
+$tries =3D (int)apc_fetch($apc_key);
+=20
+if ($tries >=3D 10) {
+    header("HTTP/1.1 429 Too Many Requests");
+    echo "<h1 style=3D\"
+    color: #ccc;
+    font-size: 30px;
+    width: calc(100%-200px);
+    margin: auto;
+    margin-top: 26px;
+    padding: 100px;
+    background: black;\">You've exceeded the number of login attempts. =
+We've blocked IP address {$_SERVER['REMOTE_ADDR']} for a few =
+minutes.</h1>";
+    exit();
+ }
+if(empty($_POST)=3D=3D=3Dfalse){=20
+	$username=3D $_POST['username_login'];
+	$password=3D$_POST['password_login'];
+	$token=3D$_POST['token'];
+	if (!empty($_POST['token'])) {
+	 if (hash_equals($_SESSION['token'], $token)) {
+			// Proceed to process the form data=20
+	=09
+		if(filter_var($username,FILTER_VALIDATE_EMAIL)){=20
+		$query1=3Dmysqli_query($GLOBALS['conn'],"SELECT * FROM users WHERE =
+email=3D '$username'");
+		$num=3Dmysqli_num_rows($query1);
+		if($num=3D=3D1){=20
+		$row=3Dmysqli_fetch_assoc($query1);=20
+		$username=3D$row['userName'];=09
+		}else{
+		$blocked =3D (int)apc_fetch($apc_blocked_key);
+		apc_store($apc_key, $tries+1, pow(2, $blocked+1)*60);  # store tries =
+for 2^(x+1) minutes: 2, 4, 8, 16, ...
+		apc_store($apc_blocked_key, $blocked+1, 86400);  # store number of =
+times blocked for 24 hours
+		return;
+		//exit();
+		}
+		}
+	if(empty($username)||empty($password)){
+		$errors[]=3D'Fill Required Fields.';
+	}else if(userExists($username)=3D=3D=3Dfalse){
+		$errors[]=3D'Invalid Username';
+		$blocked =3D (int)apc_fetch($apc_blocked_key);
+		apc_store($apc_key, $tries+1, pow(2, $blocked+1)*60);  # store tries =
+for 2^(x+1) minutes: 2, 4, 8, 16, ...
+		apc_store($apc_blocked_key, $blocked+1, 86400);  # store number of =
+times blocked for 24 hours
+=20
+		//exit();
+	}else{
+		if(strlen($password)>32){
+			$errors[]=3D'Password Exceeds 32 Characters';
+			//exit();
+		}
+		$login=3DlogIn($username,$password);
+		if($login=3D=3D=3Dfalse){
+			$errors[]=3D'Incorrect Information';
+		$blocked =3D (int)apc_fetch($apc_blocked_key);
+		apc_store($apc_key, $tries+1, pow(2, $blocked+1)*60);  # store tries =
+for 2^(x+1) minutes: 2, 4, 8, 16, ...
+		apc_store($apc_blocked_key, $blocked+1, 86400);  # store number of =
+times blocked for 24 hours
+		header('Location:http://www.daanvir.org/index2.php');
+		exit();
+		}else{=20
+		apc_delete($apc_key);
+		apc_delete($apc_blocked_key);
+			$_SESSION['userId']=3D$login;=20
+		   // echo  'Hi '.$username;=20
+		  if(userActive($username)=3D=3D=3Dtrue){
+			echo "<script language=3D\"javascript\">
+			window.location=3D\"http://daanvir.org/\";
+			</script>";
+              //echo "You are an authentic user";
+		  }else{
+			echo "<script language=3D\"javascript\">
+			logout();
+			alert('Please Activate your Account!');
+			open_page(1);
+			</script>";=20
+		  }
+		  //use Ajax here..
+		  	exit();
+			}=09
+		}=20
+		$loginAttempt=3D0;
+	=09
+	} else {
+	=09
+		$loginAttempt++;
+		// Log this as a warning and keep an eye on these attempts
+		$ip_real=3D$_SERVER['REMOTE_ADDR'];
+		$ip_proxy=3D$_SERVER['HTTP_X_FORWARDED_FOR'];
+		date_default_timezone_set('Asia/Calcutta');
+		$time=3Dtime();
+		if($loginAttempt>3){
+			mail_admin($ip_real,$ip_proxy,$time,$loginAttempt);
+		} =20
+		$blocked =3D (int)apc_fetch($apc_blocked_key);
+		apc_store($apc_key, $tries+1, pow(2, $blocked+1)*60);  # store tries =
+for 2^(x+1) minutes: 2, 4, 8, 16, ...
+		apc_store($apc_blocked_key, $blocked+1, 86400);  # store number of =
+times blocked for 24 hours
+=20
+		exit();
+	}
+  }
+}else{
+        /*echo "Error!!!";*/
+	}
+	return;
+  }
+ =20
+function block_ip($ip) {
+    $deny =3D array("$ip");
+                if (in_array ($_SERVER['REMOTE_ADDR'], $deny)) {
+                    header("HTTP/1.1 403 Forbidden");
+                    exit();
+                }
+            }
+		=09
+function mail_admin($a,$b,$c,$d){
+include '../html/mailer.php';
+$mail->setFrom('noreply@daanvir.org', 'daanvir.org');
+$mail->addAddress('kumararvind5233@gmail.com', 'Admin');=20
+$mail->Subject =3D "Warning!!! Alarming activity on the website";  =20
+$m=3D"Hi Arvin,\n\n\rI hope you are doing fine. I have found some =
+suspicious activity on Daanvir.org. Someone is trying to crack the login =
+form. I have traced the following details related to the =
+suspect:\n\nREAL IP:".$a."\nFORWARDED IP:".$b."\nTIME OF =
+ATTEMPT:".$c."\nNUMBER OF ATTEMPTS:".$d;=20
+$mail->Body =3D $m;=20
+if(!$mail->send()) {
+}else{
+//echo 1;
+}=20
+}
+function loggedIn(){
+	return
+	(isset($_SESSION['userId']))?true:false;
+}
+//get user data for userId
+function userData($userId){
+	$data =3Darray();
+	$userId=3D(int)$userId;=20
+	$func_num_args=3D func_num_args();
+	$func_get_args=3D func_get_args();=20
+	if($func_num_args>1){
+		unset($func_get_args[0]);
+		$fields=3D''.implode(',',$func_get_args).'';
+		$data=3Dmysqli_fetch_assoc(mysqli_query($GLOBALS['conn'],"SELECT =
+".$fields." FROM users WHERE userId =3D ".$userId)); =09
+		return $data;
+	}=20
+}
+//check if user exists
+function userExists($username){
+	$username=3DSanitize($username);
+	$query=3Dmysqli_query($GLOBALS['conn'],"SELECT * FROM users WHERE =
+userName =3D '$username' AND freeze=3D0");=20
+	return ((mysqli_num_rows($query))=3D=3D1? true:false);=09
+}
+=09
+//check if user has activated email
+function userActive($username){
+	$username=3DSanitize($username);
+	$query=3Dmysqli_query($GLOBALS['conn'],"SELECT * FROM users WHERE =
+userName =3D '$username' AND active =3D 1");
+	/*echo "<script language=3D\"javascript\">
+	alert(\" ".$username." , ".mysqli_num_rows($query)." \");	</script>";=20
+	*/
+	return=20
+	(mysqli_num_rows($query)=3D=3D1)? true:false;
+}
+//get userid from username
+function userId($username){
+	$username=3DSanitize($username);
+	$query=3Dmysqli_query($GLOBALS['conn'],"SELECT userId FROM users WHERE =
+userName =3D'$username'");
+	$row=3Dmysqli_fetch_assoc($query);
+	return ($row['userId']);
+}
+//get userId on login
+function logIn($username,$password){
+	$userId=3D userId($username);
+	$username=3DSanitize($username);   =20
+	$password=3Dmd5($password);
+	$query=3Dmysqli_query($GLOBALS['conn'],"SELECT * FROM users WHERE =
+userName=3D '$username' AND password =3D'$password' AND freeze=3D0");
+	$rows=3Dmysqli_num_rows($query);
+	return ($rows=3D=3D1)?($userId):false;
+}
+
+function loadNewCamps($userId,$type){=20
+$campId=3Dnull;
+if($type=3D=3D1){
+$campId=3Dmysqli_query($GLOBALS['conn'],"SELECT campId FROM camp_table =
+WHERE targetId =3D ".$userId." ORDER BY auto_inc,campId DESC");
+}else if($type=3D=3D2){
+$campId=3Dmysqli_query($GLOBALS['conn'],"SELECT campId FROM camps WHERE =
+source_user =3D ".$userId." ORDER BY date DESC");
+}=20
+	$num_rows=3Dmysqli_num_rows($campId);=20
+	if($num_rows>0){
+	$newcamps=3Darray();
+	while($row=3Dmysqli_fetch_assoc($campId)){ =20
+	$newcamps[]=3D$row['campId'];
+	}
+	$newcamps=3Darray_reverse($newcamps);=20
+	return ($newcamps);
+	}else{=20
+	echo '<h2 id=3D"not_found">You do not have any campaigns yet.<h2>';
+	exit();
+	}
+	return;
+}
+=20
+function print_camps($loaded){=20
+	$loaded=3Darray_reverse($loaded);
+	$num_camps=3Dsizeof($loaded);=20
+	$section1=3D'<section class=3D"grid-wrap">
+					<ul class=3D"grid">
+						<li class=3D"grid-sizer"></li>';
+	$section2=3D'
+				<section class=3D"slideshow">
+					<ul>';
+	for($i=3D0;$i<$num_camps;$i++){ =09
+	$campInfo=3Dmysqli_query($GLOBALS['conn'],"SELECT * FROM camps WHERE =
+campId =3D ".$loaded[$i]);
+	$n=3Dmysqli_num_rows($campInfo);
+	if($n=3D=3D1){
+	$r=3Dmysqli_fetch_assoc($campInfo);
+	$mainline=3D$r['mainline'];
+	$text=3D$r['text'];
+	$pic=3D$r['pic'];
+	$date=3D$r['date'];
+	$num_target=3D$r['num_target'];
+	$date=3Dprint_Date($date);
+	$section1.=3D'
+						<li>
+							<figure>
+								<img src=3D"'.$pic.'" alt=3D"Loading Image.."/>
+								<figcaption><h3>'.$date.'</h3><p>'.$mainline.'</p></figcaption>
+							</figure>
+						</li>';
+	$section2.=3D'
+						<li>
+							<figure>
+								<figcaption>
+									<h3>'.$date.'</h3>
+									<p>'.$text.'</p><p>This campaign has reached '.$num_target.' =
+people successfully.</p>
+								</figcaption>
+								<img src=3D"'.$pic.'" alt=3D"Loading Image.."/>
+							</figure>
+						</li>';
+		}
+	}
+	$section1.=3D'</ul>
+				</section>';
+	$section2.=3D'</ul>
+					<nav>
+						<span class=3D"icon nav-prev"></span>
+						<span class=3D"icon nav-next"></span>
+						<span class=3D"icon nav-close"></span>
+					</nav>=20
+				</section>';
+	echo $section1.$section2;
+return;
+}
+function campaigns_box($userId,$type){
+		//type: 1=3D in, 2=3D out.=20
+		$loaded =3DloadNewCamps($userId,$type);=20
+		print_camps($loaded);=20
+}=20
+function print_Date($temp){=20
+	$temp=3Ddate('D d-M Y',strtotime($temp));
+	//This avoids errors in timezone
+	date_default_timezone_set('Asia/Calcutta');
+	$today=3Dtime();
+	$today=3Ddate('D d-M Y',$today);
+	$yest=3Dtime()-(24*60*60);
+	$yest=3Ddate('D d-M Y',$yest);
+	//echo $today;
+	if($today =3D=3D=3D $temp){
+		return 'Today';
+	}else if($yest =3D=3D=3D $temp){
+		return 'Yesterday';
+	}else{
+	return $temp;
+	}
+}
+
+//SUPPORT FUNCTION
+function support($userId,$city,$state,$country,$purpose){
+	$people_Ids=3DgetPeople($userId,$purpose);
+	//$cities is a multi-dimensional array=20
+	$people_details=3DgetDetails($people_Ids);
+	$population=3Dsizeof($people_Ids);=20
+	=
+print_Supps($userId,$people_Ids,$people_details,$population,$city,$state,=
+$country,$purpose);
+	return;
+}=20
+function getPeople($userId,$purpose){=20
+	$temp=3Darray();
+	if($purpose=3D=3D'supp'){
+	$q=3Dmysqli_query($GLOBALS['conn'],"SELECT userId FROM users WHERE =
+userId!=3D".$userId);=20
+	//$q=3Dmysqli_query($GLOBALS['conn'],"SELECT userId FROM users u WHERE  =
+NOT EXISTS (SELECT  myId FROM supports s WHERE suppId =3D ".$userId." =
+AND u.userId =3D s.myId) AND userId!=3D".$userId);=20
+	$num_rows=3Dmysqli_num_rows($q);
+		if($num_rows>0){
+		while($row=3Dmysqli_fetch_assoc($q)){=09
+		$temp[]=3D$row['userId'];
+		}	=09
+		}=20
+	}else if($purpose=3D=3D'supps'){
+//little confusing but works good	=09
+	$q=3Dmysqli_query($GLOBALS['conn'],"SELECT myId FROM supports WHERE =
+suppId =3D ".$userId);
+	$num_rows=3Dmysqli_num_rows($q);
+		if($num_rows>0){
+		while($row=3Dmysqli_fetch_assoc($q)){=09
+		$temp[]=3D$row['myId'];
+		}	=09
+		}=20
+	}else{}
+	return $temp;
+}
+function getDetails($pl_Ids){
+	=
+$details=3Darray(array(),array(),array(),array(),array(),array(),array(),=
+array(),array(),array(),array(),array(),array());
+	$population=3Dsizeof($pl_Ids);
+	for($i=3D0;$i<$population;$i++){=20
+		$q=3Dmysqli_query($GLOBALS['conn'],"SELECT * FROM users WHERE userId =
+=3D ".$pl_Ids[$i]);
+		$num_rows=3Dmysqli_num_rows($q);
+		if($num_rows=3D=3D1){
+		$row=3Dmysqli_fetch_assoc($q);=09
+		$details[0][$i] =3D $row['fName'];		=09
+		$details[1][$i]=3D$row['lName'];	=09
+		$details[2][$i]=3D$row['email'];=09
+		$details[3][$i]=3D$row['city'];=09
+		$details[4][$i]=3D$row['state'];=09
+		$details[5][$i]=3D$row['country'];
+		$details[6][$i]=3D$row['profilePic'];=09
+		$details[7][$i]=3D$row['bestQuality'];=09
+		$details[8][$i]=3D$row['sex'];	=09
+		$details[9][$i]=3D$row['age'];=09
+		$details[10][$i]=3D$row['education'];=09
+		$details[11][$i]=3D$row['institution'];=09
+		$details[12][$i]=3D$row['occupation'];
+		$details[13][$i]=3D$row['started'];	=20
+	}}
+		//print_r($details);
+		return $details;
+}
+function =
+print_Supps($userId,$pl_Ids,$people_details,$population,$city,$state,$cou=
+ntry,$purpose){
+	$condition=3D0;	=20
+	if($population =3D=3D0 && $purpose=3D=3D"supps"){=20
+	echo '<h2 id=3D"not_found">You do not have any supporters yet.<h2>';
+		return;
+	}=20
+	=09
+	$section1=3D'<section class=3D"grid-wrap">
+					<ul class=3D"grid">
+						<li class=3D"grid-sizer"></li>';
+	for($i=3D0;$i<$population;$i=3D$i+1){ =20
+		$userInfo=3D"";
+		$from=3D'';
+		if($people_details[3][$i]=3D=3D$city && =
+$people_details[4][$i]=3D=3D$state && $people_details[3][$i]!=3D'' && =
+$people_details[4][$i]!=3D''){
+			$from=3D$city;
+		}else if($people_details[3][$i]!=3D$city && =
+$people_details[4][$i]=3D=3D$state && $people_details[3][$i]!=3D'' && =
+$people_details[4][$i]!=3D''){=20
+			$from=3D$state;
+		}else if($people_details[3][$i]!=3D$city && =
+$people_details[4][$i]!=3D$state && $people_details[3][$i]!=3D'' && =
+$people_details[4][$i]!=3D''){
+			$from=3D$people_details[3][$i].", ".$people_details[4][$i];
+		}else if($people_details[3][$i]=3D=3D'' && =
+$people_details[4][$i]=3D=3D'' && $people_details[5][$i]=3D=3D'' ){
+			$from=3D"";
+		}else{
+			$from=3D$people_details[4][$i];
+		}
+		$sex=3D'';
+		$age=3D'';
+		//
+		$em=3D$people_details[2][$i];
+		if((!empty($em)) && (filter_var($em,FILTER_VALIDATE_EMAIL))){
+		$userInfo.=3D"Email : ".$em."<br>";
+		}=20
+		if($people_details[8][$i]!=3D''){
+		$sex=3D$people_details[8][$i];
+		$userInfo.=3D"Sex : ".$sex."<br>";
+		}else{=20
+		$sex=3D'';
+		} =20
+		if($people_details[9][$i]!=3D'' && $people_details[9][$i]!=3D0){
+		$age=3D$people_details[9][$i];
+		$userInfo.=3D"Age : ".$age."<br>";
+		}else{=20
+		$age=3D'';
+		}=20
+	=09
+		$edu=3D'';
+		$inst=3D'';
+		if($people_details[10][$i]!=3D''){
+		$edu=3D$people_details[10][$i];
+		$userInfo.=3D"Graduated in : ".$edu."<br>";
+		}else{=20
+		$edu=3D'';
+		} =20
+		if($people_details[11][$i]!=3D''){
+		$inst=3D$people_details[11][$i];
+		$userInfo.=3D"Graduated from : ".$inst."<br>";
+		}else{=20
+		$inst=3D'';
+		}=20
+		$occ=3D'';
+		$str=3D'';
+		if($people_details[12][$i]!=3D''){
+		$occ=3D$people_details[12][$i];
+		$userInfo.=3D"Working as : ".$occ."<br>";
+		}else{=20
+		$occ=3D'';
+		} =20
+		if($people_details[13][$i]!=3D''){
+		$str=3D$people_details[13][$i];
+		$str=3Ddate('D d-M Y',strtotime($str));
+		}else{=20
+		$str=3D'';
+		}
+		$pic=3D$people_details[6][$i];
+		if($pic=3D=3D''){
+			//$pic=3D'images/userpic.png';
+		}
+		$bQ=3D$people_details[7][$i];
+		if($bQ=3D=3D''){
+			$bQ=3D'';
+		}
+		$fN=3D$people_details[0][$i];
+		$lN=3D$people_details[1][$i];
+		if($fN=3D=3D''){
+			$fN=3D'Anonymous';
+		}
+		if($lN=3D=3D''){
+			$lN=3D'';
+		} 	=20
+		$s1num=3Dsupp_num($pl_Ids[$i],1);
+		if($s1num!=3D'error'){=20
+		$userInfo.=3D"Supporters : ".$s1num."<br>";
+		}
+		$s2num=3Dsupp_num($pl_Ids[$i],2);
+		if($s2num!=3D'error'){=20
+		$userInfo.=3D"Supporting : ".$s2num."<br>";
+		}
+		$s3num=3Dsupp_num($pl_Ids[$i],3);
+		if($s3num!=3D'error'){=20
+		$userInfo.=3D"Campaigns : ".$s3num."<br>";
+		}
+		$status=3Dsupp_status($userId,$pl_Ids[$i]);
+		$r=3D($pl_Ids[$i])+451;=20
+		$o=3D'';
+		if($sex=3D=3D'M' || $sex=3D=3D'm' || $sex=3D=3D'Male' || =
+$sex=3D=3D'male')
+			$o=3D' him';
+		else if($sex=3D=3D'F' || $sex=3D=3D'f' || $sex=3D=3D'Female' || =
+$sex=3D=3D'female')
+			$o=3D' her';
+			$button=3D"";=20
+			if($userId!=3D$pl_Ids[$i]){
+			if($purpose=3D=3D"supp"){
+				if($status=3D=3Dfalse){
+				$button=3D'<p id=3D"connection" style=3D"background:yellowgreen" =
+onclick=3D"javascript:support(\'Xnum0'.$r.'\',1)">Support'.$o.'</p>';
+				}else{
+				$button=3D'<p id=3D"connection" =
+onclick=3D"javascript:support(\'Xnum0'.$r.'\',2)">Remove'.$o.'</p>';=20
+				}
+			}
+			}
+			$image=3D"";
+			if($pic!=3D'')
+			$image=3D	'<img src=3D"main/'.$pic.'" alt=3D"Loading Image.."/>';
+			else $image =3D'';
+	$section1.=3D'
+						<li>
+							<figure>'.$image.'
+								<figcaption><h3>'.$fN.' =
+'.$lN.'</h3><p>'.$from.'</p><p>'.$userInfo.'</p>'.$button.'</figcaption>
+							</figure>
+						</li>';
+			}
+	$section1.=3D'</ul>
+				</section>';
+	echo $section1;
+	return;
+}
+function supp_status($userId,$pl_Id){
+	$q=3Dmysqli_query($GLOBALS['conn'],"SELECT * FROM supports WHERE myId =
+=3D ".$userId." AND suppId =3D ".$pl_Id);
+	$num_rows=3Dmysqli_num_rows($q);
+	if($num_rows=3D=3D1){
+		return 'true';
+	}else if($num_rows=3D=3D0){
+		return false;
+	}else{
+		return 'error';
+	}
+	return;
+}
+function supp_num($pl_Id,$id){
+	//$id=3D1 gives supporters
+	//$id=3D2 gives supporting
+	if($id=3D=3D1)
+	$q=3Dmysqli_query($GLOBALS['conn'],"SELECT * FROM supports WHERE suppId =
+=3D ".$pl_Id);
+	else if($id=3D=3D2)
+	$q=3Dmysqli_query($GLOBALS['conn'],"SELECT * FROM supports WHERE myId =
+=3D ".$pl_Id);
+	else if($id=3D=3D3)
+	$q=3Dmysqli_query($GLOBALS['conn'],"SELECT * FROM camps WHERE =
+source_user =3D ".$pl_Id);=09
+	$num_rows=3Dmysqli_num_rows($q);
+	if($num_rows>=3D0){
+		return $num_rows;
+	}else{
+		return 'error';
+	}
+	return;
+}
+?>
+<?php=20
+
+function safe_($c){
+	//$c=3Ddecbin($c);
+	$c=3Dshiftleft($c, 25);
+	return $c;
+}
+function unsafe_($c){
+	$c=3Drightshift($c, 25);
+	//$c=3Dbindec($c);
+	return $c;
+}
+function dec2bin($dec) {
+    // Better function for dec to bin. Support much bigger values, but =
+doesn=E2=80=99t support signs
+    for ($b =3D '', $r =3D $dec; $r >1;) {
+        $n =3D floor($r / 2);
+        $b =3D ($r - $n * 2) . $b;
+        $r =3D $n; // $r%2 is inaccurate when using bigger values (like =
+11.435.168.214)!
+    }
+    return ($r % 2) . $b;
+}
+function shiftleft($num, $bits) {
+    return bcmul($num, bcpow('2', $bits));
+}
+function rightshift($num, $bits) {
+    return bcdiv($num, bcpow('2', $bits));
+}
+
+function filter($userId,$filterby,$sel){=20
+	$que=3Dnull;
+if($filterby=3D=3D'sms'){
+		$has=3D'hasSms';=20
+$que=3Dmysqli_query($GLOBALS['conn'],"SELECT =
+fName,lName,contactId,phone,email,profilePic
+FROM daanvaq7_vifixes_daanvir.contacts=20
+WHERE EXISTS(
+	SELECT contactId=20
+    FROM   daanvaq7_vifixes_daanvir.get_contacts
+    WHERE  contacts.contactId =3D get_contacts.contactId AND =
+get_contacts.hasSms=3D 1 AND get_contacts.userId=3D'$userId')");
+		}else{=20
+		$has=3D'hasEmail';=20
+		//avoid subquery
+		/*
+$que=3Dmysqli_query($GLOBALS['conn'],"
+SELECT =
+contacts.fName,contacts.lName,contacts.contactId,contacts.phone,contacts.=
+email,contacts.profilePic
+FROM vifixes_daanvir.contacts=20
+INNER JOIN vifixes_daanvir.get_contacts=20
+  ON (contacts.contactId=3Dget_contacts.contactId)=20
+  WHERE get_contacts.hasEmail=3D1 AND get_contacts.userId=3D'$userId'");
+  */
+$que=3Dmysqli_query($GLOBALS['conn'],"SELECT =
+fName,lName,contactId,phone,email,profilePic
+FROM daanvaq7_vifixes_daanvir.contacts=20
+WHERE EXISTS(
+	SELECT contactId=20
+    FROM   daanvaq7_vifixes_daanvir.get_contacts
+    WHERE  contacts.contactId =3D get_contacts.contactId AND =
+get_contacts.hasEmail=3D 1 AND get_contacts.userId=3D'$userId')");
+=09
+	}
+$num_rows=3D0;	=09
+$num_rows=3Dmysqli_num_rows($que);=20
+if($num_rows>0){
+	while($row=3Dmysqli_fetch_assoc($que)){=20
+$print=3D"";
+		$fName=3D$row['fName'];
+		$lName=3D$row['lName'];
+		//updated later
+		if(strlen($fName)>6){
+			$fName=3Dsubstr($fName,0,5).'.';
+		}=20
+		if(strlen($lName)>6){
+			$lName=3Dsubstr($lName,0,5).'.';
+		}
+		$contactId=3D$row['contactId'];
+	if($filterby=3D=3D'sms'){
+	$lighter=3D$row['phone'];
+	}else{=20
+	$lighter=3D$row['email'];
+=09
+		if(strlen($lighter)>21){
+			$lighter=3Dsubstr($lighter,0,20).'..';
+		}
+	} =20
+		if($row['profilePic']=3D=3D''){
+			$pic=3D'images/userpic.png';
+		}else{=20
+			$pic=3D$row['profilePic'];
+		}
+//Complex values maybe alter in processing time
+//echo '<script>alert('.$contactId.');</script>';
+$cryptedId=3D$contactId+5185985;=20
+//changes in editcontactondemand.php
+$c=3D$contactId+4484568;
+$scryptedId=3Dsafe_($c);
+
+//echo '<script>alert('.$cryptedId.');</script>';
+		//echo $fName.$lName.$phone.$pic;
+if($filterby=3D=3D'sms'){
+		$Ph=3D'class=3D"Ph'.$cryptedId.'"';
+	}else{=20
+		$Ph=3D'';
+	}
+if($sel=3D=3D'notsel'){
+$print=3D'<div id=3D"not">=20
+	<div id=3D"cover-notin">
+		<div id=3D"notpic"><img class=3D"Cls'.$cryptedId.'" =
+src=3D"'.$pic.'"/></div>
+		<div id=3D"notdet" =
+onclick=3D"javascript:changeContact(\''.$cryptedId.'\');">
+			<h2 class=3D"Nm'.$cryptedId.'">'.$fName.' '.$lName.'</h2>=20
+			<p '.$Ph.'>'.$lighter.'</p>
+		</div>=20
+			</div>=20
+		</div>';=20
+		}else{=20
+	=09
+if($filterby=3D=3D'sms'){
+		$Ph=3D'class=3D"Phn'.$scryptedId.'"';
+		$sec=3D'sms';
+		$Cls=3D'SelCntrls';
+		$el=3D'notsels';
+	}else{=20
+		$Ph=3D'';
+		$sec=3D'email';
+		$Cls=3D'SelCntrle';
+		$el=3D'notsele';
+	} =20
+$print=3D'<div id=3D"not">=20
+	<div id=3D"cover-notin" class=3D"'.$Cls.$scryptedId.' '.$el.'">
+		<div id=3D"notpic"><img class=3D"Sel'.$scryptedId.'" =
+src=3D"'.$pic.'"/></div>
+		<div id=3D"notdet" =
+onclick=3D"javascript:selcntrl(\''.$scryptedId.'\',\''.$sec.'\');">
+			<h2 class=3D"Na'.$scryptedId.'">'.$fName.' '.$lName.'</h2>=20
+			<p '.$Ph.'>'.$lighter.'</p>
+		</div>=20
+			</div>=20
+		</div>';
+		}
+	=09
+		echo $print;
+	}
+}else{
+	echo '<div id=3D"notavl">Please add some contacts here.</div>';
+}
+=20
+	return;
+}
+//For followers
+function ffilter($userId){=20
+$q=3Dmysqli_query($GLOBALS['conn'],"SELECT *
+FROM users u=20
+WHERE EXISTS(
+	SELECT suppId     =20
+    FROM   supports s
+    WHERE  u.userId =3D s.mYId AND s.suppId =3D'$userId')");
+$num_rows=3Dmysqli_num_rows($q);=20
+if($num_rows>0){=20
+	$section1=3D'<section class=3D"grid-wrap">
+					<ul class=3D"grid">
+						<li class=3D"grid-sizer"></li>';
+	while($row=3Dmysqli_fetch_assoc($q)){
+		$fName=3D$row['fName'];
+		$lName=3D' '.$row['lName'];
+	if($fName=3D=3D=3D''){
+		$fName=3D'Anonymous';
+		}
+		$contactId=3D$row['userId'];=20
+		$em=3D$row['email'];=20
+		$ph=3D$row['phone'];=20
+		$cy=3D$row['city']; =20
+		$pic=3D$row['profilePic'];
+	$userInfo=3D'';
+		if(filter_var($em,FILTER_VALIDATE_EMAIL))=20
+	$userInfo.=3D'Email : '.$em.'<br>';
+		if(preg_match('/^[0-9]{10}$/',$ph))=20
+	$userInfo.=3D'Tel : '.$ph.'<br>';
+		if(strlen($cy)>2)=20
+	$userInfo.=3D'City : '.$cy.'<br>';
+	=09
+$c=3D$contactId+448;
+//Arithmetic errors are inevitable or unavoidable in any programming =
+language where floats arise, we can use either round(result,upto_num) or =
+we can use bc math
+//but here, only add works
+$cryptedId=3Dsafe_($c);=20
+		$Ph=3D'class=3D"Phf'.$cryptedId.' pelong"';
+		$sec=3D'fol';
+		$Cls=3D'SelCntrlf';
+		if($ph=3D=3D=3D'' || $ph=3D=3D=3D '0'){=20
+		if($cy=3D=3D=3D''){
+			$lighter=3D$em;=20
+		}else{
+			$lighter=3D$em.' , '.$cy;
+		}
+		}else{
+		$lighter=3D$em.' , '.$ph;
+		}=20
+		if($pic!=3D'')
+		$image=3D	'<img src=3D"main/'.$pic.'" alt=3D"Loading Image.."/>';
+		else $image =3D'';
+		$button=3D'<p id=3D"connection">SELECT</p>';
+		$section1.=3D'
+						<li  =
+onclick=3D"javascript:selcntrl(\''.$cryptedId.'\',\''.$sec.'\');" =
+class=3D"'.$Cls.$cryptedId.' notsel elong">
+							<figure>'.$image.'
+								=
+<figcaption><h3>'.$fName.$lName.'</h3><p>'.$userInfo.'</p>'.$button.'</fi=
+gcaption>
+							</figure>
+						</li>';
+=20
+	}
+	$section1.=3D'</ul>
+				</section>';
+	echo $section1;
+}else{=20
+	echo '<h2 id=3D"not_found">You do not have any followers yet.<h2>';
+}	=20
+	return;
+}
+?>
+<?php=20
+function loadTemps($userId){=20
+$q=3Dmysqli_query($GLOBALS['conn'],"Select * FROM templates WHERE userId =
+=3D '$userId'");=20
+$num_rows=3Dmysqli_num_rows($q);=20
+if($num_rows>0){
+while($row=3Dmysqli_fetch_assoc($q)){
+		$pic=3D'images/speech.png';
+		$head=3D$row['tempName'];
+		$class=3D"Tem".($row['tempCode']);
+	=09
+		$print=3D'
+				<div id=3D"not" class=3D"'.$class.'">=20
+					<div id=3D"cover-notin">
+						<div id=3D"notpic"><img src=3D"'.$pic.'"/></div>
+						<div id=3D"notdet" onclick=3D"loadt(\''.$class.'\')">
+							<h2>'.$head.'</h2> =20
+						</div>=20
+					</div>=20
+				</div>=20
+';
+		echo $print;
+		}
+	}else{
+=09
+	echo '<div id=3D"notavl">You have not saved any templates.</div> ';
+	}
+	return;
+}
+function refer($val,$userId){
+	$curr=3D 0;
+	if($val=3D=3D'wnew'){=20
+		$q=3Dmysqli_query($GLOBALS['conn'],"SELECT Voted FROM whatsnew WHERE =
+myId =3D '$userId' ORDER BY campId DESC");
+		$num_rows=3Dmysqli_num_rows($q);=20
+		if($num_rows> 0){=20
+			$i=3D1;
+			while($r=3Dmysqli_fetch_assoc($q)){
+				if($r['Voted']=3D=3D'0'){=20
+					$i =3D $i+1;
+				}else{  =20
+					 echo $i;
+					 return;
+				}
+			}
+		}else{
+			echo 0;
+		}
+		=20
+	}else=20
+	if($val=3D=3D'mcmp'){ =20
+		$q=3Dmysqli_query($GLOBALS['conn'],"SELECT Voted FROM whatsnew WHERE =
+myId =3D '$userId'");
+		$num_rows=3Dmysqli_num_rows($q);=20
+		if($num_rows> -1){=20
+			 echo $num_rows;
+	} }
+	if($val=3D=3D'msup'){ =20
+		$q=3Dmysqli_query($GLOBALS['conn'],"SELECT myId FROM supports WHERE =
+suppId =3D '$userId'");
+		$num_rows=3Dmysqli_num_rows($q);=20
+		if($num_rows> -1){=20
+			 echo $num_rows;
+	} }
+	return;
+}
+?>
+<?php =20
+function choose_state(){
+	$q=3Dmysqli_query($GLOBALS['conn'],"SELECT * FROM states");
+	$section1=3D'<section class=3D"grid-wrap">
+					<ul class=3D"grid">
+						<li class=3D"grid-sizer"></li>';
+		while($fetch=3D mysqli_fetch_assoc($q)){
+		$button=3D'<p id=3D"connection">SELECT</p>';
+		$image=3D'';
+		//Use this code for localities too
+		if($fetch['statePic']!=3D""){
+		$image=3D'<img src=3D"main/'.$fetch['statePic'].'" alt=3D"Loading =
+Image.."/>';
+		}else{=20
+		$image=3D'';
+		}
+	$section1.=3D'
+						<li  onclick=3D"locs(\'s\',\'state904825'.$fetch['stateId'].'\');" =
+class=3D"state904825'.$fetch['stateId'].' notsel1">
+							<figure> '.$image.'
+								=
+<figcaption><h3>'.$fetch['stateName'].'</h3><p>INDIA</p>'.$button.'</figc=
+aption>
+							</figure>
+						</li>';=20
+		}
+	$section1.=3D'</ul>
+				</section>';
+	echo $section1;
+	return;
+}
+function getcatneeds(){
+$q=3Dmysqli_query($GLOBALS['conn2'],"SELECT * FROM categoryneeds");
+		while($fetch=3D mysqli_fetch_assoc($q)){
+			echo '<input class=3D"check-custom3" =
+id=3D"cnee7504'.$fetch['categoryNeedId'].'" type=3D"checkbox" =
+name=3D"cats"><label =
+for=3D"cnee7504'.$fetch['categoryNeedId'].'">'.$fetch['categoryNeedName']=
+.'</label>';
+		}
+return;
+}
+function advanced($id){
+	$q=3Dmysqli_query($GLOBALS['conn'],"SELECT * FROM administrator WHERE =
+userId =3D '$id'");
+	$num=3Dmysqli_num_rows($q);
+	if($num=3D=3D1){
+	echo '<li><a href=3D"javascript:adv()">Advanced</a></li>';
+	}
+	return;
+}
+function print_adv($id,$type){
+	if($type=3D=3D'1'){
+	$q=3Dmysqli_query($GLOBALS['conn'],"SELECT * FROM administrator WHERE =
+userId =3D '$id'");
+	$num=3Dmysqli_num_rows($q);
+	if($num=3D=3D1){
+	echo '<div id=3D"acc-control">=20
+			<div id=3D"acc-control-body" class=3D"height-more">
+				<div id=3D"optionbox" =
+onclick=3D"access(\'admin\');access(\'contains_teams\');">
+					<div id=3D"optionbox-icon" class=3D"optionicon11">
+			=09
+					</div>
+					<div id=3D"optionbox-info">
+						<h2>Teams</h2>
+						<h5>Manage Various Teams</h5>
+					</div>
+				</div><div id=3D"optionbox" =
+onclick=3D"access(\'admin\');access(\'contains_locs\');">
+					<div id=3D"optionbox-icon" class=3D"optionicon12">=20
+					</div>
+					<div id=3D"optionbox-info">
+						<h2>Localities</h2>
+						<h5>Add/ Remove Options</h5>
+					</div>
+				</div><div id=3D"optionbox" =
+onclick=3D"access(\'admin\');access(\'contains_gath\');">
+					<div id=3D"optionbox-icon" class=3D"optionicon13">
+			=09
+					</div>
+					<div id=3D"optionbox-info">
+						<h2>Gatherings</h2>
+						<h5>View incomplete matches</h5>
+					</div>
+				</div><div id=3D"optionbox" =
+onclick=3D"access(\'admin\');access(\'contains_ser\');">
+					<div id=3D"optionbox-icon" class=3D"optionicon14">
+			=09
+					</div>
+					<div id=3D"optionbox-info">
+						<h2>Overview</h2>
+						<h5>Info about served areas</h5>
+					</div>
+				</div>=20
+			</div>
+			<div id=3D"acc-control-pull" onclick=3D"toggle();">
+			<hr>
+			</div>=20
+		</div>';
+	=20
+	}
+}else if($type=3D=3D'2'){
+=09
+=09
+=09
+}=20
+	return;
+}
+function advanced_controls($id,$mode){=20
+if($mode=3D=3D1){
+	$q=3Dmysqli_query($GLOBALS['conn2'],"SELECT * FROM teams");
+	$num=3Dmysqli_num_rows($q);=20
+	if($num>0){
+		while($q_r=3Dmysqli_fetch_assoc($q)){
+			$tname=3D$q_r['teamName'];
+			$locId=3D$q_r['localityId'];=20
+			$entryId=3D$q_r['entryID'];=20
+	$qin=3Dmysqli_query($GLOBALS['conn'],"SELECT * FROM localities WHERE =
+localityId=3D'$locId'");
+	$numin=3Dmysqli_num_rows($qin);=20
+	if($numin=3D=3D1){
+		$q_rin=3Dmysqli_fetch_assoc($qin);
+		$locId=3D$q_rin['localityName'];=20
+		$stId=3D$q_rin['stateId'];=20
+	$qin1=3Dmysqli_query($GLOBALS['conn'],"SELECT * FROM states WHERE =
+stateId=3D'$stId'");
+	$numin1=3Dmysqli_num_rows($qin1);=20
+	if($numin1=3D=3D1){
+		$q_rin1=3Dmysqli_fetch_assoc($qin1);
+		$st=3D$q_rin1['stateName'];=20
+	echo '<div id=3D"tbox" =
+onclick=3D"advanced(\''.$entryId.'\',\'mem\');"><h3><br><strong>'.$tname.=
+'</strong></h3><p>'.$locId.'</p><p id=3D"sub_p">'.$st.'</p></div>';
+	}
+	 }
+		}
+	}
+	echo '<div id=3D"tbox_nor" =
+onclick=3D"advanced(null,\'addmb\');"><h3>Add<br><strong>+</strong></h3><=
+p>New Team</p></div>';
+=09
+	}else if($mode=3D=3D'2'){=20
+	$q=3Dmysqli_query($GLOBALS['conn'],"SELECT * FROM states");
+	$num=3Dmysqli_num_rows($q);=20
+	if($num>0){
+		while($q_r=3Dmysqli_fetch_assoc($q)){
+			$tname=3D$q_r['stateName'];
+			$stId=3D$q_r['stateId'];=20
+	$q1=3Dmysqli_query($GLOBALS['conn'],"SELECT * FROM areas WHERE =
+stateId=3D'$stId'");
+	$num1=3Dmysqli_num_rows($q1); =20
+	if(strlen($tname)>45){
+			$tname=3Dsubstr($tname,0,45).'...';
+		}
+	$u=3D"Areas";
+	if($num1=3D=3D1){
+	$u=3D"Area";
+	}
+	echo '<div id=3D"tbox" =
+onclick=3D"advanced(\''.$stId.'\',\'areas\');"><h3><br><strong =
+class=3D"smstrong">'.$tname.'</strong></h3><p>'.$num1.'</p><p =
+id=3D"sub_p">'.$u.'</p></div>';
+	 }
+	}
+	echo '<div id=3D"tbox_nor" =
+onclick=3D"advanced(null,\'addst\');"><h3>Add<br><strong>+</strong></h3><=
+p>New State</p></div>';=20
+	}else if($mode=3D=3D'3'){
+		//stuff here.. =20
+	$q=3Dmysqli_query($GLOBALS['conn'],"SELECT * FROM states");
+	$num=3Dmysqli_num_rows($q);=20
+	if($num>0){
+		while($q_r=3Dmysqli_fetch_assoc($q)){
+			$tname=3D$q_r['stateName'];
+			$stId=3D$q_r['stateId'];=20
+	$q1=3Dmysqli_query($GLOBALS['conn'],"SELECT * FROM areas WHERE =
+stateId=3D'$stId'");
+	$num1=3Dmysqli_num_rows($q1); =20
+	if(strlen($tname)>45){
+			$tname=3Dsubstr($tname,0,45).'...';
+		}
+	$u=3D"Areas";
+	if($num1=3D=3D1){
+	$u=3D"Area";
+	}
+	echo '<div id=3D"tbox" =
+onclick=3D"advanced(\''.$stId.'\',\'areas1\');"><h3><br><strong =
+class=3D"smstrong">'.$tname.'</strong></h3><p>'.$num1.'</p><p =
+id=3D"sub_p">'.$u.'</p></div>';
+	 }
+	}=20
+   }
+  return;
+}
+function admin($id){=20
+$check=3Dmysqli_query($GLOBALS['conn'],"SELECT * FROM administrator =
+WHERE userId=3D'$id'");=20
+$num=3Dmysqli_num_rows($check); =20
+	if($num=3D=3D1){=20
+		return true;
+	}else{
+	//header('Location:http://daanvir.org');
+	//session_destroy();
+	//exit();=20
+	}
+}
+function myV($id){
+	$check=3Dmysqli_query($GLOBALS['conn'],"SELECT * FROM videos WHERE =
+userId=3D'$id'");=20
+$num=3Dmysqli_num_rows($check); =20
+	if($num>0){  =20
+	$in=3D0;
+while($r=3Dmysqli_fetch_assoc($check)){
+	$src=3D''.$r['video_link'];
+	//Cannot pass directory=20
+	$path=3Dexplode("/",$src);
+	$path=3Dimplode(",",$path);
+	$in++;
+	/*
+	<span id=3D"views"> 360 views</span>
+	*/ =20
+  echo '<li>
+			<div id=3D"view" =
+style=3D"background:url(\'main/'.$r['thumb_link'].'\');background-size:32=
+0px 240px;background-position:center center;background-repeat:no-repeat" =
+class=3D"expandview'.$in.'"> =20
+				<div id=3D"notallowed'.$in.'" class=3D"mask mask-1"></div>
+				<div id=3D"notallowed_'.$in.'" class=3D"mask mask-2"></div>
+				<div class=3D"notallowed'.$in.'" id=3D"over">
+				<h2>'.$r['locality'].'</h2>
+				<p>'.$r['title'].'
+				<br> '.$r['date_mission'].' <br>
+				<a class=3D"info" href=3D"javascript:" =
+onclick=3D"play('.$in.',\''.$path.'\');"> <img id=3D"thumbnail'.$in.'" =
+src=3D"main/images/view-more-icon.png" alt=3D"Loading Image.."></a>
+				<span id=3D"time">'.$r['duration'].'</span></p>
+					</div>=20
+			</div>
+		</li>';=20
+		}
+	}else{
+	echo '<h2 id=3D"not_found">You do not have any videos.<h2>';
+	}
+}
+function numV($u){=20
+$check=3Dmysqli_query($GLOBALS['conn'],"SELECT * FROM videos WHERE =
+userId=3D'$u'");=20
+$num=3Dmysqli_num_rows($check); =20
+	echo $num;=20
+}
+function timeAgo($time_ago){
+    $time_ago =3D strtotime($time_ago);
+    $cur_time   =3D time();
+    $time_elapsed   =3D $cur_time - $time_ago;
+    $seconds    =3D $time_elapsed ;
+    $minutes    =3D round($time_elapsed / 60 );
+    $hours      =3D round($time_elapsed / 3600);
+    $days       =3D round($time_elapsed / 86400 );
+    $weeks      =3D round($time_elapsed / 604800);
+    $months     =3D round($time_elapsed / 2600640 );
+    $years      =3D round($time_elapsed / 31207680 );
+    // Seconds
+    if($seconds <=3D 60){
+        return "just now";
+    }
+    //Minutes
+    else if($minutes <=3D60){
+        if($minutes=3D=3D1){
+            return "one minute ago";
+        }
+        else{
+            return "$minutes minutes ago";
+        }
+    }
+    //Hours
+    else if($hours <=3D24){
+        if($hours=3D=3D1){
+            return "an hour ago";
+        }else{
+            return "$hours hrs ago";
+        }
+    }
+    //Days
+    else if($days <=3D 7){
+        if($days=3D=3D1){
+            return "yesterday";
+        }else{
+            return "$days days ago";
+        }
+    }
+    //Weeks
+    else if($weeks <=3D 4.3){
+        if($weeks=3D=3D1){
+            return "a week ago";
+        }else{
+            return "$weeks weeks ago";
+        }
+    }
+    //Months
+    else if($months <=3D12){
+        if($months=3D=3D1){
+            return "a month ago";
+        }else{
+            return "$months months ago";
+        }
+    }
+    //Years
+    else{
+        if($years=3D=3D1){
+            return "one year ago";
+        }else{
+            return "$years years ago";
+        }
+    }
+}=20
+=20
+function print_hit($loi){
+	$hitId=3D$loi;
+//def:true, then load on page else load in search
+//load on page: include outer-sl as well
+//$ifexists=3Dmysqli_query($GLOBALS['conn2'],"SELECT hitId FROM hitlist =
+WHERE localityId =3D'$locid'");
+//$nif=3Dmysqli_num_rows($ifexists);
+//if($nif!=3D1)return;
+	$data1=3Dnull;=20
+	$data2=3Dnull;=20
+	$l=3D0;
+	$r=3D0;
+	$qy=3D0;=20
+	$bar=3D0;
+	$sumt=3D0;
+	$count=3D0;=20
+		$stn=3Dnull;
+		$st=3Dnull;
+		$locn=3Dnull;
+		$pic=3D"";
+		$tstamp=3D'';
+		$date=3D'';
+		$location=3D"Not Specified";
+		$headline=3D"";
+		$tagline=3D"";
+		$dsc=3Dnull; =20
+    $counts=3D0;
+		$lc=3D"locality108202".$hitId;
+=09
+	$userDet=3D'';
+	$headdsc=3Dmysqli_query($GLOBALS['conn2'],"SELECT =
+userId,localityId,majorhit_desc,img,headline,tagline,location,need_ids =
+FROM hitlist WHERE hitId=3D'$hitId' AND freeze=3D0");=20
+	$ndsc=3Dmysqli_num_rows($headdsc);=20
+	$need_ids=3Darray();
+	if($ndsc=3D=3D1){
+	$rdsc=3Dmysqli_fetch_assoc($headdsc); =20
+	$dsc=3D$rdsc['majorhit_desc'];  =20
+	$user=3D$rdsc['userId'];=20
+	$pic=3D$rdsc['img'];
+	$locid=3D$rdsc['localityId'];
+	$pic=3Dexplode(',',$pic);=09
+	$location=3D$rdsc['location'];=20
+	$headline=3Ducfirst($rdsc['headline']);=20
+	$tagline=3Ducfirst(substr($rdsc['tagline'],0,70));=20
+	$need_ids=3Dexplode(',',$rdsc['need_ids']);=20
+	=20
+	 $headq=3Dmysqli_query($GLOBALS['conn'],"SELECT stateId,localityName =
+FROM localities WHERE localityId=3D'$locid'");=20
+	$n1=3Dmysqli_num_rows($headq);=20
+	if($n1=3D=3D1){
+		$r1=3Dmysqli_fetch_assoc($headq);=20
+		$stid=3D$r1['stateId'];=20
+		$locn=3Ducfirst(strtolower($r1['localityName'])); =20
+	$headq1=3Dmysqli_query($GLOBALS['conn'],"SELECT stateName FROM states =
+WHERE stateId=3D'$stid'");=20
+	$n2=3Dmysqli_num_rows($headq1);=20
+	if($n2=3D=3D1){
+		$r2=3Dmysqli_fetch_assoc($headq1); =20
+		$st=3D$stn=3Ducfirst(strtolower($r2['stateName']));
+			}
+		}
+=09
+	$headdsc_=3Dmysqli_query($GLOBALS['conn'],"SELECT =
+fName,lName,state,city FROM users WHERE userId=3D'$user'");=20
+	$ndsc_=3Dmysqli_num_rows($headdsc_);=20
+	if($ndsc_=3D=3D1){
+	$rdsc_=3Dmysqli_fetch_assoc($headdsc_); =20
+	$userDet.=3D' '.$rdsc_['fName'];  =20
+	if($rdsc_['lName']!=3D"")
+	$userDet.=3D' '.$rdsc_['lName']; =20
+	if($rdsc_['city']!=3D"")
+	$userDet.=3D', '.$rdsc_['city'];=20
+	if($rdsc_['state']!=3D"")
+	$userDet.=3D', '.$rdsc_['state']; =09
+		}
+	} =20
+	if(array_key_exists(0,$pic)=3D=3Dfalse){
+		$pic[0]=3D'http://daanvir.org/images/picture0001.png';
+	}
+	//desc, locname and statename retrieved
+	//Calculating class...
+	$val=3D((rand(10,1000000))*242)+456;
+	$cls1=3D'details'.($val);
+	$cls2=3D'needs'.($val);
+	$cls3=3D'supports'.($val);
+	//count total items and filled items		=09
+	if($locn!=3Dnull){
+		$s_curr=3Dsizeof($need_ids);
+	for($g=3D0;$g<$s_curr;$g++){
+	//$target=3Dmysqli_query($GLOBALS['conn2'],"SELECT qnty FROM =
+currentneeds WHERE currentNeedId=3D'$need_ids[$g]' AND includeinhit=3D1 =
+AND freeze=3D0");
+	//$number=3Dmysqli_num_rows($target);
+	//if($number=3D=3D1){
+	//	$res=3Dmysqli_fetch_assoc($target); =20
+	//	$sumt.=3D$res['qnty'];=20
+	//}
+	$achieved=3D0;
+	//$filled=3Dmysqli_query($GLOBALS['conn2'],"SELECT SUM(currNeedFillNum) =
+as sum FROM currfillmethod WHERE currentNeedId=3D'$need_ids[$g]'"); =20
+	//$achieved_num=3Dmysqli_num_rows($filled);
+	//if($achieved_num=3D=3D1){
+	//	$row_achieved=3Dmysqli_fetch_assoc($filled);
+	//	$achieved=3D$row_achieved['sum'];
+	//	} =20
+	$check1=3Dmysqli_query($GLOBALS['conn2'],"SELECT  currentNeedDesc,qnty, =
+qnty_unit FROM currentneeds WHERE includeinhit=3D1 AND =
+currentNeedId=3D'$need_ids[$g]' AND freeze=3D0");
+	$num1=3Dmysqli_num_rows($check1); =20
+	if($num1=3D=3D1){
+		$row1=3Dmysqli_fetch_assoc($check1);
+		$cnid =3D $need_ids[$g];=20
+		$cndsc=3D$row1['currentNeedDesc'];=20
+		$qy=3D$row1['qnty'];=20
+		$qu=3D$row1['qnty_unit'];
+		$sumt+=3D$qy; =20
+//print needs
+		$check2=3Dmysqli_query($GLOBALS['conn2'],"SELECT SUM(currNeedFillNum) =
+as sum FROM currfillmethod WHERE currentNeedId=3D'$need_ids[$g]' AND =
+confirmed=3D1 ORDER BY fillmethodId DESC"); =20
+		$count=3Dmysqli_num_rows($check2);=20
+		$needqy=3D0;
+		if($count=3D=3D1){
+		$r_count=3Dmysqli_fetch_assoc($check2);
+		$needqy=3D$r_count['sum'];
+		$achieved+=3D$needqy;
+		}
+//%age
+//	$l+=3D$count;
+=09
+	$l+=3D$needqy;
+	$r+=3D$qy;
+	if($qy!=3D0)
+	$pc_q=3Dround(($needqy/$qy)*100,1);
+	$need=3D$cndsc.'- ('.$pc_q.'% filled)';
+	//$need=3D$cndsc;
+	$data1.=3D'<li id=3D"H_LI_19">'.$need.'
+			</li>';
+	if($count>0){
+        $check22=3Dmysqli_query($GLOBALS['conn2'],"SELECT DISTINCT =
+userId FROM currfillmethod WHERE currentNeedId=3D'$cnid' AND =
+confirmed=3D1 ORDER BY fillmethodId DESC");=20
+        $counts=3Dmysqli_num_rows($check22);
+	while($kind=3Dmysqli_fetch_assoc($check22)){=20
+	$filler=3D$kind['userId']; =20
+	$details=3Dmysqli_query($GLOBALS['conn'],"SELECT fName,lName,state FROM =
+users WHERE userId=3D'$filler'");=20
+	$details2=3Dmysqli_query($GLOBALS['conn2'],"SELECT dated FROM =
+currfillmethod WHERE currentNeedId=3D'$cnid' AND userId=3D'$filler' =
+ORDER BY dated DESC LIMIT 1"); =20
+	$details2_=3Dmysqli_query($GLOBALS['conn2'],"SELECT * FROM transac =
+WHERE cust_id=3D'$filler' AND hitId=3D'$hitId'"); =20
+=09
+	$n=3Dmysqli_num_rows($details);
+	$n_=3Dmysqli_num_rows($details2);
+	 if($n=3D=3D1 && $n_=3D=3D1){
+	$rdet=3Dmysqli_fetch_assoc($details);=20
+	$rdet2=3Dmysqli_fetch_assoc($details2); =20
+	$n_2=3Dmysqli_num_rows($details2_);
+	if($n_2>0){
+		//$m_curr=3Dmysqli_fetch_assoc($details2_);
+		//$money_=3D$m_curr['amount'];
+		//currency donated=20
+		$currency=3D'<i id=3D"currency"></i>';
+	}else{
+		$currency=3D'';
+	}
+	$name=3D$rdet['fName'].' '.$rdet['lName']; =20
+	$state=3D$rdet['state']; 	=20
+	$tstamp=3D$rdet2['dated'];=20
+	$date =3D ' - <strong =
+style=3D"font-size:12px">'.timeAgo($tstamp).'</strong>';	=20
+	if(!empty($state)){
+		$state=3D', '.$state;
+	}=09
+	$person=3D$name.$state;
+
+	$data2.=3D'<li id=3D"H_LI_20">'.$person.$date.$currency.'</li>';=09
+//print donators for each need id	 						=09
+								}					=09
+							}
+						}
+	=09
+					//}=20
+				}
+	}//new
+if($r!=3D0)
+	$bar=3Dround(($l/$r)*100,1);=20
+$bcopy=3D$bar;
+if($bar<10){
+	$bcopy=3D10;
+}
+if($bar>100){
+	$bcopy=3D100;
+}
+//lc is hitid
+$clk=3D'fullView(\''.$st.'\',\''.$locn.'\',\''.$lc.'\',2);';
+// $clk2=3D'fullView(\''.$st.'\',\''.$locn.'\',\''.$lc.'\',2);'; =20
+if(!isset($_SESSION['userId'])){
+$clk=3D'clk();';=09
+}=09
+$btn=3D'<button id=3D"H_H_BUTTON_29" onclick=3D"'.$clk.'">
+						HELP THEM
+					</button>';
+$btn2=3D'';
+/*
+ if($dsc!=3D"")				=09
+$btn2=3D'<button id=3D"expand" onclick=3D"'.$clk2.'">In-depth =
+Analysis</button>';
+
+*/		=09
+if($bar>100){
+//$bar=3D"%100+";
+$bar=3D"100+";
+}else{
+//$bar=3D"%".$bar;
+$bar=3D$bar;
+}			=09
+if($bar>=3D100){=20
+$btn=3D'<button id=3D"H_H_BUTTON_29" style=3D"background:#acdf3d" =
+onclick=3D"'.$clk.'">
+						SUCCESSFUL!
+					</button>';
+}
+if($achieved=3D=3Dnull)$achieved=3D0;
+//pics
+$pics=3D"";
+$num_pics=3Dcount($pic);
+for($ipic=3D0;$ipic<$num_pics;$ipic++){
+	$pics=3D$pics.'
+	<div>
+	<img src=3D"main/'.$pic[$ipic].'" id=3D"IMG_8" alt=3D"Loading Image.." =
+/>
+	</div>';
+}
+       =20
+   =20
+$counts=3D$counts+20;
+$userDet_=3D"";
+if($userDet!=3D"")
+$userDet_=3D'
+							<li id=3D"H_LI_20">
+								'.$userDet.'.
+							</li>';
+	echo 	'<li id=3D"H_LI_4">
+				<h1 id=3D"H1_5">
+                <img src=3D"/img/map-icon.png" =
+style=3D"width:20px;height:20px;float:left"/>
+					'.$stn.','.$locn.'
+				</h1>=20
+                <h1 id=3D"H1_6">
+                <img src=3D"user.png" =
+style=3D"float:left;margin-left:7px;margin-top:3px"/>
+					'.$counts.' Supporters
+				</h1>=20
+<hr class=3D"style13">=20
+				<figcaption id=3D"FIGCAH_PTION_9">
+							<h3 id=3D"H3_12">
+								<font =
+style=3D"font-weight:bold;font-size:20px;font-family:Helvetica;">'.$headl=
+ine.'</font><br>
+							</h3><span style=3D"color:#494949;margin-left:10px">-by</span>
+                            <font =
+style=3D"color:#2196F3">'.$userDet.'</font>
+					<div id=3D"H_DIV_17" class=3D"details '.$cls1.'">
+						<ul id=3D"H_UL_18">
+							<li id=3D"H_LI_19">
+							'.$tagline.'
+                            ....<a onclick=3D"'.$clk.'" =
+style=3D"color:#2196F3">more</a>
+							</li>
+						</ul>
+				</figcaption>
+				<figure id=3D"FIGURE_6">=20
+					<div class=3D"owl-carousel">
+					'.$pics.'</div>
+				</figure>
+			=09
+				=09
+                <div style=3D"float:right;margin-top:-85px;">
+                <a href=3D"https://www.facebook.com/daanvir.org/"><img =
+src=3D"img/fbicon.png" style=3D"padding-right
+                 :-2px;height:30px;width:30px;"/></a>
+                <a><img src=3D"img/twittericon.png" =
+style=3D"padding-right:-2px;height:32px;width:32px;"/></a>
+                <a =
+href=3D"https://www.instagram.com/daanvir_india/"><img =
+src=3D"img/g+.png" style=3D"padding-right
+                :-2px;height:30px;width:30px;"/></a>
+                </div>
+               =20
+					</div>
+					<div id=3D"inline">
+					<div id=3D"H_DIV_23">
+						<h2 id=3D"H_H2_24">
+							Target
+						</h2>
+						<p id=3D"H_P_25">
+							'.$sumt.'
+						</p>
+					</div>
+					<div id=3D"H_DIV_26">
+						<h2 id=3D"H_H2_27">
+							Achieved
+						</h2>
+						<p id=3D"H_P_28">
+							'.$achieved.'
+						</p>
+					</div> </div>'.$btn.'
+				=09
+				<div id=3D"H_DIV_30">
+					<div id=3D"H_DIV_31" style=3D"height:'.$bcopy.'%">
+						</b></div>
+					</div>
+                    <div id=3D"rtd"><b id=3D"H_B_32">'.$bar.'%
+				</div>
+				'.$btn2.'
+			</li>
+		';			=20
+}=09
+}=20
+function handle_smart_quotes($string)
+{
+	if ( !preg_match('/^\\X*$/u', $string)) {
+    $string =3D utf8_encode($string);
+}
+    $quotes =3D array(
+	=20
+   "\xC2\x82" 	   =3D> 	"'",
+   "\xC2\x84" 	   =3D> 	'"',
+   "\xC2\x8B" 	   =3D> 	"'",
+   "\xC2\x91" 	   =3D> 	"'",
+   "\xC2\x92" 	   =3D> 	"'",
+   "\xC2\x93" 	   =3D> 	'"',
+   "\xC2\x94" 	   =3D> 	'"',
+   "\xC2\x9B" 	   =3D>   "'",
+  =20
+   "\xC2\xAB"      =3D>   '"',
+   "\xC2\xBB"      =3D>   '"',
+   "\xE2\x80\x98"  =3D>   "'",
+   "\xE2\x80\x99"  =3D>   "'",
+   "\xE2\x80\x9A"  =3D>   "'",
+   "\xE2\x80\x9B"  =3D>   "'",
+   "\xE2\x80\x9C"  =3D>   '"',
+   "\xE2\x80\x9D"  =3D>   '"',
+   "\xE2\x80\x9E"  =3D>   '"',
+   "\xE2\x80\x9F"  =3D>   '"',
+   "\xE2\x80\xB9"  =3D>   "'",
+   "\xE2\x80\xBA"  =3D> 	"'",
+  =20
+    chr(145)       =3D> 	"'",
+    chr(146)       =3D> 	"'",
+    chr(147)       =3D> 	'"',
+    chr(148)       =3D> 	'"',
+    chr(151)       =3D> 	' - ',
+=09
+	'&#8216;'      =3D> 	 "'",
+	'&#8217;'      =3D>	 "'",
+	'&#8220;'      =3D>	 '"',
+	'&#8221;'      =3D>  	 '"',
+=09
+    '&lsquo;'      =3D> 	 "'",
+    '&rsquo;'      =3D>	 "'",
+    '&ldquo;'      =3D>	 '"',
+    '&rdquo;'      =3D>	 '"',
+    '&mdash;'      =3D>	 ' - ',
+    '&ndash;'      =3D>	 '-'
+=09
+    );
+	=20
+$smartq =3D array_keys  ($quotes); // but: for efficiency you should
+$normalq =3D array_values($quotes); // pre-calculate these two arrays
+$string =3D str_replace($smartq, $normalq, html_entity_decode($string, =
+ENT_QUOTES, "UTF-8"));=20
+    return $string;
+}
+
+function handle_data($data){=20
+$data =3D str_replace('</fcollected>', ' ',$data);
+$data=3Dhandle_smart_quotes($data);
+$data=3Dstrip_tags(mysqli_real_escape_string($GLOBALS['conn'],$data),'<br=
+>');     =20
+return stripslashes($data);
+}
+
+function print_addr($zip){=20
+$retrieve=3Dmysqli_query($GLOBALS['conn'],"SELECT * FROM map WHERE =
+pincode=3D '$zip' ORDER BY pincode LIMIT 1");=20
+$num=3Dmysqli_num_rows($retrieve);
+if($num<1){
+	echo '<div id=3D"p_div" >Error: No Results Found!</div>';
+	exit();
+}
+
+$row=3D mysqli_fetch_assoc($retrieve);=20
+$state =3D $row['State'];
+$district =3D $row['District'];
+$sub_district =3D $row['SubDistrict'];
+$village =3D $row['Village'];
+return  "<p id=3D\"hitlist_expand_p\" style=3D\"padding:20px 25px;
+    z-index: 0; position:absolute;top:0;left:0\">
+		  <br>Sub-District: ".$sub_district."
+		  <br>District: ".$district."
+		  <br>State: ".$state."
+		  <br>INDIA
+		  <br> - ".$zip."</p>";=20
+}
+
+function getMap($zip){=20
+$url =3D =
+"http://maps.googleapis.com/maps/api/geocode/json?address=3D".$zip."&sens=
+or=3Dfalse";
+    $details=3Dfile_get_contents($url);
+    $result =3D json_decode($details,true);=20
+    $lat=3D$result['results'][0]['geometry']['location']['lat'];=20
+    $lng=3D$result['results'][0]['geometry']['location']['lng'];
+=20
+ $map=3D'<div id=3D"hmap" style=3D"height:360px"></div>';
+ $map.=3D'
+ <script type=3D"text/javascript">
+=20
+ var map, heatmap;
+';
+
+
+$map.=3D"
+var styles =3D {
+        default: null,
+        silver: [
+          {
+            elementType: 'geometry',
+            stylers: [{color: '#f5f5f5'}]
+          },
+          {
+            elementType: 'labels.icon',
+            stylers: [{visibility: 'off'}]
+          },
+          {
+            elementType: 'labels.text.fill',
+            stylers: [{color: '#616161'}]
+          },
+          {
+            elementType: 'labels.text.stroke',
+            stylers: [{color: '#f5f5f5'}]
+          },
+          {
+            featureType: 'administrative.land_parcel',
+            elementType: 'labels.text.fill',
+            stylers: [{color: '#bdbdbd'}]
+          },
+          {
+            featureType: 'poi',
+            elementType: 'geometry',
+            stylers: [{color: '#eeeeee'}]
+          },
+          {
+            featureType: 'poi',
+            elementType: 'labels.text.fill',
+            stylers: [{color: '#757575'}]
+          },
+          {
+            featureType: 'poi.park',
+            elementType: 'geometry',
+            stylers: [{color: '#e5e5e5'}]
+          },
+          {
+            featureType: 'poi.park',
+            elementType: 'labels.text.fill',
+            stylers: [{color: '#9e9e9e'}]
+          },
+          {
+            featureType: 'road',
+            elementType: 'geometry',
+            stylers: [{color: '#ffffff'}]
+          },
+          {
+            featureType: 'road.arterial',
+            elementType: 'labels.text.fill',
+            stylers: [{color: '#757575'}]
+          },
+          {
+            featureType: 'road.highway',
+            elementType: 'geometry',
+            stylers: [{color: '#dadada'}]
+          },
+          {
+            featureType: 'road.highway',
+            elementType: 'labels.text.fill',
+            stylers: [{color: '#616161'}]
+          },
+          {
+            featureType: 'road.local',
+            elementType: 'labels.text.fill',
+            stylers: [{color: '#9e9e9e'}]
+          },
+          {
+            featureType: 'transit.line',
+            elementType: 'geometry',
+            stylers: [{color: '#e5e5e5'}]
+          },
+          {
+            featureType: 'transit.station',
+            elementType: 'geometry',
+            stylers: [{color: '#eeeeee'}]
+          },
+          {
+            featureType: 'water',
+            elementType: 'geometry',
+            stylers: [{color: '#c9c9c9'}]
+          },
+          {
+            featureType: 'water',
+            elementType: 'labels.text.fill',
+            stylers: [{color: '#9e9e9e'}]
+          }
+        ],
+
+        night: [
+          {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+          {elementType: 'labels.text.stroke', stylers: [{color: =
+'#242f3e'}]},
+          {elementType: 'labels.text.fill', stylers: [{color: =
+'#746855'}]},
+          {
+            featureType: 'administrative.locality',
+            elementType: 'labels.text.fill',
+            stylers: [{color: '#d59563'}]
+          },
+          {
+            featureType: 'poi',
+            elementType: 'labels.text.fill',
+            stylers: [{color: '#d59563'}]
+          },
+          {
+            featureType: 'poi.park',
+            elementType: 'geometry',
+            stylers: [{color: '#263c3f'}]
+          },
+          {
+            featureType: 'poi.park',
+            elementType: 'labels.text.fill',
+            stylers: [{color: '#6b9a76'}]
+          },
+          {
+            featureType: 'road',
+            elementType: 'geometry',
+            stylers: [{color: '#38414e'}]
+          },
+          {
+            featureType: 'road',
+            elementType: 'geometry.stroke',
+            stylers: [{color: '#212a37'}]
+          },
+          {
+            featureType: 'road',
+            elementType: 'labels.text.fill',
+            stylers: [{color: '#9ca5b3'}]
+          },
+          {
+            featureType: 'road.highway',
+            elementType: 'geometry',
+            stylers: [{color: '#746855'}]
+          },
+          {
+            featureType: 'road.highway',
+            elementType: 'geometry.stroke',
+            stylers: [{color: '#1f2835'}]
+          },
+          {
+            featureType: 'road.highway',
+            elementType: 'labels.text.fill',
+            stylers: [{color: '#f3d19c'}]
+          },
+          {
+            featureType: 'transit',
+            elementType: 'geometry',
+            stylers: [{color: '#2f3948'}]
+          },
+          {
+            featureType: 'transit.station',
+            elementType: 'labels.text.fill',
+            stylers: [{color: '#d59563'}]
+          },
+          {
+            featureType: 'water',
+            elementType: 'geometry',
+            stylers: [{color: '#17263c'}]
+          },
+          {
+            featureType: 'water',
+            elementType: 'labels.text.fill',
+            stylers: [{color: '#515c6d'}]
+          },
+          {
+            featureType: 'water',
+            elementType: 'labels.text.stroke',
+            stylers: [{color: '#17263c'}]
+          }
+        ],
+
+        retro: [
+          {elementType: 'geometry', stylers: [{color: '#ebe3cd'}]},
+          {elementType: 'labels.text.fill', stylers: [{color: =
+'#523735'}]},
+          {elementType: 'labels.text.stroke', stylers: [{color: =
+'#f5f1e6'}]},
+          {
+            featureType: 'administrative',
+            elementType: 'geometry.stroke',
+            stylers: [{color: '#c9b2a6'}]
+          },
+          {
+            featureType: 'administrative.land_parcel',
+            elementType: 'geometry.stroke',
+            stylers: [{color: '#dcd2be'}]
+          },
+          {
+            featureType: 'administrative.land_parcel',
+            elementType: 'labels.text.fill',
+            stylers: [{color: '#ae9e90'}]
+          },
+          {
+            featureType: 'landscape.natural',
+            elementType: 'geometry',
+            stylers: [{color: '#dfd2ae'}]
+          },
+          {
+            featureType: 'poi',
+            elementType: 'geometry',
+            stylers: [{color: '#dfd2ae'}]
+          },
+          {
+            featureType: 'poi',
+            elementType: 'labels.text.fill',
+            stylers: [{color: '#93817c'}]
+          },
+          {
+            featureType: 'poi.park',
+            elementType: 'geometry.fill',
+            stylers: [{color: '#a5b076'}]
+          },
+          {
+            featureType: 'poi.park',
+            elementType: 'labels.text.fill',
+            stylers: [{color: '#447530'}]
+          },
+          {
+            featureType: 'road',
+            elementType: 'geometry',
+            stylers: [{color: '#f5f1e6'}]
+          },
+          {
+            featureType: 'road.arterial',
+            elementType: 'geometry',
+            stylers: [{color: '#fdfcf8'}]
+          },
+          {
+            featureType: 'road.highway',
+            elementType: 'geometry',
+            stylers: [{color: '#f8c967'}]
+          },
+          {
+            featureType: 'road.highway',
+            elementType: 'geometry.stroke',
+            stylers: [{color: '#e9bc62'}]
+          },
+          {
+            featureType: 'road.highway.controlled_access',
+            elementType: 'geometry',
+            stylers: [{color: '#e98d58'}]
+          },
+          {
+            featureType: 'road.highway.controlled_access',
+            elementType: 'geometry.stroke',
+            stylers: [{color: '#db8555'}]
+          },
+          {
+            featureType: 'road.local',
+            elementType: 'labels.text.fill',
+            stylers: [{color: '#806b63'}]
+          },
+          {
+            featureType: 'transit.line',
+            elementType: 'geometry',
+            stylers: [{color: '#dfd2ae'}]
+          },
+          {
+            featureType: 'transit.line',
+            elementType: 'labels.text.fill',
+            stylers: [{color: '#8f7d77'}]
+          },
+          {
+            featureType: 'transit.line',
+            elementType: 'labels.text.stroke',
+            stylers: [{color: '#ebe3cd'}]
+          },
+          {
+            featureType: 'transit.station',
+            elementType: 'geometry',
+            stylers: [{color: '#dfd2ae'}]
+          },
+          {
+            featureType: 'water',
+            elementType: 'geometry.fill',
+            stylers: [{color: '#b9d3c2'}]
+          },
+          {
+            featureType: 'water',
+            elementType: 'labels.text.fill',
+            stylers: [{color: '#92998d'}]
+          }
+        ],
+
+        hiding: [
+          {
+            featureType: 'poi.business',
+            stylers: [{visibility: 'off'}]
+          },
+          {
+            featureType: 'transit',
+            elementType: 'labels.icon',
+            stylers: [{visibility: 'off'}]
+          }
+        ]
+      };";
+=09
+
+$map.=3D'
+ var heatmapData =3D [ =20
+ {location: new google.maps.LatLng('.($lat).', '.($lng).'), weight: 7}
+=20
+];
+var area =3D new google.maps.LatLng('.($lat+0.063981).', =
+'.($lng-0.107984).');
+var pt =3D new google.maps.LatLng('.$lat.', '.$lng.');
+map =3D new google.maps.Map(document.getElementById(\'hmap\'), {
+  center: area,
+  zoom: 12,
+  mapTypeId: \'roadmap\'
+});
+
+ heatmap =3D new google.maps.visualization.HeatmapLayer({
+  data: heatmapData,
+  map:map
+});
+heatmap.setMap(map);
+heatmap.set(\'radius\',50);
+heatmap.set(\'opacity\',0.4);=20
+//heatmap.set(\'dissipating\',false);=20
+map.setOptions({styles: styles[\'retro\']});	 =20
+var image =3D \'http://daanvir.org/images/marker.png\';
+var beachMarker =3D new google.maps.Marker({
+          position: {lat: '.$lat.', lng: '.$lng.'},
+          map: map,
+          icon: image
+	  });
+/*var cityCircle =3D new google.maps.Circle({
+            strokeColor: \'#ff6633\',
+            strokeOpacity: 0.3,
+            strokeWeight: 2,
+            fillColor: \'#ffcc00\',
+            fillOpacity: 0.25,
+            map: map,
+            center: pt,
+            radius: Math.sqrt(30) * 100
+          });
+          */
+$("#hmap").css("overflow","visible");
+';
+// default, silver, night, retro, hiding=20
+ =20
+$map.=3D'	 =20
+   function toggleHeatmap() {
+        heatmap.setMap(heatmap.getMap() ? null : map);
+      }=20
+
+      function changeGradient() {
+        var gradient =3D [
+          \'rgba(0, 255, 255, 0)\',
+          \'rgba(0, 255, 255, 1)\',
+          \'rgba(0, 191, 255, 1)\',
+          \'rgba(0, 127, 255, 1)\',
+          \'rgba(0, 63, 255, 1)\',
+          \'rgba(0, 0, 255, 1)\',
+          \'rgba(0, 0, 223, 1)\',
+          \'rgba(0, 0, 191, 1)\',
+          \'rgba(0, 0, 159, 1)\',
+          \'rgba(0, 0, 127, 1)\',
+          \'rgba(63, 0, 91, 1)\',
+          \'rgba(127, 0, 63, 1)\',
+          \'rgba(191, 0, 31, 1)\',
+          \'rgba(255, 0, 0, 1)\'
+        ]
+        heatmap.set(\'gradient\', heatmap.get(\'gradient\') ? null : =
+gradient);
+      }
+
+      function changeRadius() {
+        heatmap.set(\'radius\', heatmap.get(\'radius\') ? null : 20);
+      }
+
+      function changeOpacity() {
+        heatmap.set(\'opacity\', heatmap.get(\'opacity\') ? null : 0.2);
+      }
+ </script>
+ ';=20
+return $map;
+}
+
+function getHIT($hID){=20
+    ob_start();
+	print_hit($hID);
+    return ob_get_clean();
+}
+
+function getBar($hitId){=20
+	$check1=3Dmysqli_query($GLOBALS['conn2'],"SELECT need_ids FROM hitlist =
+WHERE hitId=3D'$hitId'");  =20
+	$num1=3Dmysqli_num_rows($check1);=20
+	if($num1=3D=3D1){=20
+		$result=3Dmysqli_fetch_assoc($check1);=20
+		$need_ids=3Dexplode(',',$result['need_ids']);
+		$l=3D0;
+	    $r=3D0;
+	    $count=3D0;=20
+	    $qy=3D0;  =20
+		$s_curr=3Dsizeof($need_ids);
+		//$sumt=3D0;
+	    //$achieved=3D0;
+	for($g=3D0;$g<$s_curr;$g++){
+	$check1=3Dmysqli_query($GLOBALS['conn2'],"SELECT `qnty` FROM =
+currentneeds WHERE `includeinhit`=3D1 AND =
+`currentNeedId`=3D'$need_ids[$g]' AND freeze=3D0"); =20
+=09
+	$num1=3Dmysqli_num_rows($check1); =20
+	if($num1>0){
+	$row1=3Dmysqli_fetch_assoc($check1);
+		$cnid =3D $need_ids[$g]; =20
+		$qy=3D$row1['qnty']; =20
+		//$sumt+=3D$qy; =20
+$check2=3Dmysqli_query($GLOBALS['conn2'],"SELECT SUM(`currNeedFillNum`) =
+as sum FROM `currfillmethod` WHERE currentNeedId=3D'$need_ids[$g]' AND =
+`confirmed`=3D1 ORDER BY fillmethodId DESC"); =20
+		$count=3Dmysqli_num_rows($check2);=20
+		$needqy=3D0;
+		if($count=3D=3D1){
+		$r_count=3Dmysqli_fetch_assoc($check2);
+		$needqy=3D$r_count['sum'];
+		//$achieved+=3D$needqy;
+		}=20
+//%age=20
+	$l+=3D$needqy;
+	$r+=3D$qy;
+	if($qy!=3D0)
+	$pc_q=3Dround(($needqy/$qy)*100,1);=20
+	 	}
+	}
+$bar=3D0;
+$bar_=3D0;
+if($r!=3D0)
+$bar=3Dround(($l/$r)*100,1);  =20
+return $bar;
+	}=20
+}
+
+function print_blog($loi){
+    $hitId=3D$loi;
+//def:true, then load on page else load in search
+//load on page: include outer-sl as well
+//$ifexists=3Dmysqli_query($GLOBALS['conn2'],"SELECT hitId FROM hitlist =
+WHERE localityId =3D'$locid'");
+//$nif=3Dmysqli_num_rows($ifexists);
+//if($nif!=3D1)return;
+    $data1=3Dnull;=20
+    $data2=3Dnull;=20
+    $l=3D0;
+    $r=3D0;
+    $qy=3D0;=20
+    $bar=3D0;
+    $sumt=3D0;
+    $count=3D0;=20
+        $stn=3Dnull;
+        $st=3Dnull;
+        $locn=3Dnull;
+        $pic=3D"";
+        $tstamp=3D'';
+        $date=3D'';
+        $location=3D"Not Specified";
+        $headline=3D"";
+        $tagline=3D"";
+        $dsc=3Dnull; =20
+        $lc=3D"locality108202".$hitId;
+    	$hashtag=3D"";
+        $counts=3D'0';
+    $userDet=3D'';
+    $query =3D "SELECT =
+userId,localityId,majorhit_desc,img,headline,tagline,location,need_ids,ha=
+shtag FROM hitlist WHERE hitId=3D'$hitId'";
+    $headdsc=3Dmysqli_query($GLOBALS['conn2'],$query);=20
+    $ndsc=3Dmysqli_num_rows($headdsc);=20
+    $need_ids=3Darray();
+    if($ndsc=3D=3D1){
+    $rdsc=3Dmysqli_fetch_assoc($headdsc); =20
+    $dsc=3D$rdsc['majorhit_desc'];  =20
+    $user=3D$rdsc['userId'];=20
+    $pic=3D$rdsc['img'];
+    $locid=3D$rdsc['localityId'];
+    $pic=3Dexplode(',',$pic);   =20
+    $location=3D$rdsc['location'];=20
+    $headline=3D$rdsc['headline'];=20
+    $tagline=3D$rdsc['tagline'];=20
+    $hashtag=3D$rdsc['hashtag'];
+    $need_ids=3Dexplode(',',$rdsc['need_ids']);=20
+    =20
+     $headq=3Dmysqli_query($GLOBALS['conn'],"SELECT stateId,localityName =
+FROM localities WHERE localityId=3D'$locid'");=20
+    $n1=3Dmysqli_num_rows($headq);=20
+    if($n1=3D=3D1){
+        $r1=3Dmysqli_fetch_assoc($headq);=20
+        $stid=3D$r1['stateId'];=20
+        $locn=3Dstrtoupper($r1['localityName']); =20
+    $headq1=3Dmysqli_query($GLOBALS['conn'],"SELECT stateName FROM =
+states WHERE stateId=3D'$stid'");=20
+    $n2=3Dmysqli_num_rows($headq1);=20
+    if($n2=3D=3D1){
+        $r2=3Dmysqli_fetch_assoc($headq1); =20
+        $st=3D$stn=3Dstrtoupper($r2['stateName']);
+            }
+        }
+   =20
+    $headdsc_=3Dmysqli_query($GLOBALS['conn'],"SELECT =
+fName,lName,state,city FROM users WHERE userId=3D'$user'");=20
+    $ndsc_=3Dmysqli_num_rows($headdsc_);=20
+    if($ndsc_=3D=3D1){
+    $rdsc_=3Dmysqli_fetch_assoc($headdsc_); =20
+    $userDet.=3D' '.$rdsc_['fName'];  =20
+    if($rdsc_['lName']!=3D"")
+    $userDet.=3D' '.$rdsc_['lName']; =20
+    if($rdsc_['city']!=3D"")
+    $userDet.=3D', '.$rdsc_['city'];=20
+    if($rdsc_['state']!=3D"")
+    $userDet.=3D', '.$rdsc_['state'];    =20
+        }
+    } =20
+    if(array_key_exists(0,$pic)=3D=3Dfalse){
+        $pic[0]=3D'http://daanvir.org/images/picture0001.png';
+    }
+    //desc, locname and statename retrieved
+    //Calculating class...
+    $val=3D((rand(10,1000000))*242)+456;
+    $cls1=3D'details'.($val);
+    $cls2=3D'needs'.($val);
+    $cls3=3D'supports'.($val);
+    //count total items and filled items           =20
+    if($locn!=3Dnull){
+        $s_curr=3Dsizeof($need_ids);
+    for($g=3D0;$g<$s_curr;$g++){
+    //$target=3Dmysqli_query($GLOBALS['conn2'],"SELECT qnty FROM =
+currentneeds WHERE currentNeedId=3D'$need_ids[$g]' AND includeinhit=3D1 =
+AND freeze=3D0");
+    //$number=3Dmysqli_num_rows($target);
+    //if($number=3D=3D1){
+    //    $res=3Dmysqli_fetch_assoc($target); =20
+    //    $sumt.=3D$res['qnty'];=20
+    //}
+    $achieved=3D0;
+    //$filled=3Dmysqli_query($GLOBALS['conn2'],"SELECT =
+SUM(currNeedFillNum) as sum FROM currfillmethod WHERE =
+currentNeedId=3D'$need_ids[$g]'"); =20
+    //$achieved_num=3Dmysqli_num_rows($filled);
+    //if($achieved_num=3D=3D1){
+    //    $row_achieved=3Dmysqli_fetch_assoc($filled);
+    //    $achieved=3D$row_achieved['sum'];
+    //    } =20
+    $check1=3Dmysqli_query($GLOBALS['conn2'],"SELECT  =
+currentNeedDesc,qnty, qnty_unit FROM currentneeds WHERE includeinhit=3D1 =
+AND currentNeedId=3D'$need_ids[$g]' AND freeze=3D0");
+    $num1=3Dmysqli_num_rows($check1); =20
+    if($num1=3D=3D1){
+        $row1=3Dmysqli_fetch_assoc($check1);
+        $cnid =3D $need_ids[$g];=20
+        $cndsc=3D$row1['currentNeedDesc'];=20
+        $qy=3D$row1['qnty'];=20
+        $qu=3D$row1['qnty_unit'];
+        $sumt+=3D$qy; =20
+//print needs
+        $check2=3Dmysqli_query($GLOBALS['conn2'],"SELECT =
+SUM(currNeedFillNum) as sum FROM currfillmethod WHERE =
+currentNeedId=3D'$need_ids[$g]' AND confirmed=3D1 ORDER BY fillmethodId =
+DESC"); =20
+        $count=3Dmysqli_num_rows($check2);=20
+        $needqy=3D0;
+        if($count=3D=3D1){
+        $r_count=3Dmysqli_fetch_assoc($check2);
+        $needqy=3D$r_count['sum'];
+        $achieved+=3D$needqy;
+        }
+//%age
+//    $l+=3D$count;
+   =20
+    $l+=3D$needqy;
+    $r+=3D$qy;
+    if($qy!=3D0)
+    $pc_q=3Dround(($needqy/$qy)*100,1);
+    $need=3D$cndsc.'- ('.$pc_q.'% filled)';
+    //$need=3D$cndsc;
+    $data1.=3D'<li id=3D"H_LI_19">'.$need.'
+            </li>';
+    if($count>0){
+        $check22=3Dmysqli_query($GLOBALS['conn2'],"SELECT DISTINCT =
+userId FROM currfillmethod WHERE currentNeedId=3D'$cnid' AND =
+confirmed=3D1 ORDER BY fillmethodId DESC");=20
+        $counts=3Dmysqli_num_rows($check22);
+    while($kind=3Dmysqli_fetch_assoc($check22)){=20
+    $filler=3D$kind['userId']; =20
+    $details=3Dmysqli_query($GLOBALS['conn'],"SELECT fName,lName,state =
+FROM users WHERE userId=3D'$filler'");=20
+    $details2=3Dmysqli_query($GLOBALS['conn2'],"SELECT dated FROM =
+currfillmethod WHERE currentNeedId=3D'$cnid' AND userId=3D'$filler' =
+ORDER BY dated DESC LIMIT 1"); =20
+    $details2_=3Dmysqli_query($GLOBALS['conn2'],"SELECT * FROM transac =
+WHERE cust_id=3D'$filler' AND hitId=3D'$hitId'"); =20
+   =20
+    $n=3Dmysqli_num_rows($details);
+    $n_=3Dmysqli_num_rows($details2);
+     if($n=3D=3D1 && $n_=3D=3D1){
+    $rdet=3Dmysqli_fetch_assoc($details);=20
+    $rdet2=3Dmysqli_fetch_assoc($details2); =20
+    $n_2=3Dmysqli_num_rows($details2_);
+    if($n_2>0){
+        //$m_curr=3Dmysqli_fetch_assoc($details2_);
+        //$money_=3D$m_curr['amount'];
+        //currency donated=20
+        $currency=3D'<i id=3D"currency"></i>';
+    }else{
+        $currency=3D'';
+    }
+    $name=3D$rdet['fName'].' '.$rdet['lName']; =20
+    $state=3D$rdet['state'];     =20
+    $tstamp=3D$rdet2['dated'];=20
+    $date =3D ' - <strong =
+style=3D"font-size:12px">'.timeAgo($tstamp).'</strong>';    =20
+    if(!empty($state)){
+        $state=3D', '.$state;
+    }   =20
+    $person=3D$name.$state;
+
+       =20
+//print donators for each need id                                =20
+                                }                       =20
+                            }
+                        }
+       =20
+                    //}=20
+                }
+    }//new
+if($r!=3D0)
+    $bar=3Dround(($l/$r)*100,1);=20
+$bcopy=3D$bar;
+if($bar<10){
+    $bcopy=3D10;
+}
+if($bar>100){
+    $bcopy=3D100;
+}
+//lc is hitid
+$clk=3D'fullView2(\''.$st.'\',\''.$locn.'\',\''.$lc.'\',2);';
+// $clk2=3D'fullView(\''.$st.'\',\''.$locn.'\',\''.$lc.'\',2);'; =20
+if(!isset($_SESSION['userId'])){
+//$clk=3D'clk();';   =20
+}   =20
+$btn=3D'<button id=3D"H_H_BUTTON_29" onclick=3D"'.$clk.'">
+                        READ THEM
+                    </button>';
+$btn2=3D'';
+
+ if($dsc!=3D"")                   =20
+$btn2=3D'<button id=3D"expand" onclick=3D"'.$clk2.'">In-depth =
+Analysis</button>';
+
+          =20
+if($bar>100){
+//$bar=3D"%100+";
+$bar=3D"100+";
+}else{
+//$bar=3D"%".$bar;
+$bar=3D$bar;
+}               =20
+if($bar>=3D100){=20
+$btn=3D'<button id=3D"H_H_BUTTON_29" style=3D"background:#acdf3d" =
+onclick=3D"'.$clk.'">
+                        SUCCESSFUL!
+                    </button>';
+}
+if($achieved=3D=3Dnull)$achieved=3D0;
+//pics
+$pics=3D"";
+$num_pics=3Dcount($pic);
+for($ipic=3D0;$ipic<$num_pics;$ipic++){
+    $pics=3D$pics.'
+    <div>
+    <img src=3D"main/'.$pic[$ipic].'" id=3D"IMG_8" alt=3D"Loading =
+Image.." />
+    </div>';
+}
+       =20
+       =20
+       =20
+$userDet_=3D"";
+    echo     '<li id=3D"H_LI_4" style=3D"height:220px;>
+              =20
+<hr class=3D"style13">=20
+                <figcaption id=3D"FIGCAH_PTION_9">
+                            <h3 id=3D"H3_12">
+                                <font =
+style=3D"font-weight:bold;font-size:20px;font-family:Helvetica;">'.$headl=
+ine.'</font><br>
+                            </h3><span =
+style=3D"color:#494949;margin-left:10px">-by</span>
+                            <font =
+style=3D"color:#2196F3">'.$userDet.'</font>
+                    <div id=3D"H_DIV_17" class=3D"details '.$cls1.'">
+                       =20
+                </figcaption>
+                <figure id=3D"FIGURE_6">=20
+                    <div class=3D"owl-carousel">
+                    '.$pics.'</div>
+                </figure>
+                </div>
+                   =20
+                   =20
+               =20
+            </li>
+        ';            =20
+}   =20
+}=09
+=20
+
+=20
+?>
+------=_NextPart_000_0007_01D3F862.F7353860
+Content-Type: application/octet-stream;
+	name="connect.php"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment;
+	filename="connect.php"
+
+<?php 
+$servername = "localhost";
+$username="daanvaq7";
+$password="Ankit@123@";
+//$username="tempedit@daanvir.org";
+//$password="tempedit@123";
+ 
+//$password="arvin@167";
+ 
+$conn = mysqli_connect($servername, $username, $password); 
+$conn2 = mysqli_connect($servername, $username, $password); 
+
+mysqli_select_db( $conn, 'daanvaq7_vifixes_daanvir'); 
+mysqli_select_db( $conn2, 'daanvaq7_vifixes_needs');
+//check
+if(!'conn' || !'conn2')
+	die("Connection Unsuccessful: ".mysqli_connect_error());
+
+?>
+------=_NextPart_000_0007_01D3F862.F7353860
+Content-Type: application/octet-stream;
+	name="general.php"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment;
+	filename="general.php"
+
+<?php
+
+?>
+------=_NextPart_000_0007_01D3F862.F7353860--

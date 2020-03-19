@@ -1,0 +1,674 @@
+AWSTATS DATA FILE 7.6 (build 20161204)
+# If you remove this file, all statistics for date 201811 will be lost/reset.
+# Last config file used to build this data file was /home/daanvaq7/tmp/awstats/awstats.daanvir.org.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2008                
+POS_TIME 2689                
+POS_VISITOR 13355               
+POS_DAY 18452               
+POS_DOMAIN 3520                
+POS_LOGIN 4043                
+POS_ROBOT 4198                
+POS_WORMS 5017                
+POS_EMAILSENDER 5148                
+POS_EMAILRECEIVER 5291                
+POS_SESSION 19203               
+POS_SIDER 19410               
+POS_FILETYPES 5426                
+POS_DOWNLOADS 5690                
+POS_OS 5790                
+POS_BROWSER 6037                
+POS_SCREENSIZE 6967                
+POS_UNKNOWNREFERER 7041                
+POS_UNKNOWNREFERERBROWSER 7835                
+POS_ORIGIN 8303                
+POS_SEREFERRALS 8445                
+POS_PAGEREFS 8672                
+POS_SEARCHWORDS 8886                
+POS_KEYWORDS 9038                
+POS_MISC 2353                
+POS_ERRORS 9097                
+POS_CLUSTER 3899                
+POS_SIDER_404 9225                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20181201024349 125 28383 9163733184451
+FirstTime 20181101014714
+LastTime 20181130233501
+LastUpdate 20181201043843 125 0 124 0 0
+TotalVisits 138                 
+TotalUnique 110                 
+MonthHostsKnown 0                   
+MonthHostsUnknown 135                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+PDFSupport 0 0 0
+JavaEnabled 0 0 0
+DirectorSupport 0 0 0
+QuickTimeSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 0 0
+RealPlayerSupport 0 0 0
+FlashSupport 0 0 0
+TotalMisc 0 0 0
+JavascriptDisabled 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 2 2 108169 16 38 643590
+1 8 8 343283 18 53 1582745
+2 10 10 191579 20 52 2481418
+3 1 1 0 16 55 2412652
+4 5 5 122241 8 32 913887
+5 31 31 673478 27 92 3521364
+6 22 211 14859055 17 40 1280623
+7 5 6 194706 18 37 1140133
+8 14 154 6849519 12 85 3937345
+9 32 257 162767389 37 68 2216328
+10 72 166 156842696 18 35 1004856
+11 25 108 5262723 17 27 487325
+12 9 36 398621 11 26 553639
+13 22 188 11458485 36 67 905970
+14 10 23 905382 21 53 1221131
+15 8 89 4519565 18 38 1320985
+16 2 3 698474 31 50 1354517
+17 16 99 4715665 39 66 1420666
+18 21 169 32282532 12 27 979677
+19 4 4 108204 13 38 1155422
+20 14 177 9808460 11 22 460269
+21 7 11 1486315 37 49 700609
+22 11 12 535392 10 32 863528
+23 9 83 4102298 15 55 1378761
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 21
+us 143 770 41166121
+in 132 664 207998479
+cn 17 194 10657552
+nl 16 17 327393
+de 8 8 438448
+ru 8 8 437005
+th 6 87 4418651
+ao 6 79 3940409
+gb 6 6 328836
+ca 4 4 180308
+ua 3 3 164418
+cl 2 2 109612
+eu 2 2 70696
+lv 1 1 54806
+ro 1 1 54806
+cw 1 1 54806
+ee 1 1 54806
+hk 1 1 54806
+fr 1 2 169120
+by 1 1 54806
+br 0 1 588862
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 17
+Googlebot/ 233 9753690 20181130171738 34
+YandexBot/ 210 5971563 20181130215322 106
+archive\.org_bot 86 5337263 20181126114457 10
+Baiduspider/ 43 1904570 20181130032656 0
+bingbot/ 37 715636 20181123110042 13
+facebookexternalhit/ 36 2811256 20181130191153 0
+bingpreview 36 1422961 20181119232229 0
+unknown 28 4284 20181129221408 28
+YisouSpider 20 857642 20181129011950 1
+(firefox/)([0-9]\.|[0-1][0]\.) 14 111448 20181130032557 12
+Uptimebot/ 8 459 20181123035830 3
+no_user_agent 8 627609 20181121093254 0
+DotBot/ 8 110530 20181116123445 6
+YandexImages/ 3 491341 20181125093056 0
+GrapeshotCrawler/ 2 36993 20181106135220 1
+Googlebot\-Image/ 1 0 20181102225712 0
+yandex 1 0 20181110140736 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 10
+ttf 36 4644984 0 0
+Unknown 18 1359 0 0
+js 166 3614178 0 0
+png 495 23967618 0 0
+html 162 8231348 0 0
+jpeg 13 1990046 0 0
+php 126 1463740 0 0
+woff 18 29448 0 0
+css 156 6039797 0 0
+jpg 663 73432743 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 2
+/videos/video.mp4 0 2 147909026
+/robots.txt 0 3 459
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 14
+j2me 1 1
+win7 509 111
+winlong 2 2
+ios_iphone 2 1
+macosx 1 1
+Unknown 75 73
+macosx10 2 2
+winnt 12 3
+win10 742 84
+macosx12 22 22
+winxp 2 1
+linux 130 22
+linuxandroid 349 35
+win2003 9 2
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 43
+msie7.0 11 4
+firefox59.0 2 2
+chrome62.0.3202.94 1 1
+firefox15.0 5 5
+chrome63.0.3239.132 2 2
+chrome55.0.2883.87 1 0
+chrome58.0.3029.83 95 12
+chrome65.0.3325.181 2 2
+chrome34.0.1847.116 3 2
+chrome69.0.3497.81 18 4
+firefox48.0 87 11
+opera54.0.2952.51 1 1
+chrome45.0.2454.94 1 1
+chrome58.0.3029.110 8 8
+chrome70.0.3538.80 79 6
+chrome70.0.3538.77 584 107
+mozilla 16 16
+chrome27.0.1453.94 1 1
+firefox57.0 4 4
+chrome50.0.2661.102 86 5
+chrome36.0.1985.125 88 6
+msie5.0 12 3
+chrome69.0.3497.100 94 13
+chrome71.0.3578.62 1 0
+chrome34.0.1847.131 1 1
+netscape 1 1
+chrome70.0.3538.110 87 6
+Unknown 58 56
+firefox54.0 99 15
+opera37.0.2192.112031 1 0
+opera10.54 1 1
+safari9.0 1 1
+chrome60.0.3112.101 1 1
+chrome40.0.2214.85 44 6
+chrome26.0.1410.63 4 4
+edge17 87 6
+firefox62.0 91 8
+chrome61.0.3163.100 16 16
+iphone 1 0
+chrome46.0.2490.80 1 1
+firefox50.0 1 1
+chrome70.0.3538.102 93 12
+msie9.0 68 8
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 13
+CATExplorador/1.0beta_(sistemes_at_domini_dot_cat;_http://domini.cat/catexplorador.html) 20181112115632
+Mozilla 20181104122140
+ia_archiver 20181121141315
+Mozilla/5.0_(compatible;_NetcraftSurveyAgent/1.0;__info@netcraft.com) 20181101233414
+python-requests/2.19.1 20181112071758
+Go-http-client/1.1 20181126221718
+Mozilla/5.0_(compatible;_Let's_Encrypt_validation_server;__https://www.letsencrypt.org) 20181102050135
+python-requests/2.20.0 20181105163819
+AddThis.com_(http://support.addthis.com/) 20181105102124
+Mozilla/5.0_(compatible;_ips-agent) 20181111093836
+Cpanel-HTTP-Client/1.0 20181102050128
+Scrapy/1.5.1_(_https://scrapy.org) 20181125182952
+Mozilla/5.0_(compatible;_Dataprovider.com) 20181122010928
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 8
+ia_archiver 20181121141315
+python-requests/2.19.1 20181112071758
+Go-http-client/1.1 20181126221718
+CATExplorador/1.0beta_(sistemes_at_domini_dot_cat;_http://domini.cat/catexplorador.html) 20181112115632
+Cpanel-HTTP-Client/1.0 20181102050128
+Scrapy/1.5.1_(_https://scrapy.org) 20181125182952
+python-requests/2.20.0 20181105163819
+AddThis.com_(http://support.addthis.com/) 20181105102124
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 196 308
+From1 0 0
+From2 8 10
+From3 13 13
+From4 143 1527
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 4
+www_google_com_br 0 1
+www_google_co_in 5 5
+www_google_co_th 1 2
+www_google_com 2 2
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 2
+https://uptime.com/daanvir.org 12 12
+https://www.facebook.com 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 4
+404 278 562980
+206 34 3196287
+429 2 552
+403 8 20376
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 104
+/site/wp-includes/wlwmanifest.xml 2 -
+/xmlrpc.php 7 -
+/manager/ 1 -
+/admin/content/sitetree/ 1 -
+/css/main/images/bgimg.jpg 1 http://daanvir.org/css/style2_m.css
+/images/loc.png 1 http://daanvir.org/css/style2_m.css
+/css/)%20repeat-x%20center%20center%7D 1 http://daanvir.org/css/style2_m.css
+/wordpress/wp-admin/admin-ajax.php 1 -
+//js/rokmage_tinymce/tinyupload.js 2 -
+/templates/system/css/system.css 1 -
+/wp-content/plugins/wp-gdpr-compliance/readme.txt 3 -
+/ 4 -
+/bk/wp-admin/install.php 1 -
+/images/.png 1 http://daanvir.org/css/style2_m.css
+/cms/wp-includes/wlwmanifest.xml 2 -
+/me 1 -
+//wp-login.php 1 http://www.google.com.hk
+/admin/ 1 -
+/wp-admin/admin-ajax.php 1 -
+/index7.ph 1 -
+/scripts/cfformhistory.cfm 3 -
+/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php 1 -
+/javascript 16 -
+/CFIDE/cf_scripts/scripts/ajax/ckeditor/plugins/filemanager/filemanager.cfm 3 -
+//adminer.php 1 -
+/CFIDE/probe.cfm 1 -
+/blog/administrator/index.php 1 -
+/wp/wp-admin/install.php 1 -
+/assets/components/gallery/css/fileuploader.css 1 http://daanvir.org/assets/components/gallery/css/fileuploader.css
+//var/resource_config.json 1 -
+/administrator/index.php 1 -
+/wwscripts/cfformhistory.cfm 3 -
+/admin/index.php 1 https://google.com
+/css/owl.video.play.png 1 http://daanvir.org/css/owl.carousel.css
+/wp/wp-includes/wlwmanifest.xml 2 -
+//skin/frontend/base/default/css/widgets.css 1 -
+/wp-admin/install.php 1 -
+/wp/ 7 -
+/sitemap.xml 7 -
+/new/wp-admin/install.php 1 -
+/fckeditor/editor/filemanager/connectors/php/upload.php 1 -
+/manager/index.php 1 http://daanvir.org/manager/index.php
+/ads.txt 1 -
+/joomla/administrator/index.php 1 -
+/.donation-posts 14 -
+/FormScripts/ajax/ckeditor/plugins/filemanager/filemanager.cfm 3 -
+/cf_scripts/scripts/cfformhistory.cfm 3 -
+/dev.php 6 -
+//licence.txt 1 -
+/scripts/ajax/ckeditor/plugins/filemanager/filemanager.cfm 3 -
+/phpmyadmin/ 1 http://daanvir.org/phpmyadmin/
+/wordpress/wp-includes/wlwmanifest.xml 2 -
+/monitor/%SITE_NAME% 8 -
+//connect.facebook.net/en_US/sdk.js 1 -
+/admin/images/cal_date_over.gif 1 -
+/FormScripts/cfformhistory.cfm 3 -
+/simpla/ 1 -
+/wordpress/ 7 -
+/blog/wp-includes/wlwmanifest.xml 2 -
+/user/register/ 2 -
+/wp-blog-header.php 3 -
+/blog/wp-admin/admin-ajax.php 1 -
+//CHANGELOG.txt 1 -
+/blog/robots.txt 6 -
+/var/cache/mage--2/mage---d41_CONFIG_GLOBAL 3 -
+/backup/wp-admin/install.php 1 -
+/gallery/107.jpeg 1 http://www.daanvir.org/gallery/gallery.html
+//wp-admin/setup-config.php 1 -
+/wp-includes/js/wpdialog.js 1 daanvir.org
+/images/1.jpg 1 http://daanvir.org/css/style2_m.css
+/old/ 2 -
+/CFIDE/Administrator/index.cfm 3 -
+/var/resource_config.json 3 -
+/flex2gateway/amf 3 -
+/CFIDE/scripts/cfformhistory.cfm 3 -
+//administrator/components/com_jce/js/sortables.js 1 -
+//phpmyadmin/index.php 1 -
+/admin/login.php 1 -
+/wp-includes/wlwmanifest.xml 2 -
+/blog/ 7 -
+/bea_wls_deployment_internal 7 -
+/main/fonts/cantarell/cantarell-Regular.ttf 6 http://daanvir.org/css/style2.css
+/js/mage/cookies.js 2 -
+/robots.txt 17 -
+/wordpress/wp-admin/install.php 1 -
+/CFIDE/scripts/ajax/ckeditor/plugins/filemanager/filemanager.cfm 3 -
+/wp-json/wp/v2/users/ 2 -
+/libraries/sfn.php 1 -
+/new/ 2 -
+/normalize.css 1 http://daanvir.org/activate.php
+/test/ 2 -
+/wp-login.php 16 http://daanvir.org/wp-login.php
+/index.cfm 3 -
+/assets/components/gallery/css/mgr.css 2 http://daanvir.org/assets/components/gallery/css/mgr.css
+/assets/global/plugins/jquery-file-upload/server/php/index.php 2 -
+/cf_scripts/scripts/ajax/ckeditor/plugins/filemanager/filemanager.cfm 3 -
+/css/main/images/userpic.png 1 http://daanvir.org/css/style2_m.css
+/administrator/templates/isis/ext.php 1 -
+/wp/wp-admin/admin-ajax.php 1 -
+/user/register 2 -
+/main/Traversal/images/6/eager%20child.jpg/license.php 2 -
+/joomla/robots.txt 1 -
+/wp-domain.php 2 -
+/wwscripts/ajax/ckeditor/plugins/filemanager/filemanager.cfm 3 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 135
+111.92.56.30 75 193 160443165 20181105110141
+34.207.98.73 25 25 331903 20181121141315
+52.53.201.78 14 14 764398 20181130233501
+104.192.74.201 12 120 10222623 20181125062847
+157.51.214.248 12 95 4583274 20181104171418
+45.113.122.178 12 12 837 20181102050135
+103.216.83.116 9 93 5503986 20181106105630
+49.206.201.241 8 146 31579290 20181109182406
+49.207.53.71 8 62 2444593 20181115095846
+82.165.203.144 8 8 438448 20181125224511
+157.36.147.215 7 83 4444019 20181118114014
+106.78.65.230 6 87 4420995 20181102151333
+192.100.72.2 6 88 5340899 20181110135314
+154.238.29.17 6 79 3940409 20181129233449
+137.97.109.218 6 89 5455212 20181110135309
+66.133.109.36 6 6 522 20181102050134
+182.52.51.241 6 87 4418651 20181130061755
+111.92.57.246 5 31 122565 20181107125525
+117.99.85.68 4 31 2120273 20181115100012
+142.4.218.236 4 4 180308 20181122010933
+51.15.233.253 4 4 219224 20181122055214
+42.236.10.106 4 40 2652260 20181103202423
+69.58.178.59 3 3 125502 20181111093840
+168.91.14.11 3 3 132391 20181129222840
+128.177.10.252 3 12 354659 20181108183703
+104.144.177.152 1 1 15890 20181129222845
+42.156.136.121 0 1 72259 
+144.202.76.108 2 2 109612 20181111210935
+139.81.165.89 1 1 54806 20181115092821
+205.237.94.157 1 1 54806 20181122024607
+178.62.74.6 2 2 70696 20181124053840
+106.11.157.103 0 1 357 
+173.252.127.38 0 1 153 
+173.252.95.21 1 12 564593 20181111083625
+185.234.219.233 2 2 109612 20181130040921
+173.252.87.17 1 9 567806 20181107083607
+173.252.95.27 0 14 637261 
+64.246.161.42 1 1 54806 20181109184520
+109.201.152.247 1 1 0 20181123114541
+106.78.73.172 2 2 18304 20181102181833
+173.252.87.14 1 12 174890 20181107083607
+173.252.87.3 1 12 244552 20181107083607
+69.171.251.7 2 7 286553 20181107092549
+109.201.154.227 1 1 0 20181123175008
+111.92.58.246 2 6 1212285 20181106214401
+143.191.123.71 1 1 53363 20181101014714
+181.215.47.168 2 2 109612 20181112071758
+139.81.252.37 1 1 54806 20181129073443
+8.37.70.40 1 1 36840 20181105102124
+69.171.251.6 1 6 181727 20181107092549
+42.156.139.121 1 1 53363 20181101140437
+109.201.154.207 1 1 0 20181123035831
+42.120.160.121 0 1 4125 
+190.2.148.176 1 1 54806 20181117064156
+45.55.53.248 1 1 53363 20181101233414
+192.42.116.27 1 1 54806 20181115132810
+173.211.83.145 1 1 54806 20181114212718
+69.171.251.13 0 1 102457 
+46.166.137.209 1 1 54806 20181115012137
+173.252.95.33 0 15 387327 
+110.225.202.171 0 1 17662 
+69.171.251.30 1 7 29336 20181107092550
+94.250.249.41 0 1 0 
+37.139.8.104 1 1 54806 20181115132756
+193.112.29.89 1 1 54806 20181110162358
+106.11.154.53 1 3 6859 20181109140357
+46.166.188.249 2 2 54806 20181119082649
+46.166.186.211 1 1 0 20181126221718
+106.11.155.56 2 2 233326 20181109140357
+69.171.251.11 0 1 153 
+42.156.137.121 0 2 151335 
+173.252.87.15 0 1 153 
+5.188.210.32 1 1 54806 20181114052815
+109.201.154.133 1 1 0 20181124023758
+167.99.212.214 1 1 54806 20181124214035
+64.246.165.160 1 1 54806 20181129221408
+138.21.12.23 0 1 114314 
+66.70.174.44 2 2 109612 20181122055222
+198.46.168.22 1 1 53363 20181102001009
+69.171.251.17 0 6 24781 
+180.163.220.41 1 34 2030111 20181103202604
+42.236.10.124 0 3 19226 
+5.79.71.175 1 1 54806 20181116225135
+178.124.219.181 1 1 54806 20181130180508
+173.252.95.14 2 15 1144816 20181111083626
+185.166.215.19 2 2 109612 20181112115634
+67.227.71.26 1 1 54806 20181108123450
+216.218.222.12 1 1 54806 20181115132807
+104.227.246.106 1 1 53363 20181105095930
+62.210.83.78 1 1 54806 20181107022201
+42.236.10.114 1 25 1982979 20181103202420
+173.252.95.16 1 16 1015804 20181111083625
+173.252.95.20 2 15 668849 20181111083625
+104.192.74.20 2 2 106726 20181104122140
+195.3.144.185 1 1 54806 20181125182952
+179.187.145.161 0 1 588862 
+188.166.22.77 1 1 53363 20181104232651
+109.201.154.167 1 1 0 20181114181205
+185.222.202.133 1 1 54806 20181115132758
+184.22.86.46 0 1 59718 
+109.201.154.218 1 1 0 20181119090823
+103.109.209.15 1 1 54806 20181110172933
+64.233.173.9 1 1 53363 20181102181831
+180.163.220.126 1 14 516826 20181103202609
+173.252.87.13 1 11 538064 20181107083607
+180.163.220.42 3 27 980611 20181103202609
+38.100.21.68 2 9 270524 20181108111550
+42.236.10.117 1 20 684992 20181103202416
+69.171.251.15 0 2 15101 
+176.8.89.33 2 2 109612 20181130113212
+147.135.4.72 2 2 109612 20181119180955
+137.74.169.241 1 1 54806 20181115132803
+193.112.107.107 1 1 54806 20181110094006
+192.162.103.150 1 1 53363 20181104190022
+69.171.251.29 0 2 4306 
+42.120.161.121 0 1 357 
+206.180.165.147 1 1 54806 20181111180534
+42.156.138.121 0 1 10721 
+175.42.2.88 1 1 53363 20181103203111
+79.134.218.13 1 1 54806 20181106134037
+180.233.120.220 0 1 59718 
+69.171.251.14 1 5 107573 20181107092549
+109.201.154.181 1 1 0 20181114183415
+109.201.152.23 1 1 0 20181115012131
+185.195.24.60 1 1 54806 20181110140737
+173.252.87.9 1 10 474266 20181107083604
+173.252.87.1 1 11 375873 20181107083607
+106.11.156.41 0 1 10721 
+106.11.157.59 0 4 252373 
+180.163.220.62 0 11 888025 
+176.111.63.71 1 1 54806 20181110073359
+63.32.54.77 1 1 53363 20181101053708
+69.171.251.9 1 8 177553 20181107092549
+89.40.123.28 1 1 54806 20181105163819
+221.229.160.133 1 1 53363 20181101104022
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 29
+20181101 6 12 558975 6
+20181102 29 110 4600747 7
+20181103 13 176 9861756 8
+20181104 17 101 4909807 5
+20181105 78 194 308497200 4
+20181106 13 102 6843545 4
+20181107 19 142 3505600 14
+20181108 11 28 755339 6
+20181109 14 160 32150001 5
+20181110 29 194 11208459 11
+20181111 13 94 4708880 8
+20181112 5 5 274030 4
+20181113 3 3 154819 2
+20181114 5 5 154819 5
+20181115 21 102 5003314 11
+20181116 1 1 54806 1
+20181117 2 2 109612 2
+20181118 7 83 4444019 1
+20181119 5 5 164418 4
+20181121 1 1 54806 1
+20181122 12 13 678474 5
+20181123 3 3 0 3
+20181124 9 10 399889 5
+20181125 17 125 10496653 3
+20181126 2 2 54806 2
+20181127 0 1 588862 0
+20181128 1 1 54806 1
+20181129 12 85 4198302 5
+20181130 12 93 4747487 5
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+30s-2mn 7
+2mn-5mn 4
+1h+ 2
+15mn-30mn 1
+5mn-15mn 1
+30mn-1h 1
+0s-30s 122
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 44
+/ 161 8202199 102 87
+/main/points/hitlist.php 46 580455 6 7
+/main/points/blog.php 39 216234 2 13
+/fonts/Raleway/Raleway-Regular.ttf 18 3213360 3 3
+/fonts/fontawesome/fontawesome.woff 17 27812 4 5
+/css/ocra.ttf 16 1179392 3 5
+/faq.php 7 111230 1 3
+/index7.php 7 257880 3 2
+/main/html/open.php 4 80 1 1
+/main/points/turnlink.php 3 24 2 0
+/activate.php 2 45558 1 1
+/main/html/sendto.php 2 8 2 1
+/errors/MultiDomainHosting.php 2 542 0 0
+/main/html/forgot.php 2 32 0 0
+/indextemp.php 2 90414 2 1
+/main/html/fblogin.php 2 128 0 1
+/index.php 2 109612 1 2
+/main/html/search.php 2 6 1 0
+/.well-known/acme-challenge/GZMYHL-3OIS-KDH5IUDL0RJ44CQIKINM 1 64 1 0
+/.well-known/acme-challenge/NYZPCZ2I3WAW8_LNAAQI83_0-2_BJ2RE 1 64 0 0
+/.well-known/acme-challenge/_3c8AVOOXCrogpG_QF8plcN-jhIT1qRxc9VtDzNxXGg 1 87 0 0
+/main/pages/x101.php 1 33187 0 0
+/main/points/turnlink2.php 1 48 0 1
+/.well-known/acme-challenge/-Szxq4OgwN_QD5r8v9bxi6iQyJmvwg9Ci2cvgR02ABY 1 87 0 0
+/.well-known/acme-challenge/HN_4X_G1_BDR4HD13DJYUJ2_CDOFJRJQ 1 64 0 0
+/.well-known/acme-challenge/UBUTMBJIBQ425T2MD_6ILXMWO36LE0N6 1 64 0 0
+/.well-known/acme-challenge/5F1RRYWPJ7-J8FAWH1KD_KY06-P2P2EZ 1 64 0 0
+http://daanvir.org/fonts/fontawesome/fontawesome.woff 1 1636 0 0
+/.well-known/acme-challenge/5c0KkZHFlUClEVrmQoEiYAF2WtzcoEGb6kHU0cDQDMw 1 87 0 0
+/.well-known/acme-challenge/9JX0_EYIJL_RBUT6AU2-PB5AU6E4VU9Z 1 64 0 0
+/.well-known/acme-challenge/SKUUZOZ96ENQ3W64GQWJKQBG1AMQLQK6 1 64 0 0
+/.well-known/acme-challenge/QYOGG4IERRO9WBKBHNM3A151SPW9691D 1 64 0 0
+http://daanvir.org/main/points/hitlist.php 1 12618 1 1
+/.well-known/acme-challenge/8XhK9cyhIfhE3N1V1rGEqpN-Yga9sWI4y6PI-rgOfTo 1 87 0 0
+http://daanvir.org/css/ocra.ttf 1 73712 1 0
+/.well-known/acme-challenge/9wzVxSh5mr9Sl8yCvUjX_Gu1YdzMzIy0YW9__ZCY90g 1 87 0 0
+/.well-known/acme-challenge/skP66nxgw3VgBO5DMIEhYUyTXTdW0gxITNyNvT_8Svc 1 87 1 0
+http://daanvir.org/main/points/blog.php 1 5684 0 1
+/.well-known/acme-challenge/BES1PKWCY4YGXUH15UESJZQHC-MW6_M- 1 64 0 0
+/.well-known/acme-challenge/xSFkg_t6Ug67RubzHgzUe8iYy2apvPiWJ9tkLfWXcnc 1 87 0 1
+/.well-known/acme-challenge/YTPC2YGAi2lbH38qBYBgHzyem1ka2wcmgt0c0-nKX5I 1 87 0 1
+http://daanvir.org/fonts/Raleway/Raleway-Regular.ttf 1 178520 0 0
+/gallery/gallery.html 1 29149 0 1
+/.well-known/acme-challenge/a2cD-U-NFh_3UZNzqcruVc3vC4B4Ri-OVk3aYCVxJ2Y 1 87 0 0
+END_SIDER

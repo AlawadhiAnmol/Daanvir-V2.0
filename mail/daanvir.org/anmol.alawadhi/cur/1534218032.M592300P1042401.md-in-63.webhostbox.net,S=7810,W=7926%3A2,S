@@ -1,0 +1,116 @@
+Return-Path: <msprvs1=17764NwTZtObi=bounces-108884@spmailtechnolo.com>
+Delivered-To: Anmol.alawadhi@daanvir.org
+Received: from md-in-63.webhostbox.net
+	by md-in-63.webhostbox.net (Dovecot) with LMTP id MYn7IjBPclvh5w8AwBqdFg
+	for <Anmol.alawadhi@daanvir.org>; Tue, 14 Aug 2018 03:40:32 +0000
+Return-path: <msprvs1=17764NwTZtObi=bounces-108884@spmailtechnolo.com>
+Envelope-to: Anmol.alawadhi@daanvir.org
+Delivery-date: Tue, 14 Aug 2018 03:40:32 +0000
+Received: from mta214.spmta.com ([35.163.237.243]:64701)
+	by md-in-63.webhostbox.net with esmtps (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256)
+	(Exim 4.89)
+	(envelope-from <msprvs1=17764NwTZtObi=bounces-108884@spmailtechnolo.com>)
+	id 1fpQC4-0000eJ-Qw
+	for Anmol.alawadhi@daanvir.org; Tue, 14 Aug 2018 03:40:32 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=semele.app;
+	s=scph0718; t=1534218013; i=@semele.app;
+	bh=bu2xYl883MbvA03VcvYCAYDFca+7pSSul9AqpqI1zeY=;
+	h=Content-Type:To:Message-ID:Date:Subject:From;
+	b=YoYWinA31XOWSsVc/s3BLJ2aUjqeMOIZ/LnE8Nw6LCL0Y36HH3IOFeSzM0R1ggCs4
+	 nkwC73JGkglIUfkHCq+fx0TQNIl4dG1dFkFLiPHaZsLn6XQsemeJ5Gmpljta5PN2xL
+	 LPA1zGPKoJ53/DkusBBX6y3+61xs7PUmfc8TXisE=
+X-MSFBL: cbLubWGCSw/bEtzO3k3sI8T2JKyYzsH93OtM8KDSQnM=|eyJzdWJhY2NvdW50X2l
+	kIjoiMCIsIm1lc3NhZ2VfaWQiOiIwMDAyMWQ0ZjcyNWJiNDU3YzcxZSIsImN1c3R
+	vbWVyX2lkIjoiMTA4ODg0IiwiciI6IkFubW9sLmFsYXdhZGhpQGRhYW52aXIub3J
+	nIiwidGVuYW50X2lkIjoic3BjIn0=
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="UTF-8"
+To: Anmol.alawadhi@daanvir.org
+Message-ID: <7C.E1.22452.D1F427B5@b.mta1vrest.cc.prd.sparkpost>
+Date: Tue, 14 Aug 2018 03:40:13 +0000
+MIME-Version: 1.0
+Subject: Hello @daanvirindia, we'd like to help you on growing your Instagram account!
+From: "Tero from Semele" <tero@semele.app>
+List-Unsubscribe: <mailto:unsubscribe@unsub.spmta.com?subject=unsubscribe:-BRnHahWRX7eSg1p-3Wbqtwb594RS9fiXvFWBPGmtlI~|eyAicmNwdF90byI6ICJBbm1vbC5hbGF3YWRoaUBkYWFudmlyLm9yZyIsICJ0ZW5hbnRfaWQiOiAic3BjIiwgImN1c3RvbWVyX2lkIjogIjEwODg4NCIsICJzdWJhY2NvdW50X2lkIjogIjAiLCAibWVzc2FnZV9pZCI6ICIwMDAyMWQ0ZjcyNWJiNDU3YzcxZSIgfQ~~>
+List-Id: <spc-108884-0>
+X-Authenticated_sender: 
+X-Spam-Status: No, score=1.0
+X-Spam-Score: 10
+X-Spam-Bar: +
+X-Ham-Report: DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, HEADER_FROM_DIFFERENT_DOMAINS=0.001, HTML_MESSAGE=0.001, MIME_HTML_ONLY=1.105, SPF_PASS=-0.001, URIBL_BLOCKED=0.001, CMAE Analysis: v=2.3 cv=P/8UeBIu c=1 sm=0 tr=0 a=HpAAvcLHHh0Zw7uRqdWCyQ==:117 a=wlsnFfG/W2PHTRMDqfgRLg==:17 a=IkcTkHD0fZMA:10 a=dapMudl6Dx4A:10 a=n_X3Sq3_RhsA:10 a=-uNXE31MpBQA:10 a=OwTvZDZVbR5H-79ExdIA:9 a=JmCSnIda6ZWioZqd:21 a=_W_S_7VecoQA:10 a=QEXdDO2ut3YA:10
+ 
+ *  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ *       See http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ *      for more information.
+ *      [URIs: googleapis.com]
+ * -0.0 SPF_PASS SPF: sender matches SPF record
+ *  0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
+ *      domains are different
+ *  0.0 HTML_MESSAGE BODY: HTML included in message
+ *  1.1 MIME_HTML_ONLY BODY: Message only has text/html MIME parts
+ * -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ * -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
+ *       domain
+ *  0.1 DKIM_SIGNED Message has a DKIM or DK signature, not necessarily
+ *      valid
+X-Spam-Flag: NO
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><meta http-equiv=
+=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"/><link href=3D"htt=
+ps://fonts.googleapis.com/css=3Ffamily=3DLato:400,500" rel=3D"stylesheet" t=
+ype=3D"text/css"/><title>Invitation Zm With Button</title></head><body styl=
+e=3D"margin:0; background: #eee;" bgcolor=3D"#eee">=0D=0A<div style=3D"colo=
+r:transparent;visibility:hidden;opacity:0;font-size:0px;border:0;max-height=
+:1px;width:1px;margin:0px;padding:0px;border-width:0px!important;display:no=
+ne!important;line-height:0px!important;"><img border=3D"0" width=3D"1" heig=
+ht=3D"1" src=3D"http://post.spmailtechnolo.com/q/PDGogNLWPM-EmguoY_o47Q~~/A=
+AGpVAA~/RgRdVNQdPVcDc3BjQgoAAh1Pclu0V8ceUhpBbm1vbC5hbGF3YWRoaUBkYWFudmlyLm9=
+yZ1gEAAAAAA~~"/></div>=0D=0A<table style=3D"max-width: 600px; width: 100%; =
+padding: 15px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"6=
+00" align=3D"center"><tbody><tr><td height=3D"3px" bgcolor=3D"#e1c20d"></td=
+></tr><tr><td bgcolor=3D"#fff" style=3D"padding: 30px;"><p style=3D"font-fa=
+mily: 'Roboto', sans-serif; font-size: 16px;">Hello, @daanvirindia;</p><p s=
+tyle=3D"font-family: 'Roboto', sans-serif; font-size: 16px;">I really admir=
+e your work. Especially <b><u><a style=3D"color: #000;" target=3D"_blank" h=
+ref=3D"http://post.spmailtechnolo.com/f/a/hiN1qfQ40wu8OriL_7FR0A~~/AAGpVAA~=
+/RgRdVNQdP0QnaHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9wL0JscVFQYmRuR1pkVwNzcGNCCg=
+ACHU9yW7RXxx5SGkFubW9sLmFsYXdhZGhpQGRhYW52aXIub3JnWAQAAAAA">this one</a></u=
+></b> is a great example of your amazing content and I believe your Instagr=
+am account should be seen by more than <b>180</b> people.</p><p style=3D"fo=
+nt-family: 'Roboto', sans-serif; font-size: 16px;">Since I really liked you=
+r content, I want to help you on growing your Instagram.</p><p style=3D"fon=
+t-family: 'Roboto', sans-serif; font-size: 16px;">I=E2=80=99m the founder o=
+f a startup which is an Instagram automation tool. It automates your liking=
+ activity based on your targeting and makes other Instagram users notice yo=
+ur account through notifications. The idea is simple: Whenever you like som=
+eone's post, people see the notification and check your account and interac=
+t with your account if they like your content. It's the best way to grow or=
+ganically on Instagram.</p><p style=3D"font-family: 'Roboto', sans-serif; f=
+ont-size: 16px;">Use 'invitedbyceo' as the promo code and you'll have a 7-d=
+ay free trial, so you can try our product out and see if you like it or not=
+. :)</p><table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"1=
+00%" align=3D"center"><tr><td height=3D"10" style=3D"font-size:0px;"><br/><=
+/td></tr><tr><td align=3D"center"><table cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0" height=3D"50" align=3D"center"><tbody><tr><td align=3D"cente=
+r" style=3D"padding:15px 0px;font-size:16px;background-color:#000000;color:=
+#ffffff;"><a href=3D"http://post.spmailtechnolo.com/f/a/SWmtGFYpSppGFb3PIFC=
+DXw~~/AAGpVAA~/RgRdVNQdP0SHaHR0cHM6Ly9zZW1lbGUuYXBwLz91dG1fc291cmNlPWVtYWls=
+JnV0bV9tZWRpdW09NWI1OGI0ZDU3ZTU4ZmE4MjBhMzZlZDA0JnV0bV9jYW1wYWlnbj1nZW5lcmF=
+sLTIwMTgwNzI1JmVtYWlsPUFubW9sLmFsYXdhZGhpQGRhYW52aXIub3JnVwNzcGNCCgACHU9yW7=
+RXxx5SGkFubW9sLmFsYXdhZGhpQGRhYW52aXIub3JnWAQAAAAA" style=3D"font-family: R=
+oboto, sans-serif; font-size: 16px;background-color:#000000; color: #ffffff=
+; text-decoration:none;padding:10px 40px 13px 40px;"><font style=3D"font-fa=
+mily: Roboto, sans-serif; font-size: 16px; line-height: 16px;">Start Your F=
+ree Trial</font></a></td></tr></tbody></table></td></tr><tr><td height=3D"1=
+0" style=3D"font-size:0px;"><br/></td></tr></table><p style=3D"font-family:=
+ 'Roboto', sans-serif; font-size: 16px;">Keep up the great work.</p><p styl=
+e=3D"font-family: 'Roboto', sans-serif; font-size: 16px;">If you have any q=
+uestions or feedback, just reply to this email, and I=E2=80=99ll get right =
+back to you.</p><p style=3D"font-family: 'Roboto', sans-serif; font-size: 1=
+6px;">Best Regards,<br/>Tero Wallace<br/>Founder & CEO, <b>Semele</b></p></=
+td></tr></tbody></table>=0D=0A<img border=3D"0" width=3D"1" height=3D"1" al=
+t=3D"" src=3D"http://post.spmailtechnolo.com/q/GCZFpyXXmnLDal_4nRZLVw~~/AAG=
+pVAA~/RgRdVNQdPlcDc3BjQgoAAh1Pclu0V8ceUhpBbm1vbC5hbGF3YWRoaUBkYWFudmlyLm9yZ=
+1gEAAAAAA~~">=0D=0A</body></html>
+

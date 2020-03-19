@@ -1,0 +1,54 @@
+head	1.3;
+access;
+symbols;
+locks
+	daanvaq7:1.3; strict;
+comment	@# @;
+
+
+1.3
+date	2017.05.15.14.12.25;	author daanvaq7;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2017.01.06.15.11.19;	author daanvaq7;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2017.01.06.15.11.19;	author daanvaq7;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.3
+log
+@"Modified by /usr/local/cpanel/cpanel "
+@
+text
+@support:x:1156:890::/home/daanvaq7/mail/daanvir.org/support:/home/daanvaq7
+transform:x:1156:890::/home/daanvaq7/mail/daanvir.org/transform:/home/daanvaq7
+@
+
+
+1.2
+log
+@"Modified by /usr/local/cpanel/cpanel "
+@
+text
+@d2 1
+@
+
+
+1.1
+log
+@"Modified by /usr/local/cpanel/cpanel "
+@
+text
+@d1 1
+@

@@ -1,0 +1,127 @@
+Return-Path: <0100016763f068c8-55aa7a3a-db0f-4a00-808f-0ca28049c515-000000@amazonses.com>
+Delivered-To: anmol.alawadhi@daanvir.org
+Received: from md-in-63.webhostbox.net
+	by md-in-63.webhostbox.net with LMTP id sAgMIjwCAVxF+gcAwBqdFg
+	for <anmol.alawadhi@daanvir.org>; Fri, 30 Nov 2018 09:26:20 +0000
+Return-path: <0100016763f068c8-55aa7a3a-db0f-4a00-808f-0ca28049c515-000000@amazonses.com>
+Envelope-to: anmol.alawadhi@daanvir.org
+Delivery-date: Fri, 30 Nov 2018 09:26:20 +0000
+Received: from a10-176.smtp-out.amazonses.com ([54.240.10.176]:51750)
+	by md-in-63.webhostbox.net with esmtps (TLSv1.2:ECDHE-RSA-AES128-SHA256:128)
+	(Exim 4.91)
+	(envelope-from <0100016763f068c8-55aa7a3a-db0f-4a00-808f-0ca28049c515-000000@amazonses.com>)
+	id 1gSf3r-002W8b-0Q
+	for anmol.alawadhi@daanvir.org; Fri, 30 Nov 2018 09:26:20 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=beyj7v6v7m44vc3226foutgqzcxxbogf; d=internshala.com;
+	t=1543569959;
+	h=To:Subject:Message-ID:Date:From:Reply-To:MIME-Version:List-Unsubscribe:Content-Type:Content-Transfer-Encoding;
+	bh=RvWr+eYM5bfG0H0areW4eW7cWK7Rx+MmR8HpE6GPWvk=;
+	b=cNRxGZsOxJc+XnEiRM0WCcWc5y4CBa4Gl4H70j/jqudzEiQFE/9rt0zYvSQ0UYAR
+	07gOV7Ergnh9B0f6eQ+QazYUsfeS7j1tWayYdlwI5iUw4zj830e/0ak/Fnc676RfCP3
+	GGlpxSOguQmY6I8HMrVvtqhB6twr32HOoZI5kV6g=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug; d=amazonses.com; t=1543569959;
+	h=To:Subject:Message-ID:Date:From:Reply-To:MIME-Version:List-Unsubscribe:Content-Type:Content-Transfer-Encoding:Feedback-ID;
+	bh=RvWr+eYM5bfG0H0areW4eW7cWK7Rx+MmR8HpE6GPWvk=;
+	b=hWit/+l9P2j2HCQXs5IDeLa1vsslIazDnP6gf/vgjvaD4LRZx1IzDI5vc+hileOL
+	t73d02ufWbqTf6urSM2vVH5XhBq/HLxDtERa14mpNrgu7ksEdsH+f//uCOVFgfL/Dll
+	xQBAL7s8XRss6SNflBFb2x3e7GhzRZr/KPRUiS84=
+To: anmol.alawadhi@daanvir.org
+Subject: Follow Up: Regarding your intern requirements - Internshala
+Message-ID: <0100016763f068c8-55aa7a3a-db0f-4a00-808f-0ca28049c515-000000@email.amazonses.com>
+Date: Fri, 30 Nov 2018 09:25:59 +0000
+From: "Uday Khanna" <uday@internshala.com>
+Reply-To: uday@internshala.com
+MIME-Version: 1.0
+X-Mailer-LID: 6356
+List-Unsubscribe: <http://em.internshala.com/unsubscribe.php?M=105192158&C=ac228a32942e903b37fdb0265892c614&L=6356&N=15214>
+X-Mailer-RecptId: 105192158
+X-Mailer-SID: 15214
+X-Mailer-Sent-By: 4
+Content-Type: multipart/alternative; charset="UTF-8"; boundary="b1_359019b1055150546441094b018fbffd"
+Content-Transfer-Encoding: 8bit
+X-SES-Outgoing: 2018.11.30-54.240.10.176
+Feedback-ID: 1.us-east-1.zxtucPVubGftJWR49L2EMyyk1hBPV57S2rBAeFj2vQs=:AmazonSES
+X-Authenticated_sender: 
+X-Spam-Status: No, score=0.6
+X-Spam-Score: 6
+X-Spam-Bar: /
+X-Ham-Report: DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, HEADER_FROM_DIFFERENT_DOMAINS=0.001, HTML_IMAGE_ONLY_20=0.7, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_NONE=-0.0001, RCVD_IN_MSPIKE_H2=-0.001, SPF_PASS=-0.001, URIBL_BLOCKED=0.001, CMAE Analysis: v=2.3 cv=KIx08mNo c=1 sm=0 tr=0 a=HpAAvcLHHh0Zw7uRqdWCyQ==:117 a=9gygzty5km9H71DBfNmuxQ==:17 a=IkcTkHD0fZMA:10 a=JHtHm7312UAA:10 a=mDRq-kXtxVkA:10 a=Hgn-wnRn1-cA:10 a=e3HQ4uATic6sCmjNAK4A:9 a=QEXdDO2ut3YA:10 a=BG0-yrJV6j4A:10 a=JlbB7QOLdOYA:10 a=xb3H-PMZRGyV8eSpEuIA:9 a=EUtVZ1gtLKdRQdJJ:21 a=_W_S_7VecoQA:10 a=Tiie-zG8F9MA:10 a=R4z4fLCyvN8A:10
+ 
+ * -0.0 RCVD_IN_MSPIKE_H2 RBL: Average reputation (+2)
+ *      [54.240.10.176 listed in wl.mailspike.net]
+ *  0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
+ *      domains are different
+ * -0.0 SPF_PASS SPF: sender matches SPF record
+ *  0.7 HTML_IMAGE_ONLY_20 BODY: HTML: images with 1600-2000 bytes of words
+ *  0.0 HTML_MESSAGE BODY: HTML included in message
+ * -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ *  0.1 DKIM_SIGNED Message has a DKIM or DK signature, not necessarily
+ *      valid
+ * -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
+ *       domain
+ * -0.0 RCVD_IN_DNSWL_NONE RBL: Sender listed at http://www.dnswl.org/, no
+ *      trust
+ *      [54.240.10.176 listed in list.dnswl.org]
+ *  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ *       See http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ *      for more information.
+ *      [URIs: internshala.com]
+X-Spam-Flag: NO
+
+--b1_359019b1055150546441094b018fbffd
+Content-Type: text/plain; format=flowed; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Your email client cannot read this email.
+To view it online, please go here:
+http://em.internshala.com/display.php?M=105192158&C=ac228a32942e903b37fdb0265892c614&S=15214&L=6356&N=10438
+
+
+To stop receiving these
+emails:http://em.internshala.com/unsubscribe.php?M=105192158&C=ac228a32942e903b37fdb0265892c614&L=6356&N=15214
+
+--b1_359019b1055150546441094b018fbffd
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<g class="gr_ gr_23 gr-alert gr_gramm gr_inline_cards gr_run_anim
+Punctuation only-ins replaceWithoutSep" id="23" data-gr-id="23">Hi</g><span
+style="font-family: arial, helvetica, sans-serif;">&nbsp;Anmol ,</span><br
+/><br /><span style="font-family: arial, helvetica, sans-serif;">I am Uday
+from Internshala. I was wondering if you got a chance to go through my
+previous email. I am writing to notify you that&nbsp;candidates are now
+actively looking for&nbsp;winter as well as 6-month internships.</span><br
+/><br /><span style="font-family: arial, helvetica, sans-serif;">If you
+have any intern requirements, kindly post them&nbsp;<a
+href="http://em.internshala.com/link.php?M=105192158&N=15214&L=19315&F=H">here</a>&nbsp;at
+the earliest- you may simply clone an old post, edit and submit.</span><br
+/><br /><span style="font-family: arial, helvetica, sans-serif;">This is
+your user ID - anmol.alawadhi@daanvir.org. Please let me know if you have
+any queries.</span><br /><br /><span style="font-family: arial, helvetica,
+sans-serif;">Many thanks,</span><br /><span style="font-family: arial,
+helvetica, sans-serif;">Uday Khanna</span><br /><span style="font-family:
+arial, helvetica, sans-serif;">Manager- Employer Relations</span><br
+/><span style="font-family: arial, helvetica, sans-serif;"><a
+href="http://em.internshala.com/link.php?M=105192158&N=15214&L=19315&F=H">https://internshala.com</a></span><br
+/><a
+href="http://em.internshala.com/link.php?M=105192158&N=15214&L=19211&F=H"><br
+/><br /><br /></a><a
+href="http://em.internshala.com/link.php?M=105192158&N=15214&L=19211&F=H"><br
+/></a><span style="font-size: 8pt; font-family: arial, helvetica,
+sans-serif;"><a
+href="http://em.internshala.com/unsubscribe.php?M=105192158&C=ac228a32942e903b37fdb0265892c614&L=6356&N=15214">Unsubscribe</a></span>
+<img
+src="http://em.internshala.com/open.php?M=105192158&L=6356&N=15214&F=H&image=.jpg"
+height="1" width="10"></body>
+</html>
+
+--b1_359019b1055150546441094b018fbffd--
+
+

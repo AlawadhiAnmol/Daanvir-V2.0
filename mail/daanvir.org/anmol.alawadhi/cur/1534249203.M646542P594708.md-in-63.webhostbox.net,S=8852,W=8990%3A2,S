@@ -1,0 +1,138 @@
+Return-Path: <Anmol_Alawadhi@neimanmarcus.com>
+Delivered-To: anmol.alawadhi@daanvir.org
+Received: from md-in-63.webhostbox.net
+	by md-in-63.webhostbox.net (Dovecot) with LMTP id gag0JfPIclsUEwkAwBqdFg
+	for <anmol.alawadhi@daanvir.org>; Tue, 14 Aug 2018 12:20:03 +0000
+Return-path: <Anmol_Alawadhi@neimanmarcus.com>
+Envelope-to: anmol.alawadhi@daanvir.org
+Delivery-date: Tue, 14 Aug 2018 12:20:03 +0000
+Received: from esa2.hc1988-47.iphmx.com ([216.71.154.173]:3528)
+	by md-in-63.webhostbox.net with esmtps (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256)
+	(Exim 4.89)
+	(envelope-from <Anmol_Alawadhi@neimanmarcus.com>)
+	id 1fpYIo-002UuF-Nf
+	for anmol.alawadhi@daanvir.org; Tue, 14 Aug 2018 12:20:03 +0000
+IronPort-PHdr: =?us-ascii?q?9a23=3AlMdTmBdXz3ZHRnLnaOxkZQ7ZlGMj4u6mDksu8p?=
+ =?us-ascii?q?Mizoh2WeGdxcu9YB7h7PlgxGXEQZ/co6odzbaO7ea4ASQp2tWoiDg6aptCVh?=
+ =?us-ascii?q?sI2409vjcLJ4q7M3D9N+PgdCcgHc5PBxdP9nC/NlVJSo6lPwWB6nK94iQPFR?=
+ =?us-ascii?q?rhKAF7Ovr6GpLIj8Swyuu+54Dfbx9HiTahYL5+Ngm6oRnMvcQKnIVuLbo8xA?=
+ =?us-ascii?q?HUqXVSYeRWwm1oJVOXnxni48q74YBu/SdNtf8/7sBMSar1cbg2QrxeFzQmLn?=
+ =?us-ascii?q?s65Nb3uhnZTAuA/WUTX2MLmRdVGQfF7RX6XpDssivms+d2xSeXMdHqQb0yRD?=
+ =?us-ascii?q?+v6bpgRh31hycdLzM28nzZhMxugqxYrhyvqABwzIHXb4+POvpwebjQfdMDRW?=
+ =?us-ascii?q?dbQspRUzBNDp66YoASD+QBJ+FYr4zlqlYSqxu+AA6sBOf3xTJUgn/5x6M73P?=
+ =?us-ascii?q?48HgHG3QwtBNQOv2rVrNXwLqgSV+W1w7PSzTrfcvNWwi3x55TPchAkp/yHQL?=
+ =?us-ascii?q?F+cdLJxEUyCw/JlEmcpZb4Mz+Jy+gBqXaX4/Z+We63lWIrtw58riKzyss2i4?=
+ =?us-ascii?q?TEgpgZx1/Z+Sh/3Y07P8e3SFRhbt6hCJZQsiaaOJZoTc46WGFovTo6yqUBuZ?=
+ =?us-ascii?q?6mYCgG0JQnyADba/yAa4WI5BfjVOmUITdknn1od6izhxCs/kihz+3zTM+00F?=
+ =?us-ascii?q?NQoSpfjtbMq2sN2wbP5ciAT/tx5kah2TCR2ADP8uxIPFw4mbDHJ5I737I8io?=
+ =?us-ascii?q?cfvV7dEiPqhkn6lKqWeV8l+uis5eTneLLmppqEOoJojAH+N6MumsinDukkNg?=
+ =?us-ascii?q?gBRWaa9v6h273j/E30W7NKgeM3kqncqp/aI8EbqbSjAwBJz4Yj8AyzACuh0N?=
+ =?us-ascii?q?QdhXUHNk5KeAqbj4j1PFHDOOr3DfG6g1SrlDdn3erJPrn7DZTDNHfMjbfhfb?=
+ =?us-ascii?q?dm5kFB0gU819Zf54xVCrEbOv7zXVXxtNOLRiM+ZgWyxuHjTtx535wXVWKOKq?=
+ =?us-ascii?q?OQOaXMsEXO4fggcMeWY4pAkTD4LPwSzvrnknY1mV41e6So2JIRbXmiFel9ZU?=
+ =?us-ascii?q?6eZCm/yuwdGHsH61JtBNfhj0ePBGZe?=
+X-IPAS-Result: =?us-ascii?q?A3GTAQDGx3Jb/8plAApZAxwBAQEEAQEKAQGCaGdjbRIoi?=
+ =?us-ascii?q?3iMPIINkGSFKYEsTgsTgTODJiCDPSE0GAECAQEBAQEBAgEBAmmCXSKCYQEGg?=
+ =?us-ascii?q?Q4GEQMBAnwCCBkRgls2AYIBBZ8LkBMaAogCgjeGUYJDgheBEoJkLoMbAweBe?=
+ =?us-ascii?q?iYGgmEEgiQChCaJS4x1CY91gTGEK4JPFQOFXJMZgUE5gVJwgzkJkGghMI1ZA?=
+ =?us-ascii?q?QE?=
+Received: from nmgmta4.neimanmarcus.com ([204.0.69.41])
+  by esa2.hc1988-47.iphmx.com with ESMTP/TLS/DHE-RSA-AES256-SHA256; 14 Aug 2018 07:19:47 -0500
+Received: from unknown (HELO ln9332.intranet.nmg) ([10.0.101.202])
+  by nmgmta4.neimanmarcus.com with ESMTP; 14 Aug 2018 07:19:45 -0500
+In-Reply-To: 
+Subject: Fw: Approval to add to SNOW resolver groups
+From: Anmol_Alawadhi@neimanmarcus.com
+To: anmol.alawadhi@daanvir.org
+Message-ID: <OF38F325B5.00F5ADFC-ON862582E9.0043BA09-862582E9.0043BA0B@LocalDomain>
+Date: Tue, 14 Aug 2018 07:19:45 -0500
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html;
+	charset=ISO-8859-1
+MIME-Version: 1.0
+Sensitivity: 
+Importance: Normal
+X-Priority: 3 (Normal)
+References: 
+X-Mailer: Lotus Domino Web Server Release 9.0.1FP10HF200   April 17, 2018
+X-MIMETrack: Serialize by http on LN9325/Neiman_Marcus(Release 9.0.1FP10HF200 | April 17,
+ 2018) at 08/14/2018 07:19:45,Serialize complete at 08/14/2018
+ 07:19:45,Itemize by http on LN9325/Neiman_Marcus(Release 9.0.1FP10HF200 |
+ April 17, 2018) at 08/14/2018 07:19:45
+X-Disclaimed: 60307
+X-Authenticated_sender: 
+X-Spam-Status: No, score=1.0
+X-Spam-Score: 10
+X-Spam-Bar: +
+X-Ham-Report: HTML_MESSAGE=0.001, HTML_MIME_NO_HTML_TAG=0.635, MIME_HTML_ONLY=1.105, RCVD_IN_DNSWL_LOW=-0.7, SPF_PASS=-0.001, URIBL_BLOCKED=0.001, CMAE Analysis: v=2.3 cv=P/8UeBIu c=1 sm=0 tr=0 a=HpAAvcLHHh0Zw7uRqdWCyQ==:117 a=FfzYCcBUyUd9Wv348zTDMw==:17 a=8nJEP1OIZ-IA:10 a=dapMudl6Dx4A:10 a=54uDrn5CdTijmA9QtN4A:9 a=P595swJyk8_U40wR:21 a=wPNLvfGTeEIA:10
+ 
+ *  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ *       See http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ *      for more information.
+ *      [URIs: neimanmarcus.com]
+ * -0.7 RCVD_IN_DNSWL_LOW RBL: Sender listed at http://www.dnswl.org/, low
+ *      trust
+ *      [216.71.154.173 listed in list.dnswl.org]
+ * -0.0 SPF_PASS SPF: sender matches SPF record
+ *  0.0 HTML_MESSAGE BODY: HTML included in message
+ *  1.1 MIME_HTML_ONLY BODY: Message only has text/html MIME parts
+ *  0.6 HTML_MIME_NO_HTML_TAG HTML-only message, but there is no HTML tag
+X-Spam-Flag: NO
+
+<font face=3D"Default Sans Serif,Verdana,Arial,Helvetica,sans-serif" size=
+=3D"2"><br><br><font color=3D"#990099">-----Forwarded by Anmol Alawadhi/Nei=
+man=5FMarcus on 08/14/2018 05:49PM -----</font><div class=3D"iNotesHistory =
+iNotesForward" style=3D"padding-left:5px;"><div style=3D"padding-right:0px;=
+padding-left:5px;border-left:solid black 2px;">To: Anmol Alawadhi/Neiman=5F=
+Marcus@Neiman=5FMarcus<br>From: ShanmugaPriya Sivanantham/Neiman=5FMarcus<b=
+r>Date: 08/11/2018 01:36AM<br>Cc: Mariya Pattara/Neiman=5FMarcus@Neiman=5FM=
+arcus<br>Subject: Fw: Approval to add to SNOW resolver groups<br><br><font =
+size=3D"2">FYI</font><br><br><font size=3D"2">Thanks,</font><br><font size=
+=3D"2">Priya S</font><br><font size=3D"2">Advanced Analytics and CXP Suppor=
+t</font><br><br><br><font size=3D"2" color=3D"#800080">----- Forwarded by S=
+hanmugaPriya Sivanantham/Neiman=5FMarcus</font><font size=3D"2" color=3D"#8=
+00080">&nbsp;on 08/10/2018 03:06 PM</font><font size=3D"2" color=3D"#800080=
+">&nbsp;-----</font><br><br><font size=3D"2" color=3D"#5F5F5F">From:       =
+ </font><font size=3D"2">Shae Williams/Neiman=5FMarcus</font><br><font size=
+=3D"2" color=3D"#5F5F5F">To:        </font><font size=3D"2">ShanmugaPriya S=
+ivanantham/Neiman=5FMarcus@Neiman=5FMarcus</font><br><font size=3D"2" color=
+=3D"#5F5F5F">Cc:        </font><font size=3D"2">Debi Singh/Neiman=5FMarcus@=
+Neiman=5FMarcus, Gowtham Vijayakumar/Neiman=5FMarcus@Neiman=5FMarcus</font>=
+<br><font size=3D"2" color=3D"#5F5F5F">Date:        </font><font size=3D"2"=
+>08/10/2018 03:05 PM</font><br><font size=3D"2" color=3D"#5F5F5F">Subject: =
+       </font><font size=3D"2">Re: Approval to add to SNOW resolver groups<=
+/font><br><hr width=3D"100%" size=3D"2" align=3D"left" style=3D""><br><br><=
+font size=3D"2">Approved</font><br><br><b><font size=3D"1" color=3D"#DF007F=
+" face=3D"Verdana">&nbsp;</font></b><p><b><font size=3D"1" face=3D"Verdana"=
+>Shae Williams</font></b><font size=3D"1" face=3D"Verdana">&nbsp;| </font><=
+b><font size=3D"1" face=3D"Verdana">Consultant </font></b><font size=3D"1" =
+face=3D"Verdana">| </font><b><font size=3D"1" face=3D"Verdana">Neiman Marcu=
+s</font></b><font size=3D"1" face=3D"Verdana"><br>972.401.6625 |</font><fon=
+t size=3D"1" color=3D"#FF0000" face=3D"Verdana">&nbsp;</font><font size=3D"=
+1" face=3D"Verdana">111 Customer Way, Irving &nbsp;TX &nbsp;75039 | </font>=
+<font size=3D"1" color=3D"#0000FF" face=3D"Verdana"><a href=3D"mailto:shae=
+=5Fwilliams@neimanmarcus.com" target=3D"=5Fblank">shae=5Fwilliams@neimanmar=
+cus.com</a><br></font><font size=3D"2"><br></font><br><br><img width=3D"16"=
+ height=3D"16" src=3D"/icons/graycol.gif" border=3D"0" alt=3D"Inactive hide=
+ details for ShanmugaPriya Sivanantham---08/10/2018 03:04:08 PM---Hi Debi/S=
+hae, Could you please provide your appr"><font size=3D"2" color=3D"#424282"=
+>ShanmugaPriya Sivanantham---08/10/2018 03:04:08 PM---Hi Debi/Shae, Could y=
+ou please provide your approval to add Anmol Alawadhi (vsaa39) to below SNO=
+W re</font><br><br><font size=3D"2" color=3D"#5F5F5F">From:        </font><=
+font size=3D"2">ShanmugaPriya Sivanantham/Neiman=5FMarcus</font><br><font s=
+ize=3D"2" color=3D"#5F5F5F">To:        </font><font size=3D"2">Debi Singh/N=
+eiman=5FMarcus@Neiman=5FMarcus, Shae Williams/Neiman=5FMarcus@Neiman=5FMarc=
+us</font><br><font size=3D"2" color=3D"#5F5F5F">Cc:        </font><font siz=
+e=3D"2">Gowtham Vijayakumar/Neiman=5FMarcus@Neiman=5FMarcus</font><br><font=
+ size=3D"2" color=3D"#5F5F5F">Date:        </font><font size=3D"2">08/10/20=
+18 03:04 PM</font><br><font size=3D"2" color=3D"#5F5F5F">Subject:        </=
+font><font size=3D"2">Approval to add to SNOW resolver groups</font><br></p=
+><hr width=3D"100%" size=3D"2" align=3D"left" style=3D""><br><br><font size=
+=3D"2">Hi Debi/Shae,</font><br><br><font size=3D"2">Could you please provid=
+e your approval to add Anmol Alawadhi (vsaa39) to below SNOW resolver group=
+s?</font><br><br><font size=3D"2">Central=5FCustomer=5FServer</font><br><fo=
+nt size=3D"2">Advanced=5FAnalytics</font><br><font size=3D"2">CXP</font><br=
+><br><font size=3D"2">Thanks,</font><br><font size=3D"2">Priya S</font><br>=
+<font size=3D"2">Advanced Analytics and CXP Support</font><br><br><br><br><=
+/div></div></font><BR>
+<BR>

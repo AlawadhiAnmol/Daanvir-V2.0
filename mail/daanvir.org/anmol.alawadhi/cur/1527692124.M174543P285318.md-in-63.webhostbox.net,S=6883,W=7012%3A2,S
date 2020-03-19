@@ -1,0 +1,129 @@
+Return-Path: <01000163b18b9bc7-91f505dd-403b-4d93-90a3-6b21be7e3222-000000@amazonses.com>
+Delivered-To: anmol.alawadhi@daanvir.org
+Received: from md-in-63.webhostbox.net
+	by md-in-63.webhostbox.net (Dovecot) with LMTP id cXtaCly7DluGWgQAwBqdFg
+	for <anmol.alawadhi@daanvir.org>; Wed, 30 May 2018 14:55:24 +0000
+Return-path: <01000163b18b9bc7-91f505dd-403b-4d93-90a3-6b21be7e3222-000000@amazonses.com>
+Envelope-to: anmol.alawadhi@daanvir.org
+Delivery-date: Wed, 30 May 2018 14:55:24 +0000
+Received: from a10-29.smtp-out.amazonses.com ([54.240.10.29]:42696)
+	by md-in-63.webhostbox.net with esmtps (TLSv1.2:ECDHE-RSA-AES128-SHA256:128)
+	(Exim 4.89)
+	(envelope-from <01000163b18b9bc7-91f505dd-403b-4d93-90a3-6b21be7e3222-000000@amazonses.com>)
+	id 1fO2VU-001D5r-GT
+	for anmol.alawadhi@daanvir.org; Wed, 30 May 2018 14:55:24 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=vmweay23vju5pgjewim6y7ifjhik2vjg; d=internshala.com;
+	t=1527692106;
+	h=Date:From:To:Subject:Reply-To:Message-ID:Mime-Version:Content-Type;
+	bh=tnLj20R0cdToH9ZJFF7Puk4hLI9kU6sc+reFdLZ2UPE=;
+	b=PeQ9YbpTlpXAGahfi0s/aWvmyqvhTCHWGm05xrN8VdsogAfXparfuDzyd2S1ToBl
+	RgtmH1hODDa2jc5Hc7vlhsBFlqOcriiaiD8C6kzqbpe5KNXno/LjoEfY5Drk3HS3LNj
+	u5SMqX4sBHV/AIFOde3RUctIyBVkqYqYDyIUzo/Y=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug; d=amazonses.com; t=1527692106;
+	h=Date:From:To:Subject:Reply-To:Message-ID:Mime-Version:Content-Type:Feedback-ID;
+	bh=tnLj20R0cdToH9ZJFF7Puk4hLI9kU6sc+reFdLZ2UPE=;
+	b=CLgV+cCKB5orWOzR6YJVsB3CL0tYtYfNChpoa6Jd55NrktTZKUkbPwkJFRjpNZDt
+	sltuN/4XX/CDR9OmpgdSH2/xBGLT21sBoC7vtkWE/w29k6wU0znO410GLzI2QBJtX0x
+	MsDEw6+ftIPpALjpSVMx4AyklNdERkuKV2U8xHzQ=
+User-Agent: internshala.com
+Date: Wed, 30 May 2018 14:55:06 +0000
+From: "Internshala" <employer@internshala.com>
+To: anmol.alawadhi@daanvir.org
+Subject: =?UTF-8?Q?Note=20regarding=20hirin?==?UTF-8?Q?g=20Namrat?= =?UTF-8?Q?a=20Priyadarshini=20for=20C?==?UTF-8?Q?ontent=20W?= =?UTF-8?Q?riting=20internship?=
+Reply-To: "Internshala" <employer@internshala.com>
+X-Sender: employer@internshala.com
+X-Mailer: internshala.com
+X-Priority: 3 (Normal)
+Message-ID: <01000163b18b9bc7-91f505dd-403b-4d93-90a3-6b21be7e3222-000000@email.amazonses.com>
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary="B_ALT_5b0ebb4828b0e"
+X-SES-Outgoing: 2018.05.30-54.240.10.29
+Feedback-ID: 1.us-east-1.zxtucPVubGftJWR49L2EMyyk1hBPV57S2rBAeFj2vQs=:AmazonSES
+X-Authenticated_sender: 
+X-Spam-Status: No, score=0.2
+X-Spam-Score: 2
+X-Spam-Bar: /
+X-Ham-Report: DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, HEADER_FROM_DIFFERENT_DOMAINS=0.249, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_NONE=-0.0001, SPF_PASS=-0.001, T_FILL_THIS_FORM_SHORT=0.01, URIBL_BLOCKED=0.001, CMAE Analysis: v=2.3 cv=P/8UeBIu c=1 sm=0 tr=0 a=HpAAvcLHHh0Zw7uRqdWCyQ==:117 a=PhuqpIXuaH/V+G44quEiFA==:17 a=VUJBJC2UJ8kA:10 a=Hgn-wnRn1-cA:10 a=54V8FjglJEe5w-i4kO8A:9 a=X9d_F3CGUQuntMaSl3QA:9 a=4-AHuI2oGrh4PO0w:21 a=OweNV-kvB5bwejEv:21 a=QEXdDO2ut3YA:10 a=lC8mZ72c0OcA:10 a=GdYHxVxxVOFnH6_DWmYA:9 a=oHo590HYdmfXbC6X:21 a=4JaEWeTkD2hTPWLQ:21 a=bb4O4t1UnrXTSiolQ1eB:22
+ 
+ *  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ *       See http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ *      for more information.
+ *      [URIs: internshala.com]
+ * -0.0 RCVD_IN_DNSWL_NONE RBL: Sender listed at http://www.dnswl.org/, no
+ *      trust
+ *      [54.240.10.29 listed in list.dnswl.org]
+ * -0.0 SPF_PASS SPF: sender matches SPF record
+ *  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
+ *      domains are different
+ *  0.0 HTML_MESSAGE BODY: HTML included in message
+ * -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ *  0.1 DKIM_SIGNED Message has a DKIM or DK signature, not necessarily
+ *      valid
+ * -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
+ *       domain
+ *  0.0 T_FILL_THIS_FORM_SHORT Fill in a short form with personal
+ *      information
+X-Spam-Flag: NO
+
+This is a multi-part message in MIME format.
+Your email application may not support this format.
+
+--B_ALT_5b0ebb4828b0e
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Dear Anmol ,
+
+You have selected Namrata Priyadarshini from utkal university for Content
+Writing internship. Please let the student know about the next steps at the
+earliest. The student contact details are given below -
+
+Name :- Namrata Priyadarshini
+Email :- namratakunmun@gmail.com
+Phone :- +91 8763308803
+Also, we have asked the student to furnish a No Objection Certificate (NOC)
+from faculty-in-charge/head of his/her college's Training &amp; Placement
+cell to ensure that the student has the college's permission to pursue the
+internship and to reduce the chance of the student dropping out of the
+internship after confirmation. The entire process will be online and you
+will be notified when the college issues the NOC. We recommend you also
+check for this with the student before the internship starts. Why?
+
+Please feel free to write to us if there are any queries.
+
+ Many thanks,
+ Nitin Malik
+ Manager - Employer Relations
+ Internshala
+ Phone - +91 - 83758 36427
+ LinkedIn | Facebook
+
+
+--B_ALT_5b0ebb4828b0e
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Dear Anmol ,=0A<br/><br/>=0AYou have selected Namrata Priyadarshini from ut=
+kal university for Content Writing internship. Please let the student know =
+about the next steps at the earliest. The student contact details are given=
+ below -=0A<br/><br>=0A<b>Name</b> :- Namrata Priyadarshini<br>=0A<b>Email =
+</b>:- namratakunmun@gmail.com<br>=0A<b>Phone </b>:- +91 8763308803<br><br/=
+>=0AAlso, we have asked the student to furnish a <b>No Objection Certificat=
+e</b> (NOC) from faculty-in-charge/head of his/her college's <b>Training &a=
+mp; Placement cell</b> to  ensure that the student has the college's permis=
+sion to pursue the internship and to reduce the chance of the student dropp=
+ing out of the internship after confirmation. The entire process will be on=
+line and you will be notified when the college issues the NOC. We recommend=
+ you also check for this with the student before the internship starts. <a =
+href=3D"https://internshala.com/tnp/why/employer">Why?</a>=0A    <br/><br/>=
+=0APlease feel free to write to us if there are any queries.=0A<br/><br/>=
+=0A                        Many thanks,=0A                        <br/>Niti=
+n Malik=0A                        <br/>Manager - Employer Relations=0A     =
+                   <br/><a href=3D'https://internshala.com'>Internshala</a>=
+=0A                        <br/>Phone - +91 - 83758 36427=0A               =
+         <br/><a href=3D'http://www.linkedin.com/company/1706756'>LinkedIn<=
+/a> | <a href=3D'https://www.facebook.com/Internshala/'>Facebook</a>
+
+--B_ALT_5b0ebb4828b0e--

@@ -1,0 +1,27 @@
+@font-face{
+    
+    
+    font-family:california;
+    src:url("california.ttf");
+    font-family:FuturaFuturis;
+    src:url("FuturaFuturisC-Bold.otf");
+    font-family:ocra;
+    src:url("ocra.ttf")
+}
+
+#seperate3{
+    
+    
+    font-family:california ;
+}
+
+#seperate2{
+    
+    
+    font-family: FuturaFuturis;
+}
+#seperate1{
+    
+    
+    font-family: ocra;
+}

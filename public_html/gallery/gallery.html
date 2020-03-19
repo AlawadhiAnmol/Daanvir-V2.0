@@ -1,0 +1,956 @@
+
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <title>Best Gallery Ever</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+
+
+      <style>
+      .carousel-inner img {
+          width: 100%;
+          height: 100%;
+      }
+      </style>
+      <style>
+      .row img{width:100%;height:50%}
+    * {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .item {
+      position: relative;
+
+      border: 1px solid #333;
+      margin: 0%;
+      overflow: hidden;
+      width: 100%;
+    }
+    .item 
+    mg {
+      max-width: 100%;
+
+      -moz-transition: all 1s;
+      -webkit-transition: all 1s;
+      transition: all 1s ease-in;
+    }
+    .item:hover img {
+      -moz-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+
+    div.gallery {
+        border: 1px solid #ccc;
+    }
+
+    div.gallery:hover {
+        border: 1px solid #777;
+    }
+
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    div.desc {
+        padding: 15px;
+        text-align: center;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .responsive {
+        padding: 0 6px;
+        float: left;
+        width: 24.99999%;
+    }
+
+    @media only screen and (max-width: 700px) {
+        .responsive {
+            width: 49.99999%;
+            margin: 6px 0;
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        .responsive {
+            width: 100%;
+        }
+    }
+    @media only screen and (max-width: 700px) {
+        .w3-display-container w3-text-white {
+            width: 49.99999%;
+            margin: 6px 0;
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        .w3-display-container w3-text-white {
+            width: 100%;
+        }
+    }
+
+
+
+    .carousel-fade .carousel-item {
+     opacity: 0;
+     transition-duration: 1.5s;
+     transition-property: opacity;
+    }
+
+    .carousel-fade  .carousel-item.active,
+    .carousel-fade  .carousel-item-next.carousel-item-left,
+    .carousel-fade  .carousel-item-prev.carousel-item-right {
+      opacity: 1;
+    }
+
+    .carousel-fade .active.carousel-item-left,
+    .carousel-fade  .active.carousel-item-right {
+     opacity: 0;
+    }
+
+    .carousel-fade  .carousel-item-next,
+    .carousel-fade .carousel-item-prev,
+    .carousel-fade .carousel-item.active,
+    .carousel-fade .active.carousel-item-left,
+    .carousel-fade  .active.carousel-item-prev {
+     transform: translateX(0);
+     transform: translate3d(0, 0, 0);
+    }
+
+
+
+
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    </style>
+      <style>
+    .row > .column {
+      padding: 0 8px;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .column {
+      float: left;
+      width: 25%;
+    }
+
+    /* The Modal (background) */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: black;
+    }
+
+    /* Modal Content */
+    .modal-content {
+      position: relative;
+      background-color: #fefefe;
+      margin: auto;
+      padding: 0;
+      width: 90%;
+      max-width: 1200px;
+    }
+
+    /* The Close Button */
+    .close {
+      color: white;
+      position: absolute;
+      top: 10px;
+      right: 25px;
+      font-size: 35px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #999;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    .cursor {
+      cursor: pointer
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    img {
+      margin-bottom: -4px;
+    }
+
+    .caption-container {
+      text-align: center;
+      background-color: black;
+      padding: 2px 16px;
+      color: white;
+    }
+
+    .demo {
+      opacity: 0.6;
+    }
+
+    .active,
+    .demo:hover {
+      opacity: 1;
+    }
+
+    img.hover-shadow {
+      transition: 0.3s
+    }
+
+    .hover-shadow:hover {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    }
+    <style>
+    .r {
+        margin: 10px -16px;
+    }
+
+    /* Add padding BETWEEN each column */
+    .r,
+    .r > .c {
+        padding: 8px;
+    }
+
+    /* Create three equal columns that floats next to each other */
+    .c {
+        float: left;
+        width: 33.33%;
+        display: none; /* Hide all elements by default */
+    }
+
+    /* Clear floats after rows */ 
+    .r:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Content */
+    .content {
+        background-color: white;
+        padding: 10px;
+    }
+
+    /* The "show" class is added to the filtered elements */
+    .show {
+      display: block;
+    }
+
+    /* Style the buttons */
+    .btn1 {
+      border: none;
+      outline: none;
+      padding: 10px 12px;
+      background-color: #2874f0;
+      color:white;
+      cursor: pointer;
+    }
+
+    .btn1:hover {
+      background-color: #ddd;
+    }
+
+    .btn1.act {
+      background-color: #666;
+      color: white;
+    }
+      .carousel-inner img {
+          width: 100%;
+          height: 100%;
+      }
+         .bg-company-red
+     {
+     background: #ffe301;
+     padding:10px;
+     } 
+      </style>
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    </head>
+    <body style=" font-family: 'Montserrat', sans-serif;background-color:#FFFFE5;">
+    <nav class="navbar navbar-expand-md navbar-dark bg-company-red">
+      <a style="color:black;" class="navbar-brand" href="#">Daarvin</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a style="color:black;" class="nav-link" href="#">Donation Posts</a>
+          </li>
+          <li class="nav-item">
+            <a  style="color:black;"class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a style="color:black;" class="nav-link" href="#">Impact</a>
+          </li>  
+          <li class="nav-item">
+            <a style="color:black;" class="nav-link" href="#">Account</a>
+          </li>
+
+        </ul>
+      </div>  
+    </nav>
+    <h3 style="font-family: 'Montserrat', sans-serif;background:#EB8500;font-weight:bold;color:white"><center>Welcome to Our Gallery</center></h3>
+    <!-- this is zoom in effect box contains 4 images -->
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm">
+          <div class="item"> 
+      <a href="#"><img style="width:100%;height:300px;" src="22.jpg"></a>
+      <div class="item-overlay top"></div>
+    </div>
+          </div>
+          <div class="col-sm">
+         <div class="item">
+      <a href="#"><img style="width:100%;height:300px;" src="133.jpg"></a>
+      <div class="item-overlay top"></div>
+    </div>
+          </div>
+          <div class="col-sm">
+          <div class="item">
+      <a href="#"><img style="width:100%;height:300px;" src="25.jpg"></a>
+      <div class="item-overlay top"></div>
+    </div>
+          </div>
+          <div class="col-sm">
+          <div class="item">
+      <a href="#"><img style="width:100%;height:300px;" src="26.JPG"></a>
+      <div class="item-overlay top"></div>
+    </div>
+          </div>
+        </div>
+        </div>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm">
+          <div class="item"> 
+      <a href="#"><img style="width:100%;height:300px;" src="130.jpg"></a>
+      <div class="item-overlay top"></div>
+    </div>
+          </div>
+          <div class="col-sm">
+         <div class="item">
+      <a href="#"><img style="width:100%;height:300px;" src="111.jpg"></a>
+      <div class="item-overlay top"></div>
+    </div>
+          </div>
+          <div class="col-sm">
+          <div class="item">
+      <a href="#"><img style="width:100%;height:300px;" src="110.jpg"></a>
+      <div class="item-overlay top"></div>
+    </div>
+          </div>
+          <div class="col-sm">
+          <div class="item">
+      <a href="#"><img style="width:100%;height:300px;" src="43.jpg"></a>
+      <div class="item-overlay top"></div>
+    </div>
+          </div>
+        </div>
+        </div>
+        <!-- this is zoom in effect box contains 4 images (here ends) -->
+        <br>
+
+    <!-- this is carousel box contains 3 images -->
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
+      <div style="width:80%;margin-left:10%;height:500px;" class="carousel-inner">
+        <div class="carousel-item active">
+          <img style="height:500px;" class="d-block w-100" src="1.jpg" alt="First slide">
+        </div>
+        <div style="height:500px;width:100%;" class="carousel-item">
+          <iframe style="height:500px;width:100%;" src="https://www.youtube.com/embed/Xemn1jqvuS0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div class="carousel-item">
+          <img style="height:500px;" class="d-block w-100" src="34.jpg" style="height:300px;" alt="Third slide">
+        </div>
+        <div class="carousel-item">
+          <img style="height:500px;" class="d-block w-100" src="92.jpg" style="height:300px;" alt="Third slide">
+        </div>
+        <div class="carousel-item">
+          <img style="height:500px;" class="d-block w-100" src="40.jpg" style="height:300px;" alt="Third slide">
+        </div>
+        <div class="carousel-item">
+          <img style="height:500px;" class="d-block w-100" src="59.jpeg" style="height:300px;" alt="Third slide">
+        </div>
+       <div class="carousel-item">
+      <img style="height:500px;" class="d-block w-100" src="109.jpg" style="height:300px;" alt="Third slide">
+    </div>
+       <div class="carousel-item">
+      <img style="height:500px;" class="d-block w-100" src="107.jpeg" style="height:300px;" alt="Third slide">
+    </div>
+       <div class="carousel-item">
+      <img style="height:500px;" class="d-block w-100" src="114.jpeg" style="height:300px;" alt="Third slide">
+    </div>
+       <div class="carousel-item">
+      <img style="height:500px;" class="d-block w-100" src="116.jpeg" style="height:300px;" alt="Third slide">
+    </div>
+      </div>
+    </div>
+    <!-- this is carousel box contains 3 images(here ends) -->
+
+    <div>&nbsp;</div>
+    <!-- this is lightbox contains 4 images -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm"><img src="42.jpg"  class="w3-hover-grayscale"  style="width:100%;height:100%;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"></div>
+          <div class="col-sm"><img src="67.jpg" class="w3-hover-grayscale"  style="width:100%;height:100%;" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"></div>
+          <div class="col-sm"><img src="23.jpg" class="w3-hover-grayscale"  style="width:100%;height:100%;" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"></div>
+          <div class="col-sm"><img src="44.jpg" class="w3-hover-grayscale"  style="width:100%;height:100%;" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"></div>
+          <div class="col-sm"><img src="5.jpg" class="w3-hover-grayscale"  style="width:100%;height:100%;" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"></div>
+        </div>
+      </div>
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="6.jpg" style="width:100%;height:290px;">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="22.jpg" style="width:100%;height:290px;">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="23.jpg" style="width:100%;height:290px;">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="44.jpg" style="width:100%;height:290px;">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+
+        <div style="width:100%;">
+          <img class="demo cursor" src="6.jpg" style="width:25%;float:left;" onclick="currentSlide(1)" alt="Nature and sunrise">
+          <img class="demo cursor" src="22.jpg" style="width:25%;float:left;" onclick="currentSlide(2)" alt="Trolltunga, Norway">
+          <img class="demo cursor" src="23.jpg" style="width:25%;float:left;" onclick="currentSlide(3)" alt="Mountains and fjords">
+          <img class="demo cursor" src="44.jpg" style="width:25%;float:left;" onclick="currentSlide(4)" alt="Northern Lights">
+      </div>
+    </div>
+    </div>
+    <!-- this is lightbox contains 4 images(here ends) -->
+    <!-- this is description contains 3 images -->
+    <div class="w3-row-padding w3-margin-top">
+      <div class="w3-third">
+        <div class="w3-card">
+          <img src="62.jpg" style="width:100%;height:300px;">
+          <div class="w3-container">
+            <h5>Description</h5>
+            <br><br><br>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-third">
+        <div class="w3-card">
+          <img src="63.jpg" style="width:100%;height:300px;">
+          <div class="w3-container">
+            <h5>Description</h5>
+            <br><br><br>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-third">
+        <div class="w3-card">
+          <img src="64.jpg" style="width:100%;height:300px;">
+          <div class="w3-container">
+            <h5>Description</h5>
+            <br><br><br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"><br></div>
+    <!-- this is description contains 3 images(here ends) -->
+    <!-- this is filter(daanvir) contains many images-->
+    <hr>
+    <h2><center>Select What items to display :</h2></center>
+    <div  id="myBtnContainer"><center>
+
+      <button class="btn1" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn1 act" onclick="filterSelection('nature')">Daanvir 1</button>
+      <button class="btn1" onclick="filterSelection('cars')"> Daanvir 2</button>
+      <button class="btn1" onclick="filterSelection('people')">Daanvir 3</button>
+      <button class="btn1" onclick="filterSelection('person')">Daanvir 4</button>
+      <button class="btn1" onclick="filterSelection('ellipse')">Daanvir 5</button>
+      <button class="btn1" onclick="filterSelection('omni')">Daanvir 6</button>
+      <button class="btn1" onclick="filterSelection('pepe')">Daanvir 7</button>
+      <button class="btn1" onclick="filterSelection('pepsi')">Daanvir 8</button>
+    </center>
+    </div>
+    <!-- Portfolio Gallery Grid -->
+    <div class="r">
+      <div class="c nature">
+        <div class="content">
+          <img src="70.jpg" alt="Moun" style="width:100%">
+          <h4>Smiles</h4>
+        </div>
+      </div>
+      <div class="c nature">
+        <div class="content">
+        <img src="77.jpg" alt="Lights" style="width:100%">
+          <h4>Love</h4>
+        </div>
+      </div>
+      <div class="c nature">
+        <div class="content">
+        <img src="78.jpg" alt="Nature" style="width:100%">
+          <h4>Happiness</h4>
+        </div>
+      </div>
+
+      <div class="c cars">
+        <div class="content">
+          <img src="136.jpg" alt="Car" style="width:100%">
+          <h4>Retro</h4>
+        </div>
+      </div>
+      <div class="c cars">
+        <div class="content">
+        <img src="87.jpg" alt="Car" style="width:100%">
+          <h4>Fast</h4>
+        </div>
+      </div>
+      <div class="c cars">
+        <div class="content">
+        <img src="91.jpg" alt="Car" style="width:100%">
+          <h4>Classic</h4>
+        </div>
+      </div>
+
+      <div class="c people">
+        <div class="content">
+          <img src="14.jpeg" alt="Car" style="width:100%">
+          <h4>Girl</h4>
+        </div>
+      </div>
+      <div class="c people">
+        <div class="content">
+        <img src="58.jpeg" alt="Car" style="width:100%">
+          <h4>Man</h4>
+        </div>
+      </div>
+      <div class="c people">
+        <div class="content">
+        <img src="59.jpeg" alt="Car" style="width:100%">
+          <h4>Woman</h4>
+        </div>
+      </div>
+
+      <div class="c person">
+        <div class="content">
+          <img src="29.jpg" alt="Car" style="width:100%">
+          <h4>Girl</h4>
+        </div>
+      </div>
+      <div class="c person">
+        <div class="content">
+        <img src="34.jpg" alt="Car" style="width:100%">
+          <h4>Man</h4>
+        </div>
+      </div>
+      <div class="c person">
+        <div class="content">
+        <img src="30.jpg" alt="Car" style="width:100%">
+          <h4>Woman</h4>
+        </div>
+      </div>
+
+      <div class="c ellipse">
+        <div class="content">
+          <img src="40.jpg" alt="Car" style="width:100%">
+          <h4>Girl</h4>
+        </div>
+      </div>
+      <div class="c ellipse">
+        <div class="content">
+        <img src="140.jpg" alt="Car" style="width:100%">
+          <h4>Man</h4>
+        </div>
+      </div>
+      <div class="c ellipse">
+        <div class="content">
+        <img src="39.jpg" alt="Car" style="width:100%">
+          <h4>Woman</h4>
+        </div>
+      </div>
+
+      <div class="c omni">
+        <div class="content">
+          <img src="96.jpeg" alt="Car" style="width:100%">
+          <h4>Girl</h4>
+        </div>
+      </div>
+      <div class="c omni">
+        <div class="content">
+        <img src="109.jpg" alt="Car" style="width:100%">
+          <h4>Man</h4>
+        </div>
+      </div>
+      <div class="c omni">
+        <div class="content">
+        <img src="93.jpg" alt="Car" style="width:100%">
+          <h4>Woman</h4>
+        </div>
+      </div>
+
+      <div class="c pepe">
+        <div class="content">
+          <img src="95.jpg" alt="Car" style="width:100%">
+          <h4>Girl</h4>
+        </div>
+      </div>
+      <div class="c pepe">
+        <div class="content">
+        <img src="92.jpg" alt="Car" style="width:100%">
+          <h4>Man</h4>
+        </div>
+      </div>
+      <div class="c pepe">
+        <div class="content">
+        <img src="97.jpg" alt="Car" style="width:100%">
+          <h4>Woman</h4>
+        </div>
+      </div>
+
+      <div class="c pepsi">
+        <div class="content">
+          <img src="141.jpg" alt="Car" style="width:100%">
+          <h4>Girl</h4>
+        </div>
+      </div>
+      <div class="c pepsi">
+        <div class="content">
+        <img src="20.jpg" alt="Car" style="width:100%">
+          <h4>Man</h4>
+        </div>
+      </div>
+      <div class="c pepsi">
+        <div class="content">
+        <img src="21.jpg" alt="Car" class="w3-hover-grayscale"  style="width:100%">
+          <h4>Woman</h4>
+        </div>
+      </div>
+        
+        
+
+    </div>
+        
+    <hr>
+    <!-- this is filter(daanvir) contains many images(here ends)-->
+
+
+    <!-- this is black and color effect contains 4 images-->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm"><img src="145.jpeg" class="w3-hover-grayscale" style="width:100%;height:100%;"></div>
+          <div class="col-sm"><img src="148.jpeg" class="w3-hover-grayscale" style="width:100%;height:100%;"></div>
+          <div class="col-sm"><img src="157.jpeg"     class="w3-hover-grayscale" style="width:100%;height:100%;"></div>
+          <div class="col-sm"><img src="125.jpeg" class="w3-hover-grayscale" style="width:100%;height:100%;"></div>
+        </div>
+      </div>
+        
+    <!-- this is black and color effect contains 4 images(here ends)-->
+    <!-- this is border description contains 4 images-->
+    <div class="clearfix">&nbsp;</div>
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="Picture1 (1).png">
+         <img style="width:100%;"src="1.jpg" >
+        </a>
+        <div class="desc">description</div>
+      </div>
+    </div>
+
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="Picture1 (1).png">
+          <img style="width100%;"src="1.jpg" >
+        </a>
+        <div class="desc">description</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="Picture1 (1).png">
+         <img style="width:100%;"src="1.jpg" >
+        </a>
+        <div class="desc">description</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="Picture1 (1).png">
+          <img style="width:100%;"src="1.jpg" >
+        </a>
+        <div class="desc"> description </div>
+      </div>
+    </div>
+    <!-- this is border description effect contains 4 images(here ends)-->
+    <div>&nbsp;</div>
+    <!-- this is four image slideshow effect contains 4 images-->
+       <div class="container-fluid">	
+        <div id="demo5" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+         <div class="container">
+        <div class="card bg-light"> <br>
+        <div class="row">
+    <img style="width:20%;margin-left:4%;" src="1.jpg">
+    <img style="width:20%;margin-left:4%;" src="1.jpg">
+    <img style="width:20%;margin-left:4%;" src="1.jpg">
+    <img style="width:20%;margin-left:4%;" src="1.jpg"><br>
+          </div><br>
+        </div>
+      </div>
+        </div>
+        <div class="carousel-item">
+       <div class="container">
+        <div class="card bg-light"> <br>
+        <div class="row">
+    <img style="width:20%;margin-left:4%;" src="1.jpg">
+    <img style="width:20%;margin-left:4%;" src="1.jpg">
+    <img style="width:20%;margin-left:4%;" src="1.jpg">
+    <img style="width:20%;margin-left:4%;" src="1.jpg"><br>
+          </div><br>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- this is four image slideshow effect contains 4 images (here ends)-->
+    <br>
+    <!-- this is running slideshow effect contains 4 images->
+    <marquee scrollamount="10"
+    direction="left"
+    behavior="scroll">
+    <img style="width:200px;height:100px;"src="1.jpg" >
+    <img style="width:200px;height:100px;"src="1.jpg" >
+    <img style="width:200px;height:100px;"src="1.jpg" >
+    <img style="width:200px;height:100px;"src="1.jpg" >
+    <img style="width:200px;height:100px;"src="1.jpg" >
+    <img style="width:200px;height:100px;"src="1.jpg" >
+    <img style="width:200px;height:100px;"src="1.jpg" >
+    <img style="width:200px;height:100px;"src="1.jpg" >
+    </marquee>
+    <!-- this is running slideshow effect contains 4 images (here ends)-->
+    <br><br>
+    <!-- this is united(1) effect contains 8 images-->
+    <div style="width:90%;height:600px;margin-left:5%;">
+    <div style="width:40%;height:100%;float:left;">
+    <img style="width:100%;height:70%;"src="4.jpg" >
+    <img style="width:100%;height:30%;"src="6.jpg" >
+    </div>
+    <div style="width:60%;height:30%;float:left;">
+    <img style="width:50%;height:100%;float:left;"src="32.jpg" >
+    <img style="width:50%;height:100%;float:left;"src="1.jpg" >
+    </div>
+    <div style="width:60%;height:25%;float:left;">
+    <img style="width:100%;height:100%;float:left;"src="22.jpg" >
+    </div>
+    <div style="width:60%;height:20%;float:left;">
+    <img style="width:50%;height:100%;float:left;"src="45.jpg" >
+    <img style="width:50%;height:100%;float:left;"src="1.jpg" >
+    </div>
+    <div style="width:60%;height:25%;float:left;">
+    <img style="width:100%;height:100%;float:left;"src="3.jpg" >
+    </div>
+    </div>
+    <!-- this is united(1) effect contains 8 images (here ends)-->
+    <br>
+    <!-- this is united(2) effect contains 8 images -->
+    <div style="width:90%;height:600px;margin-left:5%;">
+    <div style="width:30%;height:100%;float:left;">
+    <img style="width:100%;height:60%;" src="57.jpeg" >
+    <img style="width:100%;height:40%;" src="58.jpeg" >
+    </div>
+    <div style="width:70%;height:30%;float:left;">
+    <img style="width:40%;height:100%;float:left;"src="117.jpeg" >
+    <img style="width:60%;height:100%;float:left;"src="97.jpeg" >
+    </div>
+    <div style="width:70%;height:25%;float:left;">
+    <img style="width:100%;height:100%;float:left;"src="77.jpg" >
+    </div>
+    <div style="width:70%;height:20%;float:left;">
+    <img style="width:60%;height:100%;float:left;"src="71.jpg" >
+    <img style="width:40%;height:100%;float:left;"src="87.jpg" >
+    </div>
+    <div style="width:70%;height:25%;float:left;">
+    <img style="width:100%;height:100%;float:left;"src="139.jpg" >
+    </div>
+    </div>
+    <!-- this is united(2) effect contains 8 images (here ends)-->
+    </body>
+    <script>
+    filterSelection("nature")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("c");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+
+
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn1");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("act");
+        current[0].className = current[0].className.replace(" act", "");
+        this.className += " act";
+      });
+    }
+    </script>
+      <script>
+    function openModal() {
+      document.getElementById('myModal').style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById('myModal').style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+    </html>
+

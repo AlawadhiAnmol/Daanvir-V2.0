@@ -1,0 +1,135 @@
+Return-Path: <ksumsurvey@startupmission.in>
+Delivered-To: anmol.alawadhi@daanvir.org
+Received: from md-in-63.webhostbox.net
+	by md-in-63.webhostbox.net with LMTP id wBj1IvhsxFtz6w0AwBqdFg
+	for <anmol.alawadhi@daanvir.org>; Mon, 15 Oct 2018 10:33:28 +0000
+Return-path: <ksumsurvey@startupmission.in>
+Envelope-to: anmol.alawadhi@daanvir.org
+Delivery-date: Mon, 15 Oct 2018 10:33:28 +0000
+Received: from mail-io1-f43.google.com ([209.85.166.43]:36814)
+	by md-in-63.webhostbox.net with esmtps (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128)
+	(Exim 4.91)
+	(envelope-from <ksumsurvey@startupmission.in>)
+	id 1gC0Bg-003qUk-4o
+	for anmol.alawadhi@daanvir.org; Mon, 15 Oct 2018 10:33:28 +0000
+Received: by mail-io1-f43.google.com with SMTP id p4-v6so13862848iom.3
+        for <anmol.alawadhi@daanvir.org>; Mon, 15 Oct 2018 03:33:19 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=startupmission-in.20150623.gappssmtp.com; s=20150623;
+        h=mime-version:sender:from:date:message-id:subject:to;
+        bh=idzML1pDKcZRzXCgoQWmrVcp/M7xIp7TIt4aoDA0Kns=;
+        b=xFUaITkSureMhujuYPIHZCyI98dXfPm38xyYmxKnMUoSa/X47mw/6JgWAKL0kcYUCa
+         aLypLAEAflLcFCwrynZUaqf0EvaH8ID9836wOwYR8IjnxmeEQbxNPrcvTp31Y9Dk11OS
+         SqE/4mVKa688iUlwmTrGIRKZPDr50cl16rRG85fdA+DIWGkk8otNXB3Yrx5KrP/dV5uv
+         meYe5sbOhdDID0ChKySpXZrSPLAgEtmg3JbqX/lxtLe+19RcxBoSVsNvKBvGS5qXdMQS
+         jzu/nSXuwuEQbeCdLLNvyr406uuNeXym/gl6oS0nQ7Rg7APrkmfL7E/tYrS5TME2A9LF
+         UNyw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:sender:from:date:message-id:subject
+         :to;
+        bh=idzML1pDKcZRzXCgoQWmrVcp/M7xIp7TIt4aoDA0Kns=;
+        b=H/KgPQ8mTHiekQIlQ7G1lNOloNsz/4tJMo9vgcoUcE4qzSchvZP1lbSGmp0bAMerE8
+         MoDim+phZRAgN6HItm8gZ/4HqXeCV1l47ncFnRmhjUcfwpwYG9f2+ZylSRGi/DGcwdkY
+         gumYcWcZqMhsW8XfwBYBfjvHC83lszRbPfZ36J4/7KQJwKf+Dkva6OSbPqS6vKkg+NEK
+         vfTDkU+sO22S5kO10T2eFGtKiBQqqDXJPqnGPyjIktl0mhE287hMqEf1ldDDEfVyO4By
+         SFbGuqpobKHTR21P2aUB1zQtLZMylGm9EYRxPS9yzB5hs0sofMlaewWLiFd7/d3/8o1A
+         L5xA==
+X-Gm-Message-State: ABuFfohBS1A1wvqpv0C/CWqEcxHObPstEotTJeXmi43a5eSmBGUkwc0q
+	DG8ng23spF/Iyn/T0c6YJCaSE57zx+s7LnxqKN+z2lIgyug=
+X-Google-Smtp-Source: ACcGV61ydJNLEK5nKbnA3vagwpXlMV8HPltPXMtWpzFAsbcctXdKtCeyMBluS0CNqmMCr7CGacistVjjdt72LrgsbS0=
+X-Received: by 2002:a6b:9008:: with SMTP id s8-v6mr10478207iod.179.1539599591123;
+ Mon, 15 Oct 2018 03:33:11 -0700 (PDT)
+Received: from 52669349336 named unknown by gmailapi.google.com with HTTPREST;
+ Mon, 15 Oct 2018 03:33:09 -0700
+MIME-Version: 1.0
+Sender: KERALA STARTUP MISSION <ksumsurvey@startupmission.in>
+From: KERALA STARTUP MISSION <ksumsurvey@startupmission.in>
+Date: Mon, 15 Oct 2018 03:33:09 -0700
+X-Google-Sender-Auth: gX7KrMQHcmkHnZfUMgCS_zABeco
+Message-ID: <CANzf3fjtbjQmBmAx4fzODQh_d3Qqaep2eQ4nxH79ELZcz_UB8Q@mail.gmail.com>
+Subject: Reminder mail for Phase 1-KSUM- Unique ID
+To: Anmol Alawadhi <anmol.alawadhi@daanvir.org>
+Content-Type: multipart/alternative; boundary="000000000000b9b56b057841f660"
+X-Authenticated_sender: 
+X-Spam-Status: No, score=1.3
+X-Spam-Score: 13
+X-Spam-Bar: +
+X-Ham-Report: DKIM_SIGNED=0.1, DKIM_VALID=-0.1, HTML_IMAGE_ONLY_20=0.7, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_NONE=-0.0001, T_REMOTE_IMAGE=0.01, T_SPF_PERMERROR=0.01, UNPARSEABLE_RELAY=0.001, URIBL_BLOCKED=0.001, URI_TRY_3LD=0.614, CMAE Analysis: v=2.3 cv=KIx08mNo c=1 sm=0 tr=0 a=HpAAvcLHHh0Zw7uRqdWCyQ==:117 a=MKtGQD3n3ToA:10 a=smKx5t2vBNcA:10 a=gbBFEwY1bUUA:10 a=ZZnuYtJkoWoA:10 a=2BQ1zrKiUMLoJZDm7iIA:9 a=QEXdDO2ut3YA:10 a=f_uH8HLMahoA:10 a=wNQDC92HxOBPSFNaHPQA:9 a=JWarDz8uE71ho51p:21
+ 
+ *  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ *       See http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ *      for more information.
+ *      [URIs: startupmission-dot-yamm-track.appspot.com]
+ * -0.0 RCVD_IN_DNSWL_NONE RBL: Sender listed at http://www.dnswl.org/, no
+ *      trust
+ *      [209.85.166.43 listed in list.dnswl.org]
+ *  0.0 T_SPF_PERMERROR SPF: test of record failed (permerror)
+ *  0.6 URI_TRY_3LD URI: "Try it" URI, suspicious hostname
+ *  0.7 HTML_IMAGE_ONLY_20 BODY: HTML: images with 1600-2000 bytes of words
+ *  0.0 HTML_MESSAGE BODY: HTML included in message
+ * -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ *  0.1 DKIM_SIGNED Message has a DKIM or DK signature, not necessarily
+ *      valid
+ *  0.0 UNPARSEABLE_RELAY Informational: message has unparseable relay lines
+ *  0.0 T_REMOTE_IMAGE Message contains an external image
+X-Spam-Flag: NO
+
+--000000000000b9b56b057841f660
+Content-Type: text/plain; charset="UTF-8"
+
+Dear Founder,
+
+It is noticed that haven't completed the application form for PHASE1
+verification as part of the Startup Survey.
+We are awaiting your response and this is required for us to proceed
+further. If you haven't received the google forms kindly check whether the
+mail has gone to spam.
+If you haven't received the  form earlier request you to fill the form
+given in the below link:
+GOOGLE FORM LINK P1
+<https://startupmission-dot-yamm-track.appspot.com/Redirect?ukey=1MP1hY1SskzqQUBJsW-SSnDd1zGJPYwdtuC3sQHyumgA-2097650997&key=YAMMID-99589222&link=https%3A%2F%2Fgoo.gl%2Fforms%2FElCP1LCZaYww0HAh2>
+If you have already submitted the form kindly ignore this mail.
+
+Warm Regards,
+
+KSUM SURVEY TEAM
+
+[image: beacon]
+
+[image: beacon]
+
+--000000000000b9b56b057841f660
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div>Dear Founder,</div><div><br></div><div>It is noticed =
+that haven&#39;t completed the application form for PHASE1 verification as =
+part of the Startup Survey.</div><div>We are awaiting your response and thi=
+s is required for us to proceed further. If you haven&#39;t received the go=
+ogle forms kindly check whether the mail has gone to spam.</div><div>If you=
+ haven&#39;t received the=C2=A0 form earlier request you to fill the form g=
+iven in the below link:</div><div><a href=3D"https://startupmission-dot-yam=
+m-track.appspot.com/Redirect?ukey=3D1MP1hY1SskzqQUBJsW-SSnDd1zGJPYwdtuC3sQH=
+yumgA-2097650997&amp;key=3DYAMMID-99589222&amp;link=3Dhttps%3A%2F%2Fgoo.gl%=
+2Fforms%2FElCP1LCZaYww0HAh2">GOOGLE FORM LINK P1</a><br></div><div><div></d=
+iv></div><div class=3D"gmail_quote"><div dir=3D"ltr"><div></div>If you have=
+ already submitted the form kindly ignore this mail.</div><div dir=3D"ltr">=
+<br></div><div dir=3D"ltr"><div>Warm Regards,</div><div> <br></div><div><di=
+v>KSUM SURVEY TEAM<br><div class=3D"m_-304634684082393709m_-393543295547323=
+4268m_2641785410370289618m_3051204667291483779gmail_signature" data-smartma=
+il=3D"gmail_signature"><div dir=3D"ltr"><div><div dir=3D"ltr"><img src=3D"h=
+ttps://drive.google.com/a/startupmission.in/uc?id=3D1s1NSmTc75ArMTxGbiRlB-U=
+6WGMzGvLwd&amp;export=3Ddownload" width=3D"96" height=3D"81"><br></div></di=
+v></div></div>
+</div></div></div>
+<img src=3D"https://startupmission-dot-yamm-track.appspot.com/FireBase?ukey=
+=3D1Vr03QyYWmnuE0Kxi9j-sPbChbT38yRnJ8Q5KzhLsI6o-1194896886&amp;key=3DYAMMID=
+-80134463" alt=3D"beacon" style=3D"display:none;display:none!important" wid=
+th=3D"1" height=3D"1"></div><br></div>
+<img src=3D"https://startupmission-dot-yamm-track.appspot.com/FireBase?ukey=
+=3D1MP1hY1SskzqQUBJsW-SSnDd1zGJPYwdtuC3sQHyumgA-2097650997&amp;key=3DYAMMID=
+-99589222" width=3D"1" height=3D"1" alt=3D"beacon" style=3D"display:none; d=
+isplay:none!important;">
+
+--000000000000b9b56b057841f660--

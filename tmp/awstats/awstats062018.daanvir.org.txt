@@ -1,0 +1,1010 @@
+AWSTATS DATA FILE 7.4 (build 20140726)
+# If you remove this file, all statistics for date 201806 will be lost/reset.
+# Last config file used to build this data file was /home/daanvaq7/tmp/awstats/awstats.daanvir.org.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2008                
+POS_TIME 2690                
+POS_VISITOR 27709               
+POS_DAY 39225               
+POS_DOMAIN 3606                
+POS_LOGIN 4131                
+POS_ROBOT 4286                
+POS_WORMS 4853                
+POS_EMAILSENDER 4984                
+POS_EMAILRECEIVER 5127                
+POS_SESSION 40101               
+POS_SIDER 40313               
+POS_FILETYPES 5262                
+POS_DOWNLOADS 5554                
+POS_OS 5602                
+POS_BROWSER 5891                
+POS_SCREENSIZE 7655                
+POS_UNKNOWNREFERER 7729                
+POS_UNKNOWNREFERERBROWSER 8816                
+POS_ORIGIN 9361                
+POS_SEREFERRALS 9505                
+POS_PAGEREFS 9671                
+POS_SEARCHWORDS 10232               
+POS_KEYWORDS 11246               
+POS_MISC 2354                
+POS_ERRORS 12169               
+POS_CLUSTER 3987                
+POS_SIDER_404 12339               
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20180701004952 170 45258 20064015877894
+FirstTime 20180601045032
+LastTime 20180630193150
+LastUpdate 20180701045416 170 0 169 0 0
+TotalVisits 492                 
+TotalUnique 269                 
+MonthHostsKnown 0                   
+MonthHostsUnknown 292                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+JavascriptDisabled 0 0 0
+AddToFavourites 0 0 0
+PDFSupport 0 0 0
+JavaEnabled 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+RealPlayerSupport 0 0 0
+FlashSupport 0 0 0
+QuickTimeSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 212 382 17704163 29 83 3567423
+1 14 58 2696930 8 24 457665
+2 18 94 6861822 15 41 1054068
+3 61 82 4576950 19 44 1060276
+4 81 236 12102227 19 65 2082246
+5 150 471 33083771 15 103 6077567
+6 185 455 26360200 19 65 1683015
+7 162 527 29211850 18 59 2640322
+8 107 270 10589820 16 45 1878779
+9 234 394 26256128 19 89 4464207
+10 9 91 7602647 29 72 2203421
+11 174 330 53435467 43 91 2224107
+12 162 798 78611546 25 99 2724893
+13 160 265 17584095 16 65 2044200
+14 169 385 86412659 16 62 6444747
+15 393 1400 159912712 58 243 17031491
+16 383 680 31499817 44 135 4159892
+17 444 840 41701734 15 47 1823985
+18 639 1023 79461274 38 90 2163878
+19 719 1054 39227382 82 302 3604540
+20 191 274 10575988 17 56 1661632
+21 15 84 6443769 18 77 2993443
+22 38 237 20856766 9 29 580646
+23 4 10 169022 25 145 6999130
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 20
+in 3677 6006 413738410
+us 869 3623 329859211
+es 59 335 27242584
+ca 24 153 7255704
+cz 17 154 14330308
+ru 15 32 1316431
+de 11 11 471323
+gb 9 9 474457
+au 9 9 196360
+br 8 76 6255253
+ua 7 7 310565
+ro 5 5 263740
+ie 4 10 710546
+cn 3 3 158073
+it 2 2 92027
+fr 1 1 52809
+ar 1 1 52742
+mx 1 1 52809
+hk 1 1 52632
+kr 1 1 52755
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 11
+googlebot 522 18424314 20180630234853 50
+php 205 25850354 20180630201036 0
+bot[\s_+:,\.\;\/\\-] 162 4105663 20180630232130 76
+bingpreview 101 8635844 20180625000418 0
+no_user_agent 61 5763217 20180620090243 1
+spider 50 1739213 20180630232109 0
+unknown 36 5508 20180628163341 36
+googlebot\-image 31 169679 20180628082900 0
+ia_archiver 13 325114 20180614011219 6
+[\s_+:,\.\;\/\\-]bot 3 52908 20180618171927 1
+crawl 1 0 20180630074919 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 11
+png 2089 113273318 0 0
+woff 76 122700 0 0
+eot 1 1620 0 0
+jpeg 24 5281647 0 0
+jpg 2004 551138961 0 0
+html 739 33959728 0 0
+js 747 17134870 0 0
+Unknown 5 169250 0 0
+css 852 24384147 0 0
+ttf 332 27544416 0 0
+php 3571 29928082 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 16
+linux 487 112
+winlong 18 2
+win2003 10 3
+unix 336 60
+Unknown 225 78
+ios_iphone 526 112
+win7 427 120
+j2me 111 6
+win8 4 3
+macosx 464 82
+winnt 5077 3335
+macosx6 1 1
+linuxubuntu 1 1
+macosx8 1 1
+linuxandroid 2726 798
+winxp 26 10
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 79
+msie7.0 9 2
+firefox27.0 2 2
+chrome51.0.2704.81 138 14
+firefox60.0 72 7
+chrome41.0.2272.96 1 1
+chrome67.0.3396.81 291 87
+chrome47.0.2526.111 1 1
+chrome54.8.3709.9071 1 1
+chrome56.0.2924.87 4 3
+msie8.0 25 9
+firefox34.0 1 1
+chrome59.0.3071.125 55 11
+chrome49.0.2623.110 3 2
+safari9.0 219 21
+chrome65.0.3325.109 56 12
+chrome61.0.3163.100 15 15
+chrome65.0.3325.181 1 1
+Unknown 112 45
+chrome66.0.3359.106 85 17
+mozilla 162 49
+chrome47.0.2526.106 1 1
+chrome67.0.3396.68 704 148
+firefox59.0 1 1
+opera43.0.2246.121183 1 0
+firefox57.0 1 1
+chrome55.0.2883.87 4 4
+chrome67.0.3396.87 2833 1892
+chrome53.0.2785.146 9 3
+chrome32.0.1700.107 1 1
+firefox31.0 1 1
+msie11.0 1 1
+opera42.0.5417.0145 1 1
+chrome36.0.1985.143 76 9
+msie9.0 18 2
+chrome37.0.2062.120 3 3
+chrome63.0.3239.111 1 1
+iphone 41 31
+msie6.0 3 3
+chrome5.0.375.99 1 1
+chrome11.0.672.2 1 1
+chrome55.0.2883.95 9 6
+chrome58.0.3029.81 2 2
+chrome62.0.3202.94 2 2
+opera46.3.2246.127744 87 19
+chrome39.0.0.0 1 1
+chrome66.0.3359.126 135 22
+chrome66.0.3359.203 237 29
+chrome60.0.3095.0 372 44
+chrome63.0.3239.84 1 1
+safari11.0 247 46
+chrome66.0.3359.181 2407 1230
+chrome34.0.1847.116 1 1
+firefox56.0 80 10
+chrome58.0.3029.96 1 1
+chrome40.0.2214.85 2 2
+chrome16.0.912.75 1 1
+chrome51.0.2704.79 105 37
+chrome55.0.2883.91 56 12
+safari10.1.2 90 7
+chrome66.0.3359.158 575 298
+vodafone 19 14
+chrome41.0.2224.3 2 2
+chrome67.0.3396.99 15 3
+chrome49.0.2623.105 2 2
+firefox45.0 1 1
+firefox50.0 1 1
+chrome26.0.1410.65 1 1
+opera12.16 111 6
+chrome46.0.2490.80 1 1
+firefox33.0 3 3
+chrome28.0.1467.0 1 1
+chrome49.0.2623.75 28 14
+chrome28.0.1468.0 1 1
+firefox11.0 16 0
+chrome35.0.1916.153 1 1
+chrome63.0.3239.108 1 1
+chrome63.0.3239.132 2 2
+chrome67.0.3396.79 794 486
+chrome67.0.3396.62 74 7
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 17
+Mozilla/4.0_(compatible;) 20180630172846
+Python/3.6_aiohttp/2.3.2 20180629093957
+\ 20180619214211
+python-requests/2.18.4 20180614002511
+Mozilla/5.0_zgrab/0.x_(compatible;_Researchscan/t13rl;__http://researchscan.comsys.rwth-aachen.de) 20180608043643
+Mnogosearch-3.1.21 20180602165831
+CATExplorador/1.0beta_(sistemes_at_domini_dot_cat;_http://domini.cat/catexplorador.html) 20180614041306
+Mozilla/5.0_(compatible;_ips-agent) 20180604225449
+Google-OAuth 20180620002310
+Mozilla/5.0_zgrab/0.x_(compatible;_Researchscan/t12sns;__http://researchscan.comsys.rwth-aachen.de) 20180614211219
+python-requests/2.18.3 20180610000512
+WhatsApp/2.18.94_A 20180609162125
+Mozilla/5.0_zgrab/0.x_(compatible;_Researchscan/t12ca;__http://researchscan.comsys.rwth-aachen.de) 20180614212306
+Python-urllib/2.7 20180619222517
+Mozilla/5.0_(compatible)_Feedfetcher-Google;_(_http://www.google.com/feedfetcher.html) 20180620004334
+AddThis.com_(http://support.addthis.com/) 20180629050124
+facebookexternalhit/1.1 20180607032449
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 11
+python-requests/2.18.4 20180614002511
+\ 20180619214211
+Python-urllib/2.7 20180619222517
+AddThis.com_(http://support.addthis.com/) 20180629050124
+Mnogosearch-3.1.21 20180602165831
+CATExplorador/1.0beta_(sistemes_at_domini_dot_cat;_http://domini.cat/catexplorador.html) 20180614041306
+facebookexternalhit/1.1 20180607032449
+Google-OAuth 20180620002310
+python-requests/2.18.3 20180610000512
+Python/3.6_aiohttp/2.3.2 20180629093957
+WhatsApp/2.18.94_A 20180609162125
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 930 1072
+From1 6 6
+From2 8 10
+From3 80 80
+From4 3700 9272
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 2
+google 7 9
+yandex 1 1
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 12
+http://m.facebook.com 59 59
+https://www.facebook.com 6 6
+http://resell-seo-services.com/try.php 5 5
+http://l.facebook.com/l.php 2 2
+http://pizza-imperia.com 1 1
+https://www.cjb.net 1 1
+http://seoservices2018.com 1 1
+https://l.facebook.com 1 1
+https://www.blog100.org/online-traffic-problems-are-now-a-thing-of-the-past/10321165/ 1 1
+http://pizza-tycoon.com 1 1
+http://hundejo.com 1 1
+https://lm.facebook.com 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 1
+https+//yandex.ru/clck/jsredir%3ffrom%3dyandex.ru%253bsearch%253bweb%253b%253b%26text%3d%26etext%3d1830.dnhshqgnzxzmueg3fiadh06kad_k7q5xsckfhabc-uuo7zx98b3hwl9paoagfiqg.e4b10b3a8ee58d1a85dd266a9046dc21bd71a71f%26uuid%3d%26state%3d_blhiln4sxnivvl0w45ksic66ucig23qh8irg98qeixmeppkguc0ym1snxn_khopadpyhdoka1y%26data%3dulnrnmk5wktyejr0ewjfyk1ldmtxdf9tzdznsen3n3c5ddfiz1run1nyr2rtvdllmf85zy1mrgkyqwntq1oxbvvfzkvqtnrwwddaag5pzhv4mlfhthdpwmziwkpzmfzn%26b64e%3d2%26sign%3d57d12a4b2879eb4d48f0f6d69b5b37bb%26keyno%3d0%26cst%3daiuy0dbwfj7ixge4wdyjqyp93xfrtkbamknnvurnaj3qanmdvrygjl1yqxigi6hgwz4m7mntwdwvnftl19o3pgryw8gzk1o3mkjcomqmcjzzrxy-jpqbhyykmuohg_rlezsbwzj1jgslepovpa9juazce-2altem%26ref%3dorjy4mgprjk5bodnw0uvlrrd71vzw9kp5uqozpmtkcxma_rtih0nth7ombcgwt5xa3q3mjci2ghltwj8-s-aklnfgrhcrxfirsxv5qjmpamu8fgv8f9ebw%26l10n%3dru%26cts%3d1529929483774%26mc%3d5.74686197737 1
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 2
+https 1
+//yandex.ru/clck/jsredir%3ffrom%3dyandex.ru%253bsearch%253bweb%253b%253b%26text%3d%26etext%3d1830.dnhshqgnzxzmueg3fiadh06kad_k7q5xsckfhabc-uuo7zx98b3hwl9paoagfiqg.e4b10b3a8ee58d1a85dd266a9046dc21bd71a71f%26uuid%3d%26state%3d_blhiln4sxnivvl0w45ksic66ucig23qh8irg98qeixmeppkguc0ym1snxn_khopadpyhdoka1y%26data%3dulnrnmk5wktyejr0ewjfyk1ldmtxdf9tzdznsen3n3c5ddfiz1run1nyr2rtvdllmf85zy1mrgkyqwntq1oxbvvfzkvqtnrwwddaag5pzhv4mlfhthdpwmziwkpzmfzn%26b64e%3d2%26sign%3d57d12a4b2879eb4d48f0f6d69b5b37bb%26keyno%3d0%26cst%3daiuy0dbwfj7ixge4wdyjqyp93xfrtkbamknnvurnaj3qanmdvrygjl1yqxigi6hgwz4m7mntwdwvnftl19o3pgryw8gzk1o3mkjcomqmcjzzrxy-jpqbhyykmuohg_rlezsbwzj1jgslepovpa9juazce-2altem%26ref%3dorjy4mgprjk5bodnw0uvlrrd71vzw9kp5uqozpmtkcxma_rtih0nth7ombcgwt5xa3q3mjci2ghltwj8-s-aklnfgrhcrxfirsxv5qjmpamu8fgv8f9ebw%26l10n%3dru%26cts%3d1529929483774%26mc%3d5.74686197737 1
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 8
+429 15 4155
+500 4 0
+103 2 0
+206 111 15144770
+404 618 1335798
+301 1 232
+403 27 68769
+302 43 35
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 226
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/controls.js 3 http://daanvir.org/index11.php
+/main/Traversal/ilages/26/dying%20of%20cold2.jpg 1 http://daanvir.org/indextemp.php
+/main/Traversal/imagds/30/16998153_1806498246234557_2987611561311047264_n.jpg 1 http://daanvir.org/indextemp.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/typed.min.js 3 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/idea.png 1 http://daanvir.org/index11.php
+/gallery/17.jpg 1 http://daanvir.org/gallery/gallery.html
+/blog/wp-admin/install.php 1 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/IMG-20180424-WA0002.jpg 1 http://daanvir.org/index11.php
+/main/Traversal/images/26/eager+child.jpg 3 -
+/css/images/impact.png 1 http://daanvir.org/css/style2_m.css
+/modules/modules/path.php 2 -
+/gallery/logo%20picturees10.jpg 44 http://daanvir.org/gallery/gallery.html
+/wp/wp-admin/setup-config.php 1 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/owl.carousel.css 4 http://daanvir.org/index11.php
+/old/wp-admin/setup-config.php 1 -
+/m%60in/Traversal/im%60ges/34/pic3.jpg 1 http://daanvir.org/indextemp.php
+/main/Traversal/images/20/DSC_3389.jpg 1 http://daanvir.org/indextemp.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/FB_IMG_1524282064509.jpg 1 http://daanvir.org/index11.php
+/main/Traversal/images.34/pic%201.jpg 1 http://daanvir.org/indextemp.php
+/libraries/index.php 3 -
+/img/map-ibon.png 1 http://daanvir.org/indextemp.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/14141604_1731232527094463_7973975657888817221_n.jpg 2 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/dying%20of%20cold214.jpg 2 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/16998153_1806498246234557_2987611561311047364_n.jpg 2 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/FB_IMG_1523683499259.jpg 1 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/Picture1.jpg 2 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/masonry.pkgd.min.js 3 http://daanvir.org/index11.php
+/media/media.php 1 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/user.png 3 http://daanvir.org/index11.php
+/new/wp-admin/install.php 1 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/map-icon.png 3 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/sdk.js 4 http://daanvir.org/index11.php
+/wp-admin/install.php 1 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/vt(1) 1 http://daanvir.org/index11.php
+/configbak.php 3 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/DSC_3389.jpg 2 http://daanvir.org/index11.php
+/wp-pols.php 10 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/vt(6) 1 http://daanvir.org/index11.php
+/blog/wp-includes/wlwmanifest.xml 1 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/12108947_1640059676211749_4664890777559249087_n.jpg 2 http://daanvir.org/index11.php
+/gallery/Picture1%20(1).png 2 http://daanvir.org/gallery/gallery.html
+/main/Traversal/images/6/poor+kid.jpg 11 -
+/modules/modules/version.php 3 -
+/user/register 1 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/vt 1 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/saved_resource.html 2 http://daanvir.org/index11.php
+/up.php 2 -
+/components/modules.php 3 -
+/logo%20picturees10.jpg 1 http://daanvir.org/gallery.html
+/wp-includes/wlwmanifest.xml 1 -
+/blog/robots.txt 1 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/Coco-Chanel.png 1 http://daanvir.org/index11.php
+/sitemap.xml 4 -
+/robots.txt 2 -
+/wordpress/wp-admin/install.php 1 -
+/me 1 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/css(4) 4 http://daanvir.org/index11.php
+/wp/wp-includes/wlwmanifest.xml 1 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/modernizr.custom.js 2 http://daanvir.org/index11.php
+/xmlrpc.php 3 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/reset.css 3 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/imagesloaded.pkgd.min.js 2 http://daanvir.org/index11.php
+/upgrade-network.php 15 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/vt(3) 1 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/map.js 2 http://daanvir.org/index11.php
+/main/Traversal/imager/26/FB_IMG_1523683499259.jpg 1 http://daanvir.org/indextemp.php
+/main/fonts/cantarell/cantarell-Regular.ttf 5 http://daanvir.org/css/style2.css
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/css 2 http://daanvir.org/index11.php
+/wp/ 1 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/Buchman-Frank.png 2 http://daanvir.org/index11.php
+/plugins/modules.php 3 -
+/wordpress/wp-admin/setup-config.php 1 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/g+.png 3 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/navigator-detect.min.js 3 http://daanvir.org/index11.php
+/main/js/jquery.min.map 2 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/IMG-20180424-WA0000.jpg 1 http://daanvir.org/index11.php
+/gallery/part-1.png 43 http://daanvir.org/gallery/gallery.html
+/imdex.php 3 -
+/.well-known/autoconfig/mail/config-v1.1.xml 1 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/common.js 2 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/mapcnt6.png 1 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/js 3 http://daanvir.org/index11.php
+/old/wp-admin/install.php 1 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/stats.js 3 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/pic%201.jpg 2 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/youtube-icon.png 3 http://daanvir.org/index11.php
+/img/daanvir.png 1 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/Nelson-Mandela.png 1 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/Martin-Luther-King-Jr.png 2 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/classie.js 2 http://daanvir.org/index11.php
+/modules/modules/joomla-resize.php 3 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/css(3) 4 http://daanvir.org/index11.php
+/wp/wp-admin/install.php 1 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/oVjM2wVZ10b(1).html 2 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/vt(10) 1 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/vt(8) 1 http://daanvir.org/index11.php
+/main/Traversal/images/34/pic+1.jpg 2 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/daanvir_detail2.png 2 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/fbicon.png 5 http://daanvir.org/index11.php
+/cms/wp-includes/wlwmanifest.xml 1 -
+/blog/ 1 -
+/sitemap_index.xml 3 -
+/overlay.php 3 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/dying%20of%20cold2.jpg 1 http://daanvir.org/index11.php
+/index2.php 4 -
+/xmlrpz-sql.php 3 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/dying%20of%20cold3.jpg 2 http://daanvir.org/index11.php
+/main/Traversal/imagds/34/pic%202.jpg 1 http://daanvir.org/indextemp.php
+/45.jpg 1 http://daanvir.org/gallery.html
+/.donation-posts 13 -
+/wp-login.php 11 http://daanvir.org/wp-login.php
+/14141604_1731232527094463_7973975657888817221_n.jpg 3 http://daanvir.org/custom1.css
+/new/wp-admin/setup-config.php 1 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/style2_m.css 4 http://daanvir.org/index11.php
+/img/twhttericon.png 1 http://daanvir.org/indextemp.php
+/main/Traversal/images/34/pic+2.jpg 2 -
+/main/Traversal/images/26/dying+of+cold21.jpg 2 -
+/wp-admin/setup-config.php 1 -
+/main/Traversal/images/6/eager+child.jpg 11 -
+/normalize.css 9 http://daanvir.org/reset.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/pic%202.jpg 2 http://daanvir.org/index11.php
+/1.jpg 1 http://daanvir.org/gallery.html
+/modules/modules/modules.php 3 -
+/test/wp-admin/setup-config.php 1 -
+//blog/ 1 http://daanvir.org/
+/config.php 3 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/Hangouts_Penguins_006.png 1 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/vt(2) 1 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/css(1) 4 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/imgs8.png 1 http://daanvir.org/index11.php
+/main/points/blog.php 7 http://www.daanvir.org/
+/6.jpg 1 http://daanvir.org/gallery.html
+/wp-feed.php 1 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/animate.css 3 http://daanvir.org/index11.php
+/test/wp-admin/install.php 1 -
+/core/CHANGELOG.txt 1 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/oVjM2wVZ10b.html 2 http://daanvir.org/index11.php
+/admin/ 1 -
+/blog/wp-admin/setup-config.php 1 -
+/modules/modules.php 3 -
+/license.php 2 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/sv9.png 1 http://daanvir.org/index11.php
+/main/Traversal/imagds/30/Picture1.jpg 1 http://daanvir.org/indextemp.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/custom1.css 4 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/dying%20of%20cold21.jpg 2 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/google_white5.png 1 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/css(2) 4 http://daanvir.org/index11.php
+/main/Stories/Thumbnails/2/WIN_20160619_122919.JPG 2 http://daanvir.org/
+/LICENSE.php 1 -
+/main/Traversal/images.26/dying%20of%20cold3.jpg 1 http://daanvir.org/indextemp.php
+/mahn/Traversal/imafes/6/clothless.jpg 1 http://daanvir.org/indextemp.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/linkdinicon.png 3 http://daanvir.org/index11.php
+/javascript 17 http://daanvir.org/campaign.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/user-man-circle-invert-512.png 1 http://daanvir.org/index11.php
+/main/Stories/Thumbnails/2/happy.jpg 2 http://daanvir.org/
+/main/Traversal/images/26/dying+of+cold3.jpg 2 -
+/img/daanvi.png 1 -
+/blog/xmlrpc.php 1 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/vt(7) 1 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/twittericon.png 2 http://daanvir.org/index11.php
+/site/wp-includes/wlwmanifest.xml 1 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/tmapctrl.png 1 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/util.js 2 http://daanvir.org/index11.php
+/16%EF%BB%BEmain/pages/x101.php0 2 http://daanvir.org/
+/main/Traversal/images/26/dying+of+cold2.jpg 2 -
+/main/Traversal/imager/30/12108947_1640059676211749_4664890777559249087_n.jpg 1 http://daanvir.org/indextemp.php
+/wordpress/wp-includes/wlwmanifest.xml 1 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/iA4H2N97zCg.html 1 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/cbpGridGallery.js 2 http://daanvir.org/index11.php
+/wp-installation.php 3 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/seperate.css 4 http://daanvir.org/index11.php
+/redirect.php 3 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/onion.js 3 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/clothless.jpg 2 http://daanvir.org/index11.php
+/5.jpg 1 http://daanvir.org/gallery.html
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/vt(4) 1 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/owl.carousel.min.js 4 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/cb_scout5.png 1 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/instaicon.png 3 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/poor%20kid.jpg 2 http://daanvir.org/index11.php
+/img.g+.png 1 http://daanvir.org/indextemp.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/vt(9) 1 http://daanvir.org/index11.php
+/wp-rdf.php 1 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/jquery.min.js 4 http://daanvir.org/index11.php
+/.well-known/assetlinks.json 4 -
+/main/Travers%60l/images/26/IMG,20180424-WA0000.jpg 1 http://daanvir.org/indextemp.php
+/11.php 3 -
+/main/Traversal/images/30/14141604_1731232527094463_7973875657888817221_n.jpg 1 http://daanvir.org/indextemp.php
+/layouts/modules.php 3 -
+/part-1.png 1 http://daanvir.org/gallery.html
+/m%60in/Traversal/im%60ges/30/12108947%5E1640059676211749_4664890777559249087_n.jpg 1 http://daanvir.org/indextemp.php
+/main/Traversal/hmages/26/Hangouts_Penguins_006.png 1 http://daanvir.org/indextemp.php
+/tmp.php 3 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/vt(11) 1 http://daanvir.org/index11.php
+/css/example.css 4 http://daanvir.org/indextemp.php
+/wp-datas.php 3 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/Bill-Gates.png 1 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/FB_IMG_1524510399285.jpg 1 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/vt(5) 1 http://daanvir.org/index11.php
+/main/Traversal/images/26/dying+of+cold214.jpg 2 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/is2 3 http://daanvir.org/index11.php
+/sitemapindex.xml 3 -
+/img.twittericon.png 1 http://daanvir.org/indextemp.php
+/Stories/Archives/2/SDLOpenGL%20Game%20Development%20Tutorials%20Part%204%20%20Audio%20SDLMixer%2020.mp4 1 http://daanvir.org/
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/eager%20child.jpg 2 http://daanvir.org/index11.php
+/main/Stories/Thumbnails/2/header3.jpg 2 http://daanvir.org/
+/wordpress/ 1 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/style2_small.css 1 http://daanvir.org/index11.php
+/img/m%60p-icon.png 1 http://daanvir.org/indextemp.php
+/main/Traversal/Articles/Delhi/South 1 -
+/main/points/hitlist.php 7 http://www.daanvir.org/
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/FB_IMG_1524510771305.jpg 1 http://daanvir.org/index11.php
+/mahn/Traversal/imafes/30/DSC_3389.jpg 1 http://daanvir.org/indextemp.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/vt(12) 1 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/Edmund-Burke.png 1 http://daanvir.org/index11.php
+/CHANGELOG.txt 2 -
+/campaign.ph 1 -
+/sitemap.xml.gz 3 -
+/gallery/45.jpg 12 http://daanvir.org/gallery/gallery.html
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/marker.js 3 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/vt(13) 1 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/IMG-20180423-WA0000.jpg 1 http://daanvir.org/index11.php
+/Hitlist/images/2/wallpaper5.jpg 14 -
+/hxcdm/cdm/hxcdm.php 3 -
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/tmapctrl4.png 1 http://daanvir.org/index11.php
+/Daanvir%20-%20Every%20life%20is%20vulnerable_files/pic3.jpg 1 http://daanvir.org/index11.php
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 292
+111.92.59.119 1114 1121 10153046 20180624194038
+123.63.241.36 571 982 69062917 20180630021405
+111.92.57.81 326 467 42777173 20180612183525
+111.92.58.57 246 336 29268826 20180613162335
+111.92.57.129 166 191 5676165 20180603190901
+42.111.13.45 162 166 2691236 20180616205606
+111.92.57.249 151 543 39521717 20180603075527
+27.97.212.23 150 208 33994235 20180609134723
+180.179.142.108 105 105 3197859 20180629050027
+205.253.172.185 88 88 70513 20180620003618
+13.113.106.158 88 88 3280523 20180618065249
+64.233.173.53 83 483 68988487 20180630193150
+64.233.173.55 81 453 44221606 20180630193850
+111.92.58.143 77 101 2285189 20180626181206
+27.97.219.12 76 105 22645982 20180610062941
+91.126.134.2 59 335 27242584 20180618072458
+64.233.173.57 56 420 53309402 20180630193148
+111.92.58.81 47 56 633562 20180610163439
+42.111.16.52 42 42 243471 20180625005925
+192.100.72.2 42 128 7896854 20180604084726
+111.92.56.81 36 42 641871 20180617074149
+49.15.202.11 35 49 6602177 20180606154309
+49.15.135.8 35 35 249398 20180602185313
+49.15.222.148 26 41 177240 20180603070950
+205.253.173.243 23 23 49599 20180620031133
+89.249.64.138 1 1 52809 20180628042837
+205.253.182.238 2 2 18299 20180611043031
+5.102.12.223 1 1 52755 20180618071720
+173.49.24.118 1 1 52632 20180602165831
+8.21.199.96 1 1 39227 20180624155820
+66.220.156.22 0 1 51283 
+185.180.198.41 2 2 105434 20180614002511
+183.82.208.27 2 2 59541 20180606154458
+205.253.160.136 5 5 18364 20180620094627
+14.139.61.129 21 154 13162953 20180618221510
+66.102.6.92 2 5 448329 20180619135412
+54.218.125.23 0 1 114314 
+157.36.235.199 11 55 2565817 20180606191708
+199.247.12.38 4 4 210864 20180607220024
+117.223.208.173 7 73 6140705 20180606175506
+173.252.98.26 1 15 985612 20180620090217
+149.202.72.198 1 1 52809 20180628155617
+47.30.125.180 1 1 39272 20180606192636
+69.171.225.24 1 1 39272 20180606204521
+173.252.124.55 1 7 438964 20180606154251
+94.130.131.80 1 1 52809 20180628002305
+54.245.159.175 4 40 3935577 20180606153523
+66.102.6.181 5 28 3236647 20180616201348
+8.21.199.99 2 2 16464 20180612123627
+111.91.11.154 1 1 39272 20180606163415
+112.5.248.235 1 1 52632 20180602150603
+150.107.8.226 1 1 39272 20180607035134
+205.253.170.115 16 16 90367 20180609162125
+109.81.212.187 17 154 14330308 20180618220524
+173.252.122.58 3 37 4658701 20180605050844
+64.246.165.210 1 1 52717 20180614104319
+103.113.99.75 1 1 39272 20180606180804
+106.204.153.191 1 1 39272 20180606155716
+42.111.21.89 1 1 39272 20180608042229
+106.202.81.160 1 1 8281 20180606155916
+173.252.124.58 0 5 495585 
+173.252.122.57 3 29 1456334 20180605050843
+66.220.149.18 1 1 52716 20180606204526
+111.92.56.47 1 6 219659 20180622023912
+106.192.7.201 6 30 1019626 20180612181349
+69.171.240.118 1 1 39272 20180606155219
+193.201.224.223 1 1 52809 20180629193915
+66.249.82.94 1 3 0 20180612170323
+66.249.82.159 0 1 55503 
+181.222.233.204 7 74 6145171 20180606125605
+157.48.16.37 1 7 52755 20180618160902
+93.179.68.151 1 1 52755 20180618212112
+66.102.6.91 4 10 891000 20180619135411
+66.102.6.183 2 22 2690441 20180620053028
+87.118.116.12 1 1 52632 20180605184832
+205.253.179.121 2 2 16113 20180613175532
+199.116.173.196 1 1 52717 20180614115631
+42.111.18.155 1 6 172197 20180611181008
+42.111.15.209 2 2 18302 20180617062449
+223.180.138.12 7 72 4325394 20180610185441
+204.79.180.22 0 3 80987 
+206.220.200.50 1 1 52809 20180625071820
+120.21.165.95 1 1 39272 20180607082810
+42.111.16.216 1 1 39272 20180623061357
+122.112.2.9 1 1 52632 20180602161316
+204.79.180.5 0 1 9226 
+218.214.24.125 1 1 39272 20180606213955
+42.111.12.8 2 2 18303 20180612200853
+173.252.95.22 1 1 12363 20180606200127
+189.191.38.167 1 1 52809 20180628182124
+120.148.139.246 1 1 39272 20180607041240
+34.220.131.74 6 42 4004099 20180605121008
+52.53.201.78 4 4 211182 20180629051610
+64.233.173.38 4 73 7893340 20180625151449
+109.86.72.27 1 1 52632 20180605004035
+139.59.88.214 4 4 0 20180608201419
+157.41.176.66 2 2 15372 20180625152342
+42.111.16.253 1 1 39272 20180607041702
+34.214.160.193 1 1 52755 20180619222425
+174.3.5.7 1 1 39272 20180622155009
+13.209.9.17 1 1 52755 20180619222339
+205.253.165.239 8 8 18428 20180624031237
+155.64.38.90 14 14 305184 20180625060659
+37.252.15.44 1 1 52809 20180628093502
+80.93.187.145 1 1 52755 20180617222614
+103.208.238.160 1 1 39272 20180614173754
+8.41.226.2 2 2 99548 20180629050124
+173.252.124.61 7 22 692024 20180606154252
+64.233.173.42 7 57 5916587 20180625151453
+1.187.126.254 1 1 39272 20180608082558
+42.111.14.164 15 15 85946 20180612181654
+173.252.85.26 1 1 52632 20180606155220
+106.207.154.151 1 1 49777 20180627125306
+54.215.254.26 3 3 157980 20180609032719
+157.36.163.155 1 1 39272 20180606160335
+205.253.173.144 8 8 18426 20180607122159
+173.252.90.170 2 2 91988 20180606182640
+137.226.113.27 2 2 102473 20180607230253
+64.233.173.40 9 69 7367474 20180625152155
+183.82.224.18 9 92 61904481 20180609141325
+157.39.226.210 1 1 39272 20180617120620
+173.252.92.209 1 1 52716 20180606180316
+157.41.240.52 3 3 30924 20180625152156
+107.167.107.85 6 111 7256755 20180601150758
+120.21.229.17 1 1 39272 20180607025848
+13.57.220.0 7 7 369123 20180620183820
+137.226.113.28 3 3 158067 20180614212306
+27.97.223.218 5 5 56162 20180605162317
+46.118.115.22 2 2 99506 20180602000457
+54.200.46.158 16 92 3410411 20180606153428
+173.252.92.70 1 1 52632 20180606163221
+18.236.123.254 8 80 7871154 20180606153502
+38.100.21.65 2 9 337227 20180609193023
+106.67.120.112 1 1 39272 20180607022022
+141.0.11.13 0 1 102457 
+34.247.80.240 1 1 52809 20180629093957
+173.252.98.29 2 26 1558561 20180620090216
+103.98.37.233 1 1 39272 20180606185824
+18.236.214.146 2 2 68522 20180606153512
+49.207.54.183 1 1 39272 20180606173548
+204.79.180.16 0 1 357 
+173.252.88.87 1 1 39272 20180606180316
+187.85.172.77 1 1 52742 20180613111308
+54.185.200.64 1 1 52632 20180604015523
+205.253.163.41 9 31 4933067 20180627172341
+66.220.151.213 1 1 39272 20180606154229
+117.247.191.99 2 2 49288 20180606121728
+31.13.113.192 1 3 496252 20180606155541
+151.47.121.254 1 1 39272 20180606171012
+66.249.84.55 1 2 155212 20180620002144
+157.44.199.148 1 1 39272 20180606191416
+47.31.102.249 1 1 39272 20180606161823
+42.111.5.115 4 4 18342 20180613030231
+24.77.88.16 1 6 172197 20180613160043
+223.225.204.118 9 32 2177968 20180612181445
+134.19.147.135 0 1 36370 
+173.252.84.194 1 1 8232 20180606172948
+185.220.101.32 1 1 52809 20180629184124
+42.111.31.197 1 1 39272 20180608024555
+54.227.40.15 8 24 921792 20180611073439
+223.179.68.180 1 1 39272 20180606154622
+54.191.110.114 14 146 12288818 20180606153525
+49.206.200.93 3 9 245815 20180606155657
+45.33.20.249 7 73 6140744 20180619214208
+8.21.198.48 1 1 36784 20180607000339
+106.67.116.39 1 6 172197 20180606201832
+66.249.82.218 7 37 2470798 20180625164736
+223.196.14.6 16 94 6579440 20180603050700
+66.220.156.21 1 3 6187298 20180606154008
+120.21.233.196 1 1 39272 20180607005131
+42.111.2.253 1 1 49777 20180629084001
+54.245.204.6 7 73 6144409 20180605121002
+187.114.208.129 0 1 57340 
+205.253.230.117 5 5 36694 20180612170405
+106.211.69.185 1 1 39272 20180607015742
+185.217.93.22 1 1 52755 20180623232859
+208.87.233.140 1 1 52755 20180619212202
+173.252.124.57 3 12 189950 20180606154251
+46.20.35.114 1 1 52716 20180608132718
+150.242.65.197 1 1 39272 20180609162928
+168.228.36.50 1 1 52742 20180612195555
+34.216.111.240 0 1 114314 
+66.249.82.95 0 1 0 
+185.100.87.207 5 5 263740 20180616000136
+138.246.253.19 2 2 0 20180606061754
+173.252.124.54 0 9 745449 
+51.15.138.248 1 1 52632 20180603070122
+66.249.84.57 0 2 219440 
+205.253.132.75 7 7 34472 20180611080719
+137.74.132.80 1 1 52632 20180602161309
+173.252.85.24 1 1 39272 20180606165053
+157.41.222.215 1 1 12619 20180603165837
+107.23.46.211 1 3 1230441 20180614112331
+206.180.165.147 1 1 52755 20180624091901
+42.111.31.108 5 5 18361 20180606172512
+111.92.58.88 7 73 6140748 20180618155726
+49.15.203.170 3 13 21859 20180607153653
+157.39.134.32 4 4 36600 20180620065906
+163.172.4.153 5 5 263490 20180624144824
+106.210.205.162 19 87 6411899 20180614123813
+205.253.212.58 12 12 55033 20180625164738
+104.222.33.42 1 1 52755 20180619094325
+157.36.154.80 12 56 2605091 20180606173605
+173.252.98.23 2 13 1460965 20180620090217
+157.36.191.78 1 1 39272 20180607072208
+47.8.97.250 14 138 6662813 20180601045140
+42.111.30.167 1 1 12618 20180604164212
+157.49.104.232 2 2 18303 20180612060331
+157.44.165.58 4 4 123733 20180609055203
+52.59.102.42 1 1 52755 20180619223308
+49.35.19.174 11 55 2565755 20180606161521
+35.166.70.36 4 40 3935577 20180606153347
+111.92.58.119 9 38 142137 20180623152248
+207.99.15.85 1 1 52809 20180626163031
+159.65.24.22 1 1 52717 20180613205447
+81.107.2.2 1 1 52717 20180613182405
+157.36.241.175 1 1 39272 20180608184318
+157.36.189.195 1 1 39272 20180606162306
+111.92.58.71 7 23 71123 20180630193851
+149.100.185.129 1 1 52755 20180619094159
+34.220.152.87 0 1 114314 
+8.21.198.106 1 1 20269 20180606174225
+157.48.75.162 1 4 52716 20180610121238
+18.217.138.209 8 24 856453 20180610000516
+204.79.180.21 0 1 150626 
+117.199.251.100 3 3 71020 20180611030415
+69.171.225.37 1 1 39272 20180607032449
+66.102.6.185 3 30 1637246 20180628043358
+31.13.113.196 3 5 88329 20180606155559
+183.82.214.183 21 124 7945034 20180618171424
+223.185.184.245 1 1 39272 20180607073854
+183.82.230.184 4 64 6256150 20180605120908
+27.97.213.34 2 2 18299 20180612141113
+173.252.98.27 1 9 2031267 20180620090216
+106.192.13.45 1 7 291879 20180607032158
+193.106.30.99 2 2 52809 20180625063528
+66.220.148.169 1 1 52716 20180607032450
+34.220.40.202 4 40 3935577 20180606153421
+173.252.98.28 1 11 1026588 20180620090216
+137.226.113.26 2 2 105435 20180614211219
+204.79.180.10 0 2 22898 
+204.79.180.7 0 3 72060 
+139.167.203.217 1 11 429864 20180628110334
+159.203.61.98 2 2 0 20180625214435
+42.111.11.197 1 1 39272 20180606204534
+118.219.252.193 1 1 52755 20180619222517
+106.207.156.174 1 1 39272 20180619044256
+157.36.251.63 12 56 2605026 20180607011711
+66.249.82.219 5 31 3258613 20180625164223
+66.249.84.53 0 1 102457 
+103.113.98.76 1 1 39272 20180613094832
+66.249.82.129 0 1 615725 
+157.48.14.197 7 76 6303674 20180608020330
+69.58.178.58 2 2 68522 20180604225451
+54.202.40.41 4 40 3935577 20180605120948
+18.237.61.49 2 2 68522 20180606153402
+93.100.233.74 1 1 52632 20180604204650
+31.13.113.199 0 2 125965 
+5.3.153.171 7 23 858166 20180625125042
+34.214.123.196 1 1 52755 20180619222321
+171.79.155.172 1 1 39272 20180606175222
+106.192.37.213 7 22 123861 20180615185701
+42.111.30.93 8 8 40676 20180630193151
+125.22.193.148 13 63 1546833 20180619085524
+107.170.96.6 3 3 101161 20180606153433
+111.92.56.88 2 2 18301 20180619150746
+45.63.114.215 2 2 105434 20180614041308
+61.2.62.17 7 75 7149757 20180625184356
+111.93.159.50 17 85 7178749 20180610140655
+204.79.180.4 0 1 86709 
+204.79.180.9 0 1 1098 
+106.77.180.184 3 9 245626 20180605075946
+173.252.90.244 1 1 39272 20180606163221
+54.203.111.233 1 1 52755 20180620084438
+117.225.2.213 1 1 39272 20180607154713
+8.21.198.41 2 2 89049 20180625020553
+66.102.6.90 5 7 492202 20180621183428
+42.111.28.86 2 2 18299 20180613042931
+47.52.95.208 1 1 52742 20180613131732
+42.111.23.11 1 1 39272 20180607140551
+180.169.191.142 1 1 52809 20180625020512
+8.21.198.49 1 1 39268 20180613104133
+99.234.135.206 1 1 39272 20180607111215
+66.249.82.220 2 28 829241 20180625153620
+42.111.31.207 16 16 55048 20180612180116
+173.252.122.61 1 8 947837 20180605050843
+204.79.180.23 1 4 90419 20180602102025
+27.97.185.195 2 4 17088 20180603183750
+117.224.189.216 1 1 39272 20180606161235
+192.162.103.150 1 1 52755 20180623120912
+180.151.20.110 1 1 39272 20180607041336
+106.212.163.177 1 1 39272 20180611151804
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 30
+20180601 100 430 24148858 11
+20180602 170 780 59984121 24
+20180603 225 352 17531513 16
+20180604 191 358 16849707 13
+20180605 106 478 38799028 19
+20180606 461 1351 90958960 75
+20180607 93 344 49033821 35
+20180608 92 193 8517238 15
+20180609 272 528 124147563 18
+20180610 85 247 13223326 10
+20180611 66 165 11181372 16
+20180612 362 704 88085686 31
+20180613 278 318 7032017 22
+20180614 57 132 8727014 14
+20180615 7 24 123861 1
+20180616 205 413 23832192 12
+20180617 46 119 6878429 7
+20180618 103 651 52404573 17
+20180619 63 279 20052529 21
+20180620 204 432 27286338 27
+20180621 17 24 349392 4
+20180622 4 11 311686 4
+20180623 14 45 286919 7
+20180624 1133 1155 13774562 11
+20180625 236 605 42613523 30
+20180626 79 138 47400595 3
+20180627 13 38 5202776 5
+20180628 8 22 861032 8
+20180629 11 15 476877 9
+20180630 23 89 2863231 7
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+30mn-1h 12
+1h+ 6
+2mn-5mn 18
+15mn-30mn 14
+5mn-15mn 26
+0s-30s 374
+30s-2mn 42
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 48
+/ 688 33271626 241 152
+/main/html/open.php 595 12343 5 33
+/main/points/hitlist.php 587 7396698 35 22
+/main/php/locs.php 555 324105 1 4
+/main/points/blog.php 414 2192839 18 47
+/campaign.php 276 10710582 66 63
+/main/pages/x101.php 169 5677573 4 24
+/main/points/trend.php 142 999756 1 2
+/main/html/similar_people.php 142 30978 0 3
+/main/php/registerme.php 128 7943 1 6
+/css/Helvetica-Regular.ttf 125 5502112 28 45
+/css/ocra.ttf 105 6118096 15 18
+/main/php/newcamp.php 101 7994 0 1
+/fonts/Raleway/Raleway-Regular.ttf 89 15352720 16 9
+/fonts/fontawesome/fontawesome.woff 76 122700 13 13
+/main/pages/x30.php 73 85225 5 7
+/main/points/logout.php 52 5995 0 0
+/gallery/gallery.html 50 668017 12 7
+/main/php/setcamppic.php 46 2301 0 0
+/main/pages/x27.php 44 284316 1 1
+/main/points/turnlink.php 36 2280 1 0
+/blog2.php 34 336619 8 7
+/main/html/fulldesc.php 30 390 2 11
+/errors/MultiDomainHosting.php 24 401979 0 1
+/main/html/forgot.php 23 664 1 1
+/main/pages/x26.php 3 6683 0 0
+/main/pages/x22.php 4 27125 0 0
+/main/html/search.php 7 486 0 0
+/indextemp.php 4 180828 1 2
+/main/pages/x1.php 2 19100 0 0
+/main/fonts/cantarell/Cantarell-Regular.ttf 12 570048 0 1
+/gallery.html 1 20085 1 0
+/fonts/fontawesome/fontawesome.ttf 1 1440 0 0
+/main/pages/x23.php 4 14256 0 0
+/main/html/reset.php 17 728 0 1
+/faq.php 5 79450 1 3
+/cpanel 5 169250 1 1
+/index7.php 16 523042 8 2
+/index.php 1 52748 0 0
+/main/Traversal/Articles/Delhi/South%20Block.php 2 24726 2 1
+/activate.php 8 160455 1 1
+/index11.php 2 244330 1 0
+/main/pages/x50.php 7 217 0 0
+/main/html/fblogin.php 2 6 0 0
+/main/php/verifyme.php 9 44 0 2
+/fonts/fontawesome/fontawesome.eot 1 1620 0 0
+/main/pages/x24.php 2 2553 0 0
+/reset.php 5 110725 2 1
+END_SIDER

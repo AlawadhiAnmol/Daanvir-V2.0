@@ -1,0 +1,143 @@
+Return-Path: <ksumsurvey@startupmission.in>
+Delivered-To: anmol.alawadhi@daanvir.org
+Received: from md-in-63.webhostbox.net
+	by md-in-63.webhostbox.net with LMTP id IFyeCFjpvlvTIwYAwBqdFg
+	for <anmol.alawadhi@daanvir.org>; Thu, 11 Oct 2018 06:10:32 +0000
+Return-path: <ksumsurvey@startupmission.in>
+Envelope-to: anmol.alawadhi@daanvir.org
+Delivery-date: Thu, 11 Oct 2018 06:10:32 +0000
+Received: from mail-it1-f195.google.com ([209.85.166.195]:36149)
+	by md-in-63.webhostbox.net with esmtps (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128)
+	(Exim 4.91)
+	(envelope-from <ksumsurvey@startupmission.in>)
+	id 1gAUB1-001hMX-Lt
+	for anmol.alawadhi@daanvir.org; Thu, 11 Oct 2018 06:10:32 +0000
+Received: by mail-it1-f195.google.com with SMTP id c85-v6so11601456itd.1
+        for <anmol.alawadhi@daanvir.org>; Wed, 10 Oct 2018 23:10:22 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=startupmission-in.20150623.gappssmtp.com; s=20150623;
+        h=mime-version:sender:from:date:message-id:subject:to;
+        bh=CfWtuh/Gj3lcm6LXZP8tN2I1qVOFp3cRuqJ1ictt+Jg=;
+        b=cS5qzWGBeFI7iXuwyesFHMCPsYhXM9fIp3gnh9dFsz6MqMEB8syB7c97ySiGZBFE5m
+         IHybOHlz32Te3uo86Q78ZzMl31Uol5SZ3cZTaR1MCo+fQfJl3Bf+VZiS3ooeG2kR8VHl
+         Yz1fM0P3I8B/qB0JNjtY8hNRWQZeYF5hDww/PNByhmtRmRVinj+Dg3v0EEeJMPwSNqa4
+         VcbYeW/PSftooxM0xTpLBrqumTvdbtEQ+BEq35WrCPqrMpUJ495hpwmWb+QQGBhtAj46
+         Tf1HuihQ7qii/qJHgvApRPR+XD1EfPM/bVLiPTRctKPskS5CjdzjYog+0v9Rmb8Qjypp
+         7BJQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:sender:from:date:message-id:subject
+         :to;
+        bh=CfWtuh/Gj3lcm6LXZP8tN2I1qVOFp3cRuqJ1ictt+Jg=;
+        b=VO90W1HQTlXMLjibpwmMiXX6Fs+req+V9DgS55J6AxdaAkToEePxrWBBtb/Bf80jyL
+         /MVj31IcZvfKL5cJI7JonGqXRwbkyJH7iAMMVWV+qwzIUJwOuefBxnxOYyuxT2BFI1WG
+         ACgZMhYeGHRXGEC9eDS64rIgia9xVPl89VOfl3UpXd0SgIoKWJFChSlraF1Bpti4zoHC
+         YT8dMtZAIe07rCPbgMj2aVYz7iA8oSi5+QLNeYFXoAZCePJBeZtNjSG61QCMVL41K5l0
+         MUC5kD+2LvF9Er18DQwOvYZyty7EkJVQvsaE6JJumHbUws6kpT+S5AZxZK0bnT9yJscS
+         bjFw==
+X-Gm-Message-State: ABuFfoh0si4q6l/hlmCxB8TuzdoecRrlyMAJuW74EOElMbCMaQws/GwS
+	4N1NFbKP1wnbRCDvUT0B6+Dh4HT3Piowvjo+LHm/fE4o
+X-Google-Smtp-Source: ACcGV63CKYQtLZJgp6BkLSGFoUPdWg81IoNp10NYZUx5skusaAdHmOVL5jcV9SgayeVtc+9Z5BhmpzJgbZ05dE/yN+I=
+X-Received: by 2002:a24:a089:: with SMTP id o131-v6mr390423ite.91.1539238214574;
+ Wed, 10 Oct 2018 23:10:14 -0700 (PDT)
+Received: from 52669349336 named unknown by gmailapi.google.com with HTTPREST;
+ Wed, 10 Oct 2018 23:10:13 -0700
+MIME-Version: 1.0
+Sender: KERALA STARTUP MISSION <ksumsurvey@startupmission.in>
+From: KERALA STARTUP MISSION <ksumsurvey@startupmission.in>
+Date: Wed, 10 Oct 2018 23:10:13 -0700
+X-Google-Sender-Auth: tA9WPMnHIObrgPIRYS9fjq3TJEU
+Message-ID: <CANzf3fhrYd8+FWRTUcJn-7EfXAGZJUx2boLTHwNkx056Y45MOA@mail.gmail.com>
+Subject: phase 1-KSUM unique ID
+To: Anmol Alawadhi <anmol.alawadhi@daanvir.org>
+Content-Type: multipart/alternative; boundary="0000000000000125650577edd31d"
+X-Authenticated_sender: 
+X-Spam-Status: No, score=1.9
+X-Spam-Score: 19
+X-Spam-Bar: +
+X-Ham-Report: DKIM_SIGNED=0.1, DKIM_VALID=-0.1, HTML_IMAGE_ONLY_24=1.282, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_NONE=-0.0001, RCVD_IN_MSPIKE_H2=-0.001, T_SPF_PERMERROR=0.01, UNPARSEABLE_RELAY=0.001, URIBL_BLOCKED=0.001, URI_TRY_3LD=0.612, CMAE Analysis: v=2.3 cv=KIx08mNo c=1 sm=0 tr=0 a=HpAAvcLHHh0Zw7uRqdWCyQ==:117 a=MKtGQD3n3ToA:10 a=smKx5t2vBNcA:10 a=gbBFEwY1bUUA:10 a=ZZnuYtJkoWoA:10 a=FyTA60XL4w1YqRaXt60A:9 a=QEXdDO2ut3YA:10 a=f_uH8HLMahoA:10 a=B2m-ciP-akIJ8ANkbRwA:9 a=HkCVa5XGCsoa0Oli:21
+ 
+ *  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ *       See http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ *      for more information.
+ *      [URIs: startupmission-dot-yamm-track.appspot.com]
+ * -0.0 RCVD_IN_DNSWL_NONE RBL: Sender listed at http://www.dnswl.org/, no
+ *      trust
+ *      [209.85.166.195 listed in list.dnswl.org]
+ * -0.0 RCVD_IN_MSPIKE_H2 RBL: Average reputation (+2)
+ *      [209.85.166.195 listed in wl.mailspike.net]
+ *  0.0 T_SPF_PERMERROR SPF: test of record failed (permerror)
+ *  0.6 URI_TRY_3LD URI: "Try it" URI, suspicious hostname
+ *  1.3 HTML_IMAGE_ONLY_24 BODY: HTML: images with 2000-2400 bytes of words
+ *  0.0 HTML_MESSAGE BODY: HTML included in message
+ *  0.1 DKIM_SIGNED Message has a DKIM or DK signature, not necessarily
+ *      valid
+ * -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ *  0.0 UNPARSEABLE_RELAY Informational: message has unparseable relay lines
+X-Spam-Flag: NO
+
+--0000000000000125650577edd31d
+Content-Type: text/plain; charset="UTF-8"
+
+Dear Founder,
+
+Greetings from Kerala start-up mission.
+
+Kerala Startup Mission (KSUM, formerly known as Technopark TBI) is the
+nodal agency of Government of Kerala for entrepreneurship development and
+incubation activities in Kerala. Ksum is planning to propose different
+schemes and intents to create a unique id for the startups. This unique id
+shall be used for startups for applying various schemes and programs. This
+unique id shall also be used to provide before authorities in order to
+ensure that you are a startup registered with ksum. To avail this unique id
+you are requested to fill the below form.
+please find the below link for phase 1 verification ;
+GOOGLE FORM LINK P1
+<https://startupmission-dot-yamm-track.appspot.com/Redirect?ukey=1MP1hY1SskzqQUBJsW-SSnDd1zGJPYwdtuC3sQHyumgA-2097650997&key=YAMMID-38213109&link=https%3A%2F%2Fgoo.gl%2Fforms%2FElCP1LCZaYww0HAh2>
+
+
+*Kerala Startup Mission, *
+
+*Thejaswini, Technopark Campus, *
+
+*Trivandrum, Kerala *
+*ph:0471-2700270*
+[image: beacon]
+
+--0000000000000125650577edd31d
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div>Dear Founder,</div>=
+<div><br></div>Greetings from Kerala start-up mission.</div><div dir=3D"ltr=
+"><br></div><div dir=3D"ltr">Kerala Startup Mission (KSUM, formerly known a=
+s Technopark TBI) is the nodal agency of Government of Kerala for entrepren=
+eurship development and incubation activities in Kerala. Ksum is planning t=
+o propose different schemes and intents to create a unique id for the start=
+ups. This unique id shall be used for startups for applying various schemes=
+ and programs. This unique id shall also be used to provide before authorit=
+ies in order to ensure that you are a startup registered with ksum. To avai=
+l this unique id you are requested to fill the below form.<br><div><div>ple=
+ase find the below link for phase 1 verification ;<br></div><div><a href=3D=
+"https://startupmission-dot-yamm-track.appspot.com/Redirect?ukey=3D1MP1hY1S=
+skzqQUBJsW-SSnDd1zGJPYwdtuC3sQHyumgA-2097650997&amp;key=3DYAMMID-38213109&a=
+mp;link=3Dhttps%3A%2F%2Fgoo.gl%2Fforms%2FElCP1LCZaYww0HAh2">GOOGLE FORM LIN=
+K P1</a></div></div><div><br></div><div dir=3D"ltr" class=3D"m_607254042378=
+3315138gmail_signature"><div dir=3D"ltr"><div><div dir=3D"ltr"><img src=3D"=
+https://drive.google.com/a/startupmission.in/uc?id=3D1s1NSmTc75ArMTxGbiRlB-=
+U6WGMzGvLwd&amp;export=3Ddownload" width=3D"96" height=3D"81"></div><div di=
+r=3D"ltr" style=3D"text-align:left"><b><font size=3D"1"><span style=3D"font=
+-family:tahoma,sans-serif">Kerala Startup Mission, <br></span></font></b></=
+div><div dir=3D"ltr" style=3D"text-align:left"><b><font size=3D"1"><span st=
+yle=3D"font-family:tahoma,sans-serif">Thejaswini, Technopark Campus, <br></=
+span></font></b></div><div dir=3D"ltr" style=3D"text-align:left"><b><font s=
+ize=3D"1"><span style=3D"font-family:tahoma,sans-serif">Trivandrum, Kerala =
+<br></span></font></b></div><div style=3D"text-align:left"><b><font size=3D=
+"1"><span style=3D"font-family:tahoma,sans-serif">ph:0471-2700270</span></f=
+ont></b></div></div></div></div></div></div></div>
+<img src=3D"https://startupmission-dot-yamm-track.appspot.com/FireBase?ukey=
+=3D1MP1hY1SskzqQUBJsW-SSnDd1zGJPYwdtuC3sQHyumgA-2097650997&amp;key=3DYAMMID=
+-38213109" width=3D"1" height=3D"1" alt=3D"beacon" style=3D"display:none; d=
+isplay:none!important;">
+
+--0000000000000125650577edd31d--

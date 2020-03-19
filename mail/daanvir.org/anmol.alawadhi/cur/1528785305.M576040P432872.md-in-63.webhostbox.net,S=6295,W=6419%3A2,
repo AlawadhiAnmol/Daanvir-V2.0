@@ -1,0 +1,124 @@
+Return-Path: <01000163f2b454c5-07f6c2a0-2e60-4a27-9725-59a35dbc08f4-000000@amazonses.com>
+Delivered-To: anmol.alawadhi@daanvir.org
+Received: from md-in-63.webhostbox.net
+	by md-in-63.webhostbox.net (Dovecot) with LMTP id mVKtIZlpH1vomgYAwBqdFg
+	for <anmol.alawadhi@daanvir.org>; Tue, 12 Jun 2018 06:35:05 +0000
+Return-path: <01000163f2b454c5-07f6c2a0-2e60-4a27-9725-59a35dbc08f4-000000@amazonses.com>
+Envelope-to: anmol.alawadhi@daanvir.org
+Delivery-date: Tue, 12 Jun 2018 06:35:05 +0000
+Received: from a10-172.smtp-out.amazonses.com ([54.240.10.172]:35568)
+	by md-in-63.webhostbox.net with esmtps (TLSv1.2:ECDHE-RSA-AES128-SHA256:128)
+	(Exim 4.89)
+	(envelope-from <01000163f2b454c5-07f6c2a0-2e60-4a27-9725-59a35dbc08f4-000000@amazonses.com>)
+	id 1fSctR-001uNV-Rg
+	for anmol.alawadhi@daanvir.org; Tue, 12 Jun 2018 06:35:05 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=vmweay23vju5pgjewim6y7ifjhik2vjg; d=internshala.com;
+	t=1528785294;
+	h=Date:From:To:Subject:Reply-To:Message-ID:Mime-Version:Content-Type;
+	bh=R/7pOIoxt+enkgLi3fX1BkXpkD2p9cuDcGaS7UM9rvo=;
+	b=d8uWG0BZjz+JW8Dn47SvOkCgzg38DBx2nNSjOCXf4EOt1Xpa3Ov0W/0uGI2VuhhO
+	JIeuYwH5DdEVQoVQV1As1CLUilsrXOl5uTmZY9vA8fwCa3FnFxMAr1E7r4UNT2MqaNR
+	P6z6Ar2OWh4fm53aRsEJPV3EPYdMPxJUWAVDUdcM=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug; d=amazonses.com; t=1528785294;
+	h=Date:From:To:Subject:Reply-To:Message-ID:Mime-Version:Content-Type:Feedback-ID;
+	bh=R/7pOIoxt+enkgLi3fX1BkXpkD2p9cuDcGaS7UM9rvo=;
+	b=R44n25o35eqxcOZomBnSq4bMXYmeDp402CZZnSI3QkR2v6tWKDS0kvPy4WFdJNzs
+	C8PkUzcMfjEfcRNm+k6Op9xTFQn2H926YJ1Qz81PrzQOWshJEAzR+7IKusq222OV2tc
+	bxsKfAyd29161JosQA0InsznjPepQr9xjORuajTg=
+User-Agent: internshala.com
+Date: Tue, 12 Jun 2018 06:34:54 +0000
+From: "Internshala" <employer@internshala.com>
+To: anmol.alawadhi@daanvir.org
+Subject: =?UTF-8?Q?Your=20Graphic=20Design=20?==?UTF-8?Q?internsh?= =?UTF-8?Q?ip=20on=20Internshala=20is=20?==?UTF-8?Q?now=20clo?= =?UTF-8?Q?sed?=
+Reply-To: "Internshala" <employer@internshala.com>
+X-Sender: employer@internshala.com
+X-Mailer: internshala.com
+X-Priority: 3 (Normal)
+Message-ID: <01000163f2b454c5-07f6c2a0-2e60-4a27-9725-59a35dbc08f4-000000@email.amazonses.com>
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary="B_ALT_5b1f698c28c20"
+X-SES-Outgoing: 2018.06.12-54.240.10.172
+Feedback-ID: 1.us-east-1.zxtucPVubGftJWR49L2EMyyk1hBPV57S2rBAeFj2vQs=:AmazonSES
+X-Authenticated_sender: 
+X-Spam-Status: No, score=0.2
+X-Spam-Score: 2
+X-Spam-Bar: /
+X-Ham-Report: DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, HEADER_FROM_DIFFERENT_DOMAINS=0.25, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_NONE=-0.0001, SPF_PASS=-0.001, URIBL_BLOCKED=0.001, CMAE Analysis: v=2.3 cv=P/8UeBIu c=1 sm=0 tr=0 a=HpAAvcLHHh0Zw7uRqdWCyQ==:117 a=fflHlLUJLtGELepeDmIBOQ==:17 a=7mUfYlMuFuIA:10 a=Hgn-wnRn1-cA:10 a=54V8FjglJEe5w-i4kO8A:9 a=TxyOV9yZEIj-90PnHacA:9 a=NUdgx5e_NtZH4mZc:21 a=3OgfNqDNkiZw5mDc:21 a=QEXdDO2ut3YA:10 a=_atXHenfs7nsgMB2yKEA:9 a=g05xIU2uszWbwlYA:21 a=gv3emIEUOynLpEQD:21
+ 
+ *  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ *       See http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ *      for more information.
+ *      [URIs: linkedin.com]
+ * -0.0 RCVD_IN_DNSWL_NONE RBL: Sender listed at http://www.dnswl.org/, no
+ *      trust
+ *      [54.240.10.172 listed in list.dnswl.org]
+ * -0.0 SPF_PASS SPF: sender matches SPF record
+ *  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
+ *      domains are different
+ *  0.0 HTML_MESSAGE BODY: HTML included in message
+ * -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
+ *       domain
+ * -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ *  0.1 DKIM_SIGNED Message has a DKIM or DK signature, not necessarily
+ *      valid
+X-Spam-Flag: NO
+
+This is a multi-part message in MIME format.
+Your email application may not support this format.
+
+--B_ALT_5b1f698c28c20
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Dear Anmol ,
+
+ I wanted to notify you that your Graphic Design internship is now closed
+for applications and has received 98 applications in total.
+
+ If you wish, you can also extend the deadline of the internship by maximum
+2 weeks, or repost the internship by using the 'clone internship' feature
+available on your dashboard.
+
+ You can view and update the status of the applicants here.
+
+ Kindly note that you have only 15 more days till Tue, 26 Jun 2018 to access
+the applications received.
+
+ For any assistance, I am just a call/mail away :)
+
+
+ Many thanks,
+ Nitin Malik
+ Manager - Employer Relations
+ Internshala
+ Phone - +91 - 83758 36427
+ LinkedIn | Facebook
+
+
+--B_ALT_5b1f698c28c20
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Dear Anmol ,=0A<br><br>=0A        I wanted to notify you that your <a href=
+=3D"https://internshala.com/internship/detail/graphic-design-work-from-home=
+-internship-at-daanvir-india1526674198">Graphic Design</a> internship is no=
+w closed for applications and has received 98 applications in total.=0A    =
+    <br><br>=0A        If you wish, you can also extend the deadline of the=
+ internship by maximum 2 weeks, or repost the internship by using the 'clon=
+e internship' feature available on your <a href=3D"https://internshala.com/=
+employer/dashboard">dashboard</a>.=0A        <br><br>=0A        You can vie=
+w and update the status of the applicants <a href=3D"https://internshala.co=
+m/employer/internship_applications/364193">here</a>.=0A        <br><br>=0A =
+       Kindly note that you have only 15 more days till Tue, 26 Jun 2018 to=
+ access the applications received.=0A        <br><br>=0A        For any ass=
+istance, I am just a call/mail away :)=0A        =0A=0A<br/><br/>=0A       =
+                 Many thanks,=0A                        <br/>Nitin Malik=0A=
+                        <br/>Manager - Employer Relations=0A               =
+         <br/><a href=3D'https://internshala.com'>Internshala</a>=0A       =
+                 <br/>Phone - +91 - 83758 36427=0A                        <=
+br/><a href=3D'http://www.linkedin.com/company/1706756'>LinkedIn</a> | <a h=
+ref=3D'https://www.facebook.com/Internshala/'>Facebook</a>
+
+--B_ALT_5b1f698c28c20--

@@ -1,0 +1,93 @@
+Return-Path: <manaswini.mysore@gmail.com>
+Delivered-To: anmol.alawadhi@daanvir.org
+Received: from md-in-63.webhostbox.net
+	by md-in-63.webhostbox.net (Dovecot) with LMTP id OTizNrptG1uD0g4AwBqdFg
+	for <anmol.alawadhi@daanvir.org>; Sat, 09 Jun 2018 06:03:38 +0000
+Return-path: <manaswini.mysore@gmail.com>
+Envelope-to: anmol.alawadhi@daanvir.org
+Delivery-date: Sat, 09 Jun 2018 06:03:38 +0000
+Received: from mail-pg0-f48.google.com ([74.125.83.48]:40936)
+	by md-in-63.webhostbox.net with esmtps (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128)
+	(Exim 4.89)
+	(envelope-from <manaswini.mysore@gmail.com>)
+	id 1fRWyK-0044im-Kw
+	for anmol.alawadhi@daanvir.org; Sat, 09 Jun 2018 06:03:38 +0000
+Received: by mail-pg0-f48.google.com with SMTP id l2-v6so7321507pgc.7
+        for <anmol.alawadhi@daanvir.org>; Fri, 08 Jun 2018 23:03:32 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=from:mime-version:subject:message-id:date:to;
+        bh=+POSaR4i9oOiAVBVHAB8yCfa59f/JVB9XbIk25aga1Y=;
+        b=AWkcLXv3yLcJXUQvhYyybuLfLN0q88zZdFTZgaviOb16KJPloyAP3q9kUhcGXXGDxe
+         dWHR+8BQmKXD06nh3lAFYIX+Ffo2jw/mgosBr1m3JPUk/VS2d3J830MxaGTNtpt/0s3k
+         9Bn8scKRHMZCNVQX1x2MJOA78EHYI+ziF9KpJ0bCkHRC0uGjbZEgnKGb/QXSxCkqP5hO
+         cDyifGcbV6hvL8P1IdC/JCxvjn6UeHBxty5P5wNGy4wC+YL6+OuGrwDfdxEn9oI+qIk7
+         QaLu7aVfVwE44P3zarNniZ2jlZH6WGqm94NQElg/dePQdNSUQ+1vj6leZsSL8BdVScrh
+         BDUw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:from:mime-version:subject:message-id:date:to;
+        bh=+POSaR4i9oOiAVBVHAB8yCfa59f/JVB9XbIk25aga1Y=;
+        b=n/Lr8JEKfEhkfnsNoz9iDul1Zq5rTe3WKMHSL2+JKDCilJU3Ft6E5U7ivM4DNGVt69
+         O4BJnCvIGe6NVuPV1qHYcIFUNjBlx2VI0m8VPfKhoF3JU5I3NhLTtjrG7S7bWdqH0d0O
+         CmfQkwNoMt4ykuCGRvhW+KoBRikEtpv4luKKJFANEbr0mgoMQQ68Sfph/tB1Dw8A/4ro
+         U84S9g/jaHzbeTfPxXjxD3l/fpwjdKWfni1K/eGDnDrpXd8KoDC/Fc6bzTGmeli2cNgS
+         O+Va5IF/UMFxIwEWdtsP+wjnD2KDwy5Ap0HB3XWdb4sHWBWdEwhMroLkwE8LAsP1CNTa
+         zjkg==
+X-Gm-Message-State: APt69E2pyMB8Nbkeaje65Yvzhh+sShJ2wDI11cXpaufKhnBQ2cZmJIxC
+	uDyrMshtLgjC1GhTRdfQtZZBVgg=
+X-Google-Smtp-Source: ADUXVKKr/5Jr+rcAu2OwJ9Z7vo1uajC23PWoOz2uWsTqoAW5B/hpdwucY43Lm4E4waimf3BTJ+0TBw==
+X-Received: by 2002:a62:ca99:: with SMTP id y25-v6mr8883036pfk.187.1528524203540;
+        Fri, 08 Jun 2018 23:03:23 -0700 (PDT)
+Received: from ?IPv6:2409:4070:200f:9e3a:d0cc:406f:1a18:381d? ([2409:4070:200f:9e3a:d0cc:406f:1a18:381d])
+        by smtp.gmail.com with ESMTPSA id 10-v6sm69428500pgb.40.2018.06.08.23.03.21
+        for <anmol.alawadhi@daanvir.org>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 08 Jun 2018 23:03:22 -0700 (PDT)
+From: manaswini mysore <manaswini.mysore@gmail.com>
+Content-Type: multipart/alternative;
+ boundary="Apple-Mail=_823DD034-F571-4F26-B427-E1FE4EBC3C7C"
+Mime-Version: 1.0 (Mac OS X Mail 10.3 \(3273\))
+Subject: Team page
+Message-Id: <853C500D-2BFC-48E2-8198-9A978E8708FA@gmail.com>
+Date: Sat, 9 Jun 2018 11:33:18 +0530
+To: Anmol Alawadhi <anmol.alawadhi@daanvir.org>
+X-Mailer: Apple Mail (2.3273)
+X-Authenticated_sender: 
+X-Spam-Status: No, score=-0.1
+X-Spam-Score: 0
+X-Spam-Bar: /
+X-Ham-Report: DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, FREEMAIL_FROM=0.001, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_NONE=-0.0001, SPF_PASS=-0.001, CMAE Analysis: v=2.3 cv=P/8UeBIu c=1 sm=0 tr=0 a=HpAAvcLHHh0Zw7uRqdWCyQ==:117 a=x7bEGLp0ZPQA:10 a=T6tfvO-29C8A:10 a=xqWC_Br6kY4A:10 a=4_-BN3WEXhEA:10 a=7mUfYlMuFuIA:10 a=zOjGAtW1FdMjasz3Qq0A:9 a=CjuIK1q_8ugA:10 a=5M3FFVdOnf7Wouc7sHUA:9 a=_W_S_7VecoQA:10
+ 
+ * -0.0 RCVD_IN_DNSWL_NONE RBL: Sender listed at http://www.dnswl.org/, no
+ *      trust
+ *      [74.125.83.48 listed in list.dnswl.org]
+ * -0.0 SPF_PASS SPF: sender matches SPF record
+ *  0.0 FREEMAIL_FROM Sender email is commonly abused enduser mail provider
+ *      (manaswini.mysore[at]gmail.com)
+ *  0.0 HTML_MESSAGE BODY: HTML included in message
+ * -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
+ *       domain
+ * -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ *  0.1 DKIM_SIGNED Message has a DKIM or DK signature, not necessarily
+ *      valid
+X-Spam-Flag: NO
+
+
+--Apple-Mail=_823DD034-F571-4F26-B427-E1FE4EBC3C7C
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain;
+	charset=us-ascii
+
+Please text me the changes sir.
+
+https://drive.google.com/open?id=3D1yHIFXKuGZ6T-eUrx50hiuo_1SAxY--dk =
+<https://drive.google.com/open?id=3D1yHIFXKuGZ6T-eUrx50hiuo_1SAxY--dk>=
+
+--Apple-Mail=_823DD034-F571-4F26-B427-E1FE4EBC3C7C
+Content-Transfer-Encoding: 7bit
+Content-Type: text/html;
+	charset=us-ascii
+
+<html><head><meta http-equiv="Content-Type" content="text/html charset=us-ascii"></head><body style="word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space;" class="">Please text me the changes sir.<div class=""><br class=""><div class=""><a href="https://drive.google.com/open?id=1yHIFXKuGZ6T-eUrx50hiuo_1SAxY--dk" class="">https://drive.google.com/open?id=1yHIFXKuGZ6T-eUrx50hiuo_1SAxY--dk</a></div></div></body></html>
+--Apple-Mail=_823DD034-F571-4F26-B427-E1FE4EBC3C7C--

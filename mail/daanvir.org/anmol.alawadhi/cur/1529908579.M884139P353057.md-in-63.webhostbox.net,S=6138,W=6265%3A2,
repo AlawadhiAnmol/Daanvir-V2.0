@@ -1,0 +1,127 @@
+Return-Path: <0100016435a83d75-cfec9392-52b1-47b9-bb83-a6e7e5b102fa-000000@amazonses.com>
+Delivered-To: anmol.alawadhi@daanvir.org
+Received: from md-in-63.webhostbox.net
+	by md-in-63.webhostbox.net (Dovecot) with LMTP id 8dmmNGONMFshYwUAwBqdFg
+	for <anmol.alawadhi@daanvir.org>; Mon, 25 Jun 2018 06:36:19 +0000
+Return-path: <0100016435a83d75-cfec9392-52b1-47b9-bb83-a6e7e5b102fa-000000@amazonses.com>
+Envelope-to: anmol.alawadhi@daanvir.org
+Delivery-date: Mon, 25 Jun 2018 06:36:19 +0000
+Received: from a10-173.smtp-out.amazonses.com ([54.240.10.173]:41238)
+	by md-in-63.webhostbox.net with esmtps (TLSv1.2:ECDHE-RSA-AES128-SHA256:128)
+	(Exim 4.89)
+	(envelope-from <0100016435a83d75-cfec9392-52b1-47b9-bb83-a6e7e5b102fa-000000@amazonses.com>)
+	id 1fXL6m-001jPU-1T
+	for anmol.alawadhi@daanvir.org; Mon, 25 Jun 2018 06:36:19 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=vmweay23vju5pgjewim6y7ifjhik2vjg; d=internshala.com;
+	t=1529908575;
+	h=Date:From:To:Subject:Reply-To:Message-ID:Mime-Version:Content-Type;
+	bh=dp50PZGQkYkg/WALcahEPPzXNieYvkKoNBsKn41k3PA=;
+	b=FN+S9cRl9Yq3kGtq9fwZCJD3LvZPZGi/G+NvZAnbKFyWVjrzxs4DY10IoyrbKdOy
+	PPS6O5ivWmdtrx+xK6d343GaTPP/uYZuQvXSTL15JtlIkHN/4mTWzkWiWG9hF3UecVY
+	6ucIb0uyql34dHThoApaD7As55OeliwdBWc6GftQ=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug; d=amazonses.com; t=1529908575;
+	h=Date:From:To:Subject:Reply-To:Message-ID:Mime-Version:Content-Type:Feedback-ID;
+	bh=dp50PZGQkYkg/WALcahEPPzXNieYvkKoNBsKn41k3PA=;
+	b=BUW5mfP+FWEyNxBX9EPStkmj+iMJMbb0gPtdaDx3aexMHhg5oMg402x0+bRm7iRe
+	Lpy/3K2VDqzLNOQu8FmQRV+udsKx81Ts9GhRL3LnnAwZsKvGzjyxTtTr3UZDMjtlL8F
+	PZbVdUwYA1bytAohAcM7WtoJRDgOWRuiQ+kJp9Xo=
+User-Agent: internshala.com
+Date: Mon, 25 Jun 2018 06:36:15 +0000
+From: "Internshala Admin (Employers)" <employer@internshala.com>
+To: anmol.alawadhi@daanvir.org
+Subject: =?UTF-8?Q?Copy=20of=20email=20sent=20t?==?UTF-8?Q?o=20stude?= =?UTF-8?Q?nts=20for=20Content=20Writi?==?UTF-8?Q?ng=20inter?= =?UTF-8?Q?nship?=
+Reply-To: <employer@internshala.com>
+X-Sender: employer@internshala.com
+X-Mailer: internshala.com
+X-Priority: 3 (Normal)
+Message-ID: <0100016435a83d75-cfec9392-52b1-47b9-bb83-a6e7e5b102fa-000000@email.amazonses.com>
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary="B_ALT_5b308d5d6c22b"
+X-SES-Outgoing: 2018.06.25-54.240.10.173
+Feedback-ID: 1.us-east-1.zxtucPVubGftJWR49L2EMyyk1hBPV57S2rBAeFj2vQs=:AmazonSES
+X-Authenticated_sender: 
+X-Spam-Status: No, score=0.2
+X-Spam-Score: 2
+X-Spam-Bar: /
+X-Ham-Report: DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, HEADER_FROM_DIFFERENT_DOMAINS=0.25, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_NONE=-0.0001, SPF_PASS=-0.001, URIBL_BLOCKED=0.001, CMAE Analysis: v=2.3 cv=P/8UeBIu c=1 sm=0 tr=0 a=HpAAvcLHHh0Zw7uRqdWCyQ==:117 a=oSAdShK7ztX74D7p324f+g==:17 a=7mUfYlMuFuIA:10 a=Hgn-wnRn1-cA:10 a=54V8FjglJEe5w-i4kO8A:9 a=93xJFU8yQCdaZWYuiBAA:9 a=QEXdDO2ut3YA:10 a=lC8mZ72c0OcA:10 a=TAYw8NDfBLEaEoli:21 a=bb4O4t1UnrXTSiolQ1eB:22
+ 
+ *  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ *       See http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ *      for more information.
+ *      [URIs: internshala.com]
+ * -0.0 RCVD_IN_DNSWL_NONE RBL: Sender listed at http://www.dnswl.org/, no
+ *      trust
+ *      [54.240.10.173 listed in list.dnswl.org]
+ *  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
+ *      domains are different
+ * -0.0 SPF_PASS SPF: sender matches SPF record
+ *  0.0 HTML_MESSAGE BODY: HTML included in message
+ *  0.1 DKIM_SIGNED Message has a DKIM or DK signature, not necessarily
+ *      valid
+ * -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ * -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
+ *       domain
+X-Spam-Flag: NO
+
+This is a multi-part message in MIME format.
+Your email application may not support this format.
+
+--B_ALT_5b308d5d6c22b
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Hi Anmol ,
+
+Below is the copy of the email you have sent from your dashboard to the
+student(s) for Content Writing internship. You will receive response from
+the student(s) directly in your mailbox.
+
+-----------------------------------------
+
+Hi Namrata,
+Great work with your previous article.
+Looking at your writing skills, we would like to spread the thoughts that
+you have to share.
+Here is your new task- "lunch box in children's life"
+
+Share the word file for the same on or before Saturday 30 June 2018.
+
+Thanks & Regards,
+Anmol Alawadhi
+Daanvir.org
+
+----------------------------------------
+
+Email recipients:
+
+Namrata Priyadarshini (namratakunmun@gmail.com)
+ Many thanks,
+ Team Internshala
+ Internshala | Facebook
+
+
+--B_ALT_5b308d5d6c22b
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hi Anmol ,=0A<br/><br/>=0ABelow is the copy of the email you have sent from=
+ your dashboard to the student(s) for <a href=3D"https://internshala.com/in=
+ternship/detail/content-writing-work-from-home-internship-at-daanvir-india1=
+526673972">Content Writing</a> internship.  You will receive response from =
+the student(s) directly in your mailbox.=0A<br/><br/>=0A-------------------=
+----------------------=0A<br/>=0AHi Namrata,<br />=0AGreat work with your p=
+revious article. <br />=0ALooking at your writing skills, we would like to =
+spread the thoughts that you have to share.<br />=0AHere is your new task- =
+"lunch box in children's life"<br />=0A<br />=0AShare the word file for the=
+ same on or before Saturday 30 June 2018.<br />=0A<br />=0AThanks & Regards=
+,<br />=0AAnmol Alawadhi<br />=0ADaanvir.org<br />=0A<br />=0A<br />=0A=0A<=
+br/>=0A----------------------------------------=0A<br/><br/>=0A<b>Email rec=
+ipients:</b>=0A<br/>=0A<ol><li>Namrata Priyadarshini (namratakunmun@gmail.c=
+om)</li></ol><br/><br/>=0A                        Many thanks,=0A          =
+              <br/>Team Internshala=0A                        <br/><a href=
+=3D'https://internshala.com'>Internshala</a> | <a href=3D'https://www.faceb=
+ook.com/Internshala/'>Facebook</a>
+
+--B_ALT_5b308d5d6c22b--

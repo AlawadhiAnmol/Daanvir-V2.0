@@ -1,0 +1,151 @@
+Return-Path: <bounce+9d42b0.fbe5e-anmol.alawadhi=daanvir.org@startupmission.in>
+Delivered-To: anmol.alawadhi@daanvir.org
+Received: from md-in-63.webhostbox.net
+	by md-in-63.webhostbox.net (Dovecot) with LMTP id qQXxCxsKfVtMmw0AwBqdFg
+	for <anmol.alawadhi@daanvir.org>; Wed, 22 Aug 2018 07:00:43 +0000
+Return-path: <bounce+9d42b0.fbe5e-anmol.alawadhi=daanvir.org@startupmission.in>
+Envelope-to: anmol.alawadhi@daanvir.org
+Delivery-date: Wed, 22 Aug 2018 07:00:43 +0000
+Received: from z12.mailgun.us ([104.130.96.12]:63568)
+	by md-in-63.webhostbox.net with esmtp (Exim 4.89)
+	(envelope-from <bounce+9d42b0.fbe5e-anmol.alawadhi=daanvir.org@startupmission.in>)
+	id 1fsN8B-003vKP-5P
+	for anmol.alawadhi@daanvir.org; Wed, 22 Aug 2018 07:00:43 +0000
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=startupmission.in; q=dns/txt;
+ s=smtp; t=1534921222; h=Content-Transfer-Encoding: Content-Type:
+ MIME-Version: To: From: Subject: Date: Message-ID: Sender;
+ bh=MiPd5wODKcgtbM0QiTcLVxrpAt18s1mhI8Sfe6WqIts=; b=O11GlJrP1GOvksQFEERJjmE4/rWxJ+BN4EDopWZqq+WMotEgcmVjai9aHBAxpFD9xQW0dsbm
+ SaUfw6x3ukTyHv4MKSQotywEZaeimXhyogQoexaZKdwM/2FhcR/NbpgxgfNyAVHeQe66qpIP
+ EmJ0DA7CV/duy/Z7gdWa5JzOtBk=
+X-Mailgun-Sending-Ip: 104.130.96.12
+X-Mailgun-Sid: WyJkMWI1ZSIsICJhbm1vbC5hbGF3YWRoaUBkYWFudmlyLm9yZyIsICJmYmU1ZSJd
+Sender: webadmin@startupmission.in
+Received: from [127.0.0.1] (static.ill.117.239.77.108/24.bsnl.in [117.239.77.108])
+ by mxa.mailgun.org with ESMTP id 5b7d0a05.7f3efa44c3c0-smtp-out-n01;
+ Wed, 22 Aug 2018 07:00:21 -0000 (UTC)
+Message-ID: <20d671d63c4f52994785d496f933ce34@swift.generated>
+Date: Wed, 22 Aug 2018 12:30:33 +0530
+Subject: Incubation Password
+From: KSUM <webadmin@startupmission.in>
+To: anmol.alawadhi@daanvir.org
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-Authenticated_sender: 
+X-Spam-Status: No, score=1.0
+X-Spam-Score: 10
+X-Spam-Bar: +
+X-Ham-Report: DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, HTML_MESSAGE=0.001, MIME_HTML_ONLY=1.105, RCVD_IN_DNSWL_NONE=-0.0001, T_SPF_PERMERROR=0.01, URIBL_BLOCKED=0.001, CMAE Analysis: v=2.3 cv=P/8UeBIu c=1 sm=0 tr=0 a=HpAAvcLHHh0Zw7uRqdWCyQ==:117 a=O5Uh3XYJv+kciA/SLfRZ3Q==:17 a=IkcTkHD0fZMA:10 a=MKtGQD3n3ToA:10 a=7oO2SfT85NoA:10 a=dapMudl6Dx4A:10 a=gbBFEwY1bUUA:10 a=ZZnuYtJkoWoA:10 a=X6l7xPXzqYsrIEN5gJ4A:9 a=doxn9rMYV0t-D24M:21 a=_W_S_7VecoQA:10 a=QEXdDO2ut3YA:10 a=-FEs8UIgK8oA:10 a=NWVoK91CQyQA:10
+ 
+ *  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ *       See http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ *      for more information.
+ *      [URIs: kerala.gov.in]
+ * -0.0 RCVD_IN_DNSWL_NONE RBL: Sender listed at http://www.dnswl.org/, no
+ *      trust
+ *      [104.130.96.12 listed in list.dnswl.org]
+ *  0.0 T_SPF_PERMERROR SPF: test of record failed (permerror)
+ *  1.1 MIME_HTML_ONLY BODY: Message only has text/html MIME parts
+ *  0.0 HTML_MESSAGE BODY: HTML included in message
+ * -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
+ *       domain
+ *  0.1 DKIM_SIGNED Message has a DKIM or DK signature, not necessarily
+ *      valid
+ * -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+X-Spam-Flag: NO
+
+<!DOCTYPE html>
+<html lang=3D"en-US">
+
+=09<body style=3D"margin:0; padding:0;" bgcolor=3D"#eaeced">
+=09<!-- Start Letter -->
+    <div width=3D"100%" style=3D"background: #eceff4; padding: 50px 20px; c=
+olor: #514d6a;">
+        <div style=3D"max-width: 700px; margin: 0px auto; font-size: 14px; =
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.1=
+9);" >
+            <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=
+=3D"background:#fff; width: 100%; border-bottom:5px #0b9444 solid; padding:=
+30px;">
+                <tr>
+                    <td style=3D"vertical-align: top;">
+                        <img src=3D"http://localhost/common/img/logo.png" a=
+lt=3D"Kerala StartUp Mission" style=3D"height: 50px" />
+                    </td>
+                    <td style=3D"text-align: right; vertical-align: middle;=
+ text-decoration: none;">
+                        <a target=3D"_blank" href=3D"https://startupmission=
+.kerala.gov.in/" style=3D"color: #a09bb9; text-decoration:none !important;"=
+>
+                           www.startupmission.kerala.gov.in
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <div id=3D"template-body" style=3D"padding: 40px 40px 20px 40px=
+; background: #fff; border-bottom: 1px #ccc solid; border-top:5px #00aeef s=
+olid;">
+                                            <table style=3D"width: 100%;" c=
+ellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+                    <tbody>
+                        <tr>
+                            <td style=3D"font:25px/28px Arial, Helvetica, s=
+ans-serif; color:#00aeef; padding:10px; text-align:center;">
+                            Welcome
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style=3D"font:20px Arial, Helvetica, sans-s=
+erif; color:#292c34; padding:0 0 15px; text-align: center;">
+                            <span>AnmolAlawadhi</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p style=3D"font:15px/18px Arial, Helvetica=
+, sans-serif; color:#292c34; padding:0 0 10px; text-align: center;">Your ac=
+count has been created successfully. Use the password shown below to login =
+to your account.In&nbsp;case&nbsp;of&nbsp;any&nbsp;doubts&nbsp;or&nbsp;clar=
+ifications&nbsp;please&nbsp;contact&nbsp;0471&nbsp;2700270. Please do not r=
+eply to this mail. This is an auto generated mail.<br></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style=3D"font:15px/18px Arial, Helvetica, s=
+ans-serif; border:1px #cccc dashed; padding:5px;" align=3D"center">
+                                <h4>Your Password is <span style=3D"color:#=
+e94e38;">u8G72C</span></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p style=3D"font:14px Arial, Helvetica, san=
+s-serif; color:#292c34; text-align: center;">Regards,</p>
+                                <p style=3D"font:15px/18px Arial, Helvetica=
+, sans-serif; color:#292c34; text-align: center;"><strong>Kerala Startup Mi=
+ssion</strong></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                        =20
+            </div>
+            <div style=3D"text-align: center; font-size: 14px Arial, Helvet=
+ica, sans-serif; color: #a09bb9; background: #fff;">
+                <p style=3D"margin-top:0; padding:15px;">
+                    Kerala Startup Mission.<br/>
+                    G3B, Thejaswini, Technopark Campus, Kariyavattom, Triva=
+ndrum, Kerala 695581
+                    <br/>
+                    Tel: 0471-2700270<br/>=20
+                    Powered by <a style=3D"color: #a09bb9;" target=3D"_blan=
+k" href=3D"http://livares.com">Livares Technologies</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End Start Letter -->
+=09=09=09=09
+=09</body>
+=09<!--new theme -->
+</html>

@@ -1,0 +1,409 @@
+<script type="text/javascript">
+ var map0, heatmap1, heatmap2;
+ var heatmapData1 = [  {location: new google.maps.LatLng(32.5362645, 75.2245693), weight: 5},{location: new google.maps.LatLng(28.9034473, 76.5719414), weight: 5} ], heatmapData2 = [   ];
+var area = new google.maps.LatLng(26.238894, 78.7683128);
+map0 = new google.maps.Map(document.getElementById('vmap'), {
+  center: area,
+  zoom:5,
+  mapTypeId: 'roadmap'
+});
+if(heatmapData1[0]!=null){
+heatmap1 = new google.maps.visualization.HeatmapLayer({
+  data: heatmapData1,
+  map:map0
+}); 
+var image1 = `http://daanvir.org/images/marker3.png`;
+var beaches1 = [[`GHAGWAL`, 32.5362645, 75.2245693, 3],[`ROHTAK`, 28.9034473, 76.5719414, 4]];
+var cS1 = [[`<div id="wrap-boxes-hitlist" style="min-width: 300px;height: 100%;text-align: left;"><div id="loadMoreH"><li id="H_LI_4">
+				<h1 id="H1_5">
+					JAMMU & KASHMIR-GHAGWAL
+				</h1>
+				<figure id="FIGURE_6">
+					<h2 id="H_H2_7">
+						Need passengers next dawn
+					</h2>
+					<div class="owl-carousel">
+					
+	<div>
+	<img src="main/Traversal/images/6/MBTA_XDE40_1415.jpg.jpg" id="IMG_8" alt="Loading Image.." />
+	</div>
+	<div>
+	<img src="main/Traversal/images/6/front_design_idea.jpg" id="IMG_8" alt="Loading Image.." />
+	</div>
+	<div>
+	<img src="main/Traversal/images/6/DDW_896816.jpg" id="IMG_8" alt="Loading Image.." />
+	</div></div>
+				</figure>
+				<figcaption id="FIGCAH_PTION_9">
+					<ul id="H_UL_10">
+						<li id="H_LI_11" class="col-details33228266 frontcolor" onclick="viewer('33228266',1);" >
+							<h3 id="H3_12">
+								About
+							</h3>
+						</li>
+						<li id="H_LI_13" class="col-needs33228266 backcolor" onclick="viewer('33228266',2);" >
+							<h3 id="H3_14">
+								Needs
+							</h3>
+						</li>
+						<li id="H_LI_15" class="col-supports33228266 backcolor" onclick="viewer('33228266',3);" >
+							<h3 id="H3_16">
+								Supporting
+							</h3>
+						</li>
+					</ul>
+					<div id="H_DIV_17" class="details details33228266">
+						<ul id="H_UL_18">
+							<li id="H_LI_19">
+							We drive an empty bus every morning. We need atleast 3 passengers
+							</li>
+							<li id="H_LI_20">
+								Location: BUS STAND GHAGWAL.
+							</li>
+							
+							<li id="H_LI_20">
+								- Started By Amit Yadav, MyCity, MyState.
+							</li>
+							
+						</ul>
+					</div>
+					<div id="H_DIV_17" style="display:none;" class="needs needs33228266">
+						<ul id="H_UL_18">
+							<li id="H_LI_19">We drive an empty bus every morning. We need atleast 3 passengers every morning to make sure the tyres of our bus are fed the right pressures.- (333.3% filled)
+			</li>
+						</ul>
+					</div>
+					<div id="H_DIV_17"  style="display:none;" class="supports supports33228266">
+						<ul id="H_UL_18">
+							<li id="H_LI_20">Ankit Kawatra - <strong style="font-size:12px">a week ago</strong></li>
+						</ul>
+					</div>
+					<br id="H_BR_21" /> 
+					<div id="inline">
+					<div id="H_DIV_23">
+						<h2 id="H_H2_24">
+							Target
+						</h2>
+						<p id="H_P_25">
+							3
+						</p>
+					</div>
+					<div id="H_DIV_26">
+						<h2 id="H_H2_27">
+							Achieved
+						</h2>
+						<p id="H_P_28">
+							10
+						</p>
+					</div> </div><button id="H_H_BUTTON_29" onclick="fullView('JAMMU & KASHMIR','GHAGWAL','locality10820256',1);">
+						HELP THEM
+					</button>
+				</figcaption>
+				<div id="H_DIV_30">
+					<div id="H_DIV_31" style="height:100%">
+						<b id="H_B_32">%100+</b>
+					</div>
+				</div>
+				
+			</li>
+<li id="H_LI_4">
+				<h1 id="H1_5">
+					JAMMU & KASHMIR-GHAGWAL
+				</h1>
+				<figure id="FIGURE_6">
+					<h2 id="H_H2_7">
+						Need biscuits to fight hun
+					</h2>
+					<div class="owl-carousel">
+					
+	<div>
+	<img src="main/Traversal/images/6/IMG-20170117-WA0002.jpg" id="IMG_8" alt="Loading Image.." />
+	</div>
+	<div>
+	<img src="main/Traversal/images/6/IMG-20170128-WA0001.jpg" id="IMG_8" alt="Loading Image.." />
+	</div></div>
+				</figure>
+				<figcaption id="FIGCAH_PTION_9">
+					<ul id="H_UL_10">
+						<li id="H_LI_11" class="col-details154411944 frontcolor" onclick="viewer('154411944',1);" >
+							<h3 id="H3_12">
+								About
+							</h3>
+						</li>
+						<li id="H_LI_13" class="col-needs154411944 backcolor" onclick="viewer('154411944',2);" >
+							<h3 id="H3_14">
+								Needs
+							</h3>
+						</li>
+						<li id="H_LI_15" class="col-supports154411944 backcolor" onclick="viewer('154411944',3);" >
+							<h3 id="H3_16">
+								Supporting
+							</h3>
+						</li>
+					</ul>
+					<div id="H_DIV_17" class="details details154411944">
+						<ul id="H_UL_18">
+							<li id="H_LI_19">
+							Help us collect some packets of biscuits to merry the hungry
+							</li>
+							<li id="H_LI_20">
+								Location: Near Tapyal.
+							</li>
+							
+							<li id="H_LI_20">
+								- Started By Amit Yadav, MyCity, MyState.
+							</li>
+							
+						</ul>
+					</div>
+					<div id="H_DIV_17" style="display:none;" class="needs needs154411944">
+						<ul id="H_UL_18">
+							<li id="H_LI_19">Need biscuits for children this sunday- (0% filled)
+			</li>
+						</ul>
+					</div>
+					<div id="H_DIV_17"  style="display:none;" class="supports supports154411944">
+						<ul id="H_UL_18">
+							
+						</ul>
+					</div>
+					<br id="H_BR_21" /> 
+					<div id="inline">
+					<div id="H_DIV_23">
+						<h2 id="H_H2_24">
+							Target
+						</h2>
+						<p id="H_P_25">
+							25
+						</p>
+					</div>
+					<div id="H_DIV_26">
+						<h2 id="H_H2_27">
+							Achieved
+						</h2>
+						<p id="H_P_28">
+							0
+						</p>
+					</div> </div><button id="H_H_BUTTON_29" onclick="fullView('JAMMU & KASHMIR','GHAGWAL','locality10820258',1);">
+						HELP THEM
+					</button>
+				</figcaption>
+				<div id="H_DIV_30">
+					<div id="H_DIV_31" style="height:10%">
+						<b id="H_B_32">%0</b>
+					</div>
+				</div>
+				
+			</li>
+</div></div>`],[`<div id="wrap-boxes-hitlist" style="min-width: 300px;height: 100%;text-align: left;"><div id="loadMoreH"><li id="H_LI_4">
+				<h1 id="H1_5">
+					HARYANA-ROHTAK
+				</h1>
+				<figure id="FIGURE_6">
+					<h2 id="H_H2_7">
+						effdsgdsfgdsfgsdf
+					</h2>
+					<div class="owl-carousel">
+					
+	<div>
+	<img src="main/Traversal/images/26/content3.png" id="IMG_8" alt="Loading Image.." />
+	</div>
+	<div>
+	<img src="main/Traversal/images/26/content4 - Copy.png" id="IMG_8" alt="Loading Image.." />
+	</div>
+	<div>
+	<img src="main/Traversal/images/26/content4 - Copy.png" id="IMG_8" alt="Loading Image.." />
+	</div>
+	<div>
+	<img src="main/Traversal/images/26/content4.png" id="IMG_8" alt="Loading Image.." />
+	</div></div>
+				</figure>
+				<figcaption id="FIGCAH_PTION_9">
+					<ul id="H_UL_10">
+						<li id="H_LI_11" class="col-details69725980 frontcolor" onclick="viewer('69725980',1);" >
+							<h3 id="H3_12">
+								About
+							</h3>
+						</li>
+						<li id="H_LI_13" class="col-needs69725980 backcolor" onclick="viewer('69725980',2);" >
+							<h3 id="H3_14">
+								Needs
+							</h3>
+						</li>
+						<li id="H_LI_15" class="col-supports69725980 backcolor" onclick="viewer('69725980',3);" >
+							<h3 id="H3_16">
+								Supporting
+							</h3>
+						</li>
+					</ul>
+					<div id="H_DIV_17" class="details details69725980">
+						<ul id="H_UL_18">
+							<li id="H_LI_19">
+							Earn money
+
+Get paid for your hard work. Google AdSense can autom
+							</li>
+							<li id="H_LI_20">
+								Location: dddvdfgs.
+							</li>
+							
+							<li id="H_LI_20">
+								- Started By Anmol Alawadhi.
+							</li>
+							
+						</ul>
+					</div>
+					<div id="H_DIV_17" style="display:none;" class="needs needs69725980">
+						<ul id="H_UL_18">
+							<li id="H_LI_19">dgcidgehsehsoifhewulfherjilfh irentkureiuthfre
+t g4
+erg't
+f
+h4t
+hg
+dfh
+dfh
+gfh
+fdg
+fd
+gdf
+ghf
+hgdf
+
+hdf
+
+ghfd
+h
+dgf
+hfd
+hd
+fh
+s
+dfh
+d
+fhdf
+h
+d
+h
+df
+h
+dfhdf
+h
+d
+h
+dg- (50% filled)
+			</li>
+						</ul>
+					</div>
+					<div id="H_DIV_17"  style="display:none;" class="supports supports69725980">
+						<ul id="H_UL_18">
+							<li id="H_LI_20">Anmol Alawadhi - <strong style="font-size:12px">4 days ago</strong></li>
+						</ul>
+					</div>
+					<br id="H_BR_21" /> 
+					<div id="inline">
+					<div id="H_DIV_23">
+						<h2 id="H_H2_24">
+							Target
+						</h2>
+						<p id="H_P_25">
+							10
+						</p>
+					</div>
+					<div id="H_DIV_26">
+						<h2 id="H_H2_27">
+							Achieved
+						</h2>
+						<p id="H_P_28">
+							5
+						</p>
+					</div> </div><button id="H_H_BUTTON_29" onclick="fullView('HARYANA','ROHTAK','locality10820257',1);">
+						HELP THEM
+					</button>
+				</figcaption>
+				<div id="H_DIV_30">
+					<div id="H_DIV_31" style="height:50%">
+						<b id="H_B_32">%50</b>
+					</div>
+				</div>
+				
+			</li>
+</div></div>`]];
+heatmap1.setMap(map0);
+heatmap1.set('radius',30);
+heatmap1.set('opacity',0.3);
+ 
+ for (var i = 0; i < beaches1.length; i++) {
+          var beach = beaches1[i];
+		  var content =  cS1[i];
+          var marker1 = new google.maps.Marker({
+            position: {lat: beach[1], lng: beach[2]},
+            map: map0,
+            icon: image1, 
+            title: beach[0],
+            zIndex: beach[3]
+          });
+		  var infowindow1 = new google.maps.InfoWindow({
+          content: content[0]
+        });
+		marker1.addListener('click', function() {
+          infowindow1.open(map0, marker1);
+		  bindOwl();
+        });
+		
+	 alert(i+"= "+content[0]+" "+beach[0]);
+	 alert(i+"= "+cS1[i][0]);
+        }
+}
+
+if(heatmapData2[0]!=null){
+heatmap2 = new google.maps.visualization.HeatmapLayer({
+  data: heatmapData2,
+  map:map0
+});
+
+var image2 = `http://daanvir.org/images/marker4.png`;  
+var beaches2 = []; 
+var contentString2 = []; 
+var gradient = [
+          'rgba(0, 255, 255, 0)',
+          'rgba(0, 255, 255, 1)',
+          'rgba(0, 191, 255, 1)',
+          'rgba(0, 127, 255, 1)',
+          'rgba(0, 63, 255, 1)',
+          'rgba(0, 0, 255, 1)',
+          'rgba(0, 0, 223, 1)',
+          'rgba(0, 0, 191, 1)',
+          'rgba(0, 0, 159, 1)',
+          'rgba(0, 0, 127, 1)',
+          'rgba(63, 0, 91, 1)',
+          'rgba(127, 0, 63, 1)',
+          'rgba(191, 0, 31, 1)',
+          'rgba(255, 0, 0, 1)'
+        ];
+heatmap2.setMap(map0);
+heatmap2.set('radius',30);
+heatmap2.set('opacity',0.2);  
+heatmap2.set('gradient',gradient);
+ 
+for (var i = 0; i < beaches2.length; i++) {
+          var beach2 = beaches2[i];
+		  var content2 = contentString2[i];
+          var marker2 = new google.maps.Marker({
+            position: {lat: beach2[1], lng: beach2[2]},
+            map: map0,
+            icon: image2, 
+            title: beach2[0],
+            zIndex: beach2[3]
+          });
+		  var infowindow2 = new google.maps.InfoWindow({
+          content: content2[0]
+        });
+		marker2.addListener('click', function() {
+          infowindow2.open(map0, marker2);
+		  bindOwl();
+        });
+	}
+} 
+
+</script>

@@ -1,0 +1,196 @@
+Return-Path: <security@mail.instagram.com>
+Delivered-To: anmol.alawadhi@daanvir.org
+Received: from md-in-63.webhostbox.net
+	by md-in-63.webhostbox.net (Dovecot) with LMTP id 2dZAH1ZsdFt9RwwAwBqdFg
+	for <anmol.alawadhi@daanvir.org>; Wed, 15 Aug 2018 18:09:26 +0000
+Return-path: <security@mail.instagram.com>
+Envelope-to: anmol.alawadhi@daanvir.org
+Delivery-date: Wed, 15 Aug 2018 18:09:26 +0000
+Received: from 66-220-155-146.mail-mail.facebook.com ([66.220.155.146]:44171 helo=mx-out.facebook.com)
+	by md-in-63.webhostbox.net with esmtps (TLSv1:ECDHE-RSA-AES128-SHA:128)
+	(Exim 4.89)
+	(envelope-from <security@mail.instagram.com>)
+	id 1fq0EU-003W1h-Pi
+	for anmol.alawadhi@daanvir.org; Wed, 15 Aug 2018 18:09:26 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=mail.instagram.com;
+	s=s1024-2013-q3; t=1534356548;
+	bh=nXvVC8IUlA5enc4yv9WdwvZQg97mLIzf5BTLwxIdL/k=;
+	h=Date:To:Subject:From:MIME-Version:Content-Type;
+	b=JODUHS186EVhZwpw7tu5Sq0ESOqEfCbd4UW2NgzdZyQA2is5WuSukklGsMHT1PzWq
+	 BzUhN22YX+SYEP/SUahQyrzpe+O0utPd2C5NvQXIALAvDF3mi0bxBr9zMudVti2Hcd
+	 w2VdyX86q+ugQ2gvsJ9age8kA2k1Ax/FE0IwFYsk=
+Received: from facebook.com (h8XjNpiO7EykAaDnusOea7v5biqcRgtNPn2LwvDpmZ1tnN6I5TcUAU/lmJwjduD9 2401:db00:2040:9120:face:0000:0003:0000)
+ by facebook.com with Thrift id 4e124ac8a0b611e897bf000af7a9b102-277fa958;
+ Wed, 15 Aug 2018 11:09:08 -0700
+X-Facebook: from 2401:db00:2020:d05e:face:0:8f:0 ([MTI3LjAuMC4x]) 
+	by thrift.facebook.com with HTTP (ZuckMail);
+Date: Wed, 15 Aug 2018 11:09:08 -0700
+To: anmol.alawadhi@daanvir.org
+Subject: daanvirindia, we've made it easy to get back on Instagram
+X-Priority: 3
+X-Mailer: ZuckMail [version 1.00]
+From: "Instagram" <security@mail.instagram.com>
+Reply-to: Instagram <security@mail.instagram.com>
+Errors-To: security@mail.instagram.com
+X-Facebook-Notify: ig_login_email; mailid=HMTUzNDM1NTMxNDIyMjM2ODphbm1vbC5hbGF3YWRoaUBkYWFudmlyLm9yZzo5OTE
+List-Unsubscribe: <https://www.facebook.com/o.php?k=AS3AUBaPG-MF_nQv&e=anmol.alawadhi%40daanvir.org&mid=HMTUzNDM1NTMxNDIyMjM2ODphbm1vbC5hbGF3YWRoaUBkYWFudmlyLm9yZzo5OTE>
+Feedback-ID: 9999:ig_login_email:Facebook
+X-FACEBOOK-PRIORITY: 0
+X-Auto-Response-Suppress: All
+Message-ID: <a01e163c3f765de0add6383bfb8452f7@489c26960a6127833bed7ddbdebbce22c570eb30a4e7ffb13f47f928db0416f1>
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="UTF-8"
+X-Authenticated_sender: 
+X-Spam-Status: No, score=-14.5
+X-Spam-Score: -144
+X-Spam-Bar: --------------
+X-Ham-Report: DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, ENV_AND_HDR_SPF_MATCH=-0.5, HTML_FONT_LOW_CONTRAST=0.001, HTML_MESSAGE=0.001, MIME_HTML_ONLY=1.105, SPF_HELO_PASS=-0.001, SPF_PASS=-0.001, TVD_RCVD_IP=0.001, UNPARSEABLE_RELAY=0.001, URIBL_BLOCKED=0.001, USER_IN_DEF_DKIM_WL=-7.5, USER_IN_DEF_SPF_WL=-7.5, CMAE Analysis: v=2.3 cv=P/8UeBIu c=1 sm=0 tr=0 a=HpAAvcLHHh0Zw7uRqdWCyQ==:117 a=UfEpvgsGrmUlaadi06yttw==:17 a=IkcTkHD0fZMA:10 a=dapMudl6Dx4A:10 a=-uNXE31MpBQA:10 a=MOEc7tJgzdcA:10 a=OjmdU3R2H1IA:10 a=V5QVwA5b8y3rALMZC3YA:9 a=ka_Y-fp8g4OKFRIy:21 a=_W_S_7VecoQA:10 a=QEXdDO2ut3YA:10 a=80fGaXfG2B8A:10 a=Ze6sQigKyk0A:10
+ 
+ *  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ *       See http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ *      for more information.
+ *      [URIs: instagram.com]
+ *  0.0 TVD_RCVD_IP Message was received from an IP address
+ * -7.5 USER_IN_DEF_SPF_WL From: address is in the default SPF white-list
+ * -7.5 USER_IN_DEF_DKIM_WL From: address is in the default DKIM white-list
+ * -0.0 SPF_PASS SPF: sender matches SPF record
+ * -0.0 SPF_HELO_PASS SPF: HELO matches SPF record
+ *  0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or identical to
+ *       background
+ *  1.1 MIME_HTML_ONLY BODY: Message only has text/html MIME parts
+ *  0.0 HTML_MESSAGE BODY: HTML included in message
+ * -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ *  0.1 DKIM_SIGNED Message has a DKIM or DK signature, not necessarily
+ *      valid
+ * -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
+ *       domain
+ *  0.0 UNPARSEABLE_RELAY Informational: message has unparseable relay lines
+ * -0.5 ENV_AND_HDR_SPF_MATCH Env and Hdr From used in default SPF WL Match
+X-Spam-Flag: NO
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional =
+//EN"><html><head><title>Facebook</title><meta http-equiv=3D"Content-Type" =
+content=3D"text/html; charset=3Dutf-8" /><style>@media all and (max-width: =
+480px){*[class].ib_t{min-width:100% =
+!important}*[class].ib_row{display:block =
+!important}*[class].ib_ext{display:block !important;padding:10px 0 5px =
+0;vertical-align:top !important;width:100% =
+!important}*[class].ib_img,*[class].ib_mid{vertical-align:top =
+!important}*[class].mb_blk{display:block =
+!important;padding-bottom:10px;width:100% =
+!important}*[class].mb_hide{display:none =
+!important}*[class].mb_inl{display:inline =
+!important}*[class].d_mb_flex{display:block !important}}.d_mb_show{display=
+:none}.d_mb_show_center{display:table;margin:auto}.d_mb_flex{display:flex}=
+@media only screen and (max-device-width: 480px){.d_mb_hide{display:none =
+!important}.d_mb_show{display:block !important}.d_mb_flex{display:block =
+!important}}.mb_text h1,.mb_text h2,.mb_text h3,.mb_text h4,.mb_text =
+h5,.mb_text h6{line-height:normal}.mb_work_text =
+h1{font-size:18px;line-height:normal;margin-top:4px}.mb_work_text =
+h2,.mb_work_text =
+h3{font-size:16px;line-height:normal;margin-top:4px}.mb_work_text =
+h4,.mb_work_text h5,.mb_work_text =
+h6{font-size:14px;line-height:normal}.mb_work_text =
+a{color:#1270e9}.mb_work_text p{margin-top:4px}</style></head><body =
+style=3D"margin:0;padding:0;" dir=3D"ltr" bgcolor=3D"#ffffff"><table =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center" =
+id=3D"email_table" style=3D"border-collapse:collapse;"><tr><td =
+id=3D"email_content" style=3D"font-family:Helvetica Neue,Helvetica,Lucida =
+Grande,tahoma,verdana,arial,sans-serif;background:#ffffff;"><table =
+border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr style=3D""><td height=3D"20" =
+style=3D"line-height:20px;" colspan=3D"3">&nbsp;</td></tr><tr><td =
+height=3D"1" colspan=3D"3" style=3D"line-height:1px;"></td></tr><tr><td =
+style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-collapse:collapse;border:solid 1px =
+white;margin:0 auto 5px auto;padding:3px =
+0;text-align:center;html_width:100%;width:430px;"><tr><td width=3D"15px" =
+style=3D"width:15px;"></td><td =
+style=3D"line-height:0px;width:400px;padding:0 0 15px 0;"><table =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr><td =
+style=3D"width:100%;text-align:left;height:33px;"><img height=3D"33" =
+src=3D"https://static.xx.fbcdn.net/rsrc.php/v3/yx/r/QfyICuuB4pg.png" =
+style=3D"border:0;" /></td></tr></table></td><td width=3D"15px" =
+style=3D"width:15px;"></td></tr><tr><td width=3D"15px" =
+style=3D"width:15px;"></td><td style=3D"border-top:solid 1px =
+#c8c8c8;"></td><td width=3D"15px" =
+style=3D"width:15px;"></td></tr></table></td></tr><tr><td =
+style=3D""><table border=3D"0" width=3D"430" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-collapse:collapse;margin:0 auto 0 =
+auto;"><tr><td style=3D""><table border=3D"0" width=3D"430px" =
+cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;margin:0 auto 0 auto;width:430px;"><td =
+width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><tr =
+style=3D""><td style=3D""><table border=3D"0" width=3D"100%" =
+cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr><td style=3D""><table border=3D"0" =
+cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr><td width=3D"20" =
+style=3D"display:block;width:20px;">&nbsp;&nbsp;&nbsp;</td><td =
+style=3D""><table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr><td style=3D""><p =
+style=3D"padding:0;margin:10px 0 10px 0;color:#565a5c;font-size:18px;">Hi =
+daanvirindia,</p><p style=3D"padding:0;margin:10px 0 10px =
+0;color:#565a5c;font-size:18px;">Sorry to hear you&#039;re having trouble =
+logging into Instagram. We can help you get straight back into your =
+account.</p></td></tr><tr style=3D""><td height=3D"20" =
+style=3D"line-height:20px;" colspan=3D"1">&nbsp;</td></tr><tr><td =
+style=3D""><a href=3D"https://www.instagram.com/_n/emaillogindlink?uid=3D3=
+ajlag3&amp;token=3DhYuj1V&amp;auto_send=3D0" style=3D"color:#3b5998;text-d=
+ecoration:none;display:block;width:370px;"><table border=3D"0" =
+width=3D"390" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr><td style=3D"border-collapse:colla=
+pse;border-radius:3px;text-align:center;display:block;border:solid 1px =
+#009fdf;padding:10px 16px 14px 16px;margin:0 2px 0 =
+auto;min-width:80px;background-color:#47A2EA;"><a href=3D"https://www.inst=
+agram.com/_n/emaillogindlink?uid=3D3ajlag3&amp;token=3DhYuj1V&amp;auto_sen=
+d=3D0" =
+style=3D"color:#3b5998;text-decoration:none;display:block;"><center><font =
+size=3D"3"><span style=3D"font-family:Helvetica Neue,Helvetica,Roboto,Aria=
+l,sans-serif;white-space:nowrap;font-weight:bold;vertical-align:middle;col=
+or:#fdfdfd;font-size:16px;line-height:16px;">Log&nbsp;in&nbsp;as&nbsp;daan=
+virindia</span></font></center></a></td></tr></table></a></td></tr></table=
+></td><td width=3D"20" style=3D"display:block;width:20px;">&nbsp;&nbsp;&nb=
+sp;</td></tr></table></td></tr></table></td></tr><td width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><tr><td =
+style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-collapse:collapse;"><tr><td =
+style=3D""><table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr><td width=3D"20" =
+style=3D"display:block;width:20px;">&nbsp;&nbsp;&nbsp;</td><td =
+style=3D""><table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr><td><td =
+style=3D"padding:0;margin:10px 0 10px 0;color:#565a5c;font-size:16px;">You =
+can also <a href=3D"https://instagram.com/accounts/password/reset/confirm/=
+3ajlag3/4yr-75a0e3232e5c7b069b387c072934bed9/?s=3Done_click_login_email" =
+style=3D"color:#3b5998;text-decoration:none;">reset your Instagram =
+password</a>.</td></td></tr><div></div></table></td><td width=3D"20" =
+style=3D"display:block;width:20px;">&nbsp;&nbsp;&nbsp;</td></tr></table></=
+td></tr></table></td></tr></table></td></tr></table></td></tr><tr><td =
+style=3D""><table border=3D"0" width=3D"430px" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-collapse:collapse;margin:0 auto 0 =
+auto;width:430px;"><tr style=3D""><td height=3D"30" =
+style=3D"line-height:30px;" colspan=3D"3">&nbsp;</td></tr><tr><td =
+width=3D"20" =
+style=3D"display:block;width:20px;">&nbsp;&nbsp;&nbsp;</td><td =
+style=3D""><div style=3D"color:#abadae;font-size:12px;margin:0 auto 5px =
+auto;">=C2=A9 Instagram, 1 Hacker Way, Menlo Park, CA 94025<br =
+/></div><div style=3D"color:#abadae;font-size:12px;margin:0 auto 5px =
+auto;">This message was sent to <a style=3D"color:#abadae;text-decoration:=
+underline;">anmol.alawadhi&#064;daanvir.org</a> and intended for =
+daanvirindia. Not your account? <a href=3D"https://instagram.com/accounts/=
+remove/report_wrong_email/3ajlag3/4yr-e09b5eb0f33d6d7157374fdef765f572/1HN=
+RPB29/YW5tb2wuYWxhd2FkaGlAZGFhbnZpci5vcmc/" =
+style=3D"color:#abadae;text-decoration:underline;">Remove your email</a> =
+from this account.<br /></div></td><td width=3D"20" style=3D"display:block=
+;width:20px;">&nbsp;&nbsp;&nbsp;</td></tr></table></td></tr><tr =
+style=3D""><td height=3D"20" style=3D"line-height:20px;" =
+colspan=3D"3">&nbsp;</td></tr></table><span style=3D""><img =
+src=3D"https://www.facebook.com/email_open_log_pic.php?mid=3DHMTUzNDM1NTMx=
+NDIyMjM2ODphbm1vbC5hbGF3YWRoaUBkYWFudmlyLm9yZzo5OTE" =
+style=3D"border:0;width:1px;height:1px;" =
+/></span></td></tr></table></body></html>
+

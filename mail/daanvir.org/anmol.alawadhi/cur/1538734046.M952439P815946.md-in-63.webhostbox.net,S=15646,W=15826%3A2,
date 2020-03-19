@@ -1,0 +1,180 @@
+Return-Path: <account-security-noreply@accountprotection.microsoft.com>
+Delivered-To: anmol.alawadhi@daanvir.org
+Received: from md-in-63.webhostbox.net
+	by md-in-63.webhostbox.net with LMTP id eIa0ON43t1tKcwwAwBqdFg
+	for <anmol.alawadhi@daanvir.org>; Fri, 05 Oct 2018 10:07:26 +0000
+Return-path: <account-security-noreply@accountprotection.microsoft.com>
+Envelope-to: anmol.alawadhi@daanvir.org
+Delivery-date: Fri, 05 Oct 2018 10:07:26 +0000
+Received: from mail-by2nam03on0061.outbound.protection.outlook.com ([104.47.42.61]:31380 helo=NAM03-BY2-obe.outbound.protection.outlook.com)
+	by md-in-63.webhostbox.net with esmtps (TLSv1.2:ECDHE-RSA-AES256-SHA384:256)
+	(Exim 4.91)
+	(envelope-from <account-security-noreply@accountprotection.microsoft.com>)
+	id 1g8N10-003TIA-By
+	for anmol.alawadhi@daanvir.org; Fri, 05 Oct 2018 10:07:26 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=accountprotection.microsoft.com; s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=F+LQY31c0jvvy8igPYbObZjq+VOUxtHEHof/dGsbLPo=;
+ b=NdhPwABWxIERq1rtfPohOT/eJ0ZZFNYA6oF83eC5bLNstx2xhSfSIzx13ivZ6cqWsYeTLEFC8ls0fb9lUyT9c1jKtM0eL3bxuoigOJKZ9qng/CQDrWwbrxitSofdbHk93IcixnsgpgzHGQj1FsUDNEYK1K8E1dkcVweKM6bRsNM=
+Received: from DM3NAM03FT016.eop-NAM03.prod.protection.outlook.com
+ (10.152.82.60) by DM3NAM03HT148.eop-NAM03.prod.protection.outlook.com
+ (10.152.82.225) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384) id 15.20.1207.19; Fri, 5
+ Oct 2018 10:07:09 +0000
+Received-SPF: Pass (protection.outlook.com: domain of
+ accountprotection.microsoft.com designates 65.52.110.208 as permitted sender)
+ receiver=protection.outlook.com; client-ip=65.52.110.208;
+ helo=accountprotection.microsoft.com;
+Received: from accountprotection.microsoft.com (65.52.110.208) by
+ DM3NAM03FT016.mail.protection.outlook.com (10.152.82.198) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384) id
+ 15.20.1207.19 via Frontend Transport; Fri, 5 Oct 2018 10:07:08 +0000
+From: Microsoft account team
+	<account-security-noreply@accountprotection.microsoft.com>
+Date: Fri, 5 Oct 2018 03:07:08 -0700
+Subject: Microsoft account password reset
+To: <anmol.alawadhi@daanvir.org>
+X-Priority: 3
+X-MSAPipeline: MessageDispatcherEOP
+Message-ID: <DM54WTPKM5U4.T0L0TIL55H0A@BN3SCH030020952>
+X-MSAMetaData: =?us-ascii?q?DdhwpooFse9jZEXwUsCcU3vCOy1fs9Mk4cVFUaOpvc3Rnb4wnUjY1U8sggsQT?=
+ =?us-ascii?q?an22eaZE6x099IlGEU2hBkv93m*KUI0FMxgBz!A7CT6nFhCS0rfo!v*RAVgeN?=
+ =?us-ascii?q?5zXvzzVw$$?=
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="=-gtxPRBmVF86yd51hPBrqiw=="
+X-EOPAttributedMessage: 0
+X-Forefront-Antispam-Report:
+	CIP:65.52.110.208;IPV:NLI;CTRY:US;EFV:NLI;SFV:NSPM;SFS:(10009020)(7916004)(136003)(39860400002)(346002)(376002)(34036004)(396003)(2980300002)(438002)(47530400004)(47690400004)(199004)(189003)(606006)(2351001)(5660300001)(336012)(520700007)(16586007)(8676002)(22452003)(316002)(81166006)(3480700004)(81156014)(33656002)(8936002)(356003)(53416004)(186003)(36736006)(106466001)(966005)(52230400001)(508600001)(6916009)(81686011)(26005)(10090500001)(10290500003)(6346003)(106002)(6486002)(25786009)(84326002)(236005)(2906002)(10126004)(486006)(69596002)(551544002)(14444005)(33716001)(6306002)(5180700001)(9686003)(6512007)(15650500001)(86362001)(575784001)(956004)(2420400007)(126002)(71190400001)(476003)(270700001)(5000100001)(589834003)(118246002);DIR:OUT;SFP:1101;SCL:1;SRVR:DM3NAM03HT148;H:accountprotection.microsoft.com;FPR:;SPF:Pass;LANG:en;PTR:msnbot-65-52-110-208.search.msn.com;A:0;MX:1;
+X-Microsoft-Exchange-Diagnostics: 1;DM3NAM03FT016;1:tpi1CJZdom1JwT/mUALoc5YBtKFCi+MJdQxqIQe7JDWY/uHbnIBpILbNqARaiZlRL73lu/NbuD3lEOh+OnbxHTqxq5wRp0uefjHF+Huz4NgIaONPtwmKCX9tdTJBf4yy
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: 46420412-1d8a-45af-1390-08d62aaa4f60
+X-Microsoft-Antispam:
+	BCL:0;PCL:0;RULEID:(7020095)(4652040)(8989299)(4534185)(4627221)(201703031133081)(201702281549075)(8990200)(5600074)(711020)(4608076)(2017052603328);SRVR:DM3NAM03HT148;
+X-Microsoft-Exchange-Diagnostics:
+	1;DM3NAM03HT148;3:GyHzGzBsEHxoWzj4BJOd68MzQ8DyrNEsdlTi/Rh++n4wCsylItxK4F9jY5r2TuTNhNmUboB1tegfnvDwxDfkUM6PSsOQtWTNNMeliUSALl4pfW5nrPSUzV/B2367/S8RZb2Ih13HDUjZprF0pYIBLlxX88+AemkPKmY+TC0oQb40JP7L6CWX16lzen6JVZqx2ClEnsNzHTlXr+Sdx9fXZJiaFGAq65j4XQzOF3z1AneTk+Dedpkrn32ASOWUTjhwguueI5SWFwkFL68WASMz0sa/9Gy3MrFA6BckXj42g8ygeqgwvwgdCsAN/HIJU9Zzo39AuJrr9dDwDwigxGtqIHYDBiD4fuA0H3FhRMExkH0=;25:Tab3idkoCvESXc4VM16QdWNlyH1U6NVZ8J8qnv0FcWMMZkUIkrZXVZhG7H8n4QuHRATbIlZXai+Et4wqxK7QWXtjaK3IjBnVhj1qLtJOEng12dEYqcqmo73Q9vwapDGuRJM8L+ec8EGjqcQ1lBQXShgvPA4161GLBZNE/r9h69o/3E68ZN685slKuPUSSA1kVb+TR9yTa5mbG1g5jcH41oQWey0+s8Wlr9o5AX9GsbXegycXJBGi3/HmRp4qwg4y+BR5j8vvkX/tBeZlEgONj4orVn/MZqv8AKjhligPXhsMAjYdCCZBSet2lUKFymtPUwxouD1u9YgCGVo7FoRFAQ==
+X-MS-TrafficTypeDiagnostic: DM3NAM03HT148:
+X-Microsoft-Exchange-Diagnostics:
+	1;DM3NAM03HT148;31:IWxXQEF0mpm4EEO6PaaW+yUBR0C6pxiehuA8PNzeNjXfgfvvV7f+WTXhEAMusEsQO2fbjw39gwGIsuGgbhjCblTWrElzZw/qsShX2oGMQqKIA6kVPAdWH3mR44L7vHHCuQYex1Z2zjqFPgehHNxg2ZxCRhfu80dbUoxiyOXigwmfnIrPkcp1EqHNE9oo5fM62xPhAIGVYbYbs+Fb1sBFTOoVW8QCCigcVbdd7cc9SWs=;4:jizpZqAkLiLx2PmE9KN7n68Q4h9pEGJCX0KGKNvH3Iq9ySjzaZDif4MLzzVWUaw/xOJ9yTKI+irS2CQZonLWFk8kOsbbaUb5N31u20jtuSkdeXEY+JHFl6MBkRbA0UoN81MxEInyvZqgc+r8OiDa3xDM8fMj+H4fIPkqpt6OFD3r4saY8MjGE/CFudU/XzmTqBWdbymuKaYxyMpsXL/7oi3fT4r8rBqP4eqUqRudBMfItoyAbmd4TeXPgg8awt/3DBizTjtaQZpil0ICgjsZenDptN5fLqJXRVVMDkNZuXeQ7aOSwB3nlHyqbZWzx8CoUFLs9RCwxZYw2a5GhWLEXb8+UrBrF1jIThJF0igcquLg/lk8G4xXPnp4w3m8BK1wdeo8Gnx5Q/QEK7KlFcIe7AzkuSVHiBIBLPbb28G44K4=
+X-Microsoft-Antispam-PRVS:
+	<DM3NAM03HT1483A49E683FF9BFDFC2A9289EB0@DM3NAM03HT148.eop-NAM03.prod.protection.outlook.com>
+X-Exchange-Antispam-Report-Test:
+	UriScan:(60299568892428)(37052965297144)(190501279198761)(227612066756510);
+X-MS-Exchange-SenderADCheck: 1
+X-Exchange-Antispam-Report-CFA-Test:
+	BCL:0;PCL:0;RULEID:(6040522)(2401047)(8121501046)(5005006)(10201501046)(3002001)(3231355)(2017060910176)(944501410)(52105095)(93006095)(93004095)(6055026)(149066)(150057)(6041310)(20161123560045)(20161123562045)(20161123564045)(20161123558120)(201703131423095)(201702281528075)(20161123555045)(201703061421075)(201708071742011)(7699051)(76991048);SRVR:DM3NAM03HT148;BCL:0;PCL:0;RULEID:;SRVR:DM3NAM03HT148;
+X-Forefront-PRVS: 0816F1D86E
+X-Microsoft-Exchange-Diagnostics:
+	=?us-ascii?Q?1;DM3NAM03HT148;23:zNb5ieZ2NH35uYvlxCLN3Ui9VkXnRotY2zTXlA3i2?=
+ =?us-ascii?Q?qksAOHyCYDBr12zwXOlBfezKvjdpW9dBaXfojdP6YN+UqX5pNcs6Tq8w2dJk?=
+ =?us-ascii?Q?O70IdW2iUWgL9H3U93Uc1rGprYH8fEsuxHeTs0UQgWDZgL8GusGpMfWruvCP?=
+ =?us-ascii?Q?FEZ4WMqLDkOwWrRnXXM/I9sRimVM55PmTdOrX5i6Z4oDJgvW9fmbxMwn89At?=
+ =?us-ascii?Q?PfoL0nxy7/YNKeKbmisA1VXBMC/rrXSI5abom8XvzWSyFTLSAGHsRtEDSi4r?=
+ =?us-ascii?Q?YATarSSU+EO8DpYH6+Hb5E+X1bbIg+v+ejunel2S0V0S91A0mZZ9s14IS1SB?=
+ =?us-ascii?Q?KJGMKZ7ehFtkoZ5uIzUX2DTqujQZ51lKAolM5xE5NkV88ymIMUZ5pS4PdRWH?=
+ =?us-ascii?Q?ohifT8r/bjD5nlLOaJ8gkobMr+hPDu/aWjNNQWBX5P223We4oYMqvTEzBdeK?=
+ =?us-ascii?Q?/6hirD+6SUDqhPFhA9ZKF1s4pGUtIS4i0/XD0jXuMdBJcbXew7ozVnfTdEZ4?=
+ =?us-ascii?Q?ifhC/YIDwFpJpWKQictPAMWPiz6t2JG3zr2p4jKfGzfP+xha3jraFrISsZA8?=
+ =?us-ascii?Q?/Ywi8tFJyFGTcjUPMEfA8xcewBSQwX7hS/b4KBevD8633Sd0eAk43xD6vB3q?=
+ =?us-ascii?Q?NwWIKoNhrd+xdYeOixeEaxisBpUGatV3Ff5I6VHfyaPcCfxet2ZRHQV7ypAn?=
+ =?us-ascii?Q?V3FAe+cfsDq7zu/XOmtkSmsWYQ6L6oO/jpoldx4yzxfsVmkv3EU/g7AF1wDa?=
+ =?us-ascii?Q?mZf9huN1Sm1sKhobQ7g9EvCovAZikg2BEiwk9u4A3/BQec6ibWw4EM2bJboq?=
+ =?us-ascii?Q?umOoHZ1MKhbRezGR1gk2eQvz224GMx5vvf66XLO0QqLSvRkwP0r7RoGz42l3?=
+ =?us-ascii?Q?JnsFhv8kwcAj+qdaPiIHzoP1ar7ApyFlwzasYH4Gcsx8ZwZzYnkHJHupBlzI?=
+ =?us-ascii?Q?YQQzjUkqYHe4ud9Qk7RjXtxRh2WWD3SdjbY5b4Qpn6Y0UTqm0Ps6g3mV2v7D?=
+ =?us-ascii?Q?Q6/KvLkx4e+VW8kjaX/+CHExytYz5o717ChrHCrXKfaNwy7UdICck/R5OW6n?=
+ =?us-ascii?Q?DC3Sl1p9U2bkBE8k5DEgucKdpupB1iSi4AhmZV4UvSbA9BMro3ulcU9jKI08?=
+ =?us-ascii?Q?U43VxTS8wOFGKON5eTz7/lH9LGiLrvhZpZigOCw5bAokhNdKYyJ4EbQAm8Zz?=
+ =?us-ascii?Q?Nd3Za6okmSmoNzdy0xC648s4el0+wka3pkn+VltpB8jV6Y/Erbi5zJnSyTg4?=
+ =?us-ascii?Q?7m5JdwIlRC3nCJqZMu5CXAZIYUnaVtFlgyJySuuQWo+N9Hp1GyNRvVZK9c6e?=
+ =?us-ascii?Q?GPd210K5HDWu7l6B2aAKtcWxxEBIJ2koJThKhEC4M1hM9W/vZtSnKyy2TPkO?=
+ =?us-ascii?Q?GoBfd+gio1QRK4XLwPr/lYqWh9erL4Qq+tIKnn7ZuFakQcI/IzXqMcVUQUE9?=
+ =?us-ascii?Q?De4ae+DS7d6Mdazg+o3QrvQo+IdjCucN/oHXp0CUBjf9PNJkrCZT6VWOPI7f?=
+ =?us-ascii?Q?YLYW5E9M3Lt6I/AaiuuuYPCt+KX+GeGFjIyNK3MVlm9Bp8M2/1fTVx+SF77V?=
+ =?us-ascii?Q?wW8BcquK7zEvQdh9g=3D=3D?=
+X-Microsoft-Antispam-Message-Info:
+	G6FURCjoGONGM6x4zmgb3s0bBjoLuy5Uz4O3mMrTud6c7k7oTVP6FZh6Px9rgEDH65hhAAVQCMxHm5xso0ghxdwmVdy84ZLmIfECIwkJWFb6rRMKIzkG7HpFH18chzhngc6S0tkAxYqdvMrlUIchPP/jTBuELxfx1KYcqNH7ZXjRc7CoEznqiRM28tWn01b21w4NfFzBeCL9Hzkki8Qb4zs6zBgCRLzB8P9sSJAijJhr3RSFeRQS8YNK9OwkW/2IbbQt8BSHl4tYpL/jGVbxPrxmBqrZxCBGxLqkM7111TOaRrWhz2CEwxw6ra7g/5Xp/w4CePtWhI8DoAUHB7n+0TJlvMDRX3AkwFv9g8cRXSM=
+X-Microsoft-Exchange-Diagnostics:
+	1;DM3NAM03HT148;6:YK2byuEpb6QrPXY+r9Qs+GkZAX6/lRScMYhNFdprLWXIYjaRJEDhsPvh2kCq3tkJaMr9AZRtGlGKAAextVL3L1Ggm1P/9jYno060Xm4+vT/Z0n72HasBUInR+P7jiRYVUVmapE/2tnW11lDXN8iao7JAtm7IzEQgVQ9EWFH9+MhTQvp7vL+x2iDlhIsE4gCotvC1mADajQZVVXUhe0WT/K5JdylHjXNMCKdRJF1jNS9yYA1KTAnOk6QfztidFh4Bk05c/BcfzMMGgYnewIucZBc1aw543GVQpKGeA7b7FmV2XgQVgOcbttQmAaSnx4mhfeyHN/p5YPPxrL3Epu+NN4JZOfopSjEslrVH/agUX9FSIrcjsIrZ1++Vu82T4n1FHG47+QTglDv6qpG7by+/Et0T61fFzTTcYdkoak0Vd8kDHOkw6M7MtWVDagTJrejbPVw0BIUH+d+i2oXGlQ668w==;5:LYi/r/BkpI8CZzeBSjLHQNos+eca7Qv2aAflAvTlI0Zw7TDGluMYYDnQjGwPH7yHhAPoKMBtSdkTUqmM2swWLsZJD1wPHqxcKjJ5kidXbElC+eXyRWbOXWKJxA993v5TWX2pGpqNWKRBHKMZ25KAcS0/6F1HJRGOSjafCh4yHYY=;7:X1l78LCMC+PjvYMhT9CCPhoc/okg+cNxuaQAas/M2FgShoyCzMWH0+Pb1AicEv3kOCY/sKhn1QB9PexA4cq+G9cqQ0cJpB9Z0GOPoTl1dyMCbrPS3UxEP9EJdgtfMHPiGpqO6huLPvr0PCJkVOzOUTJzAfJUposQCWbVtzz+8StefkMw73hzZuVtRv5KdVghGzITW23rbXI6ujI3nt8IXjRT8SUgpxb6y1bD1VxH+gvwh1hkKiA+T4nR6WRVY4ei
+SpamDiagnosticOutput: 1:99
+SpamDiagnosticMetadata: NSPM
+X-OriginatorOrg: accountprotection.microsoft.com
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 05 Oct 2018 10:07:08.2444
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 46420412-1d8a-45af-1390-08d62aaa4f60
+X-MS-Exchange-CrossTenant-Id: 5ba90553-c2cd-460e-b5fd-ab93ad9155c7
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=5ba90553-c2cd-460e-b5fd-ab93ad9155c7;Ip=[65.52.110.208];Helo=[accountprotection.microsoft.com]
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM3NAM03HT148
+X-Authenticated_sender: 
+X-Spam-Status: No, score=-7.8
+X-Spam-Score: -77
+X-Spam-Bar: -------
+X-Ham-Report: DKIM_INVALID=0.1, DKIM_SIGNED=0.1, ENV_AND_HDR_SPF_MATCH=-0.5, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_NONE=-0.0001, SPF_HELO_PASS=-0.001, SPF_PASS=-0.001, URIBL_BLOCKED=0.001, USER_IN_DEF_SPF_WL=-7.5, CMAE Analysis: v=2.3 cv=KIx08mNo c=1 sm=0 tr=0 a=HpAAvcLHHh0Zw7uRqdWCyQ==:117 a=5sNxy4PJ8DwAKahIPmyvag==:17 a=smKx5t2vBNcA:10 a=EjXixHym9-HHEDc7U8cA:9 a=pILNOxqGKmIA:10 a=msVBOv_JBXkKfIS_S58A:9 a=oqAm_Bk-nU-RBs81:21 a=_W_S_7VecoQA:10 a=frz4AuCg-hUA:10 a=pHzHmUro8NiASowvMSCR:22 a=Ew2E2A-JSTLzCXPT_086:22
+ 
+ *  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ *       See http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ *      for more information.
+ *      [URIs: live.com]
+ * -0.0 RCVD_IN_DNSWL_NONE RBL: Sender listed at http://www.dnswl.org/, no
+ *      trust
+ *      [104.47.42.61 listed in list.dnswl.org]
+ * -0.0 SPF_PASS SPF: sender matches SPF record
+ * -0.0 SPF_HELO_PASS SPF: HELO matches SPF record
+ *  0.1 DKIM_SIGNED Message has a DKIM or DK signature, not necessarily
+ *      valid
+ * -7.5 USER_IN_DEF_SPF_WL From: address is in the default SPF white-list
+ *  0.0 HTML_MESSAGE BODY: HTML included in message
+ *  0.1 DKIM_INVALID DKIM or DK signature exists, but is not valid
+ * -0.5 ENV_AND_HDR_SPF_MATCH Env and Hdr From used in default SPF WL Match
+X-Spam-Flag: NO
+
+--=-gtxPRBmVF86yd51hPBrqiw==
+Content-Type: text/plain; charset="windows-1252"
+Content-Transfer-Encoding: 7bit
+
+Please use this code to reset the password for the Microsoft account an*****@daanvir.org.
+
+Here is your code: 7137877
+
+
+                If you don't recognize the Microsoft account an*****@daanvir.org, you can click https://account.live.com/dp?ft=DW4irQSxs5vJFUmRc7pnnn6zOjQHWE1Ho06x3ucgOX8SOH!GL6Dz4Y0nSgY7ca9WhG6xF6vJ7nvu1rGzawVQfYpMg3i*Qi8TRIGPiJ5GgLY3yWd1orUE!MPjF1W8qKd9JgYzaOHY!HiLeb6QXkuRi8ZSZOYg1xb*Ahg1eQC8OvJ3WKIToI2TTByOyK3lIrgP!IYflMbVnPJc6O4fnesWZ1vFq5kbX4iqP8L8V3DxzQWuAntcdxbdbj7xg5CMS3sgGGSnD5Okefe1OMJC5oIRC3KCeZrc4cmNE!yP8Kc4mXNJe7uZQeJ5WSpZVhTzeZbRcQ%24%24 to remove your email address from that account.
+
+Thanks,
+The Microsoft account team 
+--=-gtxPRBmVF86yd51hPBrqiw==
+Content-Type: text/html; charset="windows-1252"
+Content-Transfer-Encoding: 7bit
+
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr"> 
+<head>
+<style type="text/css">
+ .link:link, .link:active, .link:visited {
+       color:#2672ec !important;
+       text-decoration:none !important;
+ }
+
+ .link:hover {
+       color:#4284ee !important;
+       text-decoration:none !important;
+ }
+</style>
+<title></title>
+</head>
+<body>
+<table dir="ltr">
+      <tr><td id="i1" style="padding:0; font-family:'Segoe UI Semibold', 'Segoe UI Bold', 'Segoe UI', 'Helvetica Neue Medium', Arial, sans-serif; font-size:17px; color:#707070;">Microsoft account</td></tr>
+      <tr><td id="i2" style="padding:0; font-family:'Segoe UI Light', 'Segoe UI', 'Helvetica Neue Medium', Arial, sans-serif; font-size:41px; color:#2672ec;">Password reset code</td></tr>
+      <tr><td id="i3" style="padding:0; padding-top:25px; font-family:'Segoe UI', Tahoma, Verdana, Arial, sans-serif; font-size:14px; color:#2a2a2a;">Please use this code to reset the password for the Microsoft account <a dir="ltr" id="iAccount" class="link" style="color:#2672ec; text-decoration:none" href="mailto:an*****@daanvir.org">an*****@daanvir.org</a>.</td></tr>
+      <tr><td id="i4" style="padding:0; padding-top:25px; font-family:'Segoe UI', Tahoma, Verdana, Arial, sans-serif; font-size:14px; color:#2a2a2a;">Here is your code: <span style="font-family:'Segoe UI Bold', 'Segoe UI Semibold', 'Segoe UI', 'Helvetica Neue Medium', Arial, sans-serif; font-size:14px; font-weight:bold; color:#2a2a2a;">7137877</span></td></tr>
+      <tr><td id="i5" style="padding:0; padding-top:25px; font-family:'Segoe UI', Tahoma, Verdana, Arial, sans-serif; font-size:14px; color:#2a2a2a;">
+                
+                If you don't recognize the Microsoft account <a dir="ltr" id="iAccount" class="link" style="color:#2672ec; text-decoration:none" href="mailto:an*****@daanvir.org">an*****@daanvir.org</a>, you can <a id="iLink2" class="link" style="color:#2672ec; text-decoration:none" href="https://account.live.com/dp?ft=DW4irQSxs5vJFUmRc7pnnn6zOjQHWE1Ho06x3ucgOX8SOH!GL6Dz4Y0nSgY7ca9WhG6xF6vJ7nvu1rGzawVQfYpMg3i*Qi8TRIGPiJ5GgLY3yWd1orUE!MPjF1W8qKd9JgYzaOHY!HiLeb6QXkuRi8ZSZOYg1xb*Ahg1eQC8OvJ3WKIToI2TTByOyK3lIrgP!IYflMbVnPJc6O4fnesWZ1vFq5kbX4iqP8L8V3DxzQWuAntcdxbdbj7xg5CMS3sgGGSnD5Okefe1OMJC5oIRC3KCeZrc4cmNE!yP8Kc4mXNJe7uZQeJ5WSpZVhTzeZbRcQ%24%24">click here</a> to remove your email address from that account.
+            </td></tr>
+      <tr><td id="i6" style="padding:0; padding-top:25px; font-family:'Segoe UI', Tahoma, Verdana, Arial, sans-serif; font-size:14px; color:#2a2a2a;">Thanks,</td></tr>
+      <tr><td id="i7" style="padding:0; font-family:'Segoe UI', Tahoma, Verdana, Arial, sans-serif; font-size:14px; color:#2a2a2a;">The Microsoft account team</td></tr>
+</table>
+</body>
+</html>
+--=-gtxPRBmVF86yd51hPBrqiw==--

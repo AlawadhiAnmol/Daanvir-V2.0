@@ -1,0 +1,114 @@
+Return-Path: <ughhhhateit48@gmail.com>
+Delivered-To: anmol.alawadhi@daanvir.org
+Received: from md-in-63.webhostbox.net
+	by md-in-63.webhostbox.net (Dovecot) with LMTP id 6e4dBjk1X1timgMAwBqdFg
+	for <anmol.alawadhi@daanvir.org>; Mon, 30 Jul 2018 15:56:41 +0000
+Return-path: <ughhhhateit48@gmail.com>
+Envelope-to: anmol.alawadhi@daanvir.org
+Delivery-date: Mon, 30 Jul 2018 15:56:41 +0000
+Received: from mail-qt0-f179.google.com ([209.85.216.179]:34995)
+	by md-in-63.webhostbox.net with esmtps (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128)
+	(Exim 4.89)
+	(envelope-from <ughhhhateit48@gmail.com>)
+	id 1fkAXE-0011GI-OE
+	for anmol.alawadhi@daanvir.org; Mon, 30 Jul 2018 15:56:41 +0000
+Received: by mail-qt0-f179.google.com with SMTP id a5-v6so12601267qtp.2
+        for <anmol.alawadhi@daanvir.org>; Mon, 30 Jul 2018 08:56:32 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=5I039rOcRDrVNKzw/Zh0hkJA7i0fzZSAbj3nbS4Oj3g=;
+        b=aaAHntPM/A46Tl+sa8jEAvaaBToWOpRjr8YfxpopTzzuHDzapZW7p0JuM12aMJ34wP
+         Iony+nS2SRamTHR5jf6TDDG3/Z2c16yhr4Hy2pUiDxzZmy/iNiljYcq0W8EMhJjagi9W
+         dCbm+Fn5kY4j3WpPHDDn0p5UNAwwbi5Ub5kT8V/0+jyouie+iLcpUEyAxHRGDvlhso8o
+         BcpvKfMiNet0hQF9lMGV3yu84e9C+f5GltLH093lDQPQLGiVSH2mYQafwute/oliltDO
+         d3rzB2Ay1V8Otp3Lo2M/agSD+RNT3L17P5nUYtpaHbC5x9aNSppGKS8Pn9YLFle6488u
+         Ajfg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=5I039rOcRDrVNKzw/Zh0hkJA7i0fzZSAbj3nbS4Oj3g=;
+        b=C3v/CcB3zk+8gOmNtCJ0a0lsAE9DhnpyoY5spu5iR+09+Qn3vDzHK58/whhJxiX9bt
+         z+TktQnn5j4stU9KLBkxoSIgwZsnGfp6kqOEArQRvKhfxGB+5q6qZQgY8Jjac5e1hHdu
+         rLs2jMElPTtLImQQCTIFBm21mbl3UCof65Nr2lkMoxV1DNZNB5WB20aH24SHTBTLciK0
+         81pZX/24jzwVmjKi011PpDp9JFp+y6w8cBoZ3vzUQZFG8hw31neuu6m6dRwqyWH0wpUx
+         N8IaVXwSkuuBsjsVd6/qUzMIHRLkRFG767x1C0TO5gW2kaVzqkSG0bk69dPOBAAjLz2o
+         46EQ==
+X-Gm-Message-State: AOUpUlFLmC2EHZaYJSuZ9Y06Ryy37c1+lzg6H2rxbRBiqUrTtg/d0Boe
+	yseuLXWoAkKuI8qsQxe3jQHL1Mbq8gx8LSnxYy/k9g==
+X-Google-Smtp-Source: AAOMgpfKTz7z5EXcLDLbKdKmSr3AnC0QMi64oOABBM38QP8rvFriimwJuZmUoUZRsAObkyPV8VjnDN8HuN1R7mt6ulY=
+X-Received: by 2002:ac8:8f0:: with SMTP id y45-v6mr17723817qth.408.1532966183861;
+ Mon, 30 Jul 2018 08:56:23 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 2002:a0c:b6d1:0:0:0:0:0 with HTTP; Mon, 30 Jul 2018 08:56:23
+ -0700 (PDT)
+From: PraChi Joshi <ughhhhateit48@gmail.com>
+Date: Mon, 30 Jul 2018 21:26:23 +0530
+Message-ID: <CAJsOwiaw99cXT0DH=Jc=nb2iuVrBq-a2GCfhAi4FckoOQQ=01g@mail.gmail.com>
+Subject: Internship Certificate
+To: Anmol Alawadhi <anmol.alawadhi@daanvir.org>
+Content-Type: multipart/alternative; boundary="000000000000d7828e05723980bd"
+X-Authenticated_sender: 
+X-Spam-Status: No, score=0.8
+X-Spam-Score: 8
+X-Spam-Bar: /
+X-Ham-Report: DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, FREEMAIL_ENVFROM_END_DIGIT=0.25, FREEMAIL_FROM=0.001, HK_RANDOM_ENVFROM=0.626, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_NONE=-0.0001, SPF_PASS=-0.001, URIBL_BLOCKED=0.001, CMAE Analysis: v=2.3 cv=P/8UeBIu c=1 sm=0 tr=0 a=HpAAvcLHHh0Zw7uRqdWCyQ==:117 a=x7bEGLp0ZPQA:10 a=FOBbzUb_h_sA:10 a=R9QF1RCXAYgA:10 a=mz-2LqD6SRN3LrhmN6gA:9 a=QEXdDO2ut3YA:10 a=tSLdOCOM7-5f1qo4UUAA:9 a=0w4DDzrS9qh3ERxy:21
+ 
+ *  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ *       See http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ *      for more information.
+ *      [URIs: daanvir.org]
+ *  0.6 HK_RANDOM_ENVFROM Envelope sender username looks random
+ * -0.0 RCVD_IN_DNSWL_NONE RBL: Sender listed at http://www.dnswl.org/, no
+ *      trust
+ *      [209.85.216.179 listed in list.dnswl.org]
+ *  0.0 FREEMAIL_FROM Sender email is commonly abused enduser mail provider
+ *      (ughhhhateit48[at]gmail.com)
+ * -0.0 SPF_PASS SPF: sender matches SPF record
+ *  0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends in
+ *      digit (ughhhhateit48[at]gmail.com)
+ *  0.0 HTML_MESSAGE BODY: HTML included in message
+ *  0.1 DKIM_SIGNED Message has a DKIM or DK signature, not necessarily
+ *      valid
+ * -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ * -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
+ *       domain
+X-Spam-Flag: NO
+
+--000000000000d7828e05723980bd
+Content-Type: text/plain; charset="UTF-8"
+
+Hi Anmol,
+
+
+As the period of the internship was two months and has accordingly been
+finished now. So, I would like to have my internship certificate from
+Daanvir.org.
+
+
+
+
+
+
+
+
+
+-- 
+Regards,
+Prachi
+
+--000000000000d7828e05723980bd
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><br clear=3D"all"><div>Hi Anmol,</div><div><br></div><div>=
+<br></div><div>As the period of the internship was two months and has accor=
+dingly been finished now. So, I=C2=A0would like to have my internship certi=
+ficate from Daanvir.org.=C2=A0</div><div><br></div><div><br></div><div><br>=
+</div><div><br></div><div><br></div><div><br></div><div><br></div><div><br>=
+</div><div><br></div>-- <br><div class=3D"gmail_signature" data-smartmail=
+=3D"gmail_signature"><div dir=3D"ltr">Regards,=C2=A0<div>Prachi=C2=A0</div>=
+</div></div>
+</div>
+
+--000000000000d7828e05723980bd--

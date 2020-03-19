@@ -1,0 +1,132 @@
+Return-Path: <0100016435c8a1c3-3c3423db-700b-4d8d-8001-15133b4ec469-000000@amazonses.com>
+Delivered-To: anmol.alawadhi@daanvir.org
+Received: from md-in-63.webhostbox.net
+	by md-in-63.webhostbox.net (Dovecot) with LMTP id oZtfD7GVMFtFwAgAwBqdFg
+	for <anmol.alawadhi@daanvir.org>; Mon, 25 Jun 2018 07:11:45 +0000
+Return-path: <0100016435c8a1c3-3c3423db-700b-4d8d-8001-15133b4ec469-000000@amazonses.com>
+Envelope-to: anmol.alawadhi@daanvir.org
+Delivery-date: Mon, 25 Jun 2018 07:11:45 +0000
+Received: from a10-181.smtp-out.amazonses.com ([54.240.10.181]:38692)
+	by md-in-63.webhostbox.net with esmtps (TLSv1.2:ECDHE-RSA-AES128-SHA256:128)
+	(Exim 4.89)
+	(envelope-from <0100016435c8a1c3-3c3423db-700b-4d8d-8001-15133b4ec469-000000@amazonses.com>)
+	id 1fXLf1-002PMi-21
+	for anmol.alawadhi@daanvir.org; Mon, 25 Jun 2018 07:11:45 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=vmweay23vju5pgjewim6y7ifjhik2vjg; d=internshala.com;
+	t=1529910698;
+	h=To:Subject:Message-ID:Date:From:Reply-To:MIME-Version:List-Unsubscribe:Content-Type:Content-Transfer-Encoding;
+	bh=lpTvkcxT45o70xDzMCZXzNMu5Cf9wqQxfk8I1je7xcc=;
+	b=KSkJtZFFYrlr9tPxXNbEFV3tyhUlz+HpBJZ/iLVNHLh4pAfmahHHSuxhcuwSTsTe
+	vkBlBiG4qckzehODjwNV/bPcdiiRUDO2GnSss7v4tOKD0OJhzBIyUEMl44uLUJR1gUe
+	Z425UGIYrGuIaV6HON0d7YTY8cpIIYcU2hP3JcRE=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug; d=amazonses.com; t=1529910698;
+	h=To:Subject:Message-ID:Date:From:Reply-To:MIME-Version:List-Unsubscribe:Content-Type:Content-Transfer-Encoding:Feedback-ID;
+	bh=lpTvkcxT45o70xDzMCZXzNMu5Cf9wqQxfk8I1je7xcc=;
+	b=daaR6V1ugbd2DgF+OBlH00J76n0naHqj0fpNs9I3oz+mlcpAlWOI4GLoZuK7bxdz
+	XiV3MQjpzn3wBLaFYFiTf6SalWWaOrqQ54IqWuDD4N0IAtJEA+AnsQDMVcvWbHFSFHk
+	EFIs/oBCHa11s+//gZj2gYXWcXW8gzIVFN29Fx+k=
+To: anmol.alawadhi@daanvir.org
+Subject: Regarding the result of your internship - Internshala
+Message-ID: <0100016435c8a1c3-3c3423db-700b-4d8d-8001-15133b4ec469-000000@email.amazonses.com>
+Date: Mon, 25 Jun 2018 07:11:38 +0000
+From: "Nitin Malik" <employer@internshala.com>
+Reply-To: employer@internshala.com
+MIME-Version: 1.0
+X-Mailer-LID: 5667
+List-Unsubscribe: <http://em.internshala.com/unsubscribe.php?M=86302361&C=5eb0048d701202c6ec7266e23b67393a&L=5667&N=13719>
+X-Mailer-RecptId: 86302361
+X-Mailer-SID: 13719
+X-Mailer-Sent-By: 4
+Content-Type: multipart/alternative; charset="UTF-8"; boundary="b1_f0caaec20364018242fe57e241c2677f"
+Content-Transfer-Encoding: 8bit
+X-SES-Outgoing: 2018.06.25-54.240.10.181
+Feedback-ID: 1.us-east-1.zxtucPVubGftJWR49L2EMyyk1hBPV57S2rBAeFj2vQs=:AmazonSES
+X-Authenticated_sender: 
+X-Spam-Status: No, score=0.9
+X-Spam-Score: 9
+X-Spam-Bar: /
+X-Ham-Report: DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, HEADER_FROM_DIFFERENT_DOMAINS=0.25, HTML_IMAGE_ONLY_28=0.726, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_NONE=-0.0001, SPF_PASS=-0.001, URIBL_BLOCKED=0.001, CMAE Analysis: v=2.3 cv=P/8UeBIu c=1 sm=0 tr=0 a=HpAAvcLHHh0Zw7uRqdWCyQ==:117 a=gJAInB2TfrTBKd6ahTVCgQ==:17 a=IkcTkHD0fZMA:10 a=7mUfYlMuFuIA:10 a=mDRq-kXtxVkA:10 a=Hgn-wnRn1-cA:10 a=xFzOtaMxwsNHtOZoWYsA:9 a=QEXdDO2ut3YA:10 a=BG0-yrJV6j4A:10 a=JlbB7QOLdOYA:10 a=LSM54lFEea_a9or1ClQA:9 a=YFylo0wKlNsTa8-9:21 a=MWpQ1dLxZ5eEcJdR:21 a=uYCQTyLKQNBDB1I1:21 a=_W_S_7VecoQA:10 a=Tiie-zG8F9MA:10 a=R4z4fLCyvN8A:10
+ 
+ *  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ *       See http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ *      for more information.
+ *      [URIs: internshala.com]
+ * -0.0 RCVD_IN_DNSWL_NONE RBL: Sender listed at http://www.dnswl.org/, no
+ *      trust
+ *      [54.240.10.181 listed in list.dnswl.org]
+ *  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
+ *      domains are different
+ * -0.0 SPF_PASS SPF: sender matches SPF record
+ *  0.0 HTML_MESSAGE BODY: HTML included in message
+ *  0.7 HTML_IMAGE_ONLY_28 BODY: HTML: images with 2400-2800 bytes of words
+ *  0.1 DKIM_SIGNED Message has a DKIM or DK signature, not necessarily
+ *      valid
+ * -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ * -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
+ *       domain
+X-Spam-Flag: NO
+
+--b1_f0caaec20364018242fe57e241c2677f
+Content-Type: text/plain; format=flowed; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Your email client cannot read this email.
+To view it online, please go here:
+http://em.internshala.com/display.php?M=86302361&C=5eb0048d701202c6ec7266e23b67393a&S=13719&L=5667&N=9394
+
+
+To stop receiving these
+emails:http://em.internshala.com/unsubscribe.php?M=86302361&C=5eb0048d701202c6ec7266e23b67393a&L=5667&N=13719
+
+--b1_f0caaec20364018242fe57e241c2677f
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+<html>
+<head>
+</head>
+<body>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size:
+small;">Hello Anmol ,</span><br /><br /><span style="font-family: arial,
+helvetica, sans-serif; font-size: small;">I am Nitin from Internshala.<br
+/><br />I came across your recently expired internships and saw that you
+have received a good number of applications, but haven't hired any interns.
+I was wondering if you have hired but missed updating their status on
+Internshala.</span><br /><br /><span style="font-family: arial, helvetica,
+sans-serif; font-size: small;">If so, could you please update the status of
+the hired interns&nbsp;<strong><a
+href="http://em.internshala.com/link.php?M=86302361&N=13719&L=9435&F=H">here</a></strong>
+- hardly takes a minute - so that we notify rest of the applicants that the
+position is closed now. Alternatively, you can also email me the list of
+hired candidates, I will do the needful. :)</span><br /><span
+style="font-family: arial, helvetica, sans-serif; font-size: small;"><br
+/>Also, if you have any queries or need any assistance, I can be reached on
++91 8375836427.<br /><br /><span>Note: On an average, a student applies to
+4 internships at once. To avoid candidate drop out, please update their
+status at the earliest.</span><br /></span><br /><span style="font-family:
+arial, helvetica, sans-serif; font-size: small;">Look forward.</span></p>
+<div dir="ltr"><span style="font-family: arial, helvetica, sans-serif;
+font-size: small;">Best regards,</span></div>
+<div dir="ltr">
+<div><span style="font-family: arial, helvetica, sans-serif; font-size:
+small;">Nitin Malik</span></div>
+<div><span style="font-family: arial, helvetica, sans-serif; font-size:
+small;">Manager - Employer Relations</span></div>
+<div><span style="font-family: arial, helvetica, sans-serif; font-size:
+small;"><a
+href="http://em.internshala.com/link.php?M=86302361&N=13719&L=9435&F=H">Internshala</a></span></div>
+<div><span style="font-family: arial, helvetica, sans-serif; font-size:
+small;">M : (+91) 8375836427 | Office : 0124 4004123<br /><br /><br /><br
+/><span style="font-size: x-small;"><a
+href="http://em.internshala.com/unsubscribe.php?M=86302361&C=5eb0048d701202c6ec7266e23b67393a&L=5667&N=13719">Unsubscribe</a></span></span></div>
+</div>
+<img
+src="http://em.internshala.com/open.php?M=86302361&L=5667&N=13719&F=H&image=.jpg"
+height="1" width="10"></body>
+</html>
+
+--b1_f0caaec20364018242fe57e241c2677f--
+
+

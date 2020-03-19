@@ -1,0 +1,144 @@
+Return-Path: <ughhhhateit48@gmail.com>
+Delivered-To: anmol.alawadhi@daanvir.org
+Received: from md-in-63.webhostbox.net
+	by md-in-63.webhostbox.net (Dovecot) with LMTP id 2uwpLQHRelvojgMAwBqdFg
+	for <anmol.alawadhi@daanvir.org>; Mon, 20 Aug 2018 14:32:33 +0000
+Return-path: <ughhhhateit48@gmail.com>
+Envelope-to: anmol.alawadhi@daanvir.org
+Delivery-date: Mon, 20 Aug 2018 14:32:33 +0000
+Received: from mail-qt0-f176.google.com ([209.85.216.176]:39619)
+	by md-in-63.webhostbox.net with esmtps (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128)
+	(Exim 4.89)
+	(envelope-from <ughhhhateit48@gmail.com>)
+	id 1frlEL-000yTO-Cz
+	for anmol.alawadhi@daanvir.org; Mon, 20 Aug 2018 14:32:33 +0000
+Received: by mail-qt0-f176.google.com with SMTP id o15-v6so10360610qtk.6
+        for <anmol.alawadhi@daanvir.org>; Mon, 20 Aug 2018 07:32:25 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=pBe3iiAF/KN43jSp9FfSIQF05/SidUZ8iA4jAQ1I794=;
+        b=SMm7FiP76zvQFM+GgIO1Ww6w/SIkzFExzQrCTjeTjVjTrkgueaCMwc/Xj9UVvM/VYT
+         w3hEV74Ea2cERFms6uGkIfYhnRWZC81MF/YPrxGRo+Tv6aHrLaFJpObHUwl/bjtQsapa
+         xcXXWn0aR66M4wF332MuzQHDLZ9Tlh0WFcMOVYZnSuZvbrr3aT3Ot86mRsbjnn0lif76
+         Qt1TOB/1Mm+hEyMOV/UHg2Vo3IlDhgfLG5ln4A2XPSV44mXnZxNjOCc0IAUKU+iVwGIE
+         RAzIXRwsx5VwmEHQpViHUN/PRRdxA6QL8KYaiAcVa35TfQf12Vi1M/IABmcF0ry9QK2z
+         9b1w==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=pBe3iiAF/KN43jSp9FfSIQF05/SidUZ8iA4jAQ1I794=;
+        b=fCBLQQd2tiYjI0sDgZy7cV7/GerHLWXRWcFqU8lSr8iMxlMbDZQy7BwLkzJsiciXXu
+         wKW7QGF25ofOXFt/yilQ+mpGe0uS87AoCvlEFlT9AS/wJ0LfF+PuqcpY+2Xw2B1LDfsB
+         +F+RCtr6t5BHGkpilc4oB+PzrH3N9e8iIGgjsYGxuqLolcTLDgIT4//j32spUwo0s8jP
+         qP+zjfVaS2od0GQMiEgjjuwzT+3AQRbvHfyeTT98NG1MXEpG/+8ecNVULQ2v5/MbeLFW
+         yHo9sYill9FFP87Bc2dxJqkewEMy7AokqaQL3mv+3QX4VPrJkV3mtJOxno7LmVp2g5qJ
+         VoHg==
+X-Gm-Message-State: AOUpUlGsZWdjh29wmAH/mvtVbscYbEisXJoGGyTXbtcu7R87wBgoanyu
+	wVYH6T1ZSz0+H9a2/G0DUuDa2QsTh9TqTN5bYjNn44Z5
+X-Google-Smtp-Source: AA+uWPzP/wysgPMurHzlap7PDv22/O/SoDQxROQgr4LcPoMCJ6ngUKsjjrjfRETlfnKjmEG4M/V7mkG55pal7O81RmI=
+X-Received: by 2002:ac8:8e6:: with SMTP id y35-v6mr5027605qth.408.1534775537293;
+ Mon, 20 Aug 2018 07:32:17 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 2002:a0c:b6d1:0:0:0:0:0 with HTTP; Mon, 20 Aug 2018 07:32:16
+ -0700 (PDT)
+In-Reply-To: <CAJsOwiaw99cXT0DH=Jc=nb2iuVrBq-a2GCfhAi4FckoOQQ=01g@mail.gmail.com>
+References: <CAJsOwiaw99cXT0DH=Jc=nb2iuVrBq-a2GCfhAi4FckoOQQ=01g@mail.gmail.com>
+From: PraChi Joshi <ughhhhateit48@gmail.com>
+Date: Mon, 20 Aug 2018 20:02:16 +0530
+Message-ID: <CAJsOwiaipEmgT0YRHD4R=hY5xRC=M-GF-KUQPED=_7ACyxE9=g@mail.gmail.com>
+Subject: Fwd: Internship Certificate
+To: Anmol Alawadhi <anmol.alawadhi@daanvir.org>
+Content-Type: multipart/alternative; boundary="000000000000b5deae0573dec614"
+X-Authenticated_sender: 
+X-Spam-Status: No, score=0.8
+X-Spam-Score: 8
+X-Spam-Bar: /
+X-Ham-Report: DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, FREEMAIL_ENVFROM_END_DIGIT=0.25, FREEMAIL_FROM=0.001, HK_RANDOM_ENVFROM=0.626, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_NONE=-0.0001, RCVD_IN_MSPIKE_H3=-0.01, RCVD_IN_MSPIKE_WL=-0.01, SPF_PASS=-0.001, URIBL_BLOCKED=0.001, CMAE Analysis: v=2.3 cv=P/8UeBIu c=1 sm=0 tr=0 a=HpAAvcLHHh0Zw7uRqdWCyQ==:117 a=x7bEGLp0ZPQA:10 a=FOBbzUb_h_sA:10 a=dapMudl6Dx4A:10 a=cUR8g_GPxFXAIQHZqKMA:9 a=QEXdDO2ut3YA:10 a=PJziP2krwGVtTHyo_bgA:9 a=vVu7znqDcJ6tafMl:21
+ 
+ *  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ *       See http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ *      for more information.
+ *      [URIs: daanvir.org]
+ *  0.6 HK_RANDOM_ENVFROM Envelope sender username looks random
+ * -0.0 RCVD_IN_DNSWL_NONE RBL: Sender listed at http://www.dnswl.org/, no
+ *      trust
+ *      [209.85.216.176 listed in list.dnswl.org]
+ *  0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends in
+ *      digit (ughhhhateit48[at]gmail.com)
+ *  0.0 FREEMAIL_FROM Sender email is commonly abused enduser mail provider
+ *      (ughhhhateit48[at]gmail.com)
+ * -0.0 SPF_PASS SPF: sender matches SPF record
+ *  0.0 HTML_MESSAGE BODY: HTML included in message
+ * -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
+ *       domain
+ * -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ *  0.1 DKIM_SIGNED Message has a DKIM or DK signature, not necessarily
+ *      valid
+ * -0.0 RCVD_IN_MSPIKE_H3 RBL: Good reputation (+3)
+ *      [209.85.216.176 listed in wl.mailspike.net]
+ * -0.0 RCVD_IN_MSPIKE_WL Mailspike good senders
+X-Spam-Flag: NO
+
+--000000000000b5deae0573dec614
+Content-Type: text/plain; charset="UTF-8"
+
+---------- Forwarded message ----------
+From: PraChi Joshi <ughhhhateit48@gmail.com>
+Date: Mon, Jul 30, 2018 at 9:26 PM
+Subject: Internship Certificate
+To: Anmol Alawadhi <anmol.alawadhi@daanvir.org>
+
+
+
+Hi Anmol,
+
+
+As the period of the internship was two months and has accordingly been
+finished now. So, I would like to have my internship certificate from
+Daanvir.org.
+
+
+
+
+
+
+
+
+
+-- 
+Regards,
+Prachi
+
+
+
+-- 
+Regards,
+Prachi
+
+--000000000000b5deae0573dec614
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><br><div class=3D"gmail_quote">---------- Forwarded messag=
+e ----------<br>From: <b class=3D"gmail_sendername">PraChi Joshi</b> <span =
+dir=3D"ltr">&lt;<a href=3D"mailto:ughhhhateit48@gmail.com">ughhhhateit48@gm=
+ail.com</a>&gt;</span><br>Date: Mon, Jul 30, 2018 at 9:26 PM<br>Subject: In=
+ternship Certificate<br>To: Anmol Alawadhi &lt;<a href=3D"mailto:anmol.alaw=
+adhi@daanvir.org">anmol.alawadhi@daanvir.org</a>&gt;<br><br><br><div dir=3D=
+"ltr"><br clear=3D"all"><div>Hi Anmol,</div><div><br></div><div><br></div><=
+div>As the period of the internship was two months and has accordingly been=
+ finished now. So, I=C2=A0would like to have my internship certificate from=
+ Daanvir.org.=C2=A0</div><span class=3D"HOEnZb"><font color=3D"#888888"><di=
+v><br></div><div><br></div><div><br></div><div><br></div><div><br></div><di=
+v><br></div><div><br></div><div><br></div><div><br></div>-- <br><div class=
+=3D"m_8151616488128081867gmail_signature" data-smartmail=3D"gmail_signature=
+"><div dir=3D"ltr">Regards,=C2=A0<div>Prachi=C2=A0</div></div></div>
+</font></span></div>
+</div><br><br clear=3D"all"><div><br></div>-- <br><div class=3D"gmail_signa=
+ture" data-smartmail=3D"gmail_signature"><div dir=3D"ltr">Regards,=C2=A0<di=
+v>Prachi=C2=A0</div></div></div>
+</div>
+
+--000000000000b5deae0573dec614--

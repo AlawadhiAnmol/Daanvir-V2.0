@@ -1,0 +1,445 @@
+AWSTATS DATA FILE 7.4 (build 20140726)
+# If you remove this file, all statistics for date 201708 will be lost/reset.
+# Last config file used to build this data file was /home/daanvaq7/tmp/awstats/awstats.daanvir.org.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2008                
+POS_TIME 2672                
+POS_VISITOR 9050                
+POS_DAY 11189               
+POS_DOMAIN 3433                
+POS_LOGIN 3899                
+POS_ROBOT 4054                
+POS_WORMS 4631                
+POS_EMAILSENDER 4762                
+POS_EMAILRECEIVER 4905                
+POS_SESSION 11802               
+POS_SIDER 11960               
+POS_FILETYPES 5040                
+POS_DOWNLOADS 5293                
+POS_OS 5370                
+POS_BROWSER 5567                
+POS_SCREENSIZE 6213                
+POS_UNKNOWNREFERER 6287                
+POS_UNKNOWNREFERERBROWSER 6518                
+POS_ORIGIN 6634                
+POS_SEREFERRALS 6770                
+POS_PAGEREFS 6925                
+POS_SEARCHWORDS 7186                
+POS_KEYWORDS 7338                
+POS_MISC 2336                
+POS_ERRORS 7397                
+POS_CLUSTER 3755                
+POS_SIDER_404 7507                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20170901041121 15 2855 4401531331682
+FirstTime 0
+LastTime 20170831194152
+LastUpdate 20170901054146 15 0 14 0 0
+TotalVisits 56                  
+TotalUnique 46                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 54                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+TotalMisc 0 0 0
+AddToFavourites 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+JavaEnabled 0 0 0
+RealPlayerSupport 0 0 0
+QuickTimeSupport 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 5 5 164527 11 28 861297
+1 2 2 72984 5 12 193376
+2 2 2 36492 1 7 93133
+3 3 3 109476 4 13 122577
+4 1 19 2059931 3 10 224284
+5 6 68 6945480 5 19 355514
+6 6 70 7117001 4 10 112647
+7 2 3 187298 8 36 2932672
+8 6 69 6945480 4 7 121414
+9 1 1 36492 7 14 419395
+10 4 45 4187442 6 11 269649
+11 43 183 14915494 6 23 540118
+12 6 68 6908988 7 10 88338
+13 10 115 12267358 17 25 209025
+14 4 4 145968 5 9 284603
+15 5 56 5671455 14 19 360692
+16 11 156 7803534 8 15 88912
+17 1 1 36492 10 15 87622
+18 9 72 7078371 4 24 489201
+19 9 123 12045059 3 7 40656
+20 3 3 109476 4 24 460661
+21 0 0 0 4 17 496363
+22 4 66 6872469 2 7 42069
+23 1 1 36492 6 12 277305
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 18
+in 81 787 76575540
+us 27 194 10458233
+ca 4 4 128044
+fr 4 4 145968
+id 4 66 6872487
+gb 3 4 698338
+de 3 3 0
+za 3 54 5538413
+ru 3 4 93717
+pa 3 3 109476
+ua 2 2 72984
+nl 2 2 72984
+cn 1 3 127150
+eu 1 1 36492
+bg 1 1 36492
+sk 1 1 36492
+it 1 1 36492
+np 0 1 588862
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 12
+googlebot 64 2263832 20170831050813 10
+spider 53 2027528 20170830144311 1
+bot[\s_+:,\.\;\/\\-] 44 624495 20170830143816 27
+bingpreview 35 2871481 20170829070711 0
+googlebot\-image 30 36492 20170819210252 0
+no_user_agent 18 656856 20170831094152 0
+unknown 11 1683 20170829232042 11
+php 5 415926 20170815072926 0
+[\s_+:,\.\;\/\\-]bot 4 0 20170824065713 0
+slurp 2 36645 20170818233541 1
+crawl 2 36645 20170811133022 1
+checker 1 0 20170822052457 1
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 10
+Unknown 3 109476 0 0
+ttf 16 2856320 0 0
+mp4 1 0 0 0
+html 60 1985538 0 0
+woff 15 24540 0 0
+css 78 3921541 0 0
+js 147 3241591 0 0
+png 358 27055630 0 0
+php 50 550229 0 0
+jpg 407 61757704 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 1
+/videos/video.mp4 0 3 125595
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 10
+winxp 2 2
+macosx 1 1
+winlong 2 2
+winnt 640 75
+win7 17 15
+linux 16 12
+ios_iphone 58 3
+linuxandroid 196 15
+win8.1 201 14
+Unknown 5 5
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 30
+Unknown 1 1
+firefox45.0 1 1
+chrome37.0.2062.120 7 7
+firefox26.0 2 2
+firefox50.0 1 0
+chrome40.0.2214.85 3 3
+chrome60.0.3112.90 135 11
+chrome60.0.3112.78 66 4
+chrome55.0.0.12195 1 0
+chrome56.0.2924.87 3 3
+chrome59.0.3071.115 314 50
+chrome58.0.3029.96 1 1
+chrome58.0.3029.83 89 6
+msie8.0 2 2
+chrome49.0.2623.75 7 3
+chrome45.0.2454.94 1 1
+mozilla 4 4
+firefox3.6.3 1 1
+msie6.0 1 1
+firefox51.0 2 2
+firefox53.0 57 6
+chrome59.0.3071.125 106 8
+msie9.0 2 2
+chrome51.0.2704.79 1 1
+chrome36.0.1985.125 3 3
+chrome34.0.1847.116 1 1
+iphone 1 0
+safari10.0 57 3
+chrome39.0.2171.95 3 1
+chrome60.0.3112.101 265 16
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 3
+Mozilla/5.0_(compatible;_Dataprovider.com;) 20170805005922
+Mozilla/5.0_(compatible;_ips-agent) 20170803164617
+WWW-Mechanize/1.73 20170811110645
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 1
+WWW-Mechanize/1.73 20170811110645
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 44 52
+From1 0 0
+From2 3 6
+From3 8 8
+From4 89 1072
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 1
+google 3 6
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 4
+http://burger-imperia.com 4 4
+http://pizza-tycoon.com 2 2
+http://m.facebook.com 1 1
+http://pizza-imperia.com 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 3
+403 1 2547
+103 12 0
+404 92 197393
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 44
+/administrator/index.php 3 -
+/dump.sql.tgz 2 http://daanvir.org
+/libraries/sfn.php 1 -
+/db.zip 1 http://daanvir.org
+/admin/index.php 4 -
+/db.tar 1 http://daanvir.org
+/administrator/ 2 -
+/main/fonts/cantarell/cantarell-Regular.ttf 17 http://daanvir.org/css/style2.css
+/simpla/ 1 -
+/sitemap.xml 1 -
+/temp.sql 1 http://daanvir.org
+/wp-admin 1 http://daanvir.org
+/dbdump.sql.gz 1 http://daanvir.org
+/dump.gz 1 http://daanvir.org
+/db.sql.zip 1 http://daanvir.org
+/users.sql 1 http://daanvir.org
+/dump.sql.gz 1 http://daanvir.org
+/admin.php 9 -
+/db.sql 1 http://daanvir.org
+/dump.sql 1 http://daanvir.org
+/db.sql.gz 1 http://daanvir.org
+/manager/ 4 -
+/sql.gz 1 http://daanvir.org
+/user/ 3 -
+/videos/video.mp4 3 http://daanvir.org/
+/sql.zip 1 http://daanvir.org
+/dump.tgz 1 http://daanvir.org
+/admin/content/sitetree/ 1 -
+/.donation-posts 5 -
+/typo3/ 3 -
+/js/mage/cookies.js 1 -
+/wp-login.php 3 -
+/normalize.css 1 http://daanvir.org/activate.php
+/dump.sql.zip 1 http://daanvir.org
+/db.sql.bz2 2 http://daanvir.org
+/db.tar.gz 1 http://daanvir.org
+/sql.tar.gz 1 http://daanvir.org
+/sql.tgz 1 http://daanvir.org
+/dump.tar 1 http://daanvir.org
+/xmlrpc.php 2 -
+/me 1 -
+/admin/ 1 -
+/backup.sql 1 http://daanvir.org
+/dump.zip 1 http://daanvir.org
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 54
+182.69.220.59 38 115 7417653 20170803111238
+14.139.61.129 8 121 12024738 20170829054721
+14.139.61.128 7 69 6964057 20170815180918
+103.212.147.54 4 67 6872487 20170824163626
+27.123.242.85 4 66 6872487 20170804112803
+27.34.246.50 4 66 6872486 20170801133612
+103.217.244.2 4 66 6872469 20170818221930
+42.111.100.185 4 66 6872496 20170811125626
+103.217.244.56 4 67 6892817 20170802193908
+103.240.193.12 4 66 6872478 20170817063929
+103.212.145.152 4 66 6872496 20170813082717
+45.77.60.10 4 4 145968 20170818141651
+179.43.174.131 3 3 109476 20170831134817
+196.207.99.102 3 56 5538413 20170810155024
+138.246.253.19 3 3 0 20170831194152
+167.114.172.225 3 3 109476 20170805005924
+163.172.4.153 3 3 109476 20170820153139
+169.149.57.28 3 35 3007527 20170806103033
+37.220.35.202 2 2 72984 20170811052011
+66.102.6.121 2 3 187298 20170805071321
+62.210.245.205 2 2 72984 20170809202541
+64.233.173.55 2 26 311836 20170815164830
+64.233.173.154 2 16 2304038 20170810135526
+91.142.94.222 2 2 36492 20170817124218
+69.58.178.56 2 2 72984 20170803164637
+188.165.2.183 1 1 36492 20170810203245
+78.109.23.1 1 1 36492 20170831030157
+86.147.65.87 0 1 588862 
+188.226.129.55 1 1 36492 20170827185850
+49.44.67.235 0 18 2041363 
+64.233.173.156 0 14 649727 
+79.137.67.116 1 1 36492 20170819234809
+94.130.20.86 1 1 36492 20170810014825
+66.102.6.119 0 2 228628 
+64.233.173.155 1 14 1628455 20170810135524
+169.149.40.225 1 1 18559 20170815164837
+66.102.6.117 1 2 150806 20170803062708
+47.9.167.54 1 1 18568 20170811044007
+185.136.150.244 0 1 57225 
+34.230.25.86 1 1 18559 20170816005546
+85.248.227.164 1 1 36492 20170811134033
+34.213.119.151 1 1 36492 20170811110645
+69.197.162.106 2 2 72984 20170824034309
+18.85.22.204 1 1 36492 20170811020449
+64.121.105.3 0 1 588862 
+120.92.32.172 1 3 127150 20170829103951
+64.233.173.53 1 33 111740 20170815164817
+202.166.198.220 0 1 588862 
+34.251.190.207 1 1 36492 20170810013337
+169.149.13.62 0 7 398366 
+85.143.218.11 1 1 0 20170802024558
+79.124.59.202 1 1 36492 20170811063231
+178.33.54.161 1 1 36492 20170823093947
+64.233.173.57 2 29 452420 20170816085444
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 24
+20170801 5 68 7023292 2
+20170802 5 68 6892817 2
+20170803 43 122 7792249 5
+20170804 4 66 6872487 1
+20170805 4 5 260282 2
+20170806 3 41 3471430 1
+20170809 2 2 72984 1
+20170810 10 102 10290167 7
+20170811 11 91 9151379 7
+20170813 4 66 6872496 1
+20170814 1 1 36492 1
+20170815 12 156 7822120 6
+20170816 2 3 55051 2
+20170817 6 69 7497832 2
+20170818 8 70 7018437 2
+20170819 1 1 36492 1
+20170820 1 1 36492 1
+20170823 1 2 625354 1
+20170824 6 70 7002696 2
+20170826 4 55 5152242 1
+20170827 1 1 36492 1
+20170829 6 71 7625000 3
+20170830 1 1 36492 1
+20170831 3 3 72984 3
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 2
+5mn-15mn 2
+0s-30s 54
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 11
+/ 60 1985538 47 33
+/main/points/hitlist.php 21 372335 3 13
+/fonts/Raleway/Raleway-Regular.ttf 16 2856320 3 3
+/fonts/fontawesome/fontawesome.woff 15 24540 0 3
+/main/php/locs.php 8 9302 0 0
+/main/html/open.php 8 164 0 1
+/main/pages/x29.php 4 84968 0 0
+/main/points/trend.php 4 81081 0 0
+/main/html/similar_people.php 4 2376 0 0
+/index.php/admin 3 109476 3 3
+/main/html/fblogin.php 1 3 0 0
+END_SIDER

@@ -1,0 +1,191 @@
+Return-Path: <ssachisrivastava@gmail.com>
+Delivered-To: anmol.alawadhi@daanvir.org
+Received: from md-in-63.webhostbox.net
+	by md-in-63.webhostbox.net (Dovecot) with LMTP id OTbqH33kK1vPOwoAwBqdFg
+	for <anmol.alawadhi@daanvir.org>; Thu, 21 Jun 2018 17:46:37 +0000
+Return-path: <ssachisrivastava@gmail.com>
+Envelope-to: anmol.alawadhi@daanvir.org
+Delivery-date: Thu, 21 Jun 2018 17:46:37 +0000
+Received: from mail-pl0-f46.google.com ([209.85.160.46]:44081)
+	by md-in-63.webhostbox.net with esmtps (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128)
+	(Exim 4.89)
+	(envelope-from <ssachisrivastava@gmail.com>)
+	id 1fW3fF-002uWU-Mj
+	for anmol.alawadhi@daanvir.org; Thu, 21 Jun 2018 17:46:37 +0000
+Received: by mail-pl0-f46.google.com with SMTP id z9-v6so2053879plk.11
+        for <anmol.alawadhi@daanvir.org>; Thu, 21 Jun 2018 10:46:39 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=HOI+QadAemQtOniAX/SmsPQ8YBpoTCo9U7gmFrQ6zjY=;
+        b=oxuoM9mMugDOvYwgs4foRSYH5ZzHFlJ9A56OnrBkUXhDSLE5XDalLafQPedXbpwdHu
+         LRVWKBM0bt4alScyOi8g2rJp70PuUzeftG/Onr+hdCgzj3FKcncKN4dgQjPK3ngccEv7
+         Mag2OCXB35eJlvik/1uu+5zvj363nxE1qFphzJQVgU8l96cCMQS9Snrr6JfYjwy6t4IN
+         9wJb663QWO7QUMYjeGuoIq0+XDf8fbdr9pFAwKqoQOVqpaLb5l1jb6BrBpz8BbJbRIjC
+         1ewBSWt/GZGKbpTBri1N3UKn92Q3GYY2lDosqnNW1oEYEhIZORgLvc3dz3bQbUFJyQwu
+         uzFQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=HOI+QadAemQtOniAX/SmsPQ8YBpoTCo9U7gmFrQ6zjY=;
+        b=AmUHXi5UyA4YIM8EcG+iiaxtIoSeM+1/OwvyVUriFIwWcQa3GnQQZ1p7UhRYvfnVeH
+         Rix0FA0Z55q3BdDRjDeL5tv6XukHrxqQLsSbVHjHC6xsBXHrhBXqMYq8lIxC0nApe49p
+         7DFkr/QK7pN9b9ZGJ8atOVyd5ZgxctJrP9oJaJVUgnwGFktmsd2xI595q0KRREdm9Uwh
+         Y38E7or8Dpyyo5BG2MLauv3tcw+KoEu3hkW2WisQfX3VHKj70Ah9DRnAlLXrHuae+2cv
+         RWTPrmJ48eBfwQnh92owmZ7OQ9quvQyQ1JWaVUkwD0eOEBHjIdZKbnpDyTNbRBF7pyHI
+         xg5Q==
+X-Gm-Message-State: APt69E0/hqd3oJXFDucrw9WLgedaocACPiI0iLDuuNp0WC2u8jVlmq6O
+	FVT4BF1FcHWaHOoeJI2gHct6RvndsLqLSlmv6Mw=
+X-Google-Smtp-Source: ADUXVKKi6icQct3zLMajZ/4EzLT9Ru7taEddKfGKmTBjSnQOHGm3b3Ia6c/v06TtCAlgMHJ2Jxn6iPTSU5HpU5ItLnc=
+X-Received: by 2002:a17:902:788e:: with SMTP id q14-v6mr29214457pll.234.1529603192686;
+ Thu, 21 Jun 2018 10:46:32 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 2002:a17:90a:ac06:0:0:0:0 with HTTP; Thu, 21 Jun 2018 10:46:32
+ -0700 (PDT)
+In-Reply-To: <CADk6w6+D_Dx21YO9K96GzU=47O1FEALvN0OioBSAqSgSOem4ag@mail.gmail.com>
+References: <010001641829b7e9-b536905b-7a8a-4b24-81f5-bb3bc7cbd65d-000000@email.amazonses.com>
+ <CADk6w6+D_Dx21YO9K96GzU=47O1FEALvN0OioBSAqSgSOem4ag@mail.gmail.com>
+From: saachi saachi srivastava <ssachisrivastava@gmail.com>
+Date: Thu, 21 Jun 2018 23:16:32 +0530
+Message-ID: <CADk6w6KooSJ-H3rQZhkph7ajU095WdgXZwt1F=PgbkDLYo9_AA@mail.gmail.com>
+Subject: Re: Message from Daanvir India regarding your internship application
+To: "anmol.alawadhi@daanvir.org" <anmol.alawadhi@daanvir.org>
+Content-Type: multipart/alternative; boundary="000000000000f28eea056f2a7eef"
+X-Authenticated_sender: 
+X-Spam-Status: No, score=-0.1
+X-Spam-Score: 0
+X-Spam-Bar: /
+X-Ham-Report: DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, FREEMAIL_FROM=0.001, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_NONE=-0.0001, SPF_PASS=-0.001, URIBL_BLOCKED=0.001, CMAE Analysis: v=2.3 cv=P/8UeBIu c=1 sm=0 tr=0 a=HpAAvcLHHh0Zw7uRqdWCyQ==:117 a=x7bEGLp0ZPQA:10 a=90uOaWzyR7wA:10 a=7mUfYlMuFuIA:10 a=9yMxmQvOJuE664DJs9MA:9 a=QEXdDO2ut3YA:10 a=RLDnHEcSEwsA:10 a=OVm8sekHfOjDA3TEo8oA:9 a=_dYAKPKyM9eDFMNk:21
+ 
+ *  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ *       See http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ *      for more information.
+ *      [URIs: internshala.com]
+ * -0.0 RCVD_IN_DNSWL_NONE RBL: Sender listed at http://www.dnswl.org/, no
+ *      trust
+ *      [209.85.160.46 listed in list.dnswl.org]
+ *  0.0 FREEMAIL_FROM Sender email is commonly abused enduser mail provider
+ *      (ssachisrivastava[at]gmail.com)
+ * -0.0 SPF_PASS SPF: sender matches SPF record
+ *  0.0 HTML_MESSAGE BODY: HTML included in message
+ *  0.1 DKIM_SIGNED Message has a DKIM or DK signature, not necessarily
+ *      valid
+ * -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ * -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
+ *       domain
+X-Spam-Flag: NO
+
+--000000000000f28eea056f2a7eef
+Content-Type: text/plain; charset="UTF-8"
+
+I have completed my work and send it to the email mentioned above. Let me
+know how was the article.
+thank you.
+
+On Wed, Jun 20, 2018 at 3:56 PM, saachi saachi srivastava <
+ssachisrivastava@gmail.com> wrote:
+
+> Thankyou for the work and i am working on it.
+>
+>
+> On Tuesday, June 19, 2018, Internshala Admin (Employers) <
+> employer@internshala.com> wrote:
+>
+>> Dear Saachi,
+>>
+>> You have received the following message for your Content Writing
+>> <https://internshala.com/internship/detail/content-writing-work-from-home-internship-at-daanvir-india1526673972>
+>> internship application with Daanvir India. *To respond to the employer,
+>> please write to anmol.alawadhi@daanvir.org <anmol.alawadhi@daanvir.org> (or
+>> just click on 'Reply' to respond directly to the employer).*
+>>
+>> -----------------------------------------
+>>
+>> Hi Sachi,
+>> As a content writer intern at Daanvir, I would like to explain you about
+>> your new task.
+>> We want an article on the topic "role of geometry box in childern's life"
+>> or "importance of geometry box in childern's life".
+>> Share the same writing with the title mentioned above in a word file at
+>> id - anmol.alawadhi@daanvir.org
+>> Submit your writing on or before Friday 22nd June 2018.
+>> Thanks & regards,
+>> Anmol alawadhi
+>> Daanvir.org
+>>
+>>
+>> ----------------------------------------
+>>
+>> *Tip:* Three simple etiquettes - Always reply (even if you wish to opt
+>> out), be courteous and no SMS lingo - make you look professional and
+>> improve your profile score on Internshala.
+>>
+>> All the best!
+>>
+>> Many thanks,
+>> Team Internshala
+>> Internshala <https://internshala.com> | Facebook
+>> <https://www.facebook.com/Internshala/>
+>
+>
+
+--000000000000f28eea056f2a7eef
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">I have completed my work and send it to the email mentione=
+d above. Let me know how was the article.<div>thank you.</div></div><div cl=
+ass=3D"gmail_extra"><br><div class=3D"gmail_quote">On Wed, Jun 20, 2018 at =
+3:56 PM, saachi saachi srivastava <span dir=3D"ltr">&lt;<a href=3D"mailto:s=
+sachisrivastava@gmail.com" target=3D"_blank">ssachisrivastava@gmail.com</a>=
+&gt;</span> wrote:<br><blockquote class=3D"gmail_quote" style=3D"margin:0 0=
+ 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">Thankyou for the work =
+and i am working on it.<div class=3D"HOEnZb"><div class=3D"h5"><br><br>On T=
+uesday, June 19, 2018, Internshala Admin (Employers) &lt;<a href=3D"mailto:=
+employer@internshala.com" target=3D"_blank">employer@internshala.com</a>&gt=
+; wrote:<br><blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;bo=
+rder-left:1px #ccc solid;padding-left:1ex">Dear Saachi,
+<br><br>
+You have received the following message for your <a href=3D"https://interns=
+hala.com/internship/detail/content-writing-work-from-home-internship-at-daa=
+nvir-india1526673972" target=3D"_blank">Content Writing</a> internship appl=
+ication with Daanvir India. <b>To respond to the employer, please write to =
+<a href=3D"mailto:anmol.alawadhi@daanvir.org" target=3D"_blank">anmol.alawa=
+dhi@daanvir.org</a> (or just click on &#39;Reply&#39; to respond directly t=
+o the employer).</b>
+<br><br>
+------------------------------<wbr>-----------
+<br><br>
+Hi Sachi,<br>
+As a content writer intern at Daanvir, I would like to explain you  about y=
+our new task.<br>
+We want an article on the topic &quot;role of geometry box in childern&#39;=
+s life&quot;  or &quot;importance of geometry box in childern&#39;s life&qu=
+ot;.<br>
+Share the same writing with the title mentioned above in a word file at id =
+- <a href=3D"mailto:anmol.alawadhi@daanvir.org" target=3D"_blank">anmol.ala=
+wadhi@daanvir.org</a><br>
+Submit your writing on or before Friday 22nd June 2018.<br>
+Thanks &amp; regards,<br>
+Anmol alawadhi<br>
+Daanvir.org<br>
+<br><br>
+------------------------------<wbr>----------
+<br><br>
+<b>Tip:</b> Three simple etiquettes - Always reply (even if you wish to opt=
+ out), be courteous and no SMS lingo - make you look professional and impro=
+ve your profile score on Internshala.
+<br><br>
+
+All the best!
+<br><br>
+                        Many thanks,
+                        <br>Team Internshala
+                        <br><a href=3D"https://internshala.com" target=3D"_=
+blank">Internshala</a> | <a href=3D"https://www.facebook.com/Internshala/" =
+target=3D"_blank">Facebook</a>
+</blockquote>
+</div></div></blockquote></div><br></div>
+
+--000000000000f28eea056f2a7eef--

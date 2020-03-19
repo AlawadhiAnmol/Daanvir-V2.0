@@ -1,0 +1,748 @@
+Return-Path: <namratakunmun@gmail.com>
+Delivered-To: anmol.alawadhi@daanvir.org
+Received: from md-in-63.webhostbox.net
+	by md-in-63.webhostbox.net (Dovecot) with LMTP id 8dObNkelD1velgIAwBqdFg
+	for <anmol.alawadhi@daanvir.org>; Thu, 31 May 2018 07:33:27 +0000
+Return-path: <namratakunmun@gmail.com>
+Envelope-to: anmol.alawadhi@daanvir.org
+Delivery-date: Thu, 31 May 2018 07:33:27 +0000
+Received: from mail-it0-f42.google.com ([209.85.214.42]:53492)
+	by md-in-63.webhostbox.net with esmtps (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128)
+	(Exim 4.89)
+	(envelope-from <namratakunmun@gmail.com>)
+	id 1fOI5L-000iwa-EJ
+	for anmol.alawadhi@daanvir.org; Thu, 31 May 2018 07:33:27 +0000
+Received: by mail-it0-f42.google.com with SMTP id n64-v6so26437874itb.3
+        for <anmol.alawadhi@daanvir.org>; Thu, 31 May 2018 00:33:18 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=ulBYgDH4u8sgtEiCY9hPgS0/hQfsiS3MnJP9IYGlaLY=;
+        b=nvNgjSHUjEDZ0x6Mw2cZ3z9vzuLHgcZmREDiAYDPGX/geqgYoKa3AjMC7Eq9vAD4C9
+         HiiE0fOs8h5bLVS2dhCyvBcEdi9Ogoq6VeXMvfbnLD7482pIz+EiJz1/ZJwEvRGC/q0f
+         LtKvDo0azLwFldQex4vG9jG7v4Q/+RarYOMvZ81c3GXyYg1q4dh7F+nJm6Fi76U1XlWC
+         zia5dclknBwMTaSkoVcD0QSLlPb7lfl03EecvGvk+stgagv4McbUDhufqEvSgNSBhI1+
+         pGnZ6e3AXIuGodjWXA9+SGaORERXtJpOQ044Vke8xhGC3au3AssVPqwvo5jxKKpbzMU9
+         5Irw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=ulBYgDH4u8sgtEiCY9hPgS0/hQfsiS3MnJP9IYGlaLY=;
+        b=Y8j0n2j9Ij94IO6KqAnb0l5TlxFtbl5hZ8qTD2Hp6Pd8RH6NS60gWKGvF07dB1gTgi
+         x/kpeP33e8AVtrLiLF/IXJjqAM2+xM3jz8AAErn8ruGJSghR3km6O+TpSFivFvmZDsp8
+         jftzHFILS3Mfxse8BjLJvX4A2yUJqD3PKO9jRbhZ/WaFIMLHVDZXN6atI2zHsa6YKMwk
+         b3IvWg6euFvZJzbMzK7l/FsROqPpCwA6eM5xQeGqZ4mzTH8OTXvqDgttjDHgQhxy02Ti
+         IdF2E9QAOxwkoPf1t2dxqMG89z+KJo9/6/jA/WbfCmdNYB0gfPzePls+lECEe6GHdVls
+         tVPg==
+X-Gm-Message-State: APt69E1HUop4Ge6zkeBCZQvmZy4I/nHAwe4LKy3bMhLQXmZN+QK1rmS1
+	/GiS7Q8RbcU8xni4nesfD6Bjinc8rjJCnroE43E=
+X-Google-Smtp-Source: ADUXVKJnjOEkkaE12C7uEjzV/0N+5O/rpYrEru6ZJ8x5AY7Rt4k/qbWUn+uVWtDZ3/9RVAbWvgEr4EMVeWc074dl2og=
+X-Received: by 2002:a24:f04e:: with SMTP id p14-v6mr379151iti.106.1527751991162;
+ Thu, 31 May 2018 00:33:11 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 2002:a4f:4207:0:0:0:0:0 with HTTP; Thu, 31 May 2018 00:33:10
+ -0700 (PDT)
+In-Reply-To: <CABeSxhmNhHQKE5vkj+HO3r4tt+u1Dz=gZ2MbMvhNkpkUZ7Gqyw@mail.gmail.com>
+References: <01000163818ff9dc-43e7c53c-4d71-4449-bf19-ebf74c369b06-000000@email.amazonses.com>
+ <CABeSxh=ohWwND_ZvRGjYWSGaKpcxU1oOVjOBSN+R233KgHj_Vg@mail.gmail.com>
+ <013e01d3f11c$a8f4cc30$fade6490$@daanvir.org> <CABeSxhmjhuTXFJii1sHJBkSfhxS-d2gZS9ZXXjyV0vvYW6agYQ@mail.gmail.com>
+ <014d01d3f121$fd0cb6c0$f7262440$@daanvir.org> <CABeSxhm_-BXcU2qvQT--bNhoSDWHJC=gMor2Dcu5K5fikCDKag@mail.gmail.com>
+ <CABeSxh=b1koVktMBVrky449VbqP4bT7dOSb=LiVjU77QaKCWng@mail.gmail.com>
+ <004a01d3f2bc$024228a0$06c679e0$@daanvir.org> <CABeSxhmNhHQKE5vkj+HO3r4tt+u1Dz=gZ2MbMvhNkpkUZ7Gqyw@mail.gmail.com>
+From: Namrata Priyadarshini <namratakunmun@gmail.com>
+Date: Thu, 31 May 2018 13:03:10 +0530
+Message-ID: <CABeSxh=mZHWqSHejV6=hkfW7BLPXgJZr3m4e+h80wRp08spfNQ@mail.gmail.com>
+Subject: Re: Message from Daanvir India regarding your internship application
+To: Anmol Alawadhi <anmol.alawadhi@daanvir.org>
+Content-Type: multipart/alternative; boundary="000000000000bcfe01056d7b7a9d"
+X-Authenticated_sender: 
+X-Spam-Status: No, score=-0.1
+X-Spam-Score: 0
+X-Spam-Bar: /
+X-Ham-Report: DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, FREEMAIL_FROM=0.001, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_NONE=-0.0001, RCVD_IN_MSPIKE_H3=-0.01, RCVD_IN_MSPIKE_WL=-0.01, SPF_PASS=-0.001, URIBL_BLOCKED=0.001, CMAE Analysis: v=2.3 cv=P/8UeBIu c=1 sm=0 tr=0 a=HpAAvcLHHh0Zw7uRqdWCyQ==:117 a=x7bEGLp0ZPQA:10 a=D5dkERl-5csA:10 a=VUJBJC2UJ8kA:10 a=Hdi2vKvDZP9GV6SusJIA:9 a=W4gKJvKDT7MWL65i:21 a=W1sXCL5dKw164oVb:21 a=QEXdDO2ut3YA:10 a=RLDnHEcSEwsA:10 a=mO4ZHSjFGM4rXX-rlWwA:9 a=pqvzzNInTsyTg8kl:21 a=H6gSndUIczxW95cS:21 a=knTzIWOcrvVn5hdi:21
+ 
+ *  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ *       See http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ *      for more information.
+ *      [URIs: daanvir.org]
+ * -0.0 RCVD_IN_DNSWL_NONE RBL: Sender listed at http://www.dnswl.org/, no
+ *      trust
+ *      [209.85.214.42 listed in list.dnswl.org]
+ * -0.0 RCVD_IN_MSPIKE_H3 RBL: Good reputation (+3)
+ *      [209.85.214.42 listed in wl.mailspike.net]
+ * -0.0 SPF_PASS SPF: sender matches SPF record
+ *  0.0 FREEMAIL_FROM Sender email is commonly abused enduser mail provider
+ *      (namratakunmun[at]gmail.com)
+ *  0.0 HTML_MESSAGE BODY: HTML included in message
+ *  0.1 DKIM_SIGNED Message has a DKIM or DK signature, not necessarily
+ *      valid
+ * -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ * -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
+ *       domain
+ * -0.0 RCVD_IN_MSPIKE_WL Mailspike good senders
+X-Spam-Flag: NO
+
+--000000000000bcfe01056d7b7a9d
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Good Afternoon. i have some queries about this internship program.
+ i want to know the duration(from which date this going to start to till
+which date it continue) of this internship program and whether i am going
+to get any experience certificate or not?
+
+
+On Thu, May 24, 2018 at 4:34 PM, Namrata Priyadarshini <
+namratakunmun@gmail.com> wrote:
+
+> Thank you.
+>
+> On Wed 23 May, 2018 23:02 Anmol Alawadhi, <anmol.alawadhi@daanvir.org>
+> wrote:
+>
+>> Congratulations!!
+>>
+>> The article is very nice!
+>>
+>> You have been selected as a content writer in Daanvir India
+>>
+>> We expect dedication from you!
+>>
+>> Now you will be given weekly assignments and you have to complete that i=
+n
+>> one week itself.
+>>
+>>
+>>
+>> Regards
+>>
+>> Daanvir India
+>>
+>> *From:* Namrata Priyadarshini [mailto:namratakunmun@gmail.com]
+>> *Sent:* 22 May 2018 23:37
+>> *To:* Anmol Alawadhi <anmol.alawadhi@daanvir.org>
+>> *Subject:* Re: Message from Daanvir India regarding your internship
+>> application
+>>
+>>
+>>
+>> hello. i am  writing  for the first time on these kind of topic. so
+>> doesn't have much experience. but i hope you liked my work. and i will b=
+e
+>> happy by getting your remarks.
+>>
+>>
+>>
+>>
+>>
+>> On Tue, May 22, 2018 at 11:32 PM, Namrata Priyadarshini <
+>> namratakunmun@gmail.com> wrote:
+>>
+>>                          *Drawing and color book importance to orphanage
+>> children*
+>>
+>> Orphanage, it=E2=80=99s like a
+>>
+>>                          *Drawing and color book importance to orphanage
+>> children*
+>>
+>> Orphanage, it=E2=80=99s like a second home for the homeless Childs. The =
+literal
+>> meaning of orphanage, it is a residential institution for the care and
+>> education of orphans. The orphans are those who don=E2=80=99t have a fam=
+ily, the
+>> people residing in the orphanage were considered it as a big family whic=
+h
+>> helps in the Child=E2=80=99s development and growth. The children living=
+ in the
+>> orphanage are the important part of the society and they have a greater
+>> role to play in the developing process of the nation. Today=E2=80=99s ch=
+ild is
+>> tomorrow=E2=80=99s future of the nation. Life in an orphanage is a life =
+of change,
+>> caregivers come and go. The Childs living in the street and in the
+>> orphanage doesn=E2=80=99t get chance to lead a comfortable life like a c=
+hild who
+>> lived with his family. The life of Childs living in orphanage lead a lif=
+e
+>> on the basis of a particular schedule, children get up, get cleaned, eat=
+,
+>> learn, and regimented way. There is serious lacking of creativity in the=
+ir
+>> lives. If you closely analyses their life style then you can realize mor=
+e
+>> or less they are leading a life of robot that function on the basis of
+>> certain fixed programs. These children also have full right to lead a
+>> normal life like other children. But due to large in number and presence=
+ of
+>> fewer caretakers they are enabling to lead a fairytale life like others.
+>>
+>> India is one of the most populous country where every day almost 34
+>> Childs born and among them a large number of child are orphan. According=
+ to
+>> a study conducted by the Hindustan times there are 20million children th=
+ose
+>> who are orphan, it occupy almost 4% of the total population of the natio=
+n.
+>> Not every child gets a chance to live with a family. Many more have to s=
+tay
+>> in an orphanage. Due to the large amount of number every child rising in
+>> the orphanage doesn=E2=80=99t get a chance to lead a happy life. More or=
+ less they
+>> are happy that they are getting chance to have food and have a place to
+>> sleep. But is this their destiny. No, this is not. We should take necess=
+ary
+>> steps to make their lives happier and interesting. Drawing and painting =
+is
+>> a very nice way to develop the creativity and is better option to expres=
+s
+>> ourselves. Children=E2=80=99s have an emotional attachment to painting a=
+nd drawing.
+>> Even though painting is not every child=E2=80=99s cup of tea but every c=
+hild should
+>> get a chance to draw and paint. Painting can help the child to communica=
+te
+>> their emotions without the use of any words. It also allows children an
+>> educational opportunity which is very exciting, it helps in developing
+>> various types of skills among them; it is a great field to develop their
+>> creativity. Painting can play the role of therapy for a child who might =
+be
+>> feeling different emotions; whether these feelings are subtle or extreme=
+ in
+>> nature. In addition to communication, painting can help children feel
+>> better about things that may have bottled up inside. It is a better way =
+for
+>> expressing the innovative ideas.
+>>
+>> Children are the backbone of a nation and development of any nation
+>> depends on the health and well-being of its child population. India has =
+the
+>> second largest child populations in the World. Child development
+>> encompasses the ways in which children acquire skills in a range of
+>> domains, including memory, cognition and language, gross and finer motor
+>> ability, social interaction and behavior. The first few years of life,
+>> especially infancy is a dynamic phase of life and is characterized by ra=
+pid
+>> growth and development. When children do not get the right start, they
+>> never catch up or reach their full potentials. Children are the essentia=
+l
+>> part of the nation and they should be treated with much care, love and
+>> affection so that they can prosper to the fullest. People of the society
+>> should come forward to help these children by donating more and more
+>> product so that get full access to grow as well as to develop. These
+>> children are the future our nation and it=E2=80=99s on us how we are con=
+structing
+>> our future. If we nurture them we love and provide them with books, colo=
+r
+>> books and dresses then only these children get ample chance to grow
+>> individually.
+>>
+>>
+>>
+>> second home for the homeless Childs. The literal meaning of orphanage, i=
+t
+>> is a residential institution for the care and education of orphans. The
+>> orphans are those who don=E2=80=99t have a family, the people residing i=
+n the
+>> orphanage were considered it as a big family which helps in the Child=E2=
+=80=99s
+>> development and growth. The children living in the orphanage are the
+>> important part of the society and they have a greater role to play in th=
+e
+>> developing process of the nation. Today=E2=80=99s child is tomorrow=E2=
+=80=99s future of the
+>> nation. Life in an orphanage is a life of change, caregivers come and go=
+.
+>> The Childs living in the street and in the orphanage doesn=E2=80=99t get=
+ chance to
+>> lead a comfortable life like a child who lived with his family. The life=
+ of
+>> Childs living in orphanage lead a life on the basis of a particular
+>> schedule, children get up, get cleaned, eat, learn, and regimented way.
+>> There is serious lacking of creativity in their lives. If you closely
+>> analyses their life style then you can realize more or less they are
+>> leading a life of robot that function on the basis of certain fixed
+>> programs. These children also have full right to lead a normal life like
+>> other children. But due to large in number and presence of fewer caretak=
+ers
+>> they are enabling to lead a fairytale life like others.
+>>
+>> India is one of the most populous country where every day almost 34
+>> Childs born and among them a large number of child are orphan. According=
+ to
+>> a study conducted by the Hindustan times there are 20million children th=
+ose
+>> who are orphan, it occupy almost 4% of the total population of the natio=
+n.
+>> Not every child gets a chance to live with a family. Many more have to s=
+tay
+>> in an orphanage. Due to the large amount of number every child rising in
+>> the orphanage doesn=E2=80=99t get a chance to lead a happy life. More or=
+ less they
+>> are happy that they are getting chance to have food and have a place to
+>> sleep. But is this their destiny. No, this is not. We should take necess=
+ary
+>> steps to make their lives happier and interesting. Drawing and painting =
+is
+>> a very nice way to develop the creativity and is better option to expres=
+s
+>> ourselves. Children=E2=80=99s have an emotional attachment to painting a=
+nd drawing.
+>> Even though painting is not every child=E2=80=99s cup of tea but every c=
+hild should
+>> get a chance to draw and paint. Painting can help the child to communica=
+te
+>> their emotions without the use of any words. It also allows children an
+>> educational opportunity which is very exciting, it helps in developing
+>> various types of skills among them; it is a great field to develop their
+>> creativity. Painting can play the role of therapy for a child who might =
+be
+>> feeling different emotions; whether these feelings are subtle or extreme=
+ in
+>> nature. In addition to communication, painting can help children feel
+>> better about things that may have bottled up inside. It is a better way =
+for
+>> expressing the innovative ideas.
+>>
+>> Children are the backbone of a nation and development of any nation
+>> depends on the health and well-being of its child population. India has =
+the
+>> second largest child populations in the World. Child development
+>> encompasses the ways in which children acquire skills in a range of
+>> domains, including memory, cognition and language, gross and finer motor
+>> ability, social interaction and behavior. The first few years of life,
+>> especially infancy is a dynamic phase of life and is characterized by ra=
+pid
+>> growth and development. When children do not get the right start, they
+>> never catch up or reach their full potentials. Children are the essentia=
+l
+>> part of the nation and they should be treated with much care, love and
+>> affection so that they can prosper to the fullest. People of the society
+>> should come forward to help these children by donating more and more
+>> product so that get full access to grow as well as to develop. These
+>> children are the future our nation and it=E2=80=99s on us how we are con=
+structing
+>> our future. If we nurture them we love and provide them with books, colo=
+r
+>> books and dresses then only these children get ample chance to grow
+>> individually.
+>>
+>>
+>>
+>>
+>>
+>>
+>>
+>> On Mon, May 21, 2018 at 10:07 PM, Anmol Alawadhi <
+>> anmol.alawadhi@daanvir.org> wrote:
+>>
+>> Tomorrow
+>>
+>>
+>>
+>> *From:* Namrata Priyadarshini [mailto:namratakunmun@gmail.com]
+>> *Sent:* 21 May 2018 21:33
+>> *To:* Anmol Alawadhi <anmol.alawadhi@daanvir.org>
+>>
+>>
+>> *Subject:* Re: Message from Daanvir India regarding your internship
+>> application
+>>
+>>
+>>
+>> Okay thank you for guidance. So  how many days I am getting to complete
+>> this ?
+>>
+>>
+>>
+>> On Mon 21 May, 2018 21:29 Anmol Alawadhi, <anmol.alawadhi@daanvir.org>
+>> wrote:
+>>
+>> Hi,
+>>
+>> You have to write a proper blog about orphanages and how colouring and
+>> drawing is a way of expressing innovative ideas
+>>
+>> How these children are the backbone of our country and how to help them
+>> get such things by contributing individually
+>>
+>>
+>>
+>> Make it sympathetic and eye catching
+>>
+>> Regards
+>>
+>> Daanvir India
+>>
+>>
+>>
+>>
+>>
+>> *From:* Namrata Priyadarshini [mailto:namratakunmun@gmail.com]
+>> *Sent:* 21 May 2018 14:36
+>> *To:* anmol.alawadhi@daanvir.org
+>> *Subject:* Re: Message from Daanvir India regarding your internship
+>> application
+>>
+>>
+>>
+>> Thank you very much for short listing me. I will try my level best to
+>> reach your expectations. And i want to write on drawing and color books
+>> importance to orphanage children.
+>>
+>>
+>>
+>> On Mon 21 May, 2018 12:48 Internshala Admin (Employers), <
+>> employer@internshala.com> wrote:
+>>
+>> Dear Namrata,
+>>
+>> You have received the following message for your Content Writing
+>> <https://internshala.com/internship/detail/content-writing-work-from-hom=
+e-internship-at-daanvir-india1526673972>
+>> internship application with Daanvir India. *To respond to the employer,
+>> please write to anmol.alawadhi@daanvir.org <anmol.alawadhi@daanvir.org> =
+(or
+>> just click on 'Reply' to respond directly to the employer).*
+>>
+>> -----------------------------------------
+>>
+>> Hi
+>> You have been shortlisted.
+>> Before moving forward I want you to write a sample article on the
+>> following topics(any one of your choice)
+>> 1. Clothes and Education for children of Disabled People.
+>> 2. Drawing and color books importance to Orphanage children.
+>>
+>> After you choose.
+>> Send me mail with topic and then i will tell you what to write exactly.
+>>
+>> Regards
+>> Daanvir India
+>>
+>> ----------------------------------------
+>>
+>> *Tip:* Three simple etiquettes - Always reply (even if you wish to opt
+>> out), be courteous and no SMS lingo - make you look professional and
+>> improve your profile score on Internshala.
+>>
+>> All the best!
+>>
+>> Many thanks,
+>> Team Internshala
+>> Internshala <https://internshala.com> | Facebook
+>> <https://www.facebook.com/Internshala/>
+>>
+>>
+>>
+>>
+>>
+>
+
+--000000000000bcfe01056d7b7a9d
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div>Good Afternoon. i have some queries about this intern=
+ship program. <br></div><div>=C2=A0i want to know the duration(from which d=
+ate this going to start to till which date it continue) of this internship =
+program and whether i am going to get any experience certificate or not?</d=
+iv><div><br></div></div><div class=3D"gmail_extra"><br><div class=3D"gmail_=
+quote">On Thu, May 24, 2018 at 4:34 PM, Namrata Priyadarshini <span dir=3D"=
+ltr">&lt;<a href=3D"mailto:namratakunmun@gmail.com" target=3D"_blank">namra=
+takunmun@gmail.com</a>&gt;</span> wrote:<br><blockquote class=3D"gmail_quot=
+e" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">=
+<div dir=3D"auto">Thank you.</div><div class=3D"HOEnZb"><div class=3D"h5"><=
+br><div class=3D"gmail_quote"><div dir=3D"ltr">On Wed 23 May, 2018 23:02 An=
+mol Alawadhi, &lt;<a href=3D"mailto:anmol.alawadhi@daanvir.org" target=3D"_=
+blank">anmol.alawadhi@daanvir.org</a>&gt; wrote:<br></div><blockquote class=
+=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padd=
+ing-left:1ex"><div link=3D"blue" vlink=3D"purple" lang=3D"EN-IN"><div class=
+=3D"m_8265705644027484287m_-7612414588973217317WordSection1"><p class=3D"Ms=
+oNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,sa=
+ns-serif;color:#1f497d">Congratulations!!<u></u><u></u></span></p><p class=
+=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Calibri&qu=
+ot;,sans-serif;color:#1f497d">The article is very nice!<u></u><u></u></span=
+></p><p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&qu=
+ot;Calibri&quot;,sans-serif;color:#1f497d">You have been selected as a cont=
+ent writer in Daanvir India<u></u><u></u></span></p><p class=3D"MsoNormal">=
+<span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;=
+color:#1f497d">We expect dedication from you!<u></u><u></u></span></p><p cl=
+ass=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Calibri=
+&quot;,sans-serif;color:#1f497d">Now you will be given weekly assignments a=
+nd you have to complete that in one week itself.<u></u><u></u></span></p><p=
+ class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Cali=
+bri&quot;,sans-serif;color:#1f497d"><u></u>=C2=A0<u></u></span></p><p class=
+=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Calibri&qu=
+ot;,sans-serif;color:#1f497d">Regards<u></u><u></u></span></p><p class=3D"M=
+soNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,s=
+ans-serif;color:#1f497d">Daanvir India<u></u><u></u></span></p><p class=3D"=
+MsoNormal"><b><span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quo=
+t;,sans-serif" lang=3D"EN-US">From:</span></b><span style=3D"font-size:11.0=
+pt;font-family:&quot;Calibri&quot;,sans-serif" lang=3D"EN-US"> Namrata Priy=
+adarshini [mailto:<a href=3D"mailto:namratakunmun@gmail.com" rel=3D"norefer=
+rer" target=3D"_blank">namratakunmun@gmail.<wbr>com</a>] <br><b>Sent:</b> 2=
+2 May 2018 23:37<br><b>To:</b> Anmol Alawadhi &lt;<a href=3D"mailto:anmol.a=
+lawadhi@daanvir.org" rel=3D"noreferrer" target=3D"_blank">anmol.alawadhi@da=
+anvir.org</a>&gt;<br><b>Subject:</b> Re: Message from Daanvir India regardi=
+ng your internship application<u></u><u></u></span></p><p class=3D"MsoNorma=
+l"><u></u>=C2=A0<u></u></p><div><div><p class=3D"MsoNormal">hello. i am=C2=
+=A0 writing=C2=A0 for the first time on these kind of topic. so doesn&#39;t=
+ have much experience. but i hope you liked my work. and i will be happy by=
+ getting your remarks.<u></u><u></u></p></div><div><p class=3D"MsoNormal">=
+=C2=A0 <u></u><u></u></p></div></div><div><p class=3D"MsoNormal"><u></u>=C2=
+=A0<u></u></p><div><p class=3D"MsoNormal">On Tue, May 22, 2018 at 11:32 PM,=
+ Namrata Priyadarshini &lt;<a href=3D"mailto:namratakunmun@gmail.com" rel=
+=3D"noreferrer" target=3D"_blank">namratakunmun@gmail.com</a>&gt; wrote:<u>=
+</u><u></u></p><blockquote style=3D"border:none;border-left:solid #cccccc 1=
+.0pt;padding:0cm 0cm 0cm 6.0pt;margin-left:4.8pt;margin-right:0cm"><div><p =
+class=3D"MsoNormal" style=3D"margin-bottom:10.0pt;line-height:115%"><b><spa=
+n style=3D"font-size:11.0pt;line-height:115%;font-family:&quot;Calibri&quot=
+;,sans-serif">=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0 </span></b><b><span style=3D"font-size:14.0pt;line-height:115%">D=
+rawing and color book importance to orphanage children</span></b><span styl=
+e=3D"font-size:11.0pt;line-height:115%;font-family:&quot;Calibri&quot;,sans=
+-serif"><u></u><u></u></span></p><p class=3D"MsoNormal" style=3D"margin-bot=
+tom:10.0pt;line-height:115%">Orphanage, it=E2=80=99s like a <span style=3D"=
+font-size:11.0pt;line-height:115%;font-family:&quot;Calibri&quot;,sans-seri=
+f"><u></u><u></u></span></p><p class=3D"MsoNormal" style=3D"margin-bottom:1=
+0.0pt;line-height:115%"><b><span style=3D"font-size:11.0pt;line-height:115%=
+;font-family:&quot;Calibri&quot;,sans-serif">=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 </span></b><b><span style=3D"font-s=
+ize:14.0pt;line-height:115%">Drawing and color book importance to orphanage=
+ children</span></b><span style=3D"font-size:11.0pt;line-height:115%;font-f=
+amily:&quot;Calibri&quot;,sans-serif"><u></u><u></u></span></p><p class=3D"=
+MsoNormal" style=3D"margin-bottom:10.0pt;line-height:115%">Orphanage, it=E2=
+=80=99s like a second home for the homeless Childs. The literal meaning of =
+orphanage, it is a residential institution for the care and education of or=
+phans. The orphans are those who don=E2=80=99t have a family, the people re=
+siding in the orphanage were considered it as a big family which helps in t=
+he Child=E2=80=99s development and growth. The children living in the orpha=
+nage are the important part of the society and they have a greater role to =
+play in the developing process of the nation. Today=E2=80=99s child is tomo=
+rrow=E2=80=99s future of the nation. Life in an orphanage is a life of chan=
+ge, caregivers come and go. The Childs living in the street and in the orph=
+anage doesn=E2=80=99t get chance to lead a comfortable life like a child wh=
+o lived with his family. The life of Childs living in orphanage lead a life=
+ on the basis of a particular schedule, children get up, get cleaned, eat, =
+learn, and regimented way. There is serious lacking of creativity in their =
+lives. If you closely analyses their life style then you can realize more o=
+r less they are leading a life of robot that function on the basis of certa=
+in fixed programs. These children also have full right to lead a normal lif=
+e like other children. But due to large in number and presence of fewer car=
+etakers they are enabling to lead a fairytale life like others.<span style=
+=3D"font-size:11.0pt;line-height:115%;font-family:&quot;Calibri&quot;,sans-=
+serif"><u></u><u></u></span></p><p class=3D"MsoNormal" style=3D"margin-bott=
+om:10.0pt;text-align:justify;line-height:115%">India is one of the most pop=
+ulous country where every day almost 34 Childs born and among them a large =
+number of child are orphan. According to a study conducted by the Hindustan=
+ times there are 20million children those who are orphan, it occupy almost =
+4% of the total population of the nation. Not every child gets a chance to =
+live with a family. Many more have to stay in an orphanage. Due to the larg=
+e amount of number every child rising in the orphanage doesn=E2=80=99t get =
+a chance to lead a happy life. More or less they are happy that they are ge=
+tting chance to have food and have a place to sleep. But is this their dest=
+iny. No, this is not. We should take necessary steps to make their lives ha=
+ppier and interesting. Drawing and painting is a very nice way to develop t=
+he creativity and is better option to express ourselves. Children=E2=80=99s=
+ have an emotional attachment to painting and drawing. Even though painting=
+ is not every child=E2=80=99s cup of tea but every child should get a chanc=
+e to draw and paint. Painting can help the child to communicate their emoti=
+ons without the use of any words. It also allows children an educational op=
+portunity which is very exciting, it helps in developing various types of s=
+kills among them; it is a great field to develop their creativity. Painting=
+ can play the role of therapy for a child who might be feeling different em=
+otions; whether these feelings are subtle or extreme in nature. In addition=
+ to communication, painting can help children feel better about things that=
+ may have bottled up inside. It is a better way for expressing the innovati=
+ve ideas.<span style=3D"font-size:11.0pt;line-height:115%;font-family:&quot=
+;Calibri&quot;,sans-serif"><u></u><u></u></span></p><p class=3D"MsoNormal" =
+style=3D"text-align:justify">Children are the backbone of a nation and deve=
+lopment of any nation depends on the health and well-being of its child pop=
+ulation. India has the second largest child populations in the World. Child=
+ development encompasses the ways in which children acquire skills in a ran=
+ge of domains, including memory, cognition and language, gross and finer mo=
+tor ability, social interaction and behavior. The first few years of life, =
+especially infancy is a dynamic phase of life and is characterized by rapid=
+ growth and development. When children do not get the right start, they nev=
+er catch up or reach their full potentials. Children are the essential part=
+ of the nation and they should be treated with much care, love and affectio=
+n so that they can prosper to the fullest. People of the society should com=
+e forward to help these children by donating more and more product so that =
+get full access to grow as well as to develop. These children are the futur=
+e our nation and it=E2=80=99s on us how we are constructing our future. If =
+we nurture them we love and provide them with books, color books and dresse=
+s then only these children get ample chance to grow individually.<span styl=
+e=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif"><u></u><u=
+></u></span></p><p class=3D"MsoNormal">=C2=A0<span style=3D"font-size:11.0p=
+t;font-family:&quot;Calibri&quot;,sans-serif"><u></u><u></u></span></p><p c=
+lass=3D"MsoNormal">second home for the homeless Childs. The literal meaning=
+ of orphanage, it is a residential institution for the care and education o=
+f orphans. The orphans are those who don=E2=80=99t have a family, the peopl=
+e residing in the orphanage were considered it as a big family which helps =
+in the Child=E2=80=99s development and growth. The children living in the o=
+rphanage are the important part of the society and they have a greater role=
+ to play in the developing process of the nation. Today=E2=80=99s child is =
+tomorrow=E2=80=99s future of the nation. Life in an orphanage is a life of =
+change, caregivers come and go. The Childs living in the street and in the =
+orphanage doesn=E2=80=99t get chance to lead a comfortable life like a chil=
+d who lived with his family. The life of Childs living in orphanage lead a =
+life on the basis of a particular schedule, children get up, get cleaned, e=
+at, learn, and regimented way. There is serious lacking of creativity in th=
+eir lives. If you closely analyses their life style then you can realize mo=
+re or less they are leading a life of robot that function on the basis of c=
+ertain fixed programs. These children also have full right to lead a normal=
+ life like other children. But due to large in number and presence of fewer=
+ caretakers they are enabling to lead a fairytale life like others.<u></u><=
+u></u></p><p class=3D"MsoNormal" style=3D"margin-bottom:10.0pt;text-align:j=
+ustify;line-height:115%">India is one of the most populous country where ev=
+ery day almost 34 Childs born and among them a large number of child are or=
+phan. According to a study conducted by the Hindustan times there are 20mil=
+lion children those who are orphan, it occupy almost 4% of the total popula=
+tion of the nation. Not every child gets a chance to live with a family. Ma=
+ny more have to stay in an orphanage. Due to the large amount of number eve=
+ry child rising in the orphanage doesn=E2=80=99t get a chance to lead a hap=
+py life. More or less they are happy that they are getting chance to have f=
+ood and have a place to sleep. But is this their destiny. No, this is not. =
+We should take necessary steps to make their lives happier and interesting.=
+ Drawing and painting is a very nice way to develop the creativity and is b=
+etter option to express ourselves. Children=E2=80=99s have an emotional att=
+achment to painting and drawing. Even though painting is not every child=E2=
+=80=99s cup of tea but every child should get a chance to draw and paint. P=
+ainting can help the child to communicate their emotions without the use of=
+ any words. It also allows children an educational opportunity which is ver=
+y exciting, it helps in developing various types of skills among them; it i=
+s a great field to develop their creativity. Painting can play the role of =
+therapy for a child who might be feeling different emotions; whether these =
+feelings are subtle or extreme in nature. In addition to communication, pai=
+nting can help children feel better about things that may have bottled up i=
+nside. It is a better way for expressing the innovative ideas.<span style=
+=3D"font-size:11.0pt;line-height:115%;font-family:&quot;Calibri&quot;,sans-=
+serif"><u></u><u></u></span></p><p class=3D"MsoNormal" style=3D"text-align:=
+justify">Children are the backbone of a nation and development of any natio=
+n depends on the health and well-being of its child population. India has t=
+he second largest child populations in the World. Child development encompa=
+sses the ways in which children acquire skills in a range of domains, inclu=
+ding memory, cognition and language, gross and finer motor ability, social =
+interaction and behavior. The first few years of life, especially infancy i=
+s a dynamic phase of life and is characterized by rapid growth and developm=
+ent. When children do not get the right start, they never catch up or reach=
+ their full potentials. Children are the essential part of the nation and t=
+hey should be treated with much care, love and affection so that they can p=
+rosper to the fullest. People of the society should come forward to help th=
+ese children by donating more and more product so that get full access to g=
+row as well as to develop. These children are the future our nation and it=
+=E2=80=99s on us how we are constructing our future. If we nurture them we =
+love and provide them with books, color books and dresses then only these c=
+hildren get ample chance to grow individually.<span style=3D"font-size:11.0=
+pt;font-family:&quot;Calibri&quot;,sans-serif"><u></u><u></u></span></p><p =
+class=3D"MsoNormal">=C2=A0<span style=3D"font-size:11.0pt;font-family:&quot=
+;Calibri&quot;,sans-serif"><u></u><u></u></span></p><p class=3D"MsoNormal">=
+<u></u>=C2=A0<u></u></p></div><div><div><div><p class=3D"MsoNormal"><u></u>=
+=C2=A0<u></u></p><div><p class=3D"MsoNormal">On Mon, May 21, 2018 at 10:07 =
+PM, Anmol Alawadhi &lt;<a href=3D"mailto:anmol.alawadhi@daanvir.org" rel=3D=
+"noreferrer" target=3D"_blank">anmol.alawadhi@daanvir.org</a>&gt; wrote:<u>=
+</u><u></u></p><blockquote style=3D"border:none;border-left:solid #cccccc 1=
+.0pt;padding:0cm 0cm 0cm 6.0pt;margin-left:4.8pt;margin-right:0cm"><div><di=
+v><p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;=
+Calibri&quot;,sans-serif;color:#1f497d">Tomorrow</span><u></u><u></u></p><p=
+ class=3D"MsoNormal"><a name=3D"m_8265705644027484287_m_-761241458897321731=
+7_m_4372480005630228352_m_2318949953589109" rel=3D"noreferrer"><span style=
+=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#1f49=
+7d">=C2=A0</span><u></u><u></u></a></p><p class=3D"MsoNormal"><span><b><spa=
+n style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif" lan=
+g=3D"EN-US">From:</span></b></span><span><span style=3D"font-size:11.0pt;fo=
+nt-family:&quot;Calibri&quot;,sans-serif" lang=3D"EN-US"> Namrata Priyadars=
+hini [mailto:</span></span><a href=3D"mailto:namratakunmun@gmail.com" rel=
+=3D"noreferrer" target=3D"_blank"><span><span style=3D"font-size:11.0pt;fon=
+t-family:&quot;Calibri&quot;,sans-serif" lang=3D"EN-US">namratakunmun@gmail=
+.<wbr>com</span></span><span></span></a><span><span style=3D"font-size:11.0=
+pt;font-family:&quot;Calibri&quot;,sans-serif" lang=3D"EN-US">] <br><b>Sent=
+:</b> 21 May 2018 21:33<br><b>To:</b> Anmol Alawadhi &lt;</span></span><a h=
+ref=3D"mailto:anmol.alawadhi@daanvir.org" rel=3D"noreferrer" target=3D"_bla=
+nk"><span><span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,s=
+ans-serif" lang=3D"EN-US">anmol.alawadhi@daanvir.org</span></span><span></s=
+pan></a><span><span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quo=
+t;,sans-serif" lang=3D"EN-US">&gt;</span><u></u><u></u></span></p><div><div=
+><p class=3D"MsoNormal"><span><br><b>Subject:</b> Re: Message from Daanvir =
+India regarding your internship application<u></u><u></u></span></p></div><=
+/div><div><div><p class=3D"MsoNormal"><span>=C2=A0<u></u><u></u></span></p>=
+<div><p class=3D"MsoNormal"><span>Okay thank you for guidance. So=C2=A0 how=
+ many days I am getting to complete this ?<u></u><u></u></span></p></div><p=
+ class=3D"MsoNormal"><span>=C2=A0<u></u><u></u></span></p><div><div><p clas=
+s=3D"MsoNormal"><span>On Mon 21 May, 2018 21:29 Anmol Alawadhi, &lt;</span>=
+<a href=3D"mailto:anmol.alawadhi@daanvir.org" rel=3D"noreferrer" target=3D"=
+_blank"><span>anmol.alawadhi@daanvir.org</span><span></span></a><span>&gt; =
+wrote:<u></u><u></u></span></p></div><blockquote style=3D"border:none;borde=
+r-left:solid #cccccc 1.0pt;padding:0cm 0cm 0cm 6.0pt;margin-left:4.8pt;marg=
+in-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt"><div><div><p class=3D"Ms=
+oNormal"><span><span style=3D"font-size:11.0pt;font-family:&quot;Calibri&qu=
+ot;,sans-serif;color:#1f497d">Hi,</span><u></u><u></u></span></p><p class=
+=3D"MsoNormal"><span><span style=3D"font-size:11.0pt;font-family:&quot;Cali=
+bri&quot;,sans-serif;color:#1f497d">You have to write a proper blog about o=
+rphanages and how colouring and drawing is a way of expressing innovative i=
+deas</span><u></u><u></u></span></p><p class=3D"MsoNormal"><span><span styl=
+e=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#1f4=
+97d">How these children are the backbone of our country and how to help the=
+m get such things by contributing individually </span><u></u><u></u></span>=
+</p><p class=3D"MsoNormal"><span><span style=3D"font-size:11.0pt;font-famil=
+y:&quot;Calibri&quot;,sans-serif;color:#1f497d">=C2=A0</span><u></u><u></u>=
+</span></p><p class=3D"MsoNormal"><span><span style=3D"font-size:11.0pt;fon=
+t-family:&quot;Calibri&quot;,sans-serif;color:#1f497d">Make it sympathetic =
+and eye catching</span><u></u><u></u></span></p><p class=3D"MsoNormal"><spa=
+n><span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-seri=
+f;color:#1f497d">Regards</span><u></u><u></u></span></p><p class=3D"MsoNorm=
+al"><span><span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,s=
+ans-serif;color:#1f497d">Daanvir India</span><u></u><u></u></span></p><p cl=
+ass=3D"MsoNormal"><span><span style=3D"font-size:11.0pt;font-family:&quot;C=
+alibri&quot;,sans-serif;color:#1f497d">=C2=A0</span><u></u><u></u></span></=
+p><p class=3D"MsoNormal"><span><span style=3D"font-size:11.0pt;font-family:=
+&quot;Calibri&quot;,sans-serif;color:#1f497d">=C2=A0</span></span><u></u><u=
+></u></p><p class=3D"MsoNormal"><b><span style=3D"font-size:11.0pt;font-fam=
+ily:&quot;Calibri&quot;,sans-serif" lang=3D"EN-US">From:</span></b><span st=
+yle=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif" lang=3D=
+"EN-US"> Namrata Priyadarshini [mailto:<a href=3D"mailto:namratakunmun@gmai=
+l.com" rel=3D"noreferrer" target=3D"_blank">namratakunmun@gmail.<wbr>com</a=
+>] <br><b>Sent:</b> 21 May 2018 14:36<br><b>To:</b> <a href=3D"mailto:anmol=
+.alawadhi@daanvir.org" rel=3D"noreferrer" target=3D"_blank">anmol.alawadhi@=
+daanvir.org</a><br><b>Subject:</b> Re: Message from Daanvir India regarding=
+ your internship application</span><u></u><u></u></p><p class=3D"MsoNormal"=
+>=C2=A0<u></u><u></u></p><div><p class=3D"MsoNormal">Thank you very much fo=
+r short listing me. I will try my level best to reach your expectations. An=
+d i want to write on drawing and color books importance to orphanage childr=
+en.<u></u><u></u></p></div><p class=3D"MsoNormal">=C2=A0<u></u><u></u></p><=
+div><div><p class=3D"MsoNormal">On Mon 21 May, 2018 12:48 Internshala Admin=
+ (Employers), &lt;<a href=3D"mailto:employer@internshala.com" rel=3D"norefe=
+rrer" target=3D"_blank">employer@internshala.com</a>&gt; wrote:<u></u><u></=
+u></p></div><blockquote style=3D"border:none;border-left:solid #cccccc 1.0p=
+t;padding:0cm 0cm 0cm 6.0pt;margin-left:4.8pt;margin-top:5.0pt;margin-right=
+:0cm;margin-bottom:5.0pt"><p class=3D"MsoNormal">Dear Namrata, <br><br>You =
+have received the following message for your <a href=3D"https://internshala=
+.com/internship/detail/content-writing-work-from-home-internship-at-daanvir=
+-india1526673972" rel=3D"noreferrer" target=3D"_blank">Content Writing</a> =
+internship application with Daanvir India. <b>To respond to the employer, p=
+lease write to <a href=3D"mailto:anmol.alawadhi@daanvir.org" rel=3D"norefer=
+rer" target=3D"_blank">anmol.alawadhi@daanvir.org</a> (or just click on &#3=
+9;Reply&#39; to respond directly to the employer).</b> <br><br>------------=
+------------------<wbr>----------- <br><br>Hi<br>You have been shortlisted.=
+<br>Before moving forward I want you to write a sample article on the follo=
+wing topics(any one of your choice)<br>1. Clothes and Education for childre=
+n of Disabled People.<br>2. Drawing and color books importance to Orphanage=
+ children.<br><br>After you choose.<br>Send me mail with topic and then i w=
+ill tell you what to write exactly.<br><br>Regards<br>Daanvir India<br><br>=
+------------------------------<wbr>---------- <br><br><b>Tip:</b> Three sim=
+ple etiquettes - Always reply (even if you wish to opt out), be courteous a=
+nd no SMS lingo - make you look professional and improve your profile score=
+ on Internshala. <br><br>All the best! <br><br>Many thanks, <br>Team Intern=
+shala <br><a href=3D"https://internshala.com" rel=3D"noreferrer" target=3D"=
+_blank">Internshala</a> | <a href=3D"https://www.facebook.com/Internshala/"=
+ rel=3D"noreferrer" target=3D"_blank">Facebook</a> <u></u><u></u></p></bloc=
+kquote></div></div></div></blockquote></div></div></div></div></div></block=
+quote></div><p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p></div></div></di=
+v></blockquote></div><p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p></div><=
+/div></div></blockquote></div></div></div></blockquote></div><br></div>
+
+--000000000000bcfe01056d7b7a9d--

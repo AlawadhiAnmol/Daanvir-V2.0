@@ -1,0 +1,176 @@
+Return-Path: <01000166a56ee2fa-e60e67c5-fe4d-494b-8175-23493ff6d289-000000@amazonses.com>
+Delivered-To: anmol.alawadhi@daanvir.org
+Received: from md-in-63.webhostbox.net
+	by md-in-63.webhostbox.net with LMTP id iOJzMDk90FveeAMAwBqdFg
+	for <anmol.alawadhi@daanvir.org>; Wed, 24 Oct 2018 09:36:57 +0000
+Return-path: <01000166a56ee2fa-e60e67c5-fe4d-494b-8175-23493ff6d289-000000@amazonses.com>
+Envelope-to: anmol.alawadhi@daanvir.org
+Delivery-date: Wed, 24 Oct 2018 09:36:57 +0000
+Received: from a10-96.smtp-out.amazonses.com ([54.240.10.96]:55112)
+	by md-in-63.webhostbox.net with esmtps (TLSv1.2:ECDHE-RSA-AES128-SHA256:128)
+	(Exim 4.91)
+	(envelope-from <01000166a56ee2fa-e60e67c5-fe4d-494b-8175-23493ff6d289-000000@amazonses.com>)
+	id 1gFFav-000xFO-Q6
+	for anmol.alawadhi@daanvir.org; Wed, 24 Oct 2018 09:36:57 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=beyj7v6v7m44vc3226foutgqzcxxbogf; d=internshala.com;
+	t=1540373799;
+	h=To:Subject:Message-ID:Date:From:Reply-To:MIME-Version:List-Unsubscribe:Content-Type:Content-Transfer-Encoding;
+	bh=eXLVT2K9xBHJb58EHYvkLDDeOxR6CqzaZtKyWkJ5rqs=;
+	b=lBylg2E0kJSG1Wu9QPF/op8zDGq2pPFAWLZFUaeiOgdKFANGaEyczqWIUjm075mi
+	WSpilGC/nmOUzetGsQHXTaKv8/Vn97jl6E7OWeLFGMKWmZImsLAtHln1NMkjo35z4G3
+	jcybOjRnO47q5htGB/AZlpzpv3Je7H3ZJ7gixmIk=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug; d=amazonses.com; t=1540373799;
+	h=To:Subject:Message-ID:Date:From:Reply-To:MIME-Version:List-Unsubscribe:Content-Type:Content-Transfer-Encoding:Feedback-ID;
+	bh=eXLVT2K9xBHJb58EHYvkLDDeOxR6CqzaZtKyWkJ5rqs=;
+	b=RWgQ2bDBR1gEDp59w8L4KrNQk77DV8+P853xNHOZopMk64/AFPiIsE0BcN1V93MO
+	PbtRd6mqCYiudMKqBClRclOEHIeKHKWrpkChON/NfQM5KsimEK5QH3iWUnh0gPwb4KV
+	qzzCVn0Fsj8HuRGHDYa7+sXTwb0Tj703jI1a2qdQ=
+To: anmol.alawadhi@daanvir.org
+Subject: =?UTF-8?B?RmVhdHVyZSB5b3VyIGludGVybnNoaXAgaW4g4oCYSW5kaWHigJlzIEJlc3QgU3RhcnR1cCBJbnRlcm5zaGlwc+KAmSAtIEludGVybnNoYWxh?=
+Message-ID: <01000166a56ee2fa-e60e67c5-fe4d-494b-8175-23493ff6d289-000000@email.amazonses.com>
+Date: Wed, 24 Oct 2018 09:36:39 +0000
+From: "Raghav Singla" <raghav@internshala.com>
+Reply-To: raghav@internshala.com
+MIME-Version: 1.0
+X-Mailer-LID: 6115
+List-Unsubscribe: <http://em.internshala.com/unsubscribe.php?M=97785368&C=1d250970a744b4448ddc1b9b44824129&L=6115&N=14713>
+X-Mailer-RecptId: 97785368
+X-Mailer-SID: 14713
+X-Mailer-Sent-By: 4
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+X-SES-Outgoing: 2018.10.24-54.240.10.96
+Feedback-ID: 1.us-east-1.zxtucPVubGftJWR49L2EMyyk1hBPV57S2rBAeFj2vQs=:AmazonSES
+X-Authenticated_sender: 
+X-Spam-Status: No, score=1.3
+X-Spam-Score: 13
+X-Spam-Bar: +
+X-Ham-Report: DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, HEADER_FROM_DIFFERENT_DOMAINS=0.249, HTML_FONT_LOW_CONTRAST=0.001, HTML_IMAGE_RATIO_06=0.001, HTML_MESSAGE=0.001, MIME_HTML_ONLY=1.105, RCVD_IN_DNSWL_NONE=-0.0001, SPF_PASS=-0.001, URIBL_BLOCKED=0.001, CMAE Analysis: v=2.3 cv=KIx08mNo c=1 sm=0 tr=0 a=HpAAvcLHHh0Zw7uRqdWCyQ==:117 a=EvEWS/su2N9D7MeW7UZReA==:17 a=IkcTkHD0fZMA:10 a=smKx5t2vBNcA:10 a=mDRq-kXtxVkA:10 a=Hgn-wnRn1-cA:10 a=rvBsF_H--VdvyztPVpcA:9 a=afvUJK2cnrc3mWYi:21 a=G3EWL6iFj4hILfX-:21 a=FIM8J89HxaWe6HFG:21 a=_W_S_7VecoQA:10 a=QEXdDO2ut3YA:10 a=MEfnDnd8ZssA:10 a=Tiie-zG8F9MA:10 a=JlbB7QOLdOYA:10 a=BG0-yrJV6j4A:10 a=R4z4fLCyvN8A:10
+ 
+ *  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ *       See http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ *      for more information.
+ *      [URIs: internshala.com]
+ * -0.0 RCVD_IN_DNSWL_NONE RBL: Sender listed at http://www.dnswl.org/, no
+ *      trust
+ *      [54.240.10.96 listed in list.dnswl.org]
+ * -0.0 SPF_PASS SPF: sender matches SPF record
+ *  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
+ *      domains are different
+ *  1.1 MIME_HTML_ONLY BODY: Message only has text/html MIME parts
+ *  0.0 HTML_MESSAGE BODY: HTML included in message
+ *  0.0 HTML_IMAGE_RATIO_06 BODY: HTML has a low ratio of text to image area
+ *  0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or identical to
+ *       background
+ *  0.1 DKIM_SIGNED Message has a DKIM or DK signature, not necessarily
+ *      valid
+ * -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
+ *       domain
+ * -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+X-Spam-Flag: NO
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Internshala Newsletter</title>
+</head>
+<body style="background-color:#e8e8e8; font-family:verdana;
+font-size:13px;">
+<div style="max-width: 640px; background-color: #ffffff; margin: auto;
+border: 1px solid #e8e8e8; border-radius: 5px;">
+<div style="font-family: verdana; font-size: 13px; min-height: 100px;
+background-color: #ffffff; border-radius: 5px 5px 0px 0px; margin: 0px;
+padding: 0px;">
+<div style="margin-bottom: 30px;">
+<p style="padding: 0px; margin: 0; color: #e8e8e8; text-align:
+center;"><span style="font-size: xx-small;"><a
+href="http://em.internshala.com/link.php?M=97785368&N=14713&L=18903&F=H"
+style="background-color: #ffffff;"><img
+src="http://em.internshala.com/admin/temp/newsletters//10093/IBSI-HTML-Mailer.png"
+width="640" height="300" title="" /></a></span></p>
+</div>
+</div>
+<div style="margin: 18px 6% 10px;">
+<div style="overflow: auto; padding-bottom: 10px; text-align: left
+justify;">
+<div dir="ltr">
+<div dir="ltr">
+<div>Dear Anmol ,<br /> <br />Hope you are doing well.<br /> <br />I am
+excited to share that Internshala in association with AICTE has launched
+'India's Best Startup Internships'. If you think you have a great
+internship program, <strong>submit your entry <a
+href="http://em.internshala.com/link.php?M=97785368&N=14713&L=18903&F=H">here</a>
+before 2nd November 2018</strong>.<br /><br /><strong>What's in it for
+you?</strong> The top 10 startups with awesome internships will get a
+certificate of recognition and an exclusive branding among 4 million
+students! What&rsquo;s more - you get to hire a super intern for your
+team.<br /> <br />Please note that participation is entirely free of cost.
+For any queries or assistance, I&rsquo;m just a call away.<br /> <br />P.S.
+- Please share this message among the startups in your network and help
+them build a great team.<br /><br />Thanks,<br />Raghav Singla<br />Manager
+- Corporate Relations<br />+91 78382 15576</div>
+<div>
+<div>
+<div>Internshala</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="font-family: verdana; font-size: small; padding-top: 0px;
+color: #666666; text-align: justify;"><center>
+<div style="font-family: verdana; font-size: small; padding-bottom: 10px;
+color: #666666; text-align: left;"><center>
+<p><span style="font-size: medium;"><span style="color: #ffffff;"><button
+style="border: 0; margin-bottom: 06px; background-color: #ff9e12; height:
+33px; width: 200px; color: #ff9e12;"><span style="color: #ffffff;"><span
+style="color: #ffffff;"><b style="color: white; text-decoration: none;
+font-size: 5px;"><b style="color: white; text-decoration: none; font-size:
+5px;"><strong style="color: white; text-decoration: none; font-size:
+5px;"><a
+href="http://em.internshala.com/link.php?M=97785368&N=14713&L=18903&F=H"
+style="color: white; text-decoration: none; font-size: 16px;">PARTICIPATE
+NOW</a></strong></b></b></span></span></button></span></span></p>
+</center></div>
+<center style="font-family: frank;">
+<div style="background-color: #333; border-radius: 0px 0px 5px 5px; margin:
+0px; padding: 0px;">
+<div style="margin-right: 6%; margin-left: 6%;">
+<div style="padding: 5px 0px 5px 0px;"><center>
+<div style="margin-top: 10px; text-align: center; font-size: 10px;
+font-family: verdana; color: #f3f4f4;"><span style="color:
+#ffffff;">Contact us:<br /><strong>raghav@internshala.com</strong><br /><br
+/></span>
+<div><span style="color: #ffffff;">Our Address:</span><br />
+<div><span style="color: #ffffff;">Scholiverse Educare Pr&iacute;vate
+Limited, B-610, Unitech Business Zone,&nbsp;</span></div>
+<div>
+<div><span style="color: #ffffff;">Nirvana Country, South City
+2,&nbsp;Gurgaon, India - 122018<br /><br /></span><span
+style="text-decoration: underline; color: #ffffff;"><strong><span
+style="text-decoration: underline;"><a
+href="http://em.internshala.com/unsubscribe.php?M=97785368&C=1d250970a744b4448ddc1b9b44824129&L=6115&N=14713"><span
+style="color: #ffffff; text-decoration: underline;">Unsubscribe me from
+this list</span></a></span></strong></span><span style="color: #ffffff;"><a
+href="http://em.internshala.com/display.php?M=97785368&C=1d250970a744b4448ddc1b9b44824129&S=14713&L=6115&N=10095"><br
+/></a><br /></span></div>
+</div>
+</div>
+</div>
+</center></div>
+</div>
+</div>
+</center></center></div>
+</div>
+<div><span style="color: #f3f4f4; font-size: 10px; text-align: center;
+background-color: #333333; text-decoration-line: underline;"><span
+style="color: #ffffff;"><strong>&nbsp;</strong></span></span></div>
+<img
+src="http://em.internshala.com/open.php?M=97785368&L=6115&N=14713&F=H&image=.jpg"
+height="1" width="10"></body>
+</html>
+

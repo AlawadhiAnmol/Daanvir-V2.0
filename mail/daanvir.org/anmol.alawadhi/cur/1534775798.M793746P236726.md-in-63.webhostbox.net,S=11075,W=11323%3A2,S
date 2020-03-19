@@ -1,0 +1,248 @@
+Return-Path: <ughhhhateit48@gmail.com>
+Delivered-To: anmol.alawadhi@daanvir.org
+Received: from md-in-63.webhostbox.net
+	by md-in-63.webhostbox.net (Dovecot) with LMTP id aeRCL/bRelu2nAMAwBqdFg
+	for <anmol.alawadhi@daanvir.org>; Mon, 20 Aug 2018 14:36:38 +0000
+Return-path: <ughhhhateit48@gmail.com>
+Envelope-to: anmol.alawadhi@daanvir.org
+Delivery-date: Mon, 20 Aug 2018 14:36:38 +0000
+Received: from mail-qt0-f179.google.com ([209.85.216.179]:39308)
+	by md-in-63.webhostbox.net with esmtps (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128)
+	(Exim 4.89)
+	(envelope-from <ughhhhateit48@gmail.com>)
+	id 1frlIJ-0011mN-2e
+	for anmol.alawadhi@daanvir.org; Mon, 20 Aug 2018 14:36:38 +0000
+Received: by mail-qt0-f179.google.com with SMTP id o15-v6so10378264qtk.6
+        for <anmol.alawadhi@daanvir.org>; Mon, 20 Aug 2018 07:36:31 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=Fk9tRp5/x1NMnSk+k3j/mZ21d8obSAqOEMSGp4+J8o0=;
+        b=pBGZHJppV0IWfno9j8sRSNrEKtPcFrhT0C2b1Kv9pAjaWgDEeJi6IfaFR7jeUldQTh
+         hbOckVjf6L9uv99bq1mZ2rnBdvRMrpxOZhZuYoe9d+aBggEZinyrD1GMGtXVbGSG2esh
+         M4PrJYkmMH0axCA+GV4fxETFDIV+m7/R2emBPtS/+rTidRhHyRyGFTLMGQWtix3OBhvg
+         aK+ZU9Qlb0aBZYmIZOUgpmI+jz3R7yBZiD57GERv8jtMa5Qq2vIV2zLaP785/j1s+kSf
+         FUGAtADfYGq2WBxMJgUlOQEqJNaPCKei5KMHZ065+xsFzVRUgdgfFjXZjXviNpsd74jI
+         tBuA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=Fk9tRp5/x1NMnSk+k3j/mZ21d8obSAqOEMSGp4+J8o0=;
+        b=Rajo/O9efPFIcJhf3hH9RcNYrjcoT7326YGXvkucGn7WszbaOt41EfbAgeLgcPDTyD
+         f+wJKI6/ErBM2EdmUEB6eNkT5sB/hox/o3xpyKmBpsxQ/yeB6N5kViGy6o5Lq/pZVkiX
+         gM+dPQOFEZNcvhI3Lp5ojecKtbWY6r62sMNbJAs1Nx0MVY/P3cPvB9Hr39VSpyy1Hczt
+         cK91ymP+apJH0LoYyrOikkYO6FaXJjhazCPMMWloI6mUUV8cRCnmPfDLDpYDjxY5nCJv
+         OisZ23xUBA/AGd8SNVGRRMIdWTyQHkS+zgfR0F4CQurSXthV0KWHnRwVCaM0rj5+7TzP
+         12ZA==
+X-Gm-Message-State: AOUpUlHV8cHc+zBS9XQblOOoDh266SSPCMLeM1Ub2W6LQUcBWTTF9vKe
+	H5RsmMv8Qbj9bUJJ45OH02k7U+oApD/lYfRD/taO1hnSWvE=
+X-Google-Smtp-Source: AA+uWPwOI72AIWD4DTOlxSWX+Amcsn00qfkCP1p/xYXlTKdXIIamSCn2ZE80ErxYoc1vIxF7llooibxdIc3rfinhN/8=
+X-Received: by 2002:ac8:7319:: with SMTP id x25-v6mr44304854qto.375.1534775783780;
+ Mon, 20 Aug 2018 07:36:23 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 2002:a0c:b6d1:0:0:0:0:0 with HTTP; Mon, 20 Aug 2018 07:36:23
+ -0700 (PDT)
+In-Reply-To: <CAJsOwiZFaAy5WQDDOxXsU3g1RGMG=GXJGg_477YbU3+o-_RmVA@mail.gmail.com>
+References: <0100016435a81448-fd02a1ad-31c0-4ece-90a1-0365a07a05ed-000000@email.amazonses.com>
+ <CAJsOwiZFaAy5WQDDOxXsU3g1RGMG=GXJGg_477YbU3+o-_RmVA@mail.gmail.com>
+From: PraChi Joshi <ughhhhateit48@gmail.com>
+Date: Mon, 20 Aug 2018 20:06:23 +0530
+Message-ID: <CAJsOwiaga8LXE_a9=14Ypw-qeCY9P7SUU7i4fpzH22LzJRitPA@mail.gmail.com>
+Subject: Re: Message from Daanvir India regarding your internship application
+To: Anmol Alawadhi <anmol.alawadhi@daanvir.org>
+Content-Type: multipart/alternative; boundary="00000000000066f4f50573ded567"
+X-Authenticated_sender: 
+X-Spam-Status: No, score=0.8
+X-Spam-Score: 8
+X-Spam-Bar: /
+X-Ham-Report: DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, FREEMAIL_ENVFROM_END_DIGIT=0.25, FREEMAIL_FROM=0.001, HK_RANDOM_ENVFROM=0.626, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_NONE=-0.0001, RCVD_IN_MSPIKE_H3=-0.01, RCVD_IN_MSPIKE_WL=-0.01, SPF_PASS=-0.001, URIBL_BLOCKED=0.001, CMAE Analysis: v=2.3 cv=P/8UeBIu c=1 sm=0 tr=0 a=HpAAvcLHHh0Zw7uRqdWCyQ==:117 a=x7bEGLp0ZPQA:10 a=FOBbzUb_h_sA:10 a=dapMudl6Dx4A:10 a=pzMiSTgVfcQXuY1HfCIA:9 a=QEXdDO2ut3YA:10 a=RLDnHEcSEwsA:10 a=AEI4XQnm7ubZQxKYh1AA:9 a=IFCpJ5lTq2UbZVOW:21
+ 
+ *  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ *       See http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ *      for more information.
+ *      [URIs: daanvir.org]
+ * -0.0 RCVD_IN_DNSWL_NONE RBL: Sender listed at http://www.dnswl.org/, no
+ *      trust
+ *      [209.85.216.179 listed in list.dnswl.org]
+ *  0.6 HK_RANDOM_ENVFROM Envelope sender username looks random
+ * -0.0 RCVD_IN_MSPIKE_H3 RBL: Good reputation (+3)
+ *      [209.85.216.179 listed in wl.mailspike.net]
+ *  0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends in
+ *      digit (ughhhhateit48[at]gmail.com)
+ *  0.0 FREEMAIL_FROM Sender email is commonly abused enduser mail provider
+ *      (ughhhhateit48[at]gmail.com)
+ * -0.0 SPF_PASS SPF: sender matches SPF record
+ *  0.0 HTML_MESSAGE BODY: HTML included in message
+ * -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
+ *       domain
+ * -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ *  0.1 DKIM_SIGNED Message has a DKIM or DK signature, not necessarily
+ *      valid
+ * -0.0 RCVD_IN_MSPIKE_WL Mailspike good senders
+X-Spam-Flag: NO
+
+--00000000000066f4f50573ded567
+Content-Type: text/plain; charset="UTF-8"
+
+ Hi Anmol,
+
+
+As the period of the internship was two months and has accordingly been
+finished now. So, I would like to have my internship certificate from
+Daanvir.org.
+
+
+On Sat, Jun 30, 2018 at 12:04 AM, PraChi Joshi <ughhhhateit48@gmail.com>
+wrote:
+
+> Hi Anmol
+>
+> Thank You for the appreciation.
+>
+>  And PFA for the new task.
+>
+>
+>
+>
+>
+> On Mon, Jun 25, 2018 at 12:06 PM, Internshala Admin (Employers) <
+> employer@internshala.com> wrote:
+>
+>> Dear Prachi,
+>>
+>> You have received the following message for your Content Writing
+>> <https://internshala.com/internship/detail/content-writing-work-from-home-internship-at-daanvir-india1526673972>
+>> internship application with Daanvir India. *To respond to the employer,
+>> please write to anmol.alawadhi@daanvir.org <anmol.alawadhi@daanvir.org> (or
+>> just click on 'Reply' to respond directly to the employer).*
+>>
+>> -----------------------------------------
+>>
+>> Hi Prachi,
+>> Great work with your previous article.
+>> Looking at your writing skills, we would like to spread the thoughts that
+>> you have to share.
+>> Here is your new task- "Role of lunch box in children's life"
+>>
+>> Share the word file for the same on or before Saturday 30 June 2018.
+>>
+>> Thanks & Regards,
+>> Anmol Alawadhi
+>> Daanvir.org
+>>
+>>
+>>
+>>
+>> ----------------------------------------
+>>
+>> *Tip:* Three simple etiquettes - Always reply (even if you wish to opt
+>> out), be courteous and no SMS lingo - makes you look professional.
+>>
+>> All the best!
+>>
+>> Many thanks,
+>> Team Internshala
+>> Internshala <https://internshala.com> | Facebook
+>> <https://www.facebook.com/Internshala/>
+>
+>
+>
+>
+> --
+> Regards,
+> Prachi
+>
+
+
+
+-- 
+Regards,
+Prachi
+
+--00000000000066f4f50573ded567
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">
+
+<div style=3D"font-size:12.8px;text-decoration-style:initial;text-decoratio=
+n-color:initial">Hi Anmol,</div><div style=3D"font-size:12.8px;text-decorat=
+ion-style:initial;text-decoration-color:initial"><br></div><div style=3D"fo=
+nt-size:12.8px;text-decoration-style:initial;text-decoration-color:initial"=
+><br></div><div style=3D"font-size:12.8px;text-decoration-style:initial;tex=
+t-decoration-color:initial">As the period of the internship was two months =
+and has accordingly been finished now. So, I=C2=A0would like to have my int=
+ernship certificate from Daanvir.org.=C2=A0</div><div class=3D"gmail-yj6qo =
+gmail-ajU" style=3D"outline:none;padding:10px 0px;width:22px;margin:2px 0px=
+ 0px;font-size:12.8px;text-decoration-style:initial;text-decoration-color:i=
+nitial"><div id=3D"gmail-:l1" class=3D"gmail-ajR" tabindex=3D"0" style=3D"b=
+ackground-color:rgb(241,241,241);border:1px solid rgb(221,221,221);clear:bo=
+th;line-height:6px;outline:none;width:20px"><img class=3D"gmail-ajT" src=3D=
+"https://ssl.gstatic.com/ui/v1/icons/mail/images/cleardot.gif" style=3D"bac=
+kground: url(&quot;//ssl.gstatic.com/ui/v1/icons/mail/ellipsis.png&quot;) n=
+o-repeat; height: 8px; opacity: 0.3; width: 20px;"></div></div>
+
+<br></div><div class=3D"gmail_extra"><br><div class=3D"gmail_quote">On Sat,=
+ Jun 30, 2018 at 12:04 AM, PraChi Joshi <span dir=3D"ltr">&lt;<a href=3D"ma=
+ilto:ughhhhateit48@gmail.com" target=3D"_blank">ughhhhateit48@gmail.com</a>=
+&gt;</span> wrote:<br><blockquote class=3D"gmail_quote" style=3D"margin:0 0=
+ 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><div dir=3D"ltr"><div>=
+Hi Anmol</div><div><br></div>Thank You for the appreciation.<div><br></div>=
+<div>=C2=A0And PFA for the new task.</div><div><br></div><div><br><div><br>=
+<div><br></div></div></div><div class=3D"gmail_extra"><div><div class=3D"h5=
+"><br><div class=3D"gmail_quote">On Mon, Jun 25, 2018 at 12:06 PM, Internsh=
+ala Admin (Employers) <span dir=3D"ltr">&lt;<a href=3D"mailto:employer@inte=
+rnshala.com" target=3D"_blank">employer@internshala.com</a>&gt;</span> wrot=
+e:<br><blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-l=
+eft:1px #ccc solid;padding-left:1ex">Dear Prachi,
+<br><br>
+You have received the following message for your <a href=3D"https://interns=
+hala.com/internship/detail/content-writing-work-from-home-internship-at-daa=
+nvir-india1526673972" target=3D"_blank">Content Writing</a> internship appl=
+ication with Daanvir India. <b>To respond to the employer, please write to =
+<a href=3D"mailto:anmol.alawadhi@daanvir.org" target=3D"_blank">anmol.alawa=
+dhi@daanvir.org</a> (or just click on &#39;Reply&#39; to respond directly t=
+o the employer).</b>
+<br><br>
+------------------------------<wbr>-----------
+<br><br>
+Hi Prachi,<br>
+Great work with your previous article. <br>
+Looking at your writing skills, we would like to spread the thoughts that y=
+ou have to share.<br>
+Here is your new task- &quot;Role of lunch box in children&#39;s life&quot;=
+<br>
+<br>
+Share the word file for the same on or before Saturday 30 June 2018.<br>
+<br>
+Thanks &amp; Regards,<br>
+Anmol Alawadhi<br>
+Daanvir.org<br>
+<br>
+<br>
+<br><br>
+------------------------------<wbr>----------
+<br><br>
+<b>Tip:</b> Three simple etiquettes - Always reply (even if you wish to opt=
+ out), be courteous and no SMS lingo - makes you look professional.
+<br><br>
+
+All the best!
+<br><br>
+                        Many thanks,
+                        <br>Team Internshala
+                        <br><a href=3D"https://internshala.com" target=3D"_=
+blank">Internshala</a> | <a href=3D"https://www.facebook.com/Internshala/" =
+target=3D"_blank">Facebook</a>
+</blockquote></div><br><br clear=3D"all"><div><br></div></div></div><span c=
+lass=3D"HOEnZb"><font color=3D"#888888">-- <br><div class=3D"m_385351684018=
+5989851gmail_signature" data-smartmail=3D"gmail_signature"><div dir=3D"ltr"=
+>Regards,=C2=A0<div>Prachi=C2=A0</div></div></div>
+</font></span></div></div>
+</blockquote></div><br><br clear=3D"all"><div><br></div>-- <br><div class=
+=3D"gmail_signature" data-smartmail=3D"gmail_signature"><div dir=3D"ltr">Re=
+gards,=C2=A0<div>Prachi=C2=A0</div></div></div>
+</div>
+
+--00000000000066f4f50573ded567--

@@ -1,0 +1,305 @@
+Return-Path: <ughhhhateit48@gmail.com>
+Delivered-To: anmol.alawadhi@daanvir.org
+Received: from md-in-63.webhostbox.net
+	by md-in-63.webhostbox.net (Dovecot) with LMTP id VfdJI0XXeltxJgUAwBqdFg
+	for <anmol.alawadhi@daanvir.org>; Mon, 20 Aug 2018 14:59:17 +0000
+Return-path: <ughhhhateit48@gmail.com>
+Envelope-to: anmol.alawadhi@daanvir.org
+Delivery-date: Mon, 20 Aug 2018 14:59:17 +0000
+Received: from mail-qt0-f176.google.com ([209.85.216.176]:38686)
+	by md-in-63.webhostbox.net with esmtps (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128)
+	(Exim 4.89)
+	(envelope-from <ughhhhateit48@gmail.com>)
+	id 1frleE-001QjU-5s
+	for anmol.alawadhi@daanvir.org; Mon, 20 Aug 2018 14:59:17 +0000
+Received: by mail-qt0-f176.google.com with SMTP id x7-v6so7198672qtk.5
+        for <anmol.alawadhi@daanvir.org>; Mon, 20 Aug 2018 07:59:10 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=3/VPuanVzZ/yrtLJQkcv4l8i89rvSGJ0hRqSro9ibv0=;
+        b=sOx07+04CmKim1ZLv6+rVDVH0AlErs75+J3IO44eQiTBDotu8x2jX8q+BDdxCog+0S
+         fJof/YerjxhQLKVer924P57Zm4Q/WUlZ51m/cuK2+TGpxgL1l2qqDZCvkxXU6O/18AN7
+         PE4VrMWRhPEWGfLL5zvfZKYALGH4S3h1Hnl1r0INP6c2fqPg3v1RzXmIeQOy3NUqofCL
+         hGS7ZUss7Bairs2rJYKdw5YbHj2AAXxt8dBIVf9tPbon6pZMhBTt/n9BkqA1M8YpZT3Y
+         4fYRZFsA0yscxHt6NgR6r9dxLbq+VkBC1QmtKAzuhxDuaRs5HkJCmExZ5FldWnsPF2Is
+         QOdw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=3/VPuanVzZ/yrtLJQkcv4l8i89rvSGJ0hRqSro9ibv0=;
+        b=CZdI5lFvTaI7gByF0kg7xTGRZtN9OZYNiJtgxs+drCY97vG+mVjBINGEIq6TcFJHnz
+         U4Lld6zxJS2F7k+7txSBye2D5KwKvwUQWDzdDV4yyxmDX9Lvkk070SkEFPMqfy26omZr
+         J+20skhmFVrAUONcbTgZ2C2QmQiCat3b51mGbJxwYWsZAMq8fl1fKDYRQaiannFOi8fB
+         G5zukUGsZUsKBY1QUQvNKRLqvW9Aj2gitzZaczr/GONuWyiyH3V0iI8Z/XkV/0VlApZd
+         y/CLnxhlsLDJujwEcfw9An5AxIap9VRlg29iu+0mTvuLVxoNFatIKRd/GOXM1S+a7vuB
+         xixQ==
+X-Gm-Message-State: AOUpUlEENvMu6uJ7uZyr38w5tByrHr0xuOetxU8NM82705s1/6GB8YqQ
+	usgqzXL/3NFqKZXcNc1MfG7pIVl4s7SWI7Gesy6EmEl0
+X-Google-Smtp-Source: ANB0VdaGifvK94FhXp98J7RtUW9nZ3Mccb9klRa09TsM76IUGv2zZXd8EX9rb+ESw0DF+xtqMFUwp3tDGqE9KGZSPoE=
+X-Received: by 2002:ac8:5056:: with SMTP id h22-v6mr2920874qtm.71.1534777142872;
+ Mon, 20 Aug 2018 07:59:02 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 2002:a0c:b6d1:0:0:0:0:0 with HTTP; Mon, 20 Aug 2018 07:59:02
+ -0700 (PDT)
+In-Reply-To: <CAJsOwiZqXKjAe0Db-UrVpOO=dXPXGrcJ-hw73hhRs5LwUsW1eg@mail.gmail.com>
+References: <CAJsOwiaw99cXT0DH=Jc=nb2iuVrBq-a2GCfhAi4FckoOQQ=01g@mail.gmail.com>
+ <CAJsOwiaipEmgT0YRHD4R=hY5xRC=M-GF-KUQPED=_7ACyxE9=g@mail.gmail.com>
+ <974BD63EFF18635E.A0F1F9E6-A694-40A6-B50A-D7E428A9681A@mail.outlook.com>
+ <974BD63EFF18635E.C464D0E2-2B5D-43D3-9102-9FF0B11414B1@mail.outlook.com>
+ <CAJsOwiZ2dd=rG1=bXURNGJu3=cE1A7Aox=qwWuijce1p4KBzDA@mail.gmail.com> <CAJsOwiZqXKjAe0Db-UrVpOO=dXPXGrcJ-hw73hhRs5LwUsW1eg@mail.gmail.com>
+From: PraChi Joshi <ughhhhateit48@gmail.com>
+Date: Mon, 20 Aug 2018 20:29:02 +0530
+Message-ID: <CAJsOwibzYvLjxgWbPyuPYnwnLn4GNZhPAPM_MOnmK7ieY-6YFw@mail.gmail.com>
+Subject: Re: Internship Certificate
+To: Anmol <anmol.alawadhi@daanvir.org>
+Content-Type: multipart/alternative; boundary="000000000000690d600573df265b"
+X-Authenticated_sender: 
+X-Spam-Status: No, score=0.8
+X-Spam-Score: 8
+X-Spam-Bar: /
+X-Ham-Report: DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, FREEMAIL_ENVFROM_END_DIGIT=0.25, FREEMAIL_FROM=0.001, HK_RANDOM_ENVFROM=0.626, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_NONE=-0.0001, RCVD_IN_MSPIKE_H3=-0.01, RCVD_IN_MSPIKE_WL=-0.01, SPF_PASS=-0.001, URIBL_BLOCKED=0.001, CMAE Analysis: v=2.3 cv=P/8UeBIu c=1 sm=0 tr=0 a=HpAAvcLHHh0Zw7uRqdWCyQ==:117 a=x7bEGLp0ZPQA:10 a=FOBbzUb_h_sA:10 a=dapMudl6Dx4A:10 a=_hMPd2VK9Iv-3pYxPVUA:9 a=QEXdDO2ut3YA:10 a=5UeK9suJl1gA:10 a=D1_x-A8LzDyBlnLlYxAA:9 a=cpeL1qfVvvaFEbSS:21
+ 
+ *  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ *       See http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ *      for more information.
+ *      [URIs: aka.ms]
+ * -0.0 RCVD_IN_DNSWL_NONE RBL: Sender listed at http://www.dnswl.org/, no
+ *      trust
+ *      [209.85.216.176 listed in list.dnswl.org]
+ *  0.6 HK_RANDOM_ENVFROM Envelope sender username looks random
+ * -0.0 RCVD_IN_MSPIKE_H3 RBL: Good reputation (+3)
+ *      [209.85.216.176 listed in wl.mailspike.net]
+ *  0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends in
+ *      digit (ughhhhateit48[at]gmail.com)
+ *  0.0 FREEMAIL_FROM Sender email is commonly abused enduser mail provider
+ *      (ughhhhateit48[at]gmail.com)
+ * -0.0 SPF_PASS SPF: sender matches SPF record
+ *  0.0 HTML_MESSAGE BODY: HTML included in message
+ * -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
+ *       domain
+ * -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ *  0.1 DKIM_SIGNED Message has a DKIM or DK signature, not necessarily
+ *      valid
+ * -0.0 RCVD_IN_MSPIKE_WL Mailspike good senders
+X-Spam-Flag: NO
+
+--000000000000690d600573df265b
+Content-Type: text/plain; charset="UTF-8"
+
+The internship started from May 30, 2018
+
+On Mon, Aug 20, 2018 at 8:27 PM, PraChi Joshi <ughhhhateit48@gmail.com>
+wrote:
+
+> 2 months
+>
+> On Mon, Aug 20, 2018 at 8:27 PM, PraChi Joshi <ughhhhateit48@gmail.com>
+> wrote:
+>
+>> I worked as a content writer for 3 months with your NGO.
+>>
+>> On Mon, Aug 20, 2018 at 8:08 PM, Anmol <anmol.alawadhi@daanvir.org>
+>> wrote:
+>>
+>>> Send your details!
+>>>
+>>>
+>>>
+>>>
+>>>
+>>> On Mon, Aug 20, 2018 at 8:03 PM +0530, "Anmol" <
+>>> anmol.alawadhi@daanvir.org> wrote:
+>>>
+>>> Send your details!
+>>>>
+>>>> Get Outlook for iOS <https://aka.ms/o0ukef>
+>>>>
+>>>>
+>>>>
+>>>> On Mon, Aug 20, 2018 at 8:02 PM +0530, "PraChi Joshi" <
+>>>> ughhhhateit48@gmail.com> wrote:
+>>>>
+>>>>
+>>>>> ---------- Forwarded message ----------
+>>>>> From: PraChi Joshi <ughhhhateit48@gmail.com>
+>>>>> Date: Mon, Jul 30, 2018 at 9:26 PM
+>>>>> Subject: Internship Certificate
+>>>>> To: Anmol Alawadhi <anmol.alawadhi@daanvir.org>
+>>>>>
+>>>>>
+>>>>>
+>>>>> Hi Anmol,
+>>>>>
+>>>>>
+>>>>> As the period of the internship was two months and has accordingly
+>>>>> been finished now. So, I would like to have my internship certificate from
+>>>>> Daanvir.org.
+>>>>>
+>>>>>
+>>>>>
+>>>>>
+>>>>>
+>>>>>
+>>>>>
+>>>>>
+>>>>>
+>>>>> --
+>>>>> Regards,
+>>>>> Prachi
+>>>>>
+>>>>>
+>>>>>
+>>>>> --
+>>>>> Regards,
+>>>>> Prachi
+>>>>>
+>>>>
+>>
+>>
+>> --
+>> Regards,
+>> Prachi
+>>
+>
+>
+>
+> --
+> Regards,
+> Prachi
+>
+
+
+
+-- 
+Regards,
+Prachi
+
+--000000000000690d600573df265b
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">The internship started from May 30, 2018</div><div class=
+=3D"gmail_extra"><br><div class=3D"gmail_quote">On Mon, Aug 20, 2018 at 8:2=
+7 PM, PraChi Joshi <span dir=3D"ltr">&lt;<a href=3D"mailto:ughhhhateit48@gm=
+ail.com" target=3D"_blank">ughhhhateit48@gmail.com</a>&gt;</span> wrote:<br=
+><blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1=
+px #ccc solid;padding-left:1ex"><div dir=3D"ltr">2 months=C2=A0</div><div c=
+lass=3D"gmail_extra"><div><div class=3D"h5"><br><div class=3D"gmail_quote">=
+On Mon, Aug 20, 2018 at 8:27 PM, PraChi Joshi <span dir=3D"ltr">&lt;<a href=
+=3D"mailto:ughhhhateit48@gmail.com" target=3D"_blank">ughhhhateit48@gmail.c=
+om</a>&gt;</span> wrote:<br><blockquote class=3D"gmail_quote" style=3D"marg=
+in:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><div dir=3D"ltr"=
+>I worked as a content writer for 3 months with your NGO.</div><div class=
+=3D"gmail_extra"><span><br><div class=3D"gmail_quote">On Mon, Aug 20, 2018 =
+at 8:08 PM, Anmol <span dir=3D"ltr">&lt;<a href=3D"mailto:anmol.alawadhi@da=
+anvir.org" target=3D"_blank">anmol.alawadhi@daanvir.org</a>&gt;</span> wrot=
+e:<br><blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-l=
+eft:1px #ccc solid;padding-left:1ex"><div>
+
+<div id=3D"m_-1713449379251807545m_-5495454247624224748m_-75754025469669568=
+13compose-container" style=3D"direction:ltr">
+	<span>
+		<span content=3D"Outlook Mobile for iOS"></span>
+	</span>=09
+	<div>
+	=09
+		<div style=3D"direction:ltr">Send your details!</div>
+		<div><br></div>
+		<div class=3D"m_-1713449379251807545m_-5495454247624224748m_-757540254696=
+6956813acompli_signature"><br></div>
+	</div>
+</div><div><div class=3D"m_-1713449379251807545m_-5495454247624224748h5">
+<br><br><br>
+<div class=3D"gmail_quote">On Mon, Aug 20, 2018 at 8:03 PM +0530, &quot;Anm=
+ol&quot; <span dir=3D"ltr">&lt;<a href=3D"mailto:anmol.alawadhi@daanvir.org=
+" target=3D"_blank">anmol.alawadhi@daanvir.org</a>&gt;</span> wrote:<br>
+<br>
+
+<blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1p=
+x #ccc solid;padding-left:1ex">
+
+
+
+
+<div dir=3D"3D&quot;ltr&quot;">
+
+
+<div id=3D"m_-1713449379251807545m_-5495454247624224748m_-75754025469669568=
+13compose-container" style=3D"direction:ltr">
+	<span>
+		<span content=3D"Outlook Mobile for iOS"></span>
+	</span>=09
+	<div>
+	=09
+		<div style=3D"direction:ltr">Send your details!</div>
+		<div><br></div>
+		<div class=3D"m_-1713449379251807545m_-5495454247624224748m_-757540254696=
+6956813acompli_signature">Get <a href=3D"https://aka.ms/o0ukef" target=3D"_=
+blank">Outlook for iOS</a></div>
+	</div>
+</div>
+<br><br><br>
+<div class=3D"gmail_quote">On Mon, Aug 20, 2018 at 8:02 PM +0530, &quot;Pra=
+Chi Joshi&quot; <span dir=3D"ltr">&lt;<a href=3D"mailto:ughhhhateit48@gmail=
+.com" target=3D"_blank">ughhhhateit48@gmail.com</a>&gt;</span> wrote:<br>
+<br>
+
+<blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1p=
+x #ccc solid;padding-left:1ex">
+
+
+
+
+<div dir=3D"3D&quot;ltr&quot;">
+<div dir=3D"ltr"><br><div class=3D"gmail_quote">---------- Forwarded messag=
+e ----------<br>From: <b class=3D"gmail_sendername">PraChi Joshi</b> <span =
+dir=3D"ltr">&lt;<a href=3D"mailto:ughhhhateit48@gmail.com" target=3D"_blank=
+">ughhhhateit48@gmail.com</a>&gt;</span><br>Date: Mon, Jul 30, 2018 at 9:26=
+ PM<br>Subject: Internship Certificate<br>To: Anmol Alawadhi &lt;<a href=3D=
+"mailto:anmol.alawadhi@daanvir.org" target=3D"_blank">anmol.alawadhi@daanvi=
+r.org</a>&gt;<br><br><br><div dir=3D"ltr"><br clear=3D"all"><div>Hi Anmol,<=
+/div><div><br></div><div><br></div><div>As the period of the internship was=
+ two months and has accordingly been finished now. So, I=C2=A0would like to=
+ have my internship certificate from Daanvir.org.=C2=A0</div><span class=3D=
+"m_-1713449379251807545m_-5495454247624224748m_-7575402546966956813HOEnZb">=
+<font color=3D"#888888"><div><br></div><div><br></div><div><br></div><div><=
+br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><=
+br></div>-- <br><div class=3D"m_-1713449379251807545m_-5495454247624224748m=
+_-7575402546966956813m_8151616488128081867gmail_signature" data-smartmail=
+=3D"gmail_signature"><div dir=3D"ltr">Regards,=C2=A0<div>Prachi=C2=A0</div>=
+</div></div>
+</font></span></div>
+</div><br><br clear=3D"all"><div><br></div>-- <br><div class=3D"m_-17134493=
+79251807545m_-5495454247624224748m_-7575402546966956813gmail_signature" dat=
+a-smartmail=3D"gmail_signature"><div dir=3D"ltr">Regards,=C2=A0<div>Prachi=
+=C2=A0</div></div></div>
+</div>
+
+</div>
+
+</blockquote>
+</div>
+
+</div>
+
+</blockquote>
+</div>
+</div></div></div></blockquote></div><br><br clear=3D"all"><div><br></div><=
+/span><span class=3D"m_-1713449379251807545HOEnZb"><font color=3D"#888888">=
+-- <br><div class=3D"m_-1713449379251807545m_-5495454247624224748gmail_sign=
+ature" data-smartmail=3D"gmail_signature"><div dir=3D"ltr">Regards,=C2=A0<d=
+iv>Prachi=C2=A0</div></div></div>
+</font></span></div>
+</blockquote></div><br><br clear=3D"all"><div><br></div></div></div><span c=
+lass=3D"HOEnZb"><font color=3D"#888888">-- <br><div class=3D"m_-17134493792=
+51807545gmail_signature" data-smartmail=3D"gmail_signature"><div dir=3D"ltr=
+">Regards,=C2=A0<div>Prachi=C2=A0</div></div></div>
+</font></span></div>
+</blockquote></div><br><br clear=3D"all"><div><br></div>-- <br><div class=
+=3D"gmail_signature" data-smartmail=3D"gmail_signature"><div dir=3D"ltr">Re=
+gards,=C2=A0<div>Prachi=C2=A0</div></div></div>
+</div>
+
+--000000000000690d600573df265b--

@@ -1,0 +1,153 @@
+Return-Path: <010001680ed4e556-c6bda678-4ead-45ae-bc80-c8987615efef-000000@amazonses.com>
+Delivered-To: anmol.alawadhi@daanvir.org
+Received: from md-in-63.webhostbox.net
+	by md-in-63.webhostbox.net with LMTP id mAdSE9fBLFwn8QAAwBqdFg
+	for <anmol.alawadhi@daanvir.org>; Wed, 02 Jan 2019 13:51:19 +0000
+Return-path: <010001680ed4e556-c6bda678-4ead-45ae-bc80-c8987615efef-000000@amazonses.com>
+Envelope-to: anmol.alawadhi@daanvir.org
+Delivery-date: Wed, 02 Jan 2019 13:51:19 +0000
+Received: from a10-181.smtp-out.amazonses.com ([54.240.10.181]:37374)
+	by md-in-63.webhostbox.net with esmtps (TLSv1.2:ECDHE-RSA-AES128-SHA256:128)
+	(Exim 4.91)
+	(envelope-from <010001680ed4e556-c6bda678-4ead-45ae-bc80-c8987615efef-000000@amazonses.com>)
+	id 1gegvQ-000H4e-2m
+	for anmol.alawadhi@daanvir.org; Wed, 02 Jan 2019 13:51:19 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=beyj7v6v7m44vc3226foutgqzcxxbogf; d=internshala.com;
+	t=1546437060;
+	h=To:Subject:Message-ID:Date:From:Reply-To:MIME-Version:List-Unsubscribe:Content-Type:Content-Transfer-Encoding;
+	bh=OE2SsxDT5y1bzHNroemZ9lYzkoZ6XPVS63SZlDyOhWk=;
+	b=ctjb/9QWQUr9KKFe9GBz+EhyEsDbg5AL+DXGP8Td3Pt1UuK1j+UF4GbGWAR0ssLY
+	1v6ZjgR8/mQ8uVAniEIGJr5Z2DHhh7HJfPcoKlf8mmczRnh4TE7t4/sFsHNWlzq6uXs
+	UZ8pcUocJN/7N1AFA9HgOVfTQG2ix2XT0nJrptzg=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug; d=amazonses.com; t=1546437060;
+	h=To:Subject:Message-ID:Date:From:Reply-To:MIME-Version:List-Unsubscribe:Content-Type:Content-Transfer-Encoding:Feedback-ID;
+	bh=OE2SsxDT5y1bzHNroemZ9lYzkoZ6XPVS63SZlDyOhWk=;
+	b=Io0VlQh9pfvbeWuN11kPIxLDXYoX8y9Tibr9dWSW7wtFD1/VpEqFkU8OTYWcv3kL
+	ex0uSSZGMr6UmGWAU5fw4iO+pB6/KHmhouk4mrei/yMccsveD8D6r2tLm5zNIJeV7XL
+	3Mkndq66rGCccHqVWJorcJRMC94JL/WyZOTEmnwg=
+To: anmol.alawadhi@daanvir.org
+Subject:  Thank you as Internshala Turns 8
+Message-ID: <010001680ed4e556-c6bda678-4ead-45ae-bc80-c8987615efef-000000@email.amazonses.com>
+Date: Wed, 2 Jan 2019 13:50:59 +0000
+From: "Shadab Alam" <shadab.alam@internshala.com>
+Reply-To: shadab.alam@internshala.com
+MIME-Version: 1.0
+X-Mailer-LID: 6530
+List-Unsubscribe: <http://em.internshala.com/unsubscribe.php?M=110958162&C=bcd986c66efb4a22480afe6580465db0&L=6530&N=15756>
+X-Mailer-RecptId: 110958162
+X-Mailer-SID: 15756
+X-Mailer-Sent-By: 4
+Content-Type: multipart/alternative; charset="UTF-8"; boundary="b1_489baeea524fd94afb01e2f7529af840"
+Content-Transfer-Encoding: 8bit
+X-SES-Outgoing: 2019.01.02-54.240.10.181
+Feedback-ID: 1.us-east-1.zxtucPVubGftJWR49L2EMyyk1hBPV57S2rBAeFj2vQs=:AmazonSES
+X-Authenticated_sender: 
+X-Spam-Status: No, score=1.1
+X-Spam-Score: 11
+X-Spam-Bar: +
+X-Ham-Report: DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, HEADER_FROM_DIFFERENT_DOMAINS=0.001, HTML_MESSAGE=0.001, KAM_NUMSUBJECT=0.5, MPART_ALT_DIFF=0.724, RCVD_IN_DNSWL_NONE=-0.0001, SPF_PASS=-0.001, URIBL_BLOCKED=0.001, CMAE Analysis: v=2.3 cv=KIx08mNo c=1 sm=0 tr=0 a=HpAAvcLHHh0Zw7uRqdWCyQ==:117 a=gJAInB2TfrTBKd6ahTVCgQ==:17 a=IkcTkHD0fZMA:10 a=3JhidrIBZZsA:10 a=mDRq-kXtxVkA:10 a=Hgn-wnRn1-cA:10 a=sMkCJD0wuQrbswlxwA0A:9 a=QEXdDO2ut3YA:10 a=BG0-yrJV6j4A:10 a=JlbB7QOLdOYA:10 a=a-s-taoV7mYiy7zb-5MA:9 a=lDNl2lIEhZKvKMjIUR5gOGDH5rM=:19 a=hMDLp4nbX-3nuonz:21 a=bL9kDUedEz9yR0Jy:21 a=lpm293iksUDilUhy:21 a=_W_S_7VecoQA:10 a=Tiie-zG8F9MA:10 a=R4z4fLCyvN8A:10
+ 
+ *  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ *       See http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ *      for more information.
+ *      [URIs: internshala.com]
+ *  0.5 KAM_NUMSUBJECT Subject ends in numbers
+ * -0.0 RCVD_IN_DNSWL_NONE RBL: Sender listed at http://www.dnswl.org/, no
+ *      trust
+ *      [54.240.10.181 listed in list.dnswl.org]
+ *  0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
+ *      domains are different
+ * -0.0 SPF_PASS SPF: sender matches SPF record
+ *  0.0 HTML_MESSAGE BODY: HTML included in message
+ *  0.7 MPART_ALT_DIFF BODY: HTML and text parts are different
+ * -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
+ *       domain
+ *  0.1 DKIM_SIGNED Message has a DKIM or DK signature, not necessarily
+ *      valid
+ * -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+X-Spam-Flag: NO
+
+--b1_489baeea524fd94afb01e2f7529af840
+Content-Type: text/plain; format=flowed; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Your email client cannot read this email.
+To view it online, please go here:
+http://em.internshala.com/display.php?M=110958162&C=bcd986c66efb4a22480afe6580465db0&S=15756&L=6530&N=10717
+
+
+To stop receiving these
+emails:http://em.internshala.com/unsubscribe.php?M=110958162&C=bcd986c66efb4a22480afe6580465db0&L=6530&N=15756
+
+--b1_489baeea524fd94afb01e2f7529af840
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<span style="font-size: 10pt; font-family: arial, helvetica,
+sans-serif;">Dear Anmol ,<br /><br /></span><span style="font-size: 10pt;
+font-family: arial, helvetica, sans-serif;">Hope you are doing well. I am
+Shadab, I head the employer relations team at Internshala. I was also the
+first in-office intern to join Internshala six years ago in December 2012
+:)<br /></span><br /><span style="font-size: 10pt; font-family: arial,
+helvetica, sans-serif;">Internshala turned 8 on 29th December and as we
+take another step forward, I wanted to thank you for being a part of our
+journey.<br /></span><br /><span style="font-size: 10pt; font-family:
+arial, helvetica, sans-serif;">Last year 100,000 students found an
+internship through us and hopefully, they now have a better chance to
+discover their potential and build their dream careers - all thanks to
+employers like you who invest their time, energy, and resources in hiring,
+mentoring and nurturing these young minds. We are truly grateful to you for
+the same.<br /></span><br /><span style="font-size: 10pt; font-family:
+arial, helvetica, sans-serif;">We took a number of steps to make the intern
+hiring process a little easier for you. These include launch of Internshala
+Chat (now you can manage all your conversations with applicants at one
+place), InternBot (a chatbot to answer ~30% of your queries in real time),
+Report an applicant feature (to build better professionalism among students
+for most of whom this is their first time they are interacting with the
+professional world), and a revamped internship verification process (to
+make it more rigorous and simplified at the same time for genuine
+opportunities to get published faster).<br /></span><br /><span
+style="font-size: 10pt; font-family: arial, helvetica,
+sans-serif;">However, we understand that intern hiring, by no means, is a
+solved problem. There are a number of challenges you may have faced while
+hiring interns on the platform and we are thankful to you for your
+continued patience and support despite those. Helping you get the right
+candidate (both skill and will-wise) in the shortest possible time is our
+holy grail and we would do everything we can to make that happen.</span><br
+/><br /><span style="font-size: 10pt; font-family: arial, helvetica,
+sans-serif;">I would love to hear if you have any ideas and feedback on
+what we could do better. Similarly, if you have any thoughts on possible
+collaboration between Internshala and you, please do let me know.<br
+/></span><br /><span style="font-size: 10pt; font-family: arial, helvetica,
+sans-serif;">We also made <a
+href="http://em.internshala.com/link.php?M=110958162&N=15756&L=19577&F=H">this
+short clip</a> to capture all the exciting things that happened at
+Internshala in 2018 (my personal favourites being Internshala becoming a
+Great Place to Work-Certified&trade; organisation and us moving to a newer
+office) - please do have a look when you get time and I really hope you
+enjoy watching it as much as we enjoyed making it :).<br /></span><br
+/><span style="font-size: 10pt; font-family: arial, helvetica,
+sans-serif;">Thank you once again for trusting us with your intern needs
+and wish you a very happy new year :)<br /></span><br /><span
+style="font-size: 10pt; font-family: arial, helvetica,
+sans-serif;">Thanks</span><br /><span style="font-size: 10pt; font-family:
+arial, helvetica, sans-serif;">Shadab Alam</span><br /><span
+style="font-size: 10pt; font-family: arial, helvetica, sans-serif;">Head -
+Employer Relations</span><br /><span style="font-size: 12pt; font-family:
+arial, helvetica, sans-serif;"><span style="font-size:
+10pt;">Internshala</span><br /></span>
+<img
+src="http://em.internshala.com/open.php?M=110958162&L=6530&N=15756&F=H&image=.jpg"
+height="1" width="10"></body>
+</html>
+
+--b1_489baeea524fd94afb01e2f7529af840--
+
+
